@@ -19,7 +19,11 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           #hugo-version: 'latest'
+<<<<<<< HEAD
           hugo-version:0.92.2
+=======
+          hugo-version: 0.92.2
+>>>>>>> c6a7898240fd4bcc81277e85adc7decbb838b3b9
           extended: true
 
       - name: Build
