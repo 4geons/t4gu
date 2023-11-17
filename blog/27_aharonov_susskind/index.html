@@ -1,140 +1,29 @@
-<!doctype html><html lang=en data-mode=dark>
-<head prefix="og: http://ogp.me/ns#">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.92.2">
-<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
-<title>The Aharonov–Susskind Hand Wave</title>
-<meta name=author content="Bijou M. Smith">
-<meta name=robots content="index follow">
-<link rel=canonical href=https://4geons.github.io/t4gu/blog/27_aharonov_susskind/>
-<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
-<meta property="og:title" content="The Aharonov–Susskind Hand Wave">
-<meta property="og:url" content="https://4geons.github.io/t4gu/blog/27_aharonov_susskind/">
-<meta property="og:type" content="article">
-<meta property="article:published_time" content="2023-04-14">
-<meta property="article:modified_time" content="2023-04-14">
-<meta property="og:updated_time" content="2023-04-14">
-<meta name=twitter:dnt content="on">
-<meta name=theme-color content="#222">
-<meta name=apple-mobile-web-app-capable content="yes">
-<meta name=apple-mobile-web-app-status-bar-style content="default">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://4geons.github.io/t4gu/"},"headline":"The Aharonov–Susskind Hand Wave","description":"","url":"https://4geons.github.io/t4gu/blog/27_aharonov_susskind/","inLanguage":"en","datePublished":"2023-04-14","dateModified":"2023-04-14","wordCount":"6921","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
-<noscript>
-<meta name=theme-color content="#26A269">
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
-</noscript>
-<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<script src=https://4geons.github.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
-</head>
-<body>
-<header>
-<a href=/t4gu> <img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
-<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
-<nav aria-label="Main menu.">
-<ul>
-<li>
-<a class=btn href=/t4gu/t4gu/>Home</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
-</li>
-</ul>
-</nav>
-</header>
-<div class=filler>
-<main>
-<article>
-<header>
-<h1>The Aharonov–Susskind Hand Wave</h1>
-<p>
-Published on <time datetime=2023-04-14>2023-04-14</time>
-</p>
-</header>
-<details class=toc open>
-<summary class=outline-dashed>
-Contents
-</summary>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#spin-is-not-spin>Spin is Not Spin</a>
-<ul>
-<li><a href=#an-example-of-a-non-physical-object>An Example of a Non-physical &ldquo;object&rdquo;</a></li>
-<li><a href=#what-are-the-spinors>What are the Spinors?</a></li>
-<li><a href=#a-spinor-seen-in-the-wild>A Spinor Seen in the Wild</a></li>
-<li><a href=#rotations>Rotations</a></li>
-</ul>
-</li>
-<li><a href=#demystifiction-of-the-fermion>Demystifiction of the Fermion</a>
-<ul>
-<li><a href=#try-rotating-a-rotor>Try rotating a rotor!</a></li>
-<li><a href=#really-for-real-this-time-lets-try>Really, for real this time, let&rsquo;s try!</a></li>
-<li><a href=#discrete-spectrum>Discrete Spectrum</a></li>
-<li><a href=#commutators>Commutators</a></li>
-<li><a href=#the-dirac-lagrangian>The Dirac Lagrangian</a></li>
-</ul>
-</li>
-<li><a href=#the-aharonov-susskind-hand-wave>The Aharonov Susskind Hand Wave</a></li>
-</ul>
-</nav>
-</details>
-<p>This week I get to comment on my almost all-time favourite physicist, Lenny Susskind.
+<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.101.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>The Aharonov–Susskind Hand Wave</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://4geons.github.io/t4gu/blog/27_aharonov_susskind/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="The Aharonov–Susskind Hand Wave"><meta property="og:url" content="https://4geons.github.io/t4gu/blog/27_aharonov_susskind/"><meta property="og:type" content="article"><meta property="article:published_time" content="2023-04-14"><meta property="article:modified_time" content="2023-04-14"><meta property="og:updated_time" content="2023-04-14"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://4geons.github.io/t4gu/"},"headline":"The Aharonov–Susskind Hand Wave","description":"","url":"https://4geons.github.io/t4gu/blog/27_aharonov_susskind/","inLanguage":"en","datePublished":"2023-04-14","dateModified":"2023-04-14","wordCount":"6921","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script><link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://4geons.github.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
+<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>The Aharonov–Susskind Hand Wave</h1><p>Published on <time datetime=2023-04-14>2023-04-14</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#spin-is-not-spin>Spin is Not Spin</a><ul><li><a href=#an-example-of-a-non-physical-object>An Example of a Non-physical &ldquo;object&rdquo;</a></li><li><a href=#what-are-the-spinors>What are the Spinors?</a></li><li><a href=#a-spinor-seen-in-the-wild>A Spinor Seen in the Wild</a></li><li><a href=#rotations>Rotations</a></li></ul></li><li><a href=#demystifiction-of-the-fermion>Demystifiction of the Fermion</a><ul><li><a href=#try-rotating-a-rotor>Try rotating a rotor!</a></li><li><a href=#really-for-real-this-time-lets-try>Really, for real this time, let&rsquo;s try!</a></li><li><a href=#discrete-spectrum>Discrete Spectrum</a></li><li><a href=#commutators>Commutators</a></li><li><a href=#the-dirac-lagrangian>The Dirac Lagrangian</a></li></ul></li><li><a href=#the-aharonov-susskind-hand-wave>The Aharonov Susskind Hand Wave</a></li></ul></nav></details><p>This week I get to comment on my almost all-time favourite physicist, Lenny Susskind.
 And no need to think me weird for watching Susskind lectures as my dominant form of
 entertainment &mdash; the rest of you are watching HBO, Disney and Netflix saccharin, so
-how is that less weird?</p>
-<p>The excerpt is from TTM
+how is that less weird?</p><p>The excerpt is from TTM
 <a href=https://theoreticalminimum.com/courses/particle-physics-3-supersymmetry-and-grand-unification/2010/spring/lecture-2 target=_blank>Lecture-2</a>
 of the course
 <a href=https://theoreticalminimum.com/courses/particle-physics-3-supersymmetry-and-grand-unification/2010/spring/lecture-2 target=_blank>“Particle Physics 3: Supersymmetry and Grand Unification”</a>
-.</p>
-<p>This post is also a bleeding of my theory pages into the blog. I should always
+.</p><p>This post is also a bleeding of my theory pages into the blog. I should always
 apologise for that, I try to keep the blog at the philosophical level, but what else
-am I to do with my lunchtimes when I get a writing itch to scratch?</p>
-<h2 id=spin-is-not-spin><a class=anchor href=#spin-is-not-spin title="Anchor for: Spin is Not Spin."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Spin is Not Spin</h2>
-<p>Astute quantum mechanics (proper noun) will immediately know what I&rsquo;m about
+am I to do with my lunchtimes when I get a writing itch to scratch?</p><h2 id=spin-is-not-spin><a class=anchor href=#spin-is-not-spin title='Anchor for: Spin is Not Spin.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Spin is Not Spin</h2><p>Astute quantum mechanics (proper noun) will immediately know what I&rsquo;m about
 to describe, but I promise you it&rsquo;s not the familiar normie theorists${}^\dagger$
 version of fermion spin. So please read onwards. (Although if you have read T4GU in
 the past you probably will know what I&rsquo;m going to describe, but a little repetition
-won&rsquo;t hurt your brain, and might help you explain this stuff to your students.)</p>
-<p>${}^\dagger$ Textbook well-read-can&rsquo;t-think-for-themselves physicists. Hey!&mldr; I&rsquo;m
+won&rsquo;t hurt your brain, and might help you explain this stuff to your students.)</p><p>${}^\dagger$ Textbook well-read-can&rsquo;t-think-for-themselves physicists. Hey!&mldr; I&rsquo;m
 not saying you boys and girls, deers, dolphins, wolves, bunnies, unicorns and lynxes
 (did I miss any animal spirits?), aren&rsquo;t smarter than me, it&rsquo;s just you have orthodox
 biases that I have inoculated myself a little bit against, and worked quite hard at
 it and at considerable personal and career costs. Which I am happy&ndash;sad to admit makes me
-off-the-bat quite mad and insane by normie standards.</p>
-<p>All right. So Susskind is trying to explain fermion spin. The distinguishing features
-of which are that,</p>
-<ol>
-<li>fermions are spin-coupled, meaning if we rotate one of an entangled pair and not
-the other, we will observe interference effects.</li>
-<li>If we rotate one of them by $2\pi$ radian we still observe interference effects
+off-the-bat quite mad and insane by normie standards.</p><p>All right. So Susskind is trying to explain fermion spin. The distinguishing features
+of which are that,</p><ol><li>fermions are spin-coupled, meaning if we rotate one of an entangled pair and not
+the other, we will observe interference effects.</li><li>If we rotate one of them by $2\pi$ radian we still observe interference effects
 (this is a supposedly &ldquo;deeply quantum mechanical&rdquo; aspect of reality &mdash; but it is
 not, it&rsquo;s pure classical physics, which is what this blog post hopes to explain, and
-this is something even Susskind does not yet know).</li>
-<li>If we rotate by $4\pi$ radians the interference goes away (we perform an effective
-identity rotation).</li>
-</ol>
-<p>On the inflammatory Point 2 here: I have to deflate a little. I am not going to
+this is something even Susskind does not yet know).</li><li>If we rotate by $4\pi$ radians the interference goes away (we perform an effective
+identity rotation).</li></ol><p>On the inflammatory Point 2 here: I have to deflate a little. I am not going to
 afford myself the time and web page space to fully explain how classical mechanics
 can account for interference, because it doesn&rsquo;t! You need General Relativity to get
 &ldquo;quantum&rdquo; interference, but more than that, you need topologically non-trivial
@@ -142,18 +31,13 @@ spacetime, so Classical general relativity does not suffice.
 I won&rsquo;t try to explain all that here because that&rsquo;s what most of the rest of T4GU is
 all about, so read all the rest of my stuff. But do not read like a fanboi. Read like
 a sincere good-faith critic, and let me know where I am wrong, then I&rsquo;ll count you my
-friend.</p>
-<p>On Point 3: the rotation by $2\pi$ is still the identity rotation &mdash; for geometric
+friend.</p><p>On Point 3: the rotation by $2\pi$ is still the identity rotation &mdash; for geometric
 objects. But fermion <em>wave-functions</em> are not physical objects, they are mathematical
 operators, or Multivectors, and there is no reason at all why mathematical objects
 should obey the identities of physical&ndash;geometric objects. And indeed they generally
 don&rsquo;t. Which is not &ldquo;quantum mechanics&rdquo; it is just standard mathematics. Most
 geometric (Clifford) multivectors are not physical things. I will elaborate more on
-this in due course.</p>
-<p>What? Did you think $\pi$ is a physical number? LOL.</p>
-<p>OK, but to warm you up, a good example is a mirror reflection.</p>
-<h3 id=an-example-of-a-non-physical-object><a class=anchor href=#an-example-of-a-non-physical-object title="Anchor for: An Example of a Non-physical &ldquo;object&rdquo;."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> An Example of a Non-physical &ldquo;object&rdquo;</h3>
-<p>The mathematical operator for a mirror reflection in geometric algebra is pre-and
+this in due course.</p><p>What? Did you think $\pi$ is a physical number? LOL.</p><p>OK, but to warm you up, a good example is a mirror reflection.</p><h3 id=an-example-of-a-non-physical-object><a class=anchor href=#an-example-of-a-non-physical-object title='Anchor for: An Example of a Non-physical &ldquo;object&rdquo;.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>An Example of a Non-physical &ldquo;object&rdquo;</h3><p>The mathematical operator for a mirror reflection in geometric algebra is pre-and
 then post-multiplication by a unit vector, let&rsquo;s say $\vec{n}$. The vector $\vec{n}$
 completely specifies a reflection <em>in any space dimension or signature</em>. How? Well it
 is any unit normal to the plane of your desired reflection. We have to chuck in a
@@ -162,8 +46,7 @@ is the transform,
 $$
 A \longmapsto A^\prime= -\vec{n} A\vec{n}.
 $$
-Check this works, for your homework if you please.</p>
-<p>If $A$ was a vector then you could use a matrix instead, to &ldquo;avoid&rdquo; the double-sided
+Check this works, for your homework if you please.</p><p>If $A$ was a vector then you could use a matrix instead, to &ldquo;avoid&rdquo; the double-sided
 Clifford multiplication. But why-tf would you want to do that? It&rsquo;d only work for
 vectors. The above geometric algebra (GA) description of a reflection works for
 <em>any</em> multivector, in any dimension, vectors, tensors, pseudoscalars, and anything
@@ -172,63 +55,48 @@ robotics or vision, you will instantly appreciate why you should not be using a
 matrix algebra library. You should be using a Clifford algebra library. But such
 libraries are not well-supported, so maybe think about contributing to computational
 Clifford algebra software development for the <a href=http://www.gnu.org target=_blank>GNU FSF</a>
-stuff?</p>
-<p>My point is that the reflection is not a physical thing. It is a description of
+stuff?</p><p>My point is that the reflection is not a physical thing. It is a description of
 an abstract process. The reflection matrix is an illusion, or rather, it is not a
 physical thing (I am a platonist, so I don&rsquo;t think it is illusory). The &ldquo;proper&rdquo;
 way to perform a reflection is with the above geometric algebra product. This product
 is not physical. There is no entity or daemon or ex-machina you can point to here that
-&ldquo;carries out the reflection.&rdquo;</p>
-<p>Which, when you think about it, makes perfect moral sense. An actual physical
+&ldquo;carries out the reflection.&rdquo;</p><p>Which, when you think about it, makes perfect moral sense. An actual physical
 reflection transform would involve instantly turning your body back-to-front
 (excruciating agony for a split second if time is involved) and jumping instantly
-across space without a wormhole. It&rsquo;s an impossible operation, it is non-physical.</p>
-<p>&ldquo;Huh?&rdquo; you say.</p>
-<p>When you look at your image in a mirror you do not see a transformed reflected
+across space without a wormhole. It&rsquo;s an impossible operation, it is non-physical.</p><p>&ldquo;Huh?&rdquo; you say.</p><p>When you look at your image in a mirror you do not see a transformed reflected
 self, all you see are photons that <em>look like</em> what your surface would look like <em>if
-you had</em> miraculously &ldquo;performed&rdquo; an actual metaphysical reflection.</p>
-<p>Of course, reflection operations <em>theoretically</em> are extremely handy, because they are
+you had</em> miraculously &ldquo;performed&rdquo; an actual metaphysical reflection.</p><p>Of course, reflection operations <em>theoretically</em> are extremely handy, because they are
 symmetries of Nature. You generally want physics to remain invariant if we
 hypothetically could &ldquo;perform&rdquo; a reflection on the entire universe. (At least you
 would if you did not understand chirality in the Standard Model and why left&ndash;right
 symmetry is <em>not</em> something you want to perfectly preserve, if you wanted your
-universe to be inhabited by biological creatures.)</p>
-<p>Why do we care about such symmetries? It is thanks to Emily Noether that we care.
+universe to be inhabited by biological creatures.)</p><p>Why do we care about such symmetries? It is thanks to Emily Noether that we care.
 She showed us that spacetime dynamics are comprehensible only because Nature
 preserves certain symmetry groups &mdash; meaning the laws of physics are invariant under
 certain simple symmetry transformations. Without such invariants there are no hard
-laws of physics.</p>
-<p>Why does Nature preserve the symmetries it does? Do not ask me. Lord only knows.</p>
-<p>All that scientists can give you here is an anthropic argument: <em>the symmetries are
+laws of physics.</p><p>Why does Nature preserve the symmetries it does? Do not ask me. Lord only knows.</p><p>All that scientists can give you here is an anthropic argument: <em>the symmetries are
 preserved otherwise we would not exist</em>. (Note it is <em>not</em> valid to say &ldquo;the
 symmetries are preserved <em>because</em> we exist,&rdquo; since that muddles correlation with
-causation.)</p>
-<p>Now, as a good honest Satanist, you might object that we should not expect there to be
+causation.)</p><p>Now, as a good honest Satanist, you might object that we should not expect there to be
 any &ldquo;Laws&rdquo; to speak of! Emily Noether was one of those infantile holier-than-thou
 Believers in the Divine! Well, yes. You&rsquo;d be right if Satanism (playing random dice
 with the world) was a true thing. But it isn&rsquo;t. (The Devil damn those annoying
-empiricists!)</p>
-<h3 id=what-are-the-spinors><a class=anchor href=#what-are-the-spinors title="Anchor for: What are the Spinors?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> What are the Spinors?</h3>
-<p>The first thing to straighten out before we knot things back up again, is that
+empiricists!)</p><h3 id=what-are-the-spinors><a class=anchor href=#what-are-the-spinors title='Anchor for: What are the Spinors?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>What are the Spinors?</h3><p>The first thing to straighten out before we knot things back up again, is that
 the mathematical objects we call &ldquo;spinors&rdquo; are just mathematical objects. They are not
 ontological. The fermions they describe are something else entirely, we know not what
-exactly (but they are simple, like stringy things).</p>
-<p>Trying to figure out what quarks and electrons are exactly is like trying to
+exactly (but they are simple, like stringy things).</p><p>Trying to figure out what quarks and electrons are exactly is like trying to
 picture what an alien creature on a distant planet looks like who has no advanced
 technology to send us images (we&rsquo;ve only just picked up their whole civilization&rsquo;s
 metabolic heat signatures perhaps). We know a lot about what they cannot be like.
 They can&rsquo;t be a hundred feet tall and have glass bones. Actually, electrons and
 quarks are a whole lot simpler, but it&rsquo;s just being so far removed from their
 characteristic length scale makes it hard to have confidence about what their
-geometric and topological structure actually looks like.</p>
-<p>Anyway, what quantum mechanics (QM) does is provide us a theoretical formalism for
+geometric and topological structure actually looks like.</p><p>Anyway, what quantum mechanics (QM) does is provide us a theoretical formalism for
 describing measurements. QM does not tell us anything about what happens in-between
-measurements. So QM is a <strong><em>boundary theory</em></strong>.</p>
-<p>General Relativity and classical mechanics are bulk phase space theories, they do
+measurements. So QM is a <strong><em>boundary theory</em></strong>.</p><p>General Relativity and classical mechanics are bulk phase space theories, they do
 (purport to) tell us the structure of the entire spacetime cobordism between
 measurement boundaries. QM does not. We &ldquo;learned&rdquo; not to ask why not! (I have had to
-un-learn this.) Orthodox QM only worries about the boundaries.</p>
-<p>This is essentially why people have this insane idea that there is a &ldquo;collapse&rdquo; of
+un-learn this.) Orthodox QM only worries about the boundaries.</p><p>This is essentially why people have this insane idea that there is a &ldquo;collapse&rdquo; of
 the wavefunction. To my mind there is no such thing, but if all you describe are two
 timelike separated boundary regions then naturally your theory is going to look like
 magic, since &ldquo;anything at all&rdquo; can happen in-between your measurement boundaries
@@ -237,10 +105,7 @@ Roman Empires), and the best you can have is a statistical description, and clai
 those events are a bit unlikely. Nevertheless, if you are an orthodox person you will
 still think all those wild events do occur, they&rsquo;re just not the ones you &ldquo;measured.&rdquo;
 This is in the case you take QM seriously as telling you anything can happen. I don&rsquo;t.
-You are on the path to multiverse madness there my friend.</p>
-<p>No one of sound mind ever said the orthodoxy of academia is completely sane.</p>
-<h3 id=a-spinor-seen-in-the-wild><a class=anchor href=#a-spinor-seen-in-the-wild title="Anchor for: A Spinor Seen in the Wild."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A Spinor Seen in the Wild</h3>
-<p>The way to understand spinors is to write down the spacetime (Dirac) or the Pauli
+You are on the path to multiverse madness there my friend.</p><p>No one of sound mind ever said the orthodoxy of academia is completely sane.</p><h3 id=a-spinor-seen-in-the-wild><a class=anchor href=#a-spinor-seen-in-the-wild title='Anchor for: A Spinor Seen in the Wild.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A Spinor Seen in the Wild</h3><p>The way to understand spinors is to write down the spacetime (Dirac) or the Pauli
 algebra. I&rsquo;ll stick to the 3D Pauli algebra, where the time dimension is Newtonian
 (non-relativistic). Then we have a basis frame for any fundamental particle or wee
 little system, that we chunk together as a whole for measurementation (a made-up
@@ -251,8 +116,7 @@ $$
 The implied products above are all <em>geometric products</em>, which means in the full
 algebra in general they are going to be mixed grade (William K. Clifford&rsquo;s great
 insight was that this mixing of grades, so incommensurate dimensions, was an ok
-thing to do, if you do it right, and in fact very powerful and efficient).</p>
-<p>The base $k$-blades above are of course pure grades. For general 1-vectors
+thing to do, if you do it right, and in fact very powerful and efficient).</p><p>The base $k$-blades above are of course pure grades. For general 1-vectors
 however, the geometric product is a simple sum of an inner plus outer
 product,
 $$
@@ -262,51 +126,39 @@ and so is mixed grade unless $b$ is orthogonal to $a$ (in which case $a\cdot b =
 or they are parallel (in which case $a\wedge b = 0$).
 The first term is a scalar (same as the traditional vector inner product), and the
 second term is a bivector (it does not exist in traditional vector algebra, but has
-analogues in the $2$-forms or tensors.)</p>
-<p>Scalars are $0$-grade by the way, and vectors are $1$-grade. A spacetime four-vector
+analogues in the $2$-forms or tensors.)</p><p>Scalars are $0$-grade by the way, and vectors are $1$-grade. A spacetime four-vector
 is still $1$-grade, as is any vector in $n$-dimensions. Vectors are one-dimensional
-objects in all geometries.</p>
-<p>Geometrically the bivectors are oriented elements of area. So are perfect for
+objects in all geometries.</p><p>Geometrically the bivectors are oriented elements of area. So are perfect for
 describing periodic orbits or particle helical motions, what was previously called
 &ldquo;vector curl&rdquo;, circulating planar currents, and whatnot: anything that in olden times
 was said to have a &ldquo;complex structure&rdquo; &mdash; which in fresh modern geometric algebra
-times we say is simply a <em>bivector algebra</em>.</p>
-<p>The pseudoscalar $I$ is an <em>oriented</em> relative-3-space volume element, so is a
+times we say is simply a <em>bivector algebra</em>.</p><p>The pseudoscalar $I$ is an <em>oriented</em> relative-3-space volume element, so is a
 multivector of <em>relative</em> grade-3, and since it is only grade-3 we call it a pure
 3-blade. That means only relative to the Pauli algebra, which has the spacetime
 <em>bivectors</em> $\sigma_k$ as basis vectors. This is a source of some confusion for
-beginners, so pay attention.</p>
-<p>So in the proper Spacetime Algebra (STA) or
+beginners, so pay attention.</p><p>So in the proper Spacetime Algebra (STA) or
 Dirac algebra, the pseudoscalar is actually an oriented 4-volume, a spacetime volume,
 $I=\gamma_0\gamma_1\gamma_2\gamma_3$. In the non-relativistic Pauli algebra it is
 however fine to think of it as an oriented 3-volume. (The terminology &ldquo;relative
 vector&rdquo; here just means we include a $\gamma_0$ factor to have some formal agreement
 with the traditional old-school Pauli matrix algebra &mdash; a bow to traditionalism and
-our ancestors.)</p>
-<p>The Pauli vectors $\sigma_k$ above are thus actually strictly speaking <em>bi</em>vectors
+our ancestors.)</p><p>The Pauli vectors $\sigma_k$ above are thus actually strictly speaking <em>bi</em>vectors
 from the Dirac spacetime algebra, which is the Lorentz algebra of the $\gamma_\mu$.
 But in non-relativistic physics the timelike vector $\gamma_0$ is pretty passive, we
 don&rsquo;t bother with Lorentz boosts, and in order to conform to the orthodox Pauli
 matrix algebra making the Pauli base vectors actually STA bivectors is superior (for
-the garage variety quantum mechanics to not lose their sh$\ast$t).</p>
-<p>Because the Pauli basis &ldquo;vectors&rdquo; $\sigma_k$ are really bivectors, we call them
+the garage variety quantum mechanics to not lose their sh$\ast$t).</p><p>Because the Pauli basis &ldquo;vectors&rdquo; $\sigma_k$ are really bivectors, we call them
 <em>relative vectors</em>. They are vectorial only relative to a given fixed time direction
-$\gamma_0$. Hopefully that relieves the confusion.</p>
-<p>The <em>relative</em> space trivectors $I\sigma_k$ are in fact actual bivectors in the Dirac
+$\gamma_0$. Hopefully that relieves the confusion.</p><p>The <em>relative</em> space trivectors $I\sigma_k$ are in fact actual bivectors in the Dirac
 algebra. (There are two $\gamma_0$ in each of them, so they vanish to a sign with
 the geometric product: $\gamma_0^2 = -1$. East Coast signature my dudes. It&rsquo;s the only
-correct one.)</p>
-<p>The natural elements for rotation generators are thus the space bivectors
-$I\sigma_k$. Maybe you can now see where the fermion spinors come in?</p>
-<h3 id=rotations><a class=anchor href=#rotations title="Anchor for: Rotations."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Rotations</h3>
-<p>In geometric algebra the rotation of <em>any and all</em> physical objects is accomplished
+correct one.)</p><p>The natural elements for rotation generators are thus the space bivectors
+$I\sigma_k$. Maybe you can now see where the fermion spinors come in?</p><h3 id=rotations><a class=anchor href=#rotations title='Anchor for: Rotations.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Rotations</h3><p>In geometric algebra the rotation of <em>any and all</em> physical objects is accomplished
 the same way as the Greeks or Gauss might have discovered:
 two mirror reflections make a rotation, and <em>all</em> rotations can be described by a pair
-of mirror reflections &mdash; in any space dimension. (Euclid knew this, right?)</p>
-<p>(Again, you could ask a textbook nerd: why with the clumsy matrix algebra? You only
+of mirror reflections &mdash; in any space dimension. (Euclid knew this, right?)</p><p>(Again, you could ask a textbook nerd: why with the clumsy matrix algebra? You only
 need a pair of simple unit vectors to describe any rotation. Impress your friends at
-dinner parties.)</p>
-<p>To compactly write the rotation for an arbitrary multivector, say $A$, we can make use
+dinner parties.)</p><p>To compactly write the rotation for an arbitrary multivector, say $A$, we can make use
 of Euler&rsquo;s formula,
 $$
 e^{I\theta} = \cos\theta + I \sin\theta.
@@ -316,31 +168,24 @@ Which follows purely algebraically from the pseudoscalar&rsquo;s property $I^2 =
 The geometric things are graded. The grades imply the olden times &ldquo;complex
 structures.&rdquo; But in the geometric algebra we have far superior power here, because
 we immediately see that there are several distinct &ldquo;complex structures,&rdquo; one for $I$,
-one for the lightcone $\gamma_0^2=-1$, and one for each bivector.</p>
-<p>We should not even call the latter &ldquo;complex structures&rdquo; it is a bad misnomer. They
+one for the lightcone $\gamma_0^2=-1$, and one for each bivector.</p><p>We should not even call the latter &ldquo;complex structures&rdquo; it is a bad misnomer. They
 are <em>bivector algebra</em> structures, pure and simple. While $\gamma_0^2=-1$ is lightcone
-structure. And $I^2=-1$ is spacetime bulk structure.</p>
-<p>All right! Now you are somewhat smarter than Lenny Susskind and Edward Witten.
-Pretty good days work huh?</p>
-<p>The rotation operation is then computationally,
+structure. And $I^2=-1$ is spacetime bulk structure.</p><p>All right! Now you are somewhat smarter than Lenny Susskind and Edward Witten.
+Pretty good days work huh?</p><p>The rotation operation is then computationally,
 $$
 A \longmapsto A^\prime = R A \tilde{R}
 $$
-where $R$ is called the rotor, and $\tilde{R}$ is it&rsquo;s <em>reverse</em>. So what are those?</p>
-<p>I like to first use the two mirror normal vectors, let&rsquo;s call them $n$ and $m$. Then the rotor is simply their geometric product:
+where $R$ is called the rotor, and $\tilde{R}$ is it&rsquo;s <em>reverse</em>. So what are those?</p><p>I like to first use the two mirror normal vectors, let&rsquo;s call them $n$ and $m$. Then the rotor is simply their geometric product:
 $$
 R = nm.
 $$
-Remember that is mixed grade generally, it has a scalar part ($n\cdot m$) and a bivector part ($n\wedge m$). The reverse is $\tilde{R} = mn$.</p>
-<p>Expanded out then, the rotation could be written,
+Remember that is mixed grade generally, it has a scalar part ($n\cdot m$) and a bivector part ($n\wedge m$). The reverse is $\tilde{R} = mn$.</p><p>Expanded out then, the rotation could be written,
 $$
 A \longmapsto A^\prime = nm A mn
 $$
-How does this connect with Euler&rsquo;s formula?</p>
-<p><strong>Homework?</strong> I mean, <em>please</em> try it for homework. It&rsquo;s one of those rare times in
+How does this connect with Euler&rsquo;s formula?</p><p><strong>Homework?</strong> I mean, <em>please</em> try it for homework. It&rsquo;s one of those rare times in
 life when you can simulate independent discovery, standing on the shoulders of only a
-pygmy (that&rsquo;s me).</p>
-<p>First, just recall the scalar product is the old vector inner product, so we have
+pygmy (that&rsquo;s me).</p><p>First, just recall the scalar product is the old vector inner product, so we have
 the angle $\theta$ say, between $n$ and $m$:
 $$
 n\cdot m = |n||m|\cos\theta = \cos\theta
@@ -351,8 +196,7 @@ $$
 |n\wedge m | = |n||m|\sin\theta = \sin\theta.
 $$
 (In fact this is half the <em>definition</em> of the outer product, which I neglected to
-provide above, the other half would be the plane of $n$ and $m$.)</p>
-<p>Thirdly, the last ingredient, is that the plane of $n$ and $m$ is a bivector,
+provide above, the other half would be the plane of $n$ and $m$.)</p><p>Thirdly, the last ingredient, is that the plane of $n$ and $m$ is a bivector,
 $$
 B = n\wedge m
 $$
@@ -360,144 +204,100 @@ but I will go ahead and unit normalize it, by redefinition:
 $$
 B = \frac{n\wedge m}{\sin\theta}
 $$
-then $B^2 = -1$. As you can check for homework.</p>
-<p>See how awesome this is?</p>
-<p>Not only is the real geometric bivector giving us a
+then $B^2 = -1$. As you can check for homework.</p><p>See how awesome this is?</p><p>Not only is the real geometric bivector giving us a
 &ldquo;complex structure&rdquo; it is not a dumb one, it &ldquo;knows about&rdquo; the oriented plane of the
-rotation in it&rsquo;s native Euclidean or Riemannian (flat gauged) space.</p>
-<p>The coup de grâce to olden vector algebra infantilism is now the Euler expression
+rotation in it&rsquo;s native Euclidean or Riemannian (flat gauged) space.</p><p>The coup de grâce to olden vector algebra infantilism is now the Euler expression
 for the general rotation, via a rotor:
 $$
 R = e^{-B\theta/2}.
-$$</p>
-<p>&ldquo;But hangabout? What&rsquo;s that?&rdquo; you say. Where&rsquo;d the factor of a half-angle the
-devil come from?</p>
-<p>Well&mldr; I&rsquo;ve been ultra lazy and not drawn any pictures. You can find the picture
+$$</p><p>&ldquo;But hangabout? What&rsquo;s that?&rdquo; you say. Where&rsquo;d the factor of a half-angle the
+devil come from?</p><p>Well&mldr; I&rsquo;ve been ultra lazy and not drawn any pictures. You can find the picture
 version in the <a href=/t4gu/theory/3_geometric_algebra/>theory pages here</a>
 .
 But <strong><em>if I had drawn the picture</em></strong> even only in 2D, you&rsquo;d have been convinced the
 double reflection $A\mapsto nmAmn$ is a rotation in the plane of $n$ and $m$ by
-<strong><em>twice the angle</em></strong> between $\vec{n}$ and $\vec{m}$.</p>
-<p>So the rotor can be dialed back a tad by reducing the angle in the Euler formula.
+<strong><em>twice the angle</em></strong> between $\vec{n}$ and $\vec{m}$.</p><p>So the rotor can be dialed back a tad by reducing the angle in the Euler formula.
 Effectively that&rsquo;d mean using two different unit vectors for the two mirror
 reflections, with a spread between them of $\theta/2$. It&rsquo;s just a rescale of the
-bivector in other words.</p>
-<h2 id=demystifiction-of-the-fermion><a class=anchor href=#demystifiction-of-the-fermion title="Anchor for: Demystifiction of the Fermion."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Demystifiction of the Fermion</h2>
-<p>Now we can see why fermions need a $4\pi$ rotation angle to return to the identity.</p>
-<p>The mystery was due to the fact <em>all the textbooks and experts</em> (except
+bivector in other words.</p><h2 id=demystifiction-of-the-fermion><a class=anchor href=#demystifiction-of-the-fermion title='Anchor for: Demystifiction of the Fermion.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Demystifiction of the Fermion</h2><p>Now we can see why fermions need a $4\pi$ rotation angle to return to the identity.</p><p>The mystery was due to the fact <em>all the textbooks and experts</em> (except
 <a href=http://geocalc.clas.asu.edu/ target=_blank>David Hestenes</a>
 and colleagues) for over 80 years
 have ben treating electrons and quarks as <em>being the actual rotor!</em> How stupid was
-that! (Not a question.)</p>
-<p>Of course, I&rsquo;m just as stupid${}^\ddagger$. I didn&rsquo;t realize the rotors are in fact a
+that! (Not a question.)</p><p>Of course, I&rsquo;m just as stupid${}^\ddagger$. I didn&rsquo;t realize the rotors are in fact a
 rotation instruction until I read Hestenes and
 <a href=https://www.cambridge.org/core/books/geometric-algebra-for-physicists/FB8D3ACB76AB3AB10BA7F27505925091 target=_blank>Lasenby and Doran</a>
-.</p>
-<p>${}^\ddagger$I never consider it a terribly bad character flaw to be as stupid as
-Dirac, Pauli and Gell-mann.</p>
-<p>The spinor (for quarks, electrons, all the fermions) is a mathematical instruction,
+.</p><p>${}^\ddagger$I never consider it a terribly bad character flaw to be as stupid as
+Dirac, Pauli and Gell-mann.</p><p>The spinor (for quarks, electrons, all the fermions) is a mathematical instruction,
 not a fundamental physical particle of any sort. The instruction is to rotate your
 algebraic quantity representing a &ldquo;measurement observable&rdquo; onto the rest or co-moving
-frame of the fermion.</p>
-<p>Because fermions (probably) physically circulate some energy (we know not what form)
+frame of the fermion.</p><p>Because fermions (probably) physically circulate some energy (we know not what form)
 all measurements made on them will often need to take this circulation into account,
-unless it&rsquo;s a spin insensitive measurement like position or linear momentum.</p>
-<p>The quark or electron doesn&rsquo;t give a fig what your spinor does, it is not a spinor.
+unless it&rsquo;s a spin insensitive measurement like position or linear momentum.</p><p>The quark or electron doesn&rsquo;t give a fig what your spinor does, it is not a spinor.
 But if you wish to describe the measurement outcomes, then you&rsquo;d better damn well get
-the orientation of frames right if the measurement is rotation sensitive.</p>
-<p>So one way or another, for a circulating flux of energy, you need to use a rotor in
-the spinor. The spinor really is <em>mostly rotor</em>.</p>
-<p>Of course, spinors also are useful for describing entanglement, and probability
+the orientation of frames right if the measurement is rotation sensitive.</p><p>So one way or another, for a circulating flux of energy, you need to use a rotor in
+the spinor. The spinor really is <em>mostly rotor</em>.</p><p>Of course, spinors also are useful for describing entanglement, and probability
 density, so there are other statistical factors multiplying a rotor to yield the full
-spinor, plus a tensor structure if it is entangled.</p>
-<p>However, for unveiling the mystery of &ldquo;quantum spin&rdquo; we only need to care about the
+spinor, plus a tensor structure if it is entangled.</p><p>However, for unveiling the mystery of &ldquo;quantum spin&rdquo; we only need to care about the
 rotor part, and the entanglement (to describe the interference effects).
 Once you do this, perhaps don&rsquo;t go around in public claiming you are smarter than
 Feynman or Witten, but if you privately confess to me that you feel like you&rsquo;ve had a
-fleeting glimpse into the Mind of God, well then, I won&rsquo;t deny you that jouissance.</p>
-<h3 id=try-rotating-a-rotor><a class=anchor href=#try-rotating-a-rotor title="Anchor for: Try rotating a rotor!."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Try rotating a rotor!</h3>
-<p>I tried to prime you up for this, but I can&rsquo;t help it if you still end up thinking
-I&rsquo;m &ldquo;pulling a fast one.&rdquo; But I&rsquo;ll have one more go at priming your intellect.</p>
-<p>Recall, only physical or intrinsic connected geometrical objects, have to return to
+fleeting glimpse into the Mind of God, well then, I won&rsquo;t deny you that jouissance.</p><h3 id=try-rotating-a-rotor><a class=anchor href=#try-rotating-a-rotor title='Anchor for: Try rotating a rotor!.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Try rotating a rotor!</h3><p>I tried to prime you up for this, but I can&rsquo;t help it if you still end up thinking
+I&rsquo;m &ldquo;pulling a fast one.&rdquo; But I&rsquo;ll have one more go at priming your intellect.</p><p>Recall, only physical or intrinsic connected geometrical objects, have to return to
 the identity upon a $2\pi$ rotation. If you craft some composite object that is not
 simply connected, then there is no Gödel-given or other deity, reason to expect that
 it&rsquo;ll be invariant under a $2\pi$ rotation. (SCRIPT: Susskind performs coffee cup
 trick without a coffee cup.) In fact, the abstract group of rotations
-SO(3) does not demand such invariance, since it is not a simply-connected group.</p>
-<p>It does not work in strictly 2D because rotations in 2D are simply connected.</p>
-<p>In 3D space there is connection: the coffee cup trick shows there is a smooth path
+SO(3) does not demand such invariance, since it is not a simply-connected group.</p><p>It does not work in strictly 2D because rotations in 2D are simply connected.</p><p>In 3D space there is connection: the coffee cup trick shows there is a smooth path
 in the space of rotations from $2\pi$ to the identity rotation, but you can only get
-there by going through $4\pi$.</p>
-<p>((The Lie group SO(3) is connected, you can get to any rotation smoothly from any
+there by going through $4\pi$.</p><p>((The Lie group SO(3) is connected, you can get to any rotation smoothly from any
 other, but it is not simply connected, meaning there are loops in the space of
 rotations than cannot be shrunk down to the identity. This is the source of the
 &ldquo;weirdness&rdquo; we are about to uncover. Of course, it ain&rsquo;t weird, because Lenny
 Susskind and oodles of others before, just waved their hands about to show you that
 you can do the coffee cup trick. I mean to say, the coffee cup trick always looks
-weird, like magic without magic&mldr; like&mldr; &ldquo;did I just blink for too long there?"))</p>
-<p>To obtain the proper associated connected group you need to use the universal cover,
+weird, like magic without magic&mldr; like&mldr; &ldquo;did I just blink for too long there?&rdquo;))</p><p>To obtain the proper associated connected group you need to use the universal cover,
 or SU(2). This is <em>simply</em> connected. As a double-cover it&rsquo;s identity transform is a
 $4\pi$ rotation. Bear in mind, this is pure classical Euclidean geometry. There is
-nothing &ldquo;quantum&rdquo; about this.</p>
-<p>The reason these fermion groups do not show up in classical mechanics and GR is
+nothing &ldquo;quantum&rdquo; about this.</p><p>The reason these fermion groups do not show up in classical mechanics and GR is
 because classical mechanics employs a bulk spacetime cobordism, or phase space
 evolution, formalism. Classical mechanics seeks (or pretends to) track all the
-particles all the time. QM does not.</p>
-<p>Why is this important? (Apart from the empirical observations that we are unable to
-track particles precisely as Newton and Laplace had thought one could.)</p>
-<p>It is important because if we cannot keep track of particle motions (or equivalently
+particles all the time. QM does not.</p><p>Why is this important? (Apart from the empirical observations that we are unable to
+track particles precisely as Newton and Laplace had thought one could.)</p><p>It is important because if we cannot keep track of particle motions (or equivalently
 their field modes) we&rsquo;d better have something else invariant to be able to make any
 predictions at all. Absent the phase space trajectories then, the only thing left for
 the garage variety grease-stained quantum mechanic is the fundamental symmetries. We
-need to know what symmetries are obeyed to have any hope of doing quantum mechanics.</p>
-<p>In classical mechanics the same symmetries hold, but we do not need them so
+need to know what symmetries are obeyed to have any hope of doing quantum mechanics.</p><p>In classical mechanics the same symmetries hold, but we do not need them so
 desperately. Tracking motion in phase space is overkill &mdash; it is also employing the
 symmetries, but assuming a whole lot more. Heisenberg came along and said,
-&ldquo;Tsk! Tsk! You may not (always) assume so much!&rdquo;</p>
-<h3 id=really-for-real-this-time-lets-try><a class=anchor href=#really-for-real-this-time-lets-try title="Anchor for: Really, for real this time, let&rsquo;s try!."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Really, for real this time, let&rsquo;s try!</h3>
-<p>I can go over this bit anew every time I write about it, and I still find it
+&ldquo;Tsk! Tsk! You may not (always) assume so much!&rdquo;</p><h3 id=really-for-real-this-time-lets-try><a class=anchor href=#really-for-real-this-time-lets-try title='Anchor for: Really, for real this time, let&rsquo;s try!.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Really, for real this time, let&rsquo;s try!</h3><p>I can go over this bit anew every time I write about it, and I still find it
 annoyingly obscure. But it is very basic and simple. Maybe if I tell you it is
-super elementary and basic you will digest it better than I ever have.</p>
-<p>The problem is to determine how we have to transform one rotor, say $R_\alpha$ which
+super elementary and basic you will digest it better than I ever have.</p><p>The problem is to determine how we have to transform one rotor, say $R_\alpha$ which
 encodes a rotation by $\alpha$, when we also perform some <em>other</em> rotation of our
-system in some other plane, say $R_\theta$.</p>
-<p>It&rsquo;s the simple and elementary problem of how to compose rotors.</p>
-<p>The &ldquo;big&rdquo; (conceptual) problem being that rotors are not full rotation matrix
+system in some other plane, say $R_\theta$.</p><p>It&rsquo;s the simple and elementary problem of how to compose rotors.</p><p>The &ldquo;big&rdquo; (conceptual) problem being that rotors are not full rotation matrix
 operations. A rotor acts double-sided in the general case. (For scalars or pure
 even-blade objects the rotor commutes through with a sign and one can do a
 single-side multiplication like you&rsquo;d do with a matrix, but the general case is that
 you need to do the double-sided multiplication, which comes inherited from the
-fundamental mirror reflection operation.)</p>
-<p>So let&rsquo;s calmly think about this.</p>
-<p>Initially it seems too simple. To perform one rotation then another is a simple
+fundamental mirror reflection operation.)</p><p>So let&rsquo;s calmly think about this.</p><p>Initially it seems too simple. To perform one rotation then another is a simple
 composition by the geometric product:
 $$A^{\prime\prime} = R_\beta R_\alpha A \tilde{R_\alpha} \tilde{R_\beta}
 $$
 Note the wedge product term in the geometric products is anti-symmetric:
 $a\wedge b = - b\wedge a$, which is where the non-commutativity of rotations in
-$D\ge 3$ comes from, or is encoded, in the geometric algebra.</p>
-<p>But that&rsquo;s how the multivector $A$ gets rotated, which is representing some
-&ldquo;real&rdquo; geometric quantity. It is not how a <em>rotor itself</em> gets rotated.</p>
-<p>To see why, we have to think carefully about what we mean by &ldquo;rotating a rotor&rdquo;.</p>
-<p>A rotor, in <em>this particular context</em> is not just some physical or real geometric
+$D\ge 3$ comes from, or is encoded, in the geometric algebra.</p><p>But that&rsquo;s how the multivector $A$ gets rotated, which is representing some
+&ldquo;real&rdquo; geometric quantity. It is not how a <em>rotor itself</em> gets rotated.</p><p>To see why, we have to think carefully about what we mean by &ldquo;rotating a rotor&rdquo;.</p><p>A rotor, in <em>this particular context</em> is not just some physical or real geometric
 object. No. It is an instruction for a rotation. So we have to shift mental frames a
 bit and think about what happens to one rotation instruction if we rotate a frame
-first by some <em>other</em> arbitrary rotation.</p>
-<p>It matters because the individual rotor itself is not the full rotation instruction,
-it&rsquo;s only a half of the full rotation operator.</p>
-<p>Having just said all this in tedious plain English, I hope you might already figure
+first by some <em>other</em> arbitrary rotation.</p><p>It matters because the individual rotor itself is not the full rotation instruction,
+it&rsquo;s only a half of the full rotation operator.</p><p>Having just said all this in tedious plain English, I hope you might already figure
 out what has to happen. A half-instruction to rotate will not be fully transformed
-correctly by some <em>other rotation</em>.</p>
-<p>I am a little bit sorry for what I am about to write, but it&rsquo;s the only way I can
+correctly by some <em>other rotation</em>.</p><p>I am a little bit sorry for what I am about to write, but it&rsquo;s the only way I can
 concretely grasp the proper result. This is to imagine rotating a real geometric
 object, say $A$, by any arbitrary rotor $R_\theta$, and then &ldquo;watching&rdquo; what happens
 to a <em>particular fixed</em> inner rotor $R_\alpha$. Whatever happens to $R_\alpha$ will
 then tell us how we should transform $R_\alpha$ so that it remains the same rotor
-as it was before the general rotation.</p>
-<p>((I want to re-write all that so it is simpler and more comprehensible, less seemingly
-like sophistry, but I do not know how.))</p>
-<p>Here we go.</p>
-<p>First let&rsquo;s again write the expression for rotating any multivector, first by
+as it was before the general rotation.</p><p>((I want to re-write all that so it is simpler and more comprehensible, less seemingly
+like sophistry, but I do not know how.))</p><p>Here we go.</p><p>First let&rsquo;s again write the expression for rotating any multivector, first by
 the rotor
 (i.e., &ldquo;fermion&rdquo; but not really a fermion) of interest $R_\alpha$, then by some other
 arbitrary rotation $\theta$ in the plane of a bivector $B$,
@@ -515,187 +315,134 @@ which, using the rotor composition law above, implies,
 $$
 R^\prime_\alpha = e^{-B\theta/2} R_\alpha.
 $$
-Good.</p>
-<p>But now suppose the arbitrary rotation was a full circle of $A$ around $2\pi$
+Good.</p><p>But now suppose the arbitrary rotation was a full circle of $A$ around $2\pi$
 radian? This would take,
 $$
 R_\alpha \longmapsto e^{-B2\pi/2} R_\alpha = e^{-B\pi} R_\alpha = -R_\alpha
 $$
 That is recalling $e^{-B\pi} = -1$, for any bivector $B$, by Euler&rsquo;s formula.
 In other words &ldquo;rotation by $2\pi$&rdquo; takes a rotor to it&rsquo;s additive inverse, or itself
-but rotated by $\pi$.</p>
-<p>Thus, rotors get acted upon like fermion spinors. In fact, the electron and quark et
+but rotated by $\pi$.</p><p>Thus, rotors get acted upon like fermion spinors. In fact, the electron and quark et
 al, are not such objects. The fermion is not the spinor. The spinor is the
 instruction telling you how your measurement apparatus (represented formally by
 unitary operators) has to be transformed to yield a measurement result on the actual
 physical system. The spinor is not the physical system though, it is a measurement
-operator description of part of the process of &ldquo;making a measurement.&rdquo;</p>
-<p>Let me reapeat: the rotor is not a physical geometric object. It is an instruction,
+operator description of part of the process of &ldquo;making a measurement.&rdquo;</p><p>Let me reapeat: the rotor is not a physical geometric object. It is an instruction,
 and half of a reflection. A weird half though, one full reflection is a full
 double-sided geometric product, $-nAn$, whereas the rotor is two reflections but only
 one-side of the geometric product! The $(nm)$ in the full $nmAmn$. This is the guts
 of why fermionic wave-functions appear to be strange and &ldquo;un-classical&rdquo;. They are in
-fact purely classical. They just aren&rsquo;t corresponding to any physical stuff.</p>
-<p>Would some metaphor or analogy help? ((For those who distrust mathematics?))</p>
-<p>I already offered the mirror reflection analogy, which is better than an analogy
+fact purely classical. They just aren&rsquo;t corresponding to any physical stuff.</p><p>Would some metaphor or analogy help? ((For those who distrust mathematics?))</p><p>I already offered the mirror reflection analogy, which is better than an analogy
 because it is totally related. There is no physical process of
 mirror reflection, it cannot occur in nature. (Or would require some weird f**k
 Boltzmann brain fluctuations, which you have no hope of ever observing or producing
-by sheer will power or engineering.)</p>
-<p>So it is not the quark or electron that is weird under $2\pi$ rotations. The
+by sheer will power or engineering.)</p><p>So it is not the quark or electron that is weird under $2\pi$ rotations. The
 &ldquo;weirdness&rdquo; derives simply from the non-simply connected SO(3) rotation group,
 not from &ldquo;quantum mechanics.&rdquo; (High school students find the fact the rotation group
 is not simply connected to be weird, and no one claims <em>they</em> are doing quantum
-mechanics.)</p>
-<p>The geometric algebra rotors are, after all, pure real geometry, there is nothing
+mechanics.)</p><p>The geometric algebra rotors are, after all, pure real geometry, there is nothing
 quantum mechanical about them <em>per se</em>. As I noted before, the quantum mechanics is
 the coupling of particles through entanglement (minimal wormhole bridges) and the
 subsequent possibility of interference, and <em>that</em> has nothing overtly to do with the
-spin or rotation group symmetries and their algebra.</p>
-<p>The quantum mechanics comes into play because we can spin&ndash;couple elementary
+spin or rotation group symmetries and their algebra.</p><p>The quantum mechanics comes into play because we can spin&ndash;couple elementary
 particles and thus perform interference experiments. This happens for bosons too, and
 is thus not related to the spin-$\tfrac{1}{2}$ phenomenology, which is purely
 classical physics, but in the context of a measurement formalism, rather than a phase
-space trajectory tracking formalism.</p>
-<p>Here&rsquo;s a silly sloppy metaphor which might jog you: suppose you observe a fish
+space trajectory tracking formalism.</p><p>Here&rsquo;s a silly sloppy metaphor which might jog you: suppose you observe a fish
 withdrawn from a body of water. &ldquo;Oh look, it&rsquo;s got weird gills and is trying to
 breath air with them, and move about by flapping it&rsquo;s fins and tail. Looks pretty
 quantum aquatical to me! Let&rsquo;s base some new age movements and Lacanian psychology
-upon on this creature.&rdquo;</p>
-<p>An annoying underground topological biologist like me comes along and says,
-&ldquo;No, it&rsquo;s not weird! It came from classical water you dolt.&rdquo;</p>
-<h3 id=discrete-spectrum><a class=anchor href=#discrete-spectrum title="Anchor for: Discrete Spectrum."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Discrete Spectrum</h3>
-<p>At this point I have to try answering the nerds who claim spin measurements always
+upon on this creature.&rdquo;</p><p>An annoying underground topological biologist like me comes along and says,
+&ldquo;No, it&rsquo;s not weird! It came from classical water you dolt.&rdquo;</p><h3 id=discrete-spectrum><a class=anchor href=#discrete-spectrum title='Anchor for: Discrete Spectrum.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Discrete Spectrum</h3><p>At this point I have to try answering the nerds who claim spin measurements always
 end up giving a discrete eigenvalue spectrum. Is that not thoroughly weird and
-&ldquo;quantum mechanical&rdquo;?</p>
-<p>I mean heck, you don&rsquo;t get discrete spin angular momentum from a Globetrotter moving a
-basketball on their fingertips, do you?</p>
-<p>Yeah, but not so fast Dr Meadowlark Lemon.</p>
-<ol>
-<li>We never measure the electron angular momentum, so we do not know it is discrete.
+&ldquo;quantum mechanical&rdquo;?</p><p>I mean heck, you don&rsquo;t get discrete spin angular momentum from a Globetrotter moving a
+basketball on their fingertips, do you?</p><p>Yeah, but not so fast Dr Meadowlark Lemon.</p><ol><li>We never measure the electron angular momentum, so we do not know it is discrete.
 Orbital angular momenta in atoms are totally different, and are due to symmetry
-invariants, not discrete angular momentum.</li>
-<li>The spin plane turns out discrete but only because we need to use a honking great
+invariants, not discrete angular momentum.</li><li>The spin plane turns out discrete but only because we need to use a honking great
 magnetic field (from the pov of an electron), which naturally cannot help but
 polarize the electron beam, so we are enforcing a discrete spin measurement, we are
-not &ldquo;seeing&rdquo; any intrinsic discreteness.</li>
-<li>Same goes for hyperfine splitting of energy in atoms: the atom sets up the magnetic
-field in this case.</li>
-<li>We&rsquo;d get the same with basketballs if they were charged and we used a teraguass
-magnetic field.</li>
-<li>We can spin-couple electrons, but this sort of discreteness is just a conservation
+not &ldquo;seeing&rdquo; any intrinsic discreteness.</li><li>Same goes for hyperfine splitting of energy in atoms: the atom sets up the magnetic
+field in this case.</li><li>We&rsquo;d get the same with basketballs if they were charged and we used a teraguass
+magnetic field.</li><li>We can spin-couple electrons, but this sort of discreteness is just a conservation
 principle. When we measure one of the pair we are polarizing them again. So the other
-has to, by conservation, align (or anti-align) the same way.</li>
-<li>Ahh&mldr; but then you invoke the magic words &ldquo;Pauli Exclusion.&rdquo; Or the more elite words &ldquo;Spin&ndash;Statistics.&rdquo;</li>
-</ol>
-<p>I will not give myself the space here to explain Pauli Exclusion, but the gist of it
+has to, by conservation, align (or anti-align) the same way.</li><li>Ahh&mldr; but then you invoke the magic words &ldquo;Pauli Exclusion.&rdquo; Or the more elite words &ldquo;Spin&ndash;Statistics.&rdquo;</li></ol><p>I will not give myself the space here to explain Pauli Exclusion, but the gist of it
 can be explained by isotropic spin-coupling. I have explained this in the
 <a href=/t4gu/theory/6_pauli_ex_entanglement/>theory pages here</a>
 . But I have not truly
-completed the explanation using pure T4G theory, it is on my TODO list.</p>
-<p>Pauli Exclusion is more fundamentally not about discreteness, but about symmetry.
+completed the explanation using pure T4G theory, it is on my TODO list.</p><p>Pauli Exclusion is more fundamentally not about discreteness, but about symmetry.
 Rotational symmetry to be precise. There is nothing intrinsically discrete about
 this. It is just that to get wave mechanic effects that do not destructively
 interfere, the electrons occupying the same energy level have to, for symmetry
-reasons, go into opposite spin states.</p>
-<p>Now why do they do this? Who is telling them to be exclusive? What metaphysical
+reasons, go into opposite spin states.</p><p>Now why do they do this? Who is telling them to be exclusive? What metaphysical
 fermion dating agency ordered this rule book up? The answer is pretty ordinary:
 All sorts of interactions and Feynman vertex processes occur between the boundaries
 of any spacetime cobordism. The net effect is described by summing the amplitudes,
-as Feynman showed us &mdash; or equivalently solving the wave equation.</p>
-<p>If you bump one of them out of the atom it can have any orientation you care to
+as Feynman showed us &mdash; or equivalently solving the wave equation.</p><p>If you bump one of them out of the atom it can have any orientation you care to
 suppose. In the atom it is bound, it is no longer a truly independent &ldquo;particle,&rdquo;
 and so cannot just have any old orientation for too long. Certainly not long enough
-for you to see such fluctuations.</p>
-<p>When you account for all that stuff going on, you might realize there is no way we
+for you to see such fluctuations.</p><p>When you account for all that stuff going on, you might realize there is no way we
 can control these darn fundamental particles, so many interactions occur that we have
 to account for pretty much everything that can happen. But&mldr; they all obey the
-symmetries!</p>
-<p>The symmetries control and regularize everything you see, and that is all Pauli
+symmetries!</p><p>The symmetries control and regularize everything you see, and that is all Pauli
 Exclusion is telling us: all manner of crazy stuff happens, but the net effect
 cannot violate the spacetime symmetries. Because all the crazy sh$\ast$t happens,
 there is a boatload, or several mega-tanker loads of interference. How we explain
 <em>all that</em> is the proper explanation for Pauli Exclusion. But no one really knows how
 to explain it. I have had a go in this T4GU website, but I don&rsquo;t want you to trust
 that I have incredible insights. T4G is just a theory. A pretty cool theory, but not
-certain truth.</p>
-<p>((The interference and need for summing Feynman amplitudes derives, by T4G accounts,
+certain truth.</p><p>((The interference and need for summing Feynman amplitudes derives, by T4G accounts,
 from the presence of wormholes, or closed time-like curves, which T4G postulates are
 ubiquitous at the Planck scale. F**king crazy sh$\ast$t really can occur in the
 cobordism region, but it&rsquo;s not Many Worlds crazy sh$\ast$t. It is more awesome and
-humble than Many Worlds.))</p>
-<h3 id=commutators><a class=anchor href=#commutators title="Anchor for: Commutators."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Commutators</h3>
-<p>For any freshmen, or freshdoves or whoever, reading this, you probably have already
+humble than Many Worlds.))</p><h3 id=commutators><a class=anchor href=#commutators title='Anchor for: Commutators.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Commutators</h3><p>For any freshmen, or freshdoves or whoever, reading this, you probably have already
 had to drink some of the orthodox QM koolaid. So there is a chance you might have
 heard (likely from some low rank stressed out high school teacher) that quantum
-mechanics is weird because things do not commute.</p>
-<p>We should immediately disabuse you of this false psychology.</p>
-<p>Ordinary classical rotations in 3D do not commute.</p>
-<p>Good enough?</p>
-<p>Probably not good enough, am I right? Because you are probably still thinking that
+mechanics is weird because things do not commute.</p><p>We should immediately disabuse you of this false psychology.</p><p>Ordinary classical rotations in 3D do not commute.</p><p>Good enough?</p><p>Probably not good enough, am I right? Because you are probably still thinking that
 there are still observables in QM that do not commute but which commute in classical
-mechanics. But this is not true. Why do they not tell you this in school?</p>
-<p>The fundamental commutation relations for all the groups associated with
-measurement operations are the same in classical mechanics and in quantum mechanics.</p>
-<p>The difference in quantum mechanics is Heisenberg Uncertainty. We recognize that for
+mechanics. But this is not true. Why do they not tell you this in school?</p><p>The fundamental commutation relations for all the groups associated with
+measurement operations are the same in classical mechanics and in quantum mechanics.</p><p>The difference in quantum mechanics is Heisenberg Uncertainty. We recognize that for
 sufficiently fine-grained systems, like electrons in atoms, atomic nuclei, elementary
 spins, single photons, and whatnot, we cannot make two measurements in a sequence
 that are &ldquo;incompatible&rdquo; and also expect the second measurement will not alter the
 measured value it produces from the metaphysical &ldquo;value&rdquo; (or probability distribution
-thereof) of the observable prior to the first measurement.</p>
-<p>But this is true in classical mechanics too! You cannot perform two incompatible
+thereof) of the observable prior to the first measurement.</p><p>But this is true in classical mechanics too! You cannot perform two incompatible
 measurements in succession in classical mechanics either! (Say a position followed by
-a momentum.) Probably that&rsquo;s another thing they forgot to tell you in school.</p>
-<p>So, again, what is the difference in QM?</p>
-<p>The difference is that there is a fundamental scale of action (meaning basically a
+a momentum.) Probably that&rsquo;s another thing they forgot to tell you in school.</p><p>So, again, what is the difference in QM?</p><p>The difference is that there is a fundamental scale of action (meaning basically a
 chunk of evolution through spacetime) called Planck&rsquo;s constant, or $\hbar$, which
 everyone knows about, which sets a limit on the degree to which fine grain
 incompatible measurements can be treated as compatible. If you go down to too small a
 length scale, or up to too high an energy scale, then you may not use the
-&ldquo;everything is compatible&rdquo; approximation.</p>
-<p>The <em>everything is compatible</em> approximation is <em>Classical</em> classical mechanics (CM
-with trivial spacetime topology).</p>
-<p>If you can write down a Hamiltonian or Lagrangian describing your system well-enough
+&ldquo;everything is compatible&rdquo; approximation.</p><p>The <em>everything is compatible</em> approximation is <em>Classical</em> classical mechanics (CM
+with trivial spacetime topology).</p><p>If you can write down a Hamiltonian or Lagrangian describing your system well-enough
 for your desired precision, and can avoid inserting terms in $\hbar$, then you can do
-classical mechanics.</p>
-<p>&ldquo;But hang-on a damn minute there son! What about using units where $\hbar=1$ huh?&rdquo;</p>
-<p>What about it? When you set $\hbar=1$ you do not get rid of those terms that are
+classical mechanics.</p><p>&ldquo;But hang-on a damn minute there son! What about using units where $\hbar=1$ huh?&rdquo;</p><p>What about it? When you set $\hbar=1$ you do not get rid of those terms that are
 sensitive to incomensurate operators. You get rid of them only by setting $\hbar=0$.
 But we know $\hbar > 0$ in any system of units. Which just means Classical classical
 mechanics is just wrong, and is a good physics model only when you are able to safely
-ignore fine-grain measurements or black holes, and the like.</p>
-<p>In case you are still dumbfounded by all this, let me point out how classical
+ignore fine-grain measurements or black holes, and the like.</p><p>In case you are still dumbfounded by all this, let me point out how classical
 mechanics (CM) achieves the approximation. In CM we do not even bother worrying about
 &ldquo;measurement&rdquo;! That is how. &ldquo;Measurement&rdquo; is an inapplicable concept in classical
-mechanics.</p>
-<p>It is typically only when you introduce general relativity that we get severe
+mechanics.</p><p>It is typically only when you introduce general relativity that we get severe
 kick-back from &ldquo;making a measurement&rdquo; that alerts us to worry about setting up
 experiments. That&rsquo;s because in GR the gravitational influence takes time to
 propagate, it is not instantaneous like Newton&rsquo;s classical theory. This is called
 gravitational back-reaction. But if you looked closely into electrodynamics you&rsquo;d see
-there is also back-reaction there too.</p>
-<p>I&rsquo;m being a bit sketchy here, for the sake of brevity.</p>
-<p>But the gist of it all is that both general relativity and electrodynamics truly
+there is also back-reaction there too.</p><p>I&rsquo;m being a bit sketchy here, for the sake of brevity.</p><p>But the gist of it all is that both general relativity and electrodynamics truly
 imply a non-zero Planck constant. So if you &ldquo;did classical mechanics properly&rdquo; you
 would end up with most of quantum mechanics, at the scattering theory level. (You
 would not have entanglement, or might not be forced to include entanglement, if you
 don&rsquo;t account for superposition and interference that is.) On the latter
 parenthetical remark: you might even arrive at entanglement if your classical
 mechanics had a theory of photons, rather than Maxwell theory &mdash; because you would
-have to explain interference of light without using fields and waves.</p>
-<p>I might be over-stating the case for theorist awesomeness here. I doubt anyone has
+have to explain interference of light without using fields and waves.</p><p>I might be over-stating the case for theorist awesomeness here. I doubt anyone has
 the mental capacity to have ever performed this sort of &ldquo;derivation&rdquo; of QM from CM.
 I can only see that it was possible with a hundred year hindsight. Maybe someone like
 Edward Witten could have? I don&rsquo;t really know. But old Witten has not even recognized
-it was possible in the way I have described, so maybe not even Witten.</p>
-<p>You know what though? I reckon Albert Einstein could have. He had the right sort of
-mind for it. (God does not play dice. The non-satanic mindset.)</p>
-<h3 id=the-dirac-lagrangian><a class=anchor href=#the-dirac-lagrangian title="Anchor for: The Dirac Lagrangian."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Dirac Lagrangian</h3>
-<p>More elite garage quantum mechanics will ask further niggling questions, all of
+it was possible in the way I have described, so maybe not even Witten.</p><p>You know what though? I reckon Albert Einstein could have. He had the right sort of
+mind for it. (God does not play dice. The non-satanic mindset.)</p><h3 id=the-dirac-lagrangian><a class=anchor href=#the-dirac-lagrangian title='Anchor for: The Dirac Lagrangian.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Dirac Lagrangian</h3><p>More elite garage quantum mechanics will ask further niggling questions, all of
 which T4G theory can answer (LOL, like I would know!), but I won&rsquo;t go through
 them all. But one pathetic nerd might point out the Dirac field $\psi$ has
-dimensions, so cannot be a pure rotor.</p>
-<p>But I already wrote that the spinors $\ket{\psi}$ are <em>not</em> pure rotors, they have
+dimensions, so cannot be a pure rotor.</p><p>But I already wrote that the spinors $\ket{\psi}$ are <em>not</em> pure rotors, they have
 dimensions of $L^{3/2}$ in the Lagrangian, and must of course obey unitarity, so have
 normalization factors too for the statistical probability density in space. We
 usually will write,
@@ -714,26 +461,19 @@ we understand $\psi$ is not a physical quantity, it is foremost a rotor (with ot
 statistical factors). While the rotor part is dimensionless, it acts double-sided on
 other objects like $\gamma^\mu\partial_\mu$ to rotate them, and so any physical
 factors multiplying the rotor $R$ part of $\psi$ will have to be dimensionally square
-rooted, if they are not absorbed instead into an overall normalization constant.</p>
-<p>For the even more pathetic nerds who know about the Hilbert space structure and the
+rooted, if they are not absorbed instead into an overall normalization constant.</p><p>For the even more pathetic nerds who know about the Hilbert space structure and the
 imporance of a ray representation, the Dirac field has to exhibit interference, so
 there must be geometric factors and an ambiguity in $\psi$ &ldquo;up to a phase.&rdquo; In T4G
 theory this phase factor is also geometric in origin, arising as it does from
 non-Kolmogorov probabilistic processes associated with closed time-like curve
 dynamics. So you would normally also include a separate undetermined phase factor
 $e^{i\alpha}$ in the above expression for $\psi$ whenever there is entanglement and
-hence superposition and possibility for interference.</p>
-<p>For multiparticle QM we would also want to tensor each $\psi$ with it&rsquo;s
+hence superposition and possibility for interference.</p><p>For multiparticle QM we would also want to tensor each $\psi$ with it&rsquo;s
 spin-coupled pair, which is again entanglement, and so an unnecessary complication
 for simple scattering theory. For multi-loop Feynman scattering theory the
 interference has to be inserted again to get the proper cancellations in the path
-integral.</p>
-<p>For everyday low-brow garage QM scattering experiments we don&rsquo;t need to bother
-accounting for interference and then $\psi = \sqrt{\rho} R$ would suffice.</p>
-<h2 id=the-aharonov-susskind-hand-wave><a class=anchor href=#the-aharonov-susskind-hand-wave title="Anchor for: The Aharonov Susskind Hand Wave."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Aharonov Susskind Hand Wave</h2>
-<p>Oh yeah! Why did I start writing this post in the first place?</p>
-<p>It was just to explain a joke.</p>
-<p>About 1 min 40 sec
+integral.</p><p>For everyday low-brow garage QM scattering experiments we don&rsquo;t need to bother
+accounting for interference and then $\psi = \sqrt{\rho} R$ would suffice.</p><h2 id=the-aharonov-susskind-hand-wave><a class=anchor href=#the-aharonov-susskind-hand-wave title='Anchor for: The Aharonov Susskind Hand Wave.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Aharonov Susskind Hand Wave</h2><p>Oh yeah! Why did I start writing this post in the first place?</p><p>It was just to explain a joke.</p><p>About 1 min 40 sec
 <a href="https://youtu.be/-nBOCF0sPgU?t=48" target=_blank>into the lecture Lenny demonstrates</a>
 the coffee cup trick: you can rotate a cup full to the brim with coffee on the flat
 palm of your hand around $720^\circ$ keeping your palm level without moving your
@@ -741,37 +481,6 @@ feet. It&rsquo;s also called the Dirac belt trick. It also &ldquo;proves&rdquo; 
 $2\pi$ does not necessarily return a localised sub-system of the universe back to the
 beginning. Proving that needing coffee is not a requirement of the theorem can be
 tricky. Water should work too, and even air, and invisible cups. In other words, we
-have a general proof. Susskind is such an Alpha he doesn&rsquo;t even need a cup of coffee.</p>
-<p>Lenny notes that he did not mathematically prove this topology theorem about SO(3),
-but he did give a rigorous hand-waving proof. The first such thing known to mankind ;-)</p>
-<table style="border-collapse:collapse;border=0">
-<col span=1 style=width:35%>
-<col span=1 style=width:25%>
-<col span=1 style=width:35%>
-<tr style="border:1px solid color:#0f0f0f">
-<td style="border:1px solid color:#0f0f0f"><a href=../26_nonkolmogorov>Previous chapter</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../28_susy>Next chapter</a></td>
-</tr>
-<tr style="border:1px solid color:#0f0f0f">
-<td style="border:1px solid color:#0f0f0f"><a href=../26_nonkolmogorov>Non-Kolmogorov Models</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../28_susy>Susy C</a></td>
-</tr>
-</table>
-</article>
-</main>
-</div>
-<footer>
-<div class=req-js>
-<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
-</div>
-<noscript>
-<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
-</noscript>
-</footer>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
-<script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
-<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
-</body>
-</html>
+have a general proof. Susskind is such an Alpha he doesn&rsquo;t even need a cup of coffee.</p><p>Lenny notes that he did not mathematically prove this topology theorem about SO(3),
+but he did give a rigorous hand-waving proof. The first such thing known to mankind ;-)</p><table style="border-collapse:collapse;border=0"><col span=1 style=width:35%><col span=1 style=width:25%><col span=1 style=width:35%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../26_nonkolmogorov>Previous chapter</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../28_susy>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../26_nonkolmogorov>Non-Kolmogorov Models</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../28_susy>Susy C</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.4268ce940bc6faa510d7b638acc3f08a63501d9504dd3155bfc48d6838ade320.js integrity="sha256-QmjOlAvG+qUQ17Y4rMPwimNQHZUE3TFVv8SNaDit4yA=" crossorigin=anonymous></script>
+<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>

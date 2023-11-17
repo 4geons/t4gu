@@ -1,120 +1,17 @@
-<!doctype html><html lang=en data-mode=dark>
-<head prefix="og: http://ogp.me/ns#">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.92.2">
-<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
-<title>Pauli Exclusion and T4G | Topological 4-Geon Theory Unchained</title>
-<meta name=author content="Bijou M. Smith">
-<meta name=robots content="index follow">
-<link rel=canonical href=https://4geons.github.io/t4gu/philosophy/010_pauli_exclusion/>
-<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
-<meta property="og:title" content="Pauli Exclusion and T4G">
-<meta property="og:url" content="https://4geons.github.io/t4gu/philosophy/010_pauli_exclusion/">
-<meta property="og:type" content="website">
-<meta name=twitter:dnt content="on">
-<meta name=theme-color content="#222">
-<meta name=apple-mobile-web-app-capable content="yes">
-<meta name=apple-mobile-web-app-status-bar-style content="default">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://4geons.github.io/t4gu/","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
-<noscript>
-<meta name=theme-color content="#26A269">
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
-</noscript>
-<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<script src=https://4geons.github.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
-</head>
-<body>
-<header>
-<a href=/t4gu> <img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
-<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
-<nav aria-label="Main menu.">
-<ul>
-<li>
-<a class=btn href=/t4gu/t4gu/>Home</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
-</li>
-</ul>
-</nav>
-</header>
-<div class=filler>
-<main>
-<article>
-<header>
-<h1>Pauli Exclusion and T4G</h1>
-<p>
-Published on <time datetime=2019-12-19>2019-12-19</time>
-</p>
-</header>
-<details class=toc open>
-<summary class=outline-dashed>
-Contents
-</summary>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#pauli-exclusion-----is-it-not-thoroughly-quantum>Pauli Exclusion &mdash; is it not &ldquo;thoroughly quantum&rdquo;?</a>
-<ul>
-<li><a href=#relativistic-qft>Relativistic QFT</a></li>
-</ul>
-</li>
-<li><a href=#pauli-exclusion-without-relativistic-fields>Pauli Exclusion without relativistic fields</a>
-<ul>
-<li><a href=#more-on-cqg-----weyl-conformal-symmetry>More on CQG &mdash; Weyl conformal symmetry</a></li>
-</ul>
-</li>
-<li><a href=#a-t4g-approach>A T4G approach</a>
-<ul>
-<li><a href=#coupled-versus-de-coupled-approach-to-pep>Coupled versus de-coupled approach to PEP</a></li>
-<li><a href=#not-bohmian-rather-edts>Not Bohmian, rather &ldquo;EDTS&rdquo;</a></li>
-<li><a href=#a-surprise-for-later>A surprise for later</a></li>
-</ul>
-</li>
-<li><a href=#microstructure-and-the-block-universe>Microstructure and the Block Universe</a></li>
-</ul>
-</nav>
-</details>
-<h2 id=pauli-exclusion-----is-it-not-thoroughly-quantum><a class=anchor href=#pauli-exclusion-----is-it-not-thoroughly-quantum title="Anchor for: Pauli Exclusion &mdash; is it not &ldquo;thoroughly quantum&rdquo;?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Pauli Exclusion &mdash; is it not &ldquo;thoroughly quantum&rdquo;?</h2>
-<p>One noobie objection to T4G is that fermions do not exist in GR, and so also the
+<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.101.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Pauli Exclusion and T4G | Topological 4-Geon Theory Unchained</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://4geons.github.io/t4gu/philosophy/010_pauli_exclusion/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Pauli Exclusion and T4G"><meta property="og:url" content="https://4geons.github.io/t4gu/philosophy/010_pauli_exclusion/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://4geons.github.io/t4gu/","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://4geons.github.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
+<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Pauli Exclusion and T4G</h1><p>Published on <time datetime=2019-12-19>2019-12-19</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#pauli-exclusion-----is-it-not-thoroughly-quantum>Pauli Exclusion &mdash; is it not &ldquo;thoroughly quantum&rdquo;?</a><ul><li><a href=#relativistic-qft>Relativistic QFT</a></li></ul></li><li><a href=#pauli-exclusion-without-relativistic-fields>Pauli Exclusion without relativistic fields</a><ul><li><a href=#more-on-cqg-----weyl-conformal-symmetry>More on CQG &mdash; Weyl conformal symmetry</a></li></ul></li><li><a href=#a-t4g-approach>A T4G approach</a><ul><li><a href=#coupled-versus-de-coupled-approach-to-pep>Coupled versus de-coupled approach to PEP</a></li><li><a href=#not-bohmian-rather-edts>Not Bohmian, rather &ldquo;EDTS&rdquo;</a></li><li><a href=#a-surprise-for-later>A surprise for later</a></li></ul></li><li><a href=#microstructure-and-the-block-universe>Microstructure and the Block Universe</a></li></ul></nav></details><h2 id=pauli-exclusion-----is-it-not-thoroughly-quantum><a class=anchor href=#pauli-exclusion-----is-it-not-thoroughly-quantum title='Anchor for: Pauli Exclusion &mdash; is it not &ldquo;thoroughly quantum&rdquo;?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Pauli Exclusion &mdash; is it not &ldquo;thoroughly quantum&rdquo;?</h2><p>One noobie objection to T4G is that fermions do not exist in GR, and so also the
 Pauli Exclusion Principle cannot be derived from GR.
 The first assertion is false, as we&rsquo;ve already shown:
 in the geometric spacetime algebra (STA) fermions occur naturally as the
-generators of rotations and Lorentz boosts.</p>
-<p>The concept of &ldquo;a fermion&rdquo; is just a unit of matter which has the same symmetries
+generators of rotations and Lorentz boosts.</p><p>The concept of &ldquo;a fermion&rdquo; is just a unit of matter which has the same symmetries
 as the rotation generators. QM is a <em>measurement theory</em> recall, so all that
 counts (all that needs to be &ldquo;accounted for&rdquo;) are the ends of a cobordism, not
 what happens in-between, and that means the &ldquo;fundamental particles&rdquo; in QM can be
-characterized FAPP by their symmetries.</p>
-<p>But this is not sufficient to get the PEP.</p>
-<h3 id=relativistic-qft><a class=anchor href=#relativistic-qft title="Anchor for: Relativistic QFT."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Relativistic QFT</h3>
-<p>The usual textbook derivation of the PEP <em>also</em> assumes relativistic quantum
-field theory.</p>
-<p>This implies &ldquo;all&rdquo; T4G theory needs to do is show that RQFT is an approximate or
+characterized FAPP by their symmetries.</p><p>But this is not sufficient to get the PEP.</p><h3 id=relativistic-qft><a class=anchor href=#relativistic-qft title='Anchor for: Relativistic QFT.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Relativistic QFT</h3><p>The usual textbook derivation of the PEP <em>also</em> assumes relativistic quantum
+field theory.</p><p>This implies &ldquo;all&rdquo; T4G theory needs to do is show that RQFT is an approximate or
 effective emergent consequence of the collective behaviour of T4G particles.
 This is a tough project to undertake, but I&rsquo;ve never read or heard any arguments
-saying it is impossible.</p>
-<p>However, there are also proofs of the spin&ndash;statistics theorem that do not rely
+saying it is impossible.</p><p>However, there are also proofs of the spin&ndash;statistics theorem that do not rely
 upon relativistic QFT. See for example <a href=https://link.springer.com/article/10.1007/s10701-015-9912-7 target=_blank>Santamato and De Martini here,</a>
 also <a href=https://arxiv.org/pdf/quant-ph/0306033.pdf target=_blank>Shaji and Sudasharn here,</a>
 <a href=https://arxiv.org/pdf/2203.05106 target=_blank>Averin here,</a>
@@ -122,52 +19,38 @@ also <a href=https://doi.org/10.1142/S0217751X93001223 target=_blank>Balachandra
 and <a href=https://arxiv.org/pdf/quant-ph/0402118 target=_blank>Peshkin here.</a>
 Most of these proofs rely only upon parity, and T4G theory already has this in
 the rotation generators for the STA.
-So it is fair to say T4G already has Pauli exclusion.</p>
-<p>Remember, QFT&rsquo;s are really theories of non-local correlation functions.
+So it is fair to say T4G already has Pauli exclusion.</p><p>Remember, QFT&rsquo;s are really theories of non-local correlation functions.
 All the scattering amplitudes (the real physics) can be computed if we know the
 correlators. But T4G provides a mechanism for non-local correlators, namely the
 wormhole gas postulate (WHG). There is thus a theoretical path here for deriving
-RQFT from T4G theory.</p>
-<p>If this can be done then the PEP drops out automatically.
+RQFT from T4G theory.</p><p>If this can be done then the PEP drops out automatically.
 It is a collective behaviour phenomenon, not fundamental ontology of physical
-reality.</p>
-<p>To help conceptually grok all this, it is worth thinking of the Pauli Exclusion
+reality.</p><p>To help conceptually grok all this, it is worth thinking of the Pauli Exclusion
 Principle as a result of a time-independent solution to the Dirac equation (which
 is the relativistic Schrödinger&ndash;Pauli theory).
 There is no reason Pauli exclusion absolutely applies to the Planck scale
-microstructure.</p>
-<p>Having said that, we know there <em>is</em> fundamental ontology behind, and not too far
+microstructure.</p><p>Having said that, we know there <em>is</em> fundamental ontology behind, and not too far
 removed from, the Pauli Exclusion Principle, and it&rsquo;s entanglement, or wormhole
 topology, ER=EPR. I will get back to this below under
 <a href=Coupled-versus-de-coupled-approach-to-pep>Coupled versus De-coupled Approach</a>
 .
 What this development says is that the PEP is almost fundamental ontology, but it
-clearly <em>derives</em> from spacetime topology.</p>
-<h2 id=pauli-exclusion-without-relativistic-fields><a class=anchor href=#pauli-exclusion-without-relativistic-fields title="Anchor for: Pauli Exclusion without relativistic fields."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Pauli Exclusion without relativistic fields</h2>
-<p>I have not grokked this next stuff entirely just yet, but the paper by
+clearly <em>derives</em> from spacetime topology.</p><h2 id=pauli-exclusion-without-relativistic-fields><a class=anchor href=#pauli-exclusion-without-relativistic-fields title='Anchor for: Pauli Exclusion without relativistic fields.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Pauli Exclusion without relativistic fields</h2><p>I have not grokked this next stuff entirely just yet, but the paper by
 <a href=https://arxiv.org/abs/1604.06253 target=_blank>Santamato and de Martini</a>
 purports to show the
-Pauli exclusion principle is implicit in general relativity.</p>
-<p>This is fairly delightful!
+Pauli exclusion principle is implicit in general relativity.</p><p>This is fairly delightful!
 Since we&rsquo;ve learned fermions are intrinsic to GR, why not the whole lot?
-We are talking about symmetry principles after all!</p>
-<p>And indeed this is how Santamato and de Martini derive Pauli exclusion &mdash;
+We are talking about symmetry principles after all!</p><p>And indeed this is how Santamato and de Martini derive Pauli exclusion &mdash;
 they get PEP from Weyl gauge invariance and &ldquo;<em>the conservation of the intrinsic
-helicity of elementary particles.</em>&rdquo;</p>
-<p>What&rsquo;s more, the proof of the PEP is far more elegant than the standard RQFT
+helicity of elementary particles.</em>&rdquo;</p><p>What&rsquo;s more, the proof of the PEP is far more elegant than the standard RQFT
 proof. Santamato and de Martini do not even use QFT. The proof is thus
 applicable to non-relativistic QM. (As it should be, since Pauli exclusion occurs
-in the NR-QM Schrödinger&ndash;Pauli theory.)</p>
-<p>The PEP is still a &ldquo;quantum&rdquo; effect in this treatment.
-Santamato and de Martini need &ldquo;quantum statistics&rdquo; to derive the PEP.</p>
-<p>There is thus a fairly trivial T4G derivation of the Pauli exclusion principle,
+in the NR-QM Schrödinger&ndash;Pauli theory.)</p><p>The PEP is still a &ldquo;quantum&rdquo; effect in this treatment.
+Santamato and de Martini need &ldquo;quantum statistics&rdquo; to derive the PEP.</p><p>There is thus a fairly trivial T4G derivation of the Pauli exclusion principle,
 because T4G theory yields quantum statistics naturally.
 In fact, with &ldquo;conservation of helicity&rdquo; (a symmetry principle holding in T4G
 thery) I could not see how Santamato and de Martini&rsquo;s result is not in fact
-a T4G proof.</p>
-<p>Perhaps I missed something?</p>
-<p>I&rsquo;d love to get any feedback on this from anyone who can follow their 2016 paper <em><a href=https://arxiv.org/abs/1604.06253 target=_blank>Weyl-gauge invariant proof of the Spin-Statistics Theorem.</a>
-</em>
+a T4G proof.</p><p>Perhaps I missed something?</p><p>I&rsquo;d love to get any feedback on this from anyone who can follow their 2016 paper <em><a href=https://arxiv.org/abs/1604.06253 target=_blank>Weyl-gauge invariant proof of the Spin-Statistics Theorem.</a></em>
 You can also find a similar non-relativistic QM proof of the spin&ndash;statistics
 theorem in their
 <a href=https://link.springer.com/article/10.1007/s10701-015-9912-7 target=_blank>2015 paper here.</a>
@@ -175,71 +58,54 @@ I am a little bit fuzzy about their CQG (conformal quantum geometrodynamics)
 paradigm, they say it&rsquo;s a type of Hidden Variable theory, but of course Bell
 experiments show all HV theories must have either retrocausation or must be non-
 local. The CQG theory is non-local. Which is thus ok, but I still cannot really
-grok CQG.</p>
-<h3 id=more-on-cqg-----weyl-conformal-symmetry><a class=anchor href=#more-on-cqg-----weyl-conformal-symmetry title="Anchor for: More on CQG &mdash; Weyl conformal symmetry."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> More on CQG &mdash; Weyl conformal symmetry</h3>
-<p>I might write about CQG in the theory section later. Much later.
+grok CQG.</p><h3 id=more-on-cqg-----weyl-conformal-symmetry><a class=anchor href=#more-on-cqg-----weyl-conformal-symmetry title='Anchor for: More on CQG &mdash; Weyl conformal symmetry.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>More on CQG &mdash; Weyl conformal symmetry</h3><p>I might write about CQG in the theory section later. Much later.
 But to me it looks a lot like T4G in disguise.
 The so-called Weyl field introduces a conformal symmetry, an the field is
 attributed to Weyl curvature, which replaces the particle mass.
 The Weyl connection introduces a term in the scalar Weyl curvature which mimics a
 de Broglie&ndash;Bohm pilot wave theory potential, which is what classifies CQG
-as a type of hidden variable theory.</p>
-<p>The rough Reader&rsquo;s Digest account is that the Weyl curvature introduces a
+as a type of hidden variable theory.</p><p>The rough Reader&rsquo;s Digest account is that the Weyl curvature introduces a
 &ldquo;quantum potential.&rdquo; But Santamato and de Martini say their Weyl potential
 involves &ldquo;internal coordinates&rdquo; not hidden variables, so their &ldquo;internal
-coordinates&rdquo; are possibly observable, they&rsquo;re just not &ldquo;spacetime coordinates&rdquo;.</p>
-<p>Santamato and de Martini show that a complex valued wave-function reduce
+coordinates&rdquo; are possibly observable, they&rsquo;re just not &ldquo;spacetime coordinates&rdquo;.</p><p>Santamato and de Martini show that a complex valued wave-function reduce
 their Weyl connection equations to a simpler linear wave-equation.
 You can also read a derivation of the Dirac equation using the same ideas <a href=https://arxiv.org/pdf/1107.3168v1 target=_blank>here.</a>
 So they say the complex amplitude is an ansatz, hiding the Weyl geometry.
-(Sounds like a way to simplify T4G theory.)</p>
-<p>In T4G theory I would just here say that the &ldquo;complex&rdquo; wave-function can be taken
+(Sounds like a way to simplify T4G theory.)</p><p>In T4G theory I would just here say that the &ldquo;complex&rdquo; wave-function can be taken
 to be a STA rotor, or Hestenes spinor. These objects give the exact same
 equations of motion as the orthodox Dirac theory for spin-1/2. So the Santamato
 and de Martini treatment at this stage can be used to justify the Hestenes
-rotors as ansatz descriptions of the more fundamental underlying Weyl geometry.</p>
-<p>When I continue reading Santamato and de Martini&rsquo;s paper I just mentally
+rotors as ansatz descriptions of the more fundamental underlying Weyl geometry.</p><p>When I continue reading Santamato and de Martini&rsquo;s paper I just mentally
 substitute &ldquo;wormhole geometry&rdquo; for their (internal coordinates) &ldquo;Weyl geometry&rdquo;
-and then I can see how CQG is just a dopey way to describe T4G theory.</p>
-<p>The link up with O&rsquo;Hara is via the coupling involved, the internal coordinates
+and then I can see how CQG is just a dopey way to describe T4G theory.</p><p>The link up with O&rsquo;Hara is via the coupling involved, the internal coordinates
 can couple other field flux between non-local regions of spacetime.
 That&rsquo;s the Wheeler&ndash;Misner wormhole flux tube stuff in disguise.
-At least impressionistically.</p>
-<p>To my dull brain, that sounds like they could be using just very awkward clunky
+At least impressionistically.</p><p>To my dull brain, that sounds like they could be using just very awkward clunky
 Riemannian geometry (pulled out of their ass-ets) to describe wormhole degrees of
 freedom, which would be a T4G theory.
-But I could by off. I have to look at it a lot closer.</p>
-<h2 id=a-t4g-approach><a class=anchor href=#a-t4g-approach title="Anchor for: A T4G approach."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A T4G approach</h2>
-<p>I will leave it to our Theory pages to do all the math, here let&rsquo;s just note the
+But I could by off. I have to look at it a lot closer.</p><h2 id=a-t4g-approach><a class=anchor href=#a-t4g-approach title='Anchor for: A T4G approach.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A T4G approach</h2><p>I will leave it to our Theory pages to do all the math, here let&rsquo;s just note the
 idea. The basic idea is geometric. Particle exchange (parity symmetry) is a
 mirror symmetry. All rotations are combinations of two mirror reflections.
 In the STA (geometric algebra) the rotations are performed by double-sided action
-by a rotor $R$ and it&rsquo;s reverse $\tilde{R}$, including the Lorentz boosts.</p>
-<p>A reflection in GA (geometric algebra) is performed by a geometric product, say
+by a rotor $R$ and it&rsquo;s reverse $\tilde{R}$, including the Lorentz boosts.</p><p>A reflection in GA (geometric algebra) is performed by a geometric product, say
 we reflect a vector $A$ about the plane normal to $\vec{n}$ then the transform
 is,
-$$ A \rightarrow A^\prime = -n A n $$</p>
-<p>Any rotation can now be performed by reflecting in two planes, one given by
+$$ A \rightarrow A^\prime = -n A n $$</p><p>Any rotation can now be performed by reflecting in two planes, one given by
 normal $\vec{n}$ another by normal $\vec{m}$ say.
 The rotation will be in the plane defined by the wedge of the two normals, and
-the rotation angle will be twice the angle between the two normals.</p>
-<p>In the STA a rotor is a geometric product of two unit vectors, say,
+the rotation angle will be twice the angle between the two normals.</p><p>In the STA a rotor is a geometric product of two unit vectors, say,
 $$ R = \vec{n}\vec{m} $$
 where $\vec{n}$ and $\vec{m}$ are vectors normal to the planes of reflection,
-and $\tilde{R}=\vec{m}\vec{n}$.</p>
-<p>To rotate some arbitrary vector or multivector $A$ to $A^\prime$ we just perform
+and $\tilde{R}=\vec{m}\vec{n}$.</p><p>To rotate some arbitrary vector or multivector $A$ to $A^\prime$ we just perform
 the two reflections using the one rotor,
-$$ A \longrightarrow A^\prime = R A \tilde{R}$$</p>
-<p>In T4G theory we do not see anything mystical or &ldquo;quantum&rdquo; about the spin-
+$$ A \longrightarrow A^\prime = R A \tilde{R}$$</p><p>In T4G theory we do not see anything mystical or &ldquo;quantum&rdquo; about the spin-
 statistics theorem. What is &ldquo;quantum&rdquo; about spin-statistics is that matter comes
 in discrete orientable chunks called 4-geons. So in a <em>Measurement Theory</em> like
 QM we have to rotate our frame onto the frame of the 4-geon, as Hestenes was
 always saying: <strong><em>the wave-function is just this such instruction</em></strong>.
 Spin-1/2 is a fermionic label, and in T4G is the same as the 4-geon described by
-&ldquo;an instruction to rotate frames.&rdquo; The unit rotors are in fact spin-1/2.</p>
-<p>Bosons are vector particles, and so can perform their frame rotations by a single
-sided transform. This makes bosons spin-$0$, spin-$1$ or spin-$2$.</p>
-<p>What do the bosons correspond to?
+&ldquo;an instruction to rotate frames.&rdquo; The unit rotors are in fact spin-1/2.</p><p>Bosons are vector particles, and so can perform their frame rotations by a single
+sided transform. This makes bosons spin-$0$, spin-$1$ or spin-$2$.</p><p>What do the bosons correspond to?
 Well, what rotation can be performed by a single-sided rotor?
 The answer is all rotations in 2D space can be done single-sided, so the two
 vectors $\vec{n}$ and $\vec{m}$ above can be moved to the left-hand side,
@@ -247,31 +113,24 @@ $$ A \longrightarrow A^\prime = \vec{m}\vec{n} A \vec{n}\vec{m} = \vec{m}\vec{n}
 which holds only if $A$ is in the same plane as $\vec{n}$ and $\vec{m}$.
 In 3D or 4D GA that means taking $A$ as a linear operator for $R$ it has to be
 either a scalar or a vector or a pseudoscalar, so if $R$ represents the 4-geon
-frame rotation then it is &ldquo;a boson.&rdquo;</p>
-<p>And that&rsquo;s all there is to it.</p>
-<p>Note that in T4G theory neither the rotor $R$ nor the operator $A$ are &ldquo;the
+frame rotation then it is &ldquo;a boson.&rdquo;</p><p>And that&rsquo;s all there is to it.</p><p>Note that in T4G theory neither the rotor $R$ nor the operator $A$ are &ldquo;the
 particle.&rdquo; It&rsquo;s their relationship that tells us whether we are describing
-<em>measurements on</em> a boson or fermion.</p>
-<p>After writing all this I looked up a paper by the Cambridge GA group on
+<em>measurements on</em> a boson or fermion.</p><p>After writing all this I looked up a paper by the Cambridge GA group on
 <a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>electron physics (here),</a>
 where I knew
 they dealt with the Stern&ndash;Gerlach apparatus beam splitting elegantly (it&rsquo;s not a
 discrete spin thing, it&rsquo;s a beam polarization effect and results from rotational
 symmetry invariance, not from &ldquo;discrete spin&rdquo;).
 So I thought that paper might also prove the spin&ndash;statistics theorem too, and
-sure enough it did.</p>
-<p>The proof starts off as I describe above, but of course we have to go to a two-
+sure enough it did.</p><p>The proof starts off as I describe above, but of course we have to go to a two-
 particle system, to get the full parity (exchange) result.
-That&rsquo;s what <a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>Doran et al. do in that paper.</a>
-</p>
-<p>Incidentally, while looking up that old Chris Doran paper I came across a paper
+That&rsquo;s what <a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>Doran et al. do in that paper.</a></p><p>Incidentally, while looking up that old Chris Doran paper I came across a paper
 he authored with Timothy Havel which is just as
 <a href=https://arxiv.org/pdf/quant-ph/0106063 target=_blank>good to read.</a>
 Also see the paper by <a href=https://heyokatc.com/pdfs/MISC/Geometric_Algebra_and_the_Causal_Approach_to_Multiparticle_Quantum_Mechanics_-_Somaroo-Doran-jmp-1999.pdf target=_blank>Somaroo et al., here.</a>
 which gives, I guess,$^\ast$ a simpler introduction
 to multiparticle QM since it restricts to the non-relativistic case (Pauli
-equation).</p>
-<p>$^\ast$ &ldquo;I guess&rdquo; only because I often find the full spacetime algebra (STA)
+equation).</p><p>$^\ast$ &ldquo;I guess&rdquo; only because I often find the full spacetime algebra (STA)
 simpler, and that&rsquo;s the relativistic case (Dirac equation).
 For n00bies, it&rsquo;s worth bearing in mind we use field theory in the relativistic
 QM case to handle pair-production and annihilation.
@@ -282,26 +141,21 @@ QFT, and this is basically what Nima Arkani-Hamed&rsquo;s amplituhedron program 
 it does not use field theory, and only considers scattering processes (which
 every conceivable &ldquo;measurement&rdquo; can be <em>in principle</em> boiled down to).
 Again, one might use field theory Lagrangians and Feynman diagram expansions
-instead because they&rsquo;re &ldquo;simpler&rdquo; (a relative term).</p>
-<h3 id=coupled-versus-de-coupled-approach-to-pep><a class=anchor href=#coupled-versus-de-coupled-approach-to-pep title="Anchor for: Coupled versus de-coupled approach to PEP."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Coupled versus de-coupled approach to PEP</h3>
-<p>A challenge for T4G theory would be to reduce the PEP and spin&ndash;statistics
+instead because they&rsquo;re &ldquo;simpler&rdquo; (a relative term).</p><h3 id=coupled-versus-de-coupled-approach-to-pep><a class=anchor href=#coupled-versus-de-coupled-approach-to-pep title='Anchor for: Coupled versus de-coupled approach to PEP.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Coupled versus de-coupled approach to PEP</h3><p>A challenge for T4G theory would be to reduce the PEP and spin&ndash;statistics
 theorem to the very rudimentary basic geometrodynamics.
 If you examine the above <a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>Doran et al.,</a>
 and <a href=https://arxiv.org/pdf/quant-ph/0106063 target=_blank>Havel and Doran</a>
 papers, this is
 very close to what they do, we see PEP is a result of coupling, entanglement.
 But those authors fail to point out this is related to ER=EPR, and so miss the
-full geometric picture, even though they&rsquo;re employing the spacetime algebra.</p>
-<p>There is also another bit of research to look at using a coupling principle to
-get the PEP.</p>
-<p>The above $\psi$ parity symmetry $\leftrightarrow$ PEP approaches are the
+full geometric picture, even though they&rsquo;re employing the spacetime algebra.</p><p>There is also another bit of research to look at using a coupling principle to
+get the PEP.</p><p>The above $\psi$ parity symmetry $\leftrightarrow$ PEP approaches are the
 traditional way, but there is one other that I&rsquo;ve wanted to explore, which is due
 to <a href=https://arxiv.org/abs/quant-ph/0109137 target=_blank>Paul O'Hara</a>
 &mdash; it seeks to obtain
 spin&ndash;statistics from a
 <a href=https://arxiv.org/abs/quant-ph/0109137 target=_blank>coupling (fermions) versus de-coupled (bosons)</a>
-principle.</p>
-<p>Even more tantalising, from their CQG theory,
+principle.</p><p>Even more tantalising, from their CQG theory,
 <a href=https://link.springer.com/article/10.1007/s10773-013-1651-y target=_blank>Santamato and de Martini (here)</a>
 arrive at a similar result to O&rsquo;Hara, which further suggests
 that EPR entanglement is intimately related to spin&ndash;statistics.
@@ -309,136 +163,102 @@ O&rsquo;Hara also wrote a couple of other nice papers on this approach to spin&n
 statistics
 <a href=https://arxiv.org/pdf/quant-ph/0310016 target=_blank>here</a>
 and <a href=https://arxiv.org/pdf/hep-th/9701089 target=_blank>here relating spin-statistics
-to baryonic structure.</a>
-</p>
-<p>Note the property that O&rsquo;Hara refers to as <em>isotropically spin&ndash;correlated</em> is
+to baryonic structure.</a></p><p>Note the property that O&rsquo;Hara refers to as <em>isotropically spin&ndash;correlated</em> is
 basically the assumption in Bell EPR experiments for spins, and is guaranteed in
 T4G theory from ER=EPR. (No matter which direction you measure the spin, the Bell
 pair will be spin correlated.) It is the key property O&rsquo;Hara uses for his
-analysis of spin&ndash;statistics.</p>
-<p>For the case of spin-3/2 baryons, we have <em>possibly</em> three spin correlated 4-
+analysis of spin&ndash;statistics.</p><p>For the case of spin-3/2 baryons, we have <em>possibly</em> three spin correlated 4-
 geons, and we get O&rsquo;Hara&rsquo;s coupling principle by Wigner&rsquo;s version of monogamy of
 entanglement. This possibility turns out to be impossible. O&rsquo;Hara&rsquo;s coupling
-principle is: <em>Isotropically spin-correlated particles must occur in <strong>pairs</strong>.</em></p>
-<p>O&rsquo;Hara then derives the theorem: <em>A sufficient condition for a system of
+principle is: <em>Isotropically spin-correlated particles must occur in <strong>pairs</strong>.</em></p><p>O&rsquo;Hara then derives the theorem: <em>A sufficient condition for a system of
 $n$ indistinguishable particles to exhibit Fermi&ndash;Dirac statistics is that it
-contain spin-coupled particles.</em></p>
-<p>Which he notes is the Pauli Exclusion Principle. Which is pretty slick.</p>
-<p>Well this is all fascinating!</p>
-<p>How does it square up with T4G?</p>
-<p>I think it is pretty obvious. O&rsquo;Hara&rsquo;s approach can probably be reinterpreted
+contain spin-coupled particles.</em></p><p>Which he notes is the Pauli Exclusion Principle. Which is pretty slick.</p><p>Well this is all fascinating!</p><p>How does it square up with T4G?</p><p>I think it is pretty obvious. O&rsquo;Hara&rsquo;s approach can probably be reinterpreted
 using ER=EPR, the foundation of T4G theory.
 <em>The wormhole topology of 4-geons is the coupling we seek.</em>
 Unless Obi Wan Kenobi just made me write that I think it&rsquo;s a good idea to
-explore, worth a PhD thesis or half.</p>
-<h3 id=not-bohmian-rather-edts><a class=anchor href=#not-bohmian-rather-edts title="Anchor for: Not Bohmian, rather &ldquo;EDTS&rdquo;."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Not Bohmian, rather &ldquo;EDTS&rdquo;</h3>
-<p>(Polemical warning ahead.) The paper by Somarooo, and several by
+explore, worth a PhD thesis or half.</p><h3 id=not-bohmian-rather-edts><a class=anchor href=#not-bohmian-rather-edts title='Anchor for: Not Bohmian, rather &ldquo;EDTS&rdquo;.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Not Bohmian, rather &ldquo;EDTS&rdquo;</h3><p>(Polemical warning ahead.) The paper by Somarooo, and several by
 David Hestenes, use the STA but also tack-on the idea of Bohmian mechanics.
-I don&rsquo;t like that angle.</p>
-<p>You know that stuff is Hidden Variables. No matter what mathematical framework
+I don&rsquo;t like that angle.</p><p>You know that stuff is Hidden Variables. No matter what mathematical framework
 you use, Hilbert space or the STA, all Bohmian treatments have got to have HV&rsquo;s.
 As a realist I f-ing hate hidden variables. The weird thing is Bohmian theorists
 think <em>they&rsquo;re</em> the realists. I guess that&rsquo;s semantics. What I don&rsquo;t like is the
 whole idea something is hidden. It&rsquo;s no better than the Many Worlds view.
-(Which is not a <em>view</em> &mdash; what is it those MWI theorists are &ldquo;viewing&rdquo; exactly?)</p>
-<p>The T4G wormhole gas and 4-geon postulates are not HV theories, they are
+(Which is not a <em>view</em> &mdash; what is it those MWI theorists are &ldquo;viewing&rdquo; exactly?)</p><p>The T4G wormhole gas and 4-geon postulates are not HV theories, they are
 &ldquo;extremely difficult to see&rdquo; variable theories (EDTS). Like string/brane theory.
 Only string/brane theory variables only get you particle phenomenology, not
-quantum mechanics. T4G gets us both.</p>
-<p>For what it&rsquo;s worth, I think you can dimly see a connection.
+quantum mechanics. T4G gets us both.</p><p>For what it&rsquo;s worth, I think you can dimly see a connection.
 Take Santamato & de Martini again, with their conformal quantum geometry
 (CQG). This has &ldquo;internal coordinates&rdquo; which are a lot like wormhole variables,
 but &ldquo;very hidden&rdquo; so a lot like Bohmian mechanics. You can probably see where I
-am going. There are conceptual, if not mathematical, bridges here.</p>
-<p>I do not know of much theoretical physics that has used such conceptual bridging,
+am going. There are conceptual, if not mathematical, bridges here.</p><p>I do not know of much theoretical physics that has used such conceptual bridging,
 but Max Planck was doing this sort of thing. Isaac Newton had a bridge to build
 from spirits or angels as the action-at-a-distance forces, but he never built
 those bridges out to get to general relativity, how could he? Not enough
-scaffolding, so not to blame.</p>
-<h3 id=a-surprise-for-later><a class=anchor href=#a-surprise-for-later title="Anchor for: A surprise for later."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A surprise for later</h3>
-<p>I saw how the ER=EPR paradigm, T4G theory and O&rsquo;Hara&rsquo;s approach to the Pauli
+scaffolding, so not to blame.</p><h3 id=a-surprise-for-later><a class=anchor href=#a-surprise-for-later title='Anchor for: A surprise for later.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A surprise for later</h3><p>I saw how the ER=EPR paradigm, T4G theory and O&rsquo;Hara&rsquo;s approach to the Pauli
 exclusion principle and coupling (aka. entanglement) can be synthesized to give
 an account for &ldquo;quantum&rdquo; interference. Only now it&rsquo;s entirely
 general relativity + CTCs. So GR$\Rightarrow$ QM is a thing, over and above what
-Lenny Susskind thinks.</p>
-<p>Or as I guessed in the earlier chapters, (GR+CTCs)$\Rightarrow$QM.</p>
-<p>You can find$^\ast$ a short write-up on all this in the
+Lenny Susskind thinks.</p><p>Or as I guessed in the earlier chapters, (GR+CTCs)$\Rightarrow$QM.</p><p>You can find$^\ast$ a short write-up on all this in the
 <a href=/t4gu/theory>Theory</a>
 pages in the articles
 <a href=/t4gu/theory/10_pauli_ex_entanglement>Pauli Exclusion from Entanglement</a>
 ,
 and
-<a href=/t4gu/theory/11_interference_from_entanglement>Interference from Entanglement.</a>
-</p>
-<p>$^\ast$ You cannot find these articles finished just yet (c. November 2022),
+<a href=/t4gu/theory/11_interference_from_entanglement>Interference from Entanglement.</a></p><p>$^\ast$ You cannot find these articles finished just yet (c. November 2022),
 but they will be posted soon.
 My paid job is not to do all this.
 But you can donate if you like to move my work more to T4GU.
 Every $10 NZD you donate I will work one hour on T4GU that I otherwise would
 not. Not because you donate, but because I want to, but also because you donated.
-There&rsquo;s no wage slavery or exploitation here.</p>
-<p>Not to scare you, but the theory pages are much longer, necessarily,
+There&rsquo;s no wage slavery or exploitation here.</p><p>Not to scare you, but the theory pages are much longer, necessarily,
 since we go through more mathematical details. But wherever possible I try to
 replace mathematics with English language.
 I can do this when I see a derivation in an arXiv paper that I can just
 reference. So my theory pages should not hurt your brain too much.
 Thus when I say &ldquo;short write-up&rdquo; I mean it should be more or less complete,
 but to see how the articles are complete you have to imagine inserting all
-the references!</p>
-<p>I also have teed up doing O&rsquo;Hara&rsquo;s stuff all over again but in the geometric
+the references!</p><p>I also have teed up doing O&rsquo;Hara&rsquo;s stuff all over again but in the geometric
 algebra, the STA of Hestenes, Doran and Lasenby.
 That sort of thing is fun to do, perversely, since you know you are not doing
 much that is original, but it does provide a few original insights.
-That&rsquo;s because we eradicate the crud of Hilbert spaces and use real geometry.</p>
-<p>Any time you want a Hilbert space you can always build one back from the STA
+That&rsquo;s because we eradicate the crud of Hilbert spaces and use real geometry.</p><p>Any time you want a Hilbert space you can always build one back from the STA
 geometric algebra, since several vector space structures exist within the full
 16-dimensional graded STA.
 &ldquo;All&rdquo; that QM does is employ the unitary operators for the description of
 measurements, and Hamiltonian time evolution, which is just using a ray
-representation on the spacetime algebra.</p>
-<p>And lastly, I think the phases for the ray representations are all explained by
+representation on the spacetime algebra.</p><p>And lastly, I think the phases for the ray representations are all explained by
 the wormhole topology.
-But there is a bit of work to do to rigorously prove all these conjectures.</p>
-<h2 id=microstructure-and-the-block-universe><a class=anchor href=#microstructure-and-the-block-universe title="Anchor for: Microstructure and the Block Universe."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Microstructure and the Block Universe</h2>
-<p>Back a few sections I mentioned that, &ldquo;There is no reason Pauli exclusion
+But there is a bit of work to do to rigorously prove all these conjectures.</p><h2 id=microstructure-and-the-block-universe><a class=anchor href=#microstructure-and-the-block-universe title='Anchor for: Microstructure and the Block Universe.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Microstructure and the Block Universe</h2><p>Back a few sections I mentioned that, &ldquo;There is no reason Pauli exclusion
 absolutely applies to the Planck scale microstructure.&rdquo; I should elaborate on
-this.</p>
-<p>In fact PEP proper is <em>naïvely inconsistent</em> with the path integral formulation
+this.</p><p>In fact PEP proper is <em>naïvely inconsistent</em> with the path integral formulation
 of QM &mdash; in the latter formulation of QM the fermion can be anywhere in
 spacetime, with some probability amplitude. The PEP says only that in a time-
 independent eigenstate the fermionic energy eigenstates cannot have occupancy
-number greater than 2.</p>
-<p>This helps explain (or &ldquo;lets you see&rdquo;) how something very weird like Pauli
+number greater than 2.</p><p>This helps explain (or &ldquo;lets you see&rdquo;) how something very weird like Pauli
 Exclusion can arise in classical GR but with non-trivial spacetime topology.
 In the presence of closed timelike curves (CTCs) on the Planck scale, matter in
 spacetime has an induced collective wave-like behaviour, or, if your prefer, an
 induced elliptic stationary state 4D spacetime structure.
 The solution to any partial differential geometry connecting boundaries of any
-given spacetime cobordism are pseudo-elliptical in T4G theory.</p>
-<p>That just means they mimic stationary state solutions to pseudo-elliptic PDEs.</p>
-<p>Recall here your PDE courses.
+given spacetime cobordism are pseudo-elliptical in T4G theory.</p><p>That just means they mimic stationary state solutions to pseudo-elliptic PDEs.</p><p>Recall here your PDE courses.
 Most systems governed by time evolution differential equations will begenerically
 hyperbolic systems of equations. Elliptic equations occur in stationary systems
 with boundary conditions rather than initial conditions, such as structural
-engineering stress analysis, or in static electrodynamics.</p>
-<p>In a whole spacetime approach to physics the governing equations for a 4D
+engineering stress analysis, or in static electrodynamics.</p><p>In a whole spacetime approach to physics the governing equations for a 4D
 spacetime volume will be a lot like elliptic equations if we stipulate the past
 and future (or the present) measurement boundaries are fixed.
 Due to the Lorentzian metric, in a relativistic solution, the equations will
 however again become hyperbolic. This is why I say they are &ldquo;pseudo-elliptic&rdquo;.
 They would be elliptical equation solutions in Euclidean spacetime.
-(Or one can do a Wick rotation to imaginary time.)</p>
-<p>One might doubt this, but really it cannot be any other way without admitting
+(Or one can do a Wick rotation to imaginary time.)</p><p>One might doubt this, but really it cannot be any other way without admitting
 that our spacetime is wildly unstable and history is changing all the time (there
 is no history). Either the cobordism between spacetime measurement boundaries is
-well-defined, or it is in constant atemporal flux.</p>
-<p><strong>Aside:</strong> at times in my youth I did consider the atemporal flux view of the
+well-defined, or it is in constant atemporal flux.</p><p><strong>Aside:</strong> at times in my youth I did consider the atemporal flux view of the
 Block Universe. This is now what George Ellis is developing, which he terms the
 <a href=https://arxiv.org/pdf/0912.0808 target=_blank>Crystallizing Block Universe.</a>
 I cannot subscribe to that theory, it is just too bizarre.
 I find T4G more conservative and natural, but that&rsquo;s just my taste. Perhaps Ellis
-is right.</p>
-<p>For what it&rsquo;s worth, I think Ellis' CBU is not altogether radically different
+is right.</p><p>For what it&rsquo;s worth, I think Ellis&rsquo; CBU is not altogether radically different
 from one way of viewing T4G theory.
 If one insists upon a time-oriented description of our universe, then T4G is
 practically indistinguishable from the CBU description, since &ldquo;the future&rdquo; is
@@ -447,46 +267,8 @@ T4G however also says we are free to take an atemporal perspective, non-time
 oriented, in which case an entire Einstein Block Universe (EBU) is recovered.
 To know about the EBU is of course something like being a god.
 It&rsquo;s not physics as we know it, but if we were minimally god-like the EBU is what
-we&rsquo;d at a minimum perceive facts about.</p>
-<p>Also, people talk about the Block Universe or EBU as if it were physics.
+we&rsquo;d at a minimum perceive facts about.</p><p>Also, people talk about the Block Universe or EBU as if it were physics.
 To me it&rsquo;s never been physics. It is metaphysics. But the most minimal
-metaphysics we know of, for sure, hence the closest to physics.</p>
-<p>I did not envisage an article on Pauli exclusion to end with the Block Universe,
-but there you have it! T4G theory connects or welds a lot of physics together.</p>
-<p><a href=../011_gravitons/>Next chapter (Gravitons)</a>
-<br>
-<a href=../009_wormholes>Previous chapter (Wormholes)</a>
-<br>
-<a href=../>Back to Philosophy TOC</a>
-</p>
-<table style="border-collapse:collapse;border=0">
-<col span=1 style=width:30%>
-<col span=1 style=width:20%>
-<col span=1 style=width:30%>
-<tr style="border:1px solid color:#0f0f0f">
-<td style="border:1px solid color:#0f0f0f"><a href=../009_wormholes>Previous Chapter</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Theory</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../011_gravitons>Next chapter</a></td>
-</tr>
-<tr style="border:1px solid color:#0f0f0f">
-<td style="border:1px solid color:#0f0f0f"><a href=../009_wormholes>Wormholes</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../011_gravitons>Gravitons</a></td>
-</tr>
-</table>
-</article>
-</main>
-</div>
-<footer>
-<div class=req-js>
-<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
-</div>
-<noscript>
-<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
-</noscript>
-</footer>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
-<script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
-<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
-</body>
-</html>
+metaphysics we know of, for sure, hence the closest to physics.</p><p>I did not envisage an article on Pauli exclusion to end with the Block Universe,
+but there you have it! T4G theory connects or welds a lot of physics together.</p><p><a href=../011_gravitons/>Next chapter (Gravitons)</a><br><a href=../009_wormholes>Previous chapter (Wormholes)</a><br><a href=../>Back to Philosophy TOC</a></p><table style="border-collapse:collapse;border=0"><col span=1 style=width:30%><col span=1 style=width:20%><col span=1 style=width:30%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../009_wormholes>Previous Chapter</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Theory</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../011_gravitons>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../009_wormholes>Wormholes</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../011_gravitons>Gravitons</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.4268ce940bc6faa510d7b638acc3f08a63501d9504dd3155bfc48d6838ade320.js integrity="sha256-QmjOlAvG+qUQ17Y4rMPwimNQHZUE3TFVv8SNaDit4yA=" crossorigin=anonymous></script>
+<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>

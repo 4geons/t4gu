@@ -1,109 +1,5 @@
-<!doctype html><html lang=en data-mode=dark>
-<head prefix="og: http://ogp.me/ns#">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.92.2">
-<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
-<title>Pauli Exclusion from Entanglement | Topological 4-Geon Theory Unchained</title>
-<meta name=author content="Bijou M. Smith">
-<meta name=robots content="index follow">
-<link rel=canonical href=https://4geons.github.io/t4gu/theory/007_pauli_ex_entanglement/>
-<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
-<meta property="og:title" content="Pauli Exclusion from Entanglement">
-<meta property="og:url" content="https://4geons.github.io/t4gu/theory/007_pauli_ex_entanglement/">
-<meta property="og:type" content="website">
-<meta name=twitter:dnt content="on">
-<meta name=theme-color content="#222">
-<meta name=apple-mobile-web-app-capable content="yes">
-<meta name=apple-mobile-web-app-status-bar-style content="default">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://4geons.github.io/t4gu/","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
-<noscript>
-<meta name=theme-color content="#26A269">
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
-</noscript>
-<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<script src=https://4geons.github.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
-</head>
-<body>
-<header>
-<a href=/t4gu> <img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
-<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
-<nav aria-label="Main menu.">
-<ul>
-<li>
-<a class=btn href=/t4gu/t4gu/>Home</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
-</li>
-</ul>
-</nav>
-</header>
-<div class=filler>
-<main>
-<article>
-<header>
-<h1>Pauli Exclusion from Entanglement</h1>
-<p>
-Published on <time datetime=2016-10-30>2016-10-30</time>
-</p>
-</header>
-<details class=toc open>
-<summary class=outline-dashed>
-Contents
-</summary>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#isotropically-spin-coupled--entangled>Isotropically spin-coupled = entangled</a>
-<ul>
-<li><a href=#a-bit-of-ontology>A bit of ontology</a></li>
-</ul>
-</li>
-<li><a href=#spin-states>Spin states</a>
-<ul>
-<li><a href=#what-exactly-is-rotationally-invariant>What exactly is rotationally invariant?</a></li>
-<li><a href=#some-notation>Some notation</a></li>
-</ul>
-</li>
-<li><a href=#spin-coupled-states>Spin-Coupled States</a>
-<ul>
-<li><a href=#the-general-n-particle-case>The general $n$ particle case</a></li>
-<li><a href=#notation-for-tensor-spaces>Notation for tensor spaces</a></li>
-<li><a href=#forbidden-states>Forbidden states</a></li>
-</ul>
-</li>
-<li><a href=#theorem-1>Monogamy of entanglement </a>
-<ul>
-<li><a href=#corollary-spin-singlet-isc-states-obey-fermi-dirac-statistics>Corollary: spin singlet ISC states obey Fermi-Dirac statistics</a></li>
-</ul>
-</li>
-<li><a href=#the-pauli-exclusion-principle>The Pauli Exclusion Principle</a></li>
-<li><a href=#what-about-bose-einstein>What about Bose-Einstein?</a></li>
-<li><a href=#caveats>Caveats</a></li>
-</ul>
-</nav>
-</details>
-<p>The necessary background for this chapter is a course on advanced quantum mechanics.
+<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.101.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Pauli Exclusion from Entanglement | Topological 4-Geon Theory Unchained</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://4geons.github.io/t4gu/theory/007_pauli_ex_entanglement/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Pauli Exclusion from Entanglement"><meta property="og:url" content="https://4geons.github.io/t4gu/theory/007_pauli_ex_entanglement/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://4geons.github.io/t4gu/","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://4geons.github.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
+<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Pauli Exclusion from Entanglement</h1><p>Published on <time datetime=2016-10-30>2016-10-30</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#isotropically-spin-coupled--entangled>Isotropically spin-coupled = entangled</a><ul><li><a href=#a-bit-of-ontology>A bit of ontology</a></li></ul></li><li><a href=#spin-states>Spin states</a><ul><li><a href=#what-exactly-is-rotationally-invariant>What exactly is rotationally invariant?</a></li><li><a href=#some-notation>Some notation</a></li></ul></li><li><a href=#spin-coupled-states>Spin-Coupled States</a><ul><li><a href=#the-general-n-particle-case>The general $n$ particle case</a></li><li><a href=#notation-for-tensor-spaces>Notation for tensor spaces</a></li><li><a href=#forbidden-states>Forbidden states</a></li></ul></li><li><a href=#theorem-1>Monogamy of entanglement</a><ul><li><a href=#corollary-spin-singlet-isc-states-obey-fermi-dirac-statistics>Corollary: spin singlet ISC states obey Fermi-Dirac statistics</a></li></ul></li><li><a href=#the-pauli-exclusion-principle>The Pauli Exclusion Principle</a></li><li><a href=#what-about-bose-einstein>What about Bose-Einstein?</a></li><li><a href=#caveats>Caveats</a></li></ul></nav></details><p>The necessary background for this chapter is a course on advanced quantum mechanics.
 But you do not need the whole course.
 Just the foundations and up to treatments of Hilbert spaces and spin states is
 sufficient, which is mostly logic and linear algebra, no dynamics needed.
@@ -117,18 +13,14 @@ and <em>then</em> you&rsquo;ll be able
 to follow the &mdash; in many ways nicer &mdash; account of Pauli exclusion or
 spin&ndash;statistics in the <a href=../008_pauli_in_ga>next chapter,</a>
 when we repeat this current chapter
-using geometric algebra.</p>
-<p>This chapter is better done using orthodox QM. I&rsquo;m not yet sure why this comes
+using geometric algebra.</p><p>This chapter is better done using orthodox QM. I&rsquo;m not yet sure why this comes
 out pedagogically nicer, it just does, but I think that&rsquo;s a failure of mine to
 motivate O&rsquo;Hara&rsquo;s spin&ndash;coupling principle starting with geometric algebra.
 But obviously we could do it that way. Maybe it&rsquo;s just because I found it
 emotionally difficult not to <em>credit O&rsquo;Hara first</em>. In my mind he&rsquo;s as important
-as Hestenes, Lasenby & Doran, just as important, and even more under-appreciated.</p>
-<p>((This is a lovely thing about T4G theory, I find accidentally I am acknowledging
+as Hestenes, Lasenby & Doran, just as important, and even more under-appreciated.</p><p>((This is a lovely thing about T4G theory, I find accidentally I am acknowledging
 quite a few unsung heroes of theoretical physics. As well as the odd giant.
-And we&rsquo;ll not be stopping at Lenny, Juan, HLD and O&rsquo;Hara!))</p>
-<h2 id=isotropically-spin-coupled--entangled><a class=anchor href=#isotropically-spin-coupled--entangled title="Anchor for: Isotropically spin-coupled = entangled."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Isotropically spin-coupled = entangled</h2>
-<p>In T4G theory all 4-geons can be entangled by being connected by a minimal
+And we&rsquo;ll not be stopping at Lenny, Juan, HLD and O&rsquo;Hara!))</p><h2 id=isotropically-spin-coupled--entangled><a class=anchor href=#isotropically-spin-coupled--entangled title='Anchor for: Isotropically spin-coupled = entangled.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Isotropically spin-coupled = entangled</h2><p>In T4G theory all 4-geons can be entangled by being connected by a minimal
 (ER=EPR) wormhole bridge.
 (Got a problem with that? Then take it up with
 <a href=https://arxiv.org/abs/1306.0533 target=_blank>Maldacena</a>
@@ -136,51 +28,38 @@ and
 <a href=https://arxiv.org/pdf/1412.8483 target=_blank>Susskind,</a>
 and
 <a href=https://arxiv.org/pdf/1708.03040 target=_blank>GR=QM</a>
-)</p>
-<p>We now <em>repeat</em> <a href=https://arxiv.org/abs/quant-ph/0109137 target=_blank>Paul O'Hara's work,</a>
+)</p><p>We now <em>repeat</em> <a href=https://arxiv.org/abs/quant-ph/0109137 target=_blank>Paul O'Hara's work,</a>
 for pedagogical purposes.
-But now with the insight that the spin-coupling is actually an ER bridge.</p>
-<p>No geometrodynamics are assumed, so we know this is all consistent with T4G
+But now with the insight that the spin-coupling is actually an ER bridge.</p><p>No geometrodynamics are assumed, so we know this is all consistent with T4G
 and ER=EPR.
-We do not yet know if geometrodynamical implications will help to refute T4G theory.</p>
-<p>What does this mean for theory development?</p>
-<p>It means that T4G can explain the Pauli Exclusion Principle.
+We do not yet know if geometrodynamical implications will help to refute T4G theory.</p><p>What does this mean for theory development?</p><p>It means that T4G can explain the Pauli Exclusion Principle.
 That is, if you like to think of T4G as a good model for fundamental physics,
 then <em>at least</em> you get Pauli exclusion right.
-&ldquo;At least,&rdquo; ok? This is not total confirmation of T4G theory.</p>
-<h3 id=a-bit-of-ontology><a class=anchor href=#a-bit-of-ontology title="Anchor for: A bit of ontology."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A bit of ontology</h3>
-<p>Next up we are going to define entanglement of spins states (a specific type
+&ldquo;At least,&rdquo; ok? This is not total confirmation of T4G theory.</p><h3 id=a-bit-of-ontology><a class=anchor href=#a-bit-of-ontology title='Anchor for: A bit of ontology.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A bit of ontology</h3><p>Next up we are going to define entanglement of spins states (a specific type
 of entanglement) using <a href=https://arxiv.org/abs/quant-ph/0109137 target=_blank>O'Hara's</a>
 concept of <em>isotropic spin-coupling</em> (ISC).
 We then follow O&rsquo;Hara almost verbatim, to show ISC states can only exist in
 <strong><em>pairs</em></strong>.
 From this almost trivially (a few pages of mathematical physics, just linear
-algebra mostly) the Pauli Exclusion Principle will follow.</p>
-<p>All of O&rsquo;Hara&rsquo;s work presumes the orthodox QM postulates.
+algebra mostly) the Pauli Exclusion Principle will follow.</p><p>All of O&rsquo;Hara&rsquo;s work presumes the orthodox QM postulates.
 We however must obey only the T4G postulates. It turns out we can.
 But this means a shift in ontological perspective.
 This will have geometrodynamical implications that we do not fully understand
 yet, so it might fail ontologically.
-But in-principle we will have derived the PEP from T4G theory.</p>
-<p>If the T4G ontology fails for other reasons, we have still derived the PEP from entanglement.
+But in-principle we will have derived the PEP from T4G theory.</p><p>If the T4G ontology fails for other reasons, we have still derived the PEP from entanglement.
 All that this failure of the geometrodynamics would imply, if indeed it fails,
 is that we still have no ontology for &ldquo;quantum&rdquo; entanglement.
 However, Maldacena and Susskind&rsquo;s ER=EPR conjectures (because now there are
 <a href=https://arxiv.org/pdf/1412.8483 target=_blank>several of them</a>
 ) suggest the basic T4G ontology
-looks pretty good (a non-scientific statement, but take it for what it is.)</p>
-<p>Our aforementioned ontological shift is to note that ISC states are 4-geons
-connected by a minimal spacetime wormhole bridge, an ER bridge.</p>
-<p>As just noted, this is not an awfully big perspective shift for the present purposes,
+looks pretty good (a non-scientific statement, but take it for what it is.)</p><p>Our aforementioned ontological shift is to note that ISC states are 4-geons
+connected by a minimal spacetime wormhole bridge, an ER bridge.</p><p>As just noted, this is not an awfully big perspective shift for the present purposes,
 because no geometrodynamical implications are invoked in the derivation of the
 Pauli exclusion principle.
 All it amounts to is giving the reader a mental model of what an ISC state looks
 like if you happened to have a Planck microscope.
 The only difference with O&rsquo;Hara&rsquo;s paper is thus that he gives no mental
-<strong><a href=https://arxiv.org/abs/0908.1787 target=_blank>pictorial model.</a>
-</strong> See <a href=https://arxiv.org/abs/0908.1787 target=_blank>Bob Cooke's stuff.</a>
-</p>
-<p>That&rsquo;s the preliminaries, now we have to do the basic mathematics.
+<strong><a href=https://arxiv.org/abs/0908.1787 target=_blank>pictorial model.</a></strong> See <a href=https://arxiv.org/abs/0908.1787 target=_blank>Bob Cooke's stuff.</a></p><p>That&rsquo;s the preliminaries, now we have to do the basic mathematics.
 It ain&rsquo;t too hard, thanks to Paul O&rsquo;Hara having done it for us,
 all we at T4GU need is a nice exposition chapter.
 The philosophy to aid understanding will be continued at the end and at the
@@ -188,93 +67,67 @@ beginning of the <a href=../008_pauli_in_ga>next chapter</a>
 when we repeat this using the
 <em>real</em> geometric algebra &mdash; to &ldquo;prove&rdquo; it&rsquo;s got nothing to do with the
 axioms of Hilbert space quantum mechanics. It&rsquo;s all classical geometry,
-only with non-trivial spacetime topology.</p>
-<p>Who would&rsquo;ve thought it could be so simple, huh?
+only with non-trivial spacetime topology.</p><p>Who would&rsquo;ve thought it could be so simple, huh?
 Although, the $\mathcal{GA}$ version we&rsquo;ll do in the next chapter looks a
 bit nastier, I have to admit. But I think that&rsquo;s only because of the
-unfamiliarity with GA &mdash; we were not taught GA from kindergarten.</p>
-<h2 id=spin-states><a class=anchor href=#spin-states title="Anchor for: Spin states."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Spin states</h2>
-<p>We&rsquo;ll introduce some notation for a simple system of $n$ particles,
+unfamiliarity with GA &mdash; we were not taught GA from kindergarten.</p><h2 id=spin-states><a class=anchor href=#spin-states title='Anchor for: Spin states.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Spin states</h2><p>We&rsquo;ll introduce some notation for a simple system of $n$ particles,
 together with a Stern-Gerlach type of apparatus, which means we can ignore most
 of the information and focus only on the component part of the wave-function
-for this type of spin measurement.</p>
-<p>A general $n$-geon wave-function will be denoted,
+for this type of spin measurement.</p><p>A general $n$-geon wave-function will be denoted,
 $$
 |\psi\rangle = |\psi(\lambda_1, \lambda_2,\ldots \lambda_n)\rangle
 $$
 where the parameters $\lambda_i$ are whatever we need to specify states w.r.t.
 to possible measurement observables. In our case this could be position
 or momentum as well as spin orientation. But we&rsquo;re going to be mostly concerned
-just with the spin.</p>
-<p>What is &ldquo;spin&rdquo;?</p>
-<p>In this context all it means is deflection &ldquo;up&rdquo; or &ldquo;down&rdquo; by the Stern-Gerlach
+just with the spin.</p><p>What is &ldquo;spin&rdquo;?</p><p>In this context all it means is deflection &ldquo;up&rdquo; or &ldquo;down&rdquo; by the Stern-Gerlach
 apparatus.
-We do not need it to mean much more, except for one critical thing:</p>
-<blockquote>
-<p>the spin state is rotationally invariant.</p>
-</blockquote>
-<p>This refers to abstract rotation in the Hilbert space $H_1\otimes\ldots \otimes H_n$,
-not in real Euclidean space.</p>
-<p>But <em>also</em> in <em>real</em> space if we rotate the whole experiment around in space,
+We do not need it to mean much more, except for one critical thing:</p><blockquote><p>the spin state is rotationally invariant.</p></blockquote><p>This refers to abstract rotation in the Hilbert space $H_1\otimes\ldots \otimes H_n$,
+not in real Euclidean space.</p><p>But <em>also</em> in <em>real</em> space if we rotate the whole experiment around in space,
 including the geon, we&rsquo;ll get the same measurement outcomes too
 (statistically of course, since we&rsquo;re doing QM not CM).
 That is, the amplitudes of the wave-function remain invariant upon a rotation
 of the system.
-But the same applies if we rotate the Hilbert space states around &ldquo;internally&rdquo;.</p>
-<p>Abstractly, an &ldquo;internal&rdquo; rotation on particle $i$ is a result of applying the operator
+But the same applies if we rotate the Hilbert space states around &ldquo;internally&rdquo;.</p><p>Abstractly, an &ldquo;internal&rdquo; rotation on particle $i$ is a result of applying the operator
 $R_i(\phi)$, and the same on particle $j$ is $R_j(\phi)$, then
 $$
 \text{Rotaional invariance:}\quad [R_i(\phi), R_j(\phi])] \circ |\psi\rangle = |\psi\rangle.
 $$
 Not all states of $n$-geons will be rotationally invariant like this,
-the rotationally invariant states are <em>special</em>.</p>
-<p>OK, so strictly speaking we aught to note that there was a tensor product
+the rotationally invariant states are <em>special</em>.</p><p>OK, so strictly speaking we aught to note that there was a tensor product
 Hilbert space $H_1\otimes H_2$ and so forth, and $\psi\in H_1\otimes H_2$ would
-be one of the $n=2$ geon systems. We cooked up only two electrons.</p>
-<p>But all that generalizes to $n>2$ multiparticle states, if we have the
+be one of the $n=2$ geon systems. We cooked up only two electrons.</p><p>But all that generalizes to $n>2$ multiparticle states, if we have the
 electricity to cook up $n$ electrons. Here electron$\leftrightarrow$geon.
-And suppose we do not lose track of any of the little buggers.</p>
-<p>The $k^\text{th}$ geon thus will result in some recorded spin on our S-G detector,
+And suppose we do not lose track of any of the little buggers.</p><p>The $k^\text{th}$ geon thus will result in some recorded spin on our S-G detector,
 but due to the way we set-up this type of experiment there&rsquo;re only two possible
 instrument readings, $\uparrow$ or $\downarrow$.
 So let the observed $k^\text{th}$ geon be in one of the reduced &ldquo;spin states&rdquo;
 denoted by
 $s_k(\theta) = |\pm\rangle$ where for later eye-ball convenience
-&lsquo;$+$'$=\uparrow$ and &lsquo;$-$'$=\downarrow$.</p>
-<p>$\theta$ is the angle of the Stern-Gerlach magnetic field orientation w.r.t. our
+&lsquo;$+$&rsquo;$=\uparrow$ and &lsquo;$-$&rsquo;$=\downarrow$.</p><p>$\theta$ is the angle of the Stern-Gerlach magnetic field orientation w.r.t. our
 lab technicians vertical $z$ (or $\boldsymbol{\sigma}_3$) axis.
-OK, so we can rotate our hulking big magnet around.</p>
-<h3 id=what-exactly-is-rotationally-invariant><a class=anchor href=#what-exactly-is-rotationally-invariant title="Anchor for: What exactly is rotationally invariant?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> What exactly is rotationally invariant?</h3>
-<p>I think it needs to be stressed that what is invariant above is the whole experiment.
+OK, so we can rotate our hulking big magnet around.</p><h3 id=what-exactly-is-rotationally-invariant><a class=anchor href=#what-exactly-is-rotationally-invariant title='Anchor for: What exactly is rotationally invariant?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>What exactly is rotationally invariant?</h3><p>I think it needs to be stressed that what is invariant above is the whole experiment.
 We cannot separate the state $|\psi\rangle$ from the measurement system,
 since it is in the basis we choose &mdash; by choice of measurement apparatus &mdash;
-that we are expanding $|\psi\rangle$.</p>
-<p>We chose the Hilbert space $H_1\otimes H_2$ to describe the system.
+that we are expanding $|\psi\rangle$.</p><p>We chose the Hilbert space $H_1\otimes H_2$ to describe the system.
 Now whether this is just &ldquo;the pair of electrons&rdquo; or the pair of geons,
 or &ldquo;geons + measurement apparatus&rdquo;
 is a fair point to quibble about. But instrumentally we cannot say it&rsquo;s
 &ldquo;only the electron&rdquo;. It makes no sense in QM to think of an isolated 4-geon,
-since we can only know there is a particle at all by interacting with it.</p>
-<p>Also, the fact the rotational invariance refers to the whole system,
+since we can only know there is a particle at all by interacting with it.</p><p>Also, the fact the rotational invariance refers to the whole system,
 characterized by the &ldquo;state vector&rdquo; $|\psi\rangle$ is clear enough from the
 description of &ldquo;rotation&rdquo; above. We rotated an object clearly <em>in the Hilbert space</em>
-not in real Euclidean or Minkowski spacetime.</p>
-<p>Obviously if we rotated <em>just</em> the 4-geon (electron) and <em>not</em> the magnetic field,
+not in real Euclidean or Minkowski spacetime.</p><p>Obviously if we rotated <em>just</em> the 4-geon (electron) and <em>not</em> the magnetic field,
 we&rsquo;d get a different system, <em>that</em> sort of space rotation would not be an invariant.
-Hope that is all clear.</p>
-<p>If you beg to differ, then <a href=https://ko-fi.com/achrononmaster/ target=_blank>donate</a>
-and let me know.</p>
-<h3 id=some-notation><a class=anchor href=#some-notation title="Anchor for: Some notation."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Some notation</h3>
-<p>I&rsquo;ll denote by $s^\perp_k(\theta)$ the spin state of the $k^\text{th}$ geon
-which is orthogonal to $s_k$.</p>
-<p>We do not know ahead of time whether $s_k(\theta)$ will turn out $+$ or $-$,
+Hope that is all clear.</p><p>If you beg to differ, then <a href=https://ko-fi.com/achrononmaster/ target=_blank>donate</a>
+and let me know.</p><h3 id=some-notation><a class=anchor href=#some-notation title='Anchor for: Some notation.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Some notation</h3><p>I&rsquo;ll denote by $s^\perp_k(\theta)$ the spin state of the $k^\text{th}$ geon
+which is orthogonal to $s_k$.</p><p>We do not know ahead of time whether $s_k(\theta)$ will turn out $+$ or $-$,
 only that by set-up it&rsquo;ll be one or the other. We <em>would</em> know the amplitude for
 each though, in an independent geon state, if we knew the geon was initially
 aligned at $\theta=0$ or $\theta=\pi$, since in those two special cases we&rsquo;d
 get with $P=1$ (for sure) the results $+$ and $-$ respectively.
 But we&rsquo;re going to be considering arbitrary angles for the magnetic field can
-be dialed up at will by the experimentalist.</p>
-<p>So, if the unknown spin of the geon was actually at some angle $\theta$ w.r.t
+be dialed up at will by the experimentalist.</p><p>So, if the unknown spin of the geon was actually at some angle $\theta$ w.r.t
 the magnetic field (which is in the $z$ direction) then it will have probability,
 $$
 \begin{array}{ll}
@@ -283,38 +136,24 @@ $$
 & P = \sin^2(\theta/2) \quad \text{for projecting to}\quad |-\rangle.
 &\end{array}
 $$
-We worked all that out in the previous chapter.</p>
-<h2 id=spin-coupled-states><a class=anchor href=#spin-coupled-states title="Anchor for: Spin-Coupled States."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Spin-Coupled States</h2>
-<p>Now we add a twist to the experiment. We cook up geons (electrons) that are
+We worked all that out in the previous chapter.</p><h2 id=spin-coupled-states><a class=anchor href=#spin-coupled-states title='Anchor for: Spin-Coupled States.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Spin-Coupled States</h2><p>Now we add a twist to the experiment. We cook up geons (electrons) that are
 maximally entangled. This means there are several EPR wormhole bridges
-connecting the geons, such that:</p>
-<blockquote>
-<p>If any one of the geons spin is measured, we will know the spins of all
-the $(n-1)$ others simultaneously. <br> <div style=text-align:center>(An <strong><em>ISC</em></strong> state.)</div></p>
-</blockquote>
-<p>And of course we&rsquo;ll imagine conducting all the $n$ measurements simultaneously,
-or as near to as can be humanely arranged.</p>
-<p>Such a batch of nicely cooked up geons are called an Isotropically Spin Coupled
+connecting the geons, such that:</p><blockquote><p>If any one of the geons spin is measured, we will know the spins of all
+the $(n-1)$ others simultaneously.<br><div style=text-align:center>(An <strong><em>ISC</em></strong> state.)</div></p></blockquote><p>And of course we&rsquo;ll imagine conducting all the $n$ measurements simultaneously,
+or as near to as can be humanely arranged.</p><p>Such a batch of nicely cooked up geons are called an Isotropically Spin Coupled
 system, or <strong><em>ISC</em></strong> state. The reason we can call this rotationally invariant
 system a single &ldquo;state&rdquo; is precisely because they&rsquo;re fully entangled or
 coupled by a sequence of wormhole bridges.
 We do not attempt to mentally picture this topology &mdash; partly because we&rsquo;ve
 read ahead a few paragraphs and know that there&rsquo;s only one sort of wormhole
-coupling that nature will allow.</p>
-<p>((Yeah, ok, I get it. I also hate pedagogy done by magical &ldquo;look-ahead&rdquo;. Deal with it.))</p>
-<p>This means we can write down a single wave-function in
-$H_1\otimes H_2\otimes\ldots \otimes H_n$ for this sort of fully entangled state.</p>
-<p>((And do not fear, in the next chapter we will show how to do this in the
+coupling that nature will allow.</p><p>((Yeah, ok, I get it. I also hate pedagogy done by magical &ldquo;look-ahead&rdquo;. Deal with it.))</p><p>This means we can write down a single wave-function in
+$H_1\otimes H_2\otimes\ldots \otimes H_n$ for this sort of fully entangled state.</p><p>((And do not fear, in the next chapter we will show how to do this in the
 real geometric algebra. Here we are bowing to the orthodoxy and doing it the
-old fashioned Hilbert space way. Tipping our hat to O&rsquo;Hara.))</p>
-<h3 id=the-general-n-particle-case><a class=anchor href=#the-general-n-particle-case title="Anchor for: The general $n$ particle case."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The general $n$ particle case</h3>
-<p>With respect to our Stern-Gerlahc experiment, the general state of interest is a linear combination of the $s$ and the orthogona $s^\perp$, which could be written:
+old fashioned Hilbert space way. Tipping our hat to O&rsquo;Hara.))</p><h3 id=the-general-n-particle-case><a class=anchor href=#the-general-n-particle-case title='Anchor for: The general $n$ particle case.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The general $n$ particle case</h3><p>With respect to our Stern-Gerlahc experiment, the general state of interest is a linear combination of the $s$ and the orthogona $s^\perp$, which could be written:
 $$
 |\psi\rangle = \tfrac{1}{\sqrt{2}}\left(s_1(\theta)\otimes s_2(\theta)\otimes\ldots \otimes s_n(\theta) \pm s^\perp_1(\theta)\otimes s^\perp_2(\theta)\otimes\ldots \otimes s^\perp_n(\theta)\right)
 $$
-OK, breath. We are not going to need all of that.</p>
-<h3 id=notation-for-tensor-spaces><a class=anchor href=#notation-for-tensor-spaces title="Anchor for: Notation for tensor spaces."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Notation for tensor spaces</h3>
-<p>If we have three 4-geons in respectively pure states $\uparrow$, $\downarrow$,
+OK, breath. We are not going to need all of that.</p><h3 id=notation-for-tensor-spaces><a class=anchor href=#notation-for-tensor-spaces title='Anchor for: Notation for tensor spaces.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Notation for tensor spaces</h3><p>If we have three 4-geons in respectively pure states $\uparrow$, $\downarrow$,
 $\uparrow$, we will denote the system of all three of them by,
 $$
 |\psi = |+\rangle \otimes |-\rangle \otimes |+\rangle
@@ -328,46 +167,33 @@ the lazy notation,
 $$
 |\psi = |{\scriptsize + - +}\rangle
 $$
-and similarly for any of the $2^8$ combinations of the spin measurement outcomes `$\pm$&rsquo;.</p>
-<p>And similarly for any whole number $n$ of geons: $|{\scriptsize + + - + - - - +}\rangle$
-for instance for one of the $n=8$ geon systems.</p>
-<p>In fact, I kind of like the lazy notation, it usefully encapsulates the mental
-concept that &ldquo;the system&rdquo; really is &ldquo;a whole&rdquo;.</p>
-<h3 id=forbidden-states><a class=anchor href=#forbidden-states title="Anchor for: Forbidden states."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Forbidden states</h3>
-<p>States where the spins of $(n-1)$ of the geons cannot be determined from a
+and similarly for any of the $2^8$ combinations of the spin measurement outcomes `$\pm$&rsquo;.</p><p>And similarly for any whole number $n$ of geons: $|{\scriptsize + + - + - - - +}\rangle$
+for instance for one of the $n=8$ geon systems.</p><p>In fact, I kind of like the lazy notation, it usefully encapsulates the mental
+concept that &ldquo;the system&rdquo; really is &ldquo;a whole&rdquo;.</p><h3 id=forbidden-states><a class=anchor href=#forbidden-states title='Anchor for: Forbidden states.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Forbidden states</h3><p>States where the spins of $(n-1)$ of the geons cannot be determined from a
 measurement of one of them, say $s_1$, or any one $s_k$, are forbidden
 from being &ldquo;<strong>ISC</strong>.&rdquo;
 They are <em>allowed</em> in nature, in fact they&rsquo;ll be the generic class of states,
-but if they occur then they&rsquo;re not maximally entangled.</p>
-<p>This just means if we had a magical Aasgardian cube that maximally coupled 4-geons,
+but if they occur then they&rsquo;re not maximally entangled.</p><p>This just means if we had a magical Aasgardian cube that maximally coupled 4-geons,
 then a state like,
 $$
 \psi = \tfrac{1}{\sqrt{2}} \left( |{\scriptsize + + -}\rangle + |{\scriptsize - - +}\rangle + |{\scriptsize + + +}\rangle \right)
 $$
-would be excluded from the cooking of this Aasgardian cube. Why?<br>
-Because, for instance,
+would be excluded from the cooking of this Aasgardian cube. Why?<br>Because, for instance,
 if we measured the first spin $s_1=|+\rangle$ then <em>either</em> or both of the
 first or last terms in this linear combination could get projected,
 so we&rsquo;d surely know $s_2=|+\rangle$ but we would have no clue what the
-third geon state $s_3$ was.</p>
-<p>That above state $\psi$ could come out of the cube of course,
+third geon state $s_3$ was.</p><p>That above state $\psi$ could come out of the cube of course,
 but then our cube would be broken,
-we&rsquo;d have to send it to the dwarf repair shop.</p>
-<h2 id=theorem-1><a class=anchor href=#theorem-1 title="Anchor for: Monogamy of entanglement ."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Monogamy of entanglement </h2>
-<p><strong>Theorem 1:</strong> ISC states can only exist in pairs.
-<a name=Thm-1></a></p>
-<p><strong>Proof:</strong> There is no proof. This is an empirical observation, we interrogate
-nature about it. Nature seems to hold to the bargain.</p>
-<p>However, given quantum mechanics has the necessary empirical backing,
+we&rsquo;d have to send it to the dwarf repair shop.</p><h2 id=theorem-1><a class=anchor href=#theorem-1 title='Anchor for: Monogamy of entanglement .'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Monogamy of entanglement</h2><p><strong>Theorem 1:</strong> ISC states can only exist in pairs.
+<a name=Thm-1></a></p><p><strong>Proof:</strong> There is no proof. This is an empirical observation, we interrogate
+nature about it. Nature seems to hold to the bargain.</p><p>However, given quantum mechanics has the necessary empirical backing,
 we can take the postulates as given and then show that a proof of the ISC theorem
 can be derived. I&rsquo;m still not calling this a proof because that does violence
 to the language of mathematics. I&rsquo;m only going to give a physicists hand-waving
 justification.
 But you can feel free to rigorously construct the mathematical proof in the
-privacy of your torture chamber if you like, don&rsquo;t let me stop you.</p>
-<p>To begin: we only need to consider the case of three coupled geons, because
-if three cannot be maximally coupled, then neither can there be $n$=4, 5, &mldr;</p>
-<p>Good. So the spin states of two coupled geons can have the form, <a name=Eq.1>(Eq.1)</a>
+privacy of your torture chamber if you like, don&rsquo;t let me stop you.</p><p>To begin: we only need to consider the case of three coupled geons, because
+if three cannot be maximally coupled, then neither can there be $n$=4, 5, &mldr;</p><p>Good. So the spin states of two coupled geons can have the form, <a name=Eq.1>(Eq.1)</a>
 $$
 \begin{array}{ll}
 & |\psi\rangle = \frac{1}{\sqrt{2}}\left( |{\scriptsize + +}\rangle + |{\scriptsize - -}\rangle \right) \\
@@ -378,24 +204,16 @@ $$
 those would be two of the allowed ISC states. The second of these is called the
 <strong><em>singlet state</em></strong>.
 The first of them is &ldquo;pseudo-singlet&rdquo; and is rarely observed in the wild,
-but it is a valid ISC state, and can be produced in quantum computers using Hadamard and CNOT gates.</p>
-<p>The minus sign in the singlet paired state ensures rotational invariance in the
-Hilbert space.</p>
-<p>The theorem is to prove these two are the only possible ISC states,
-for any number $n$ of coupled 4-geons.</p>
-<p>As noted above, we only need a proof for $n=3$, because if we cannot get
-three ISC coupled 4-geons, we&rsquo;ll never get 4 or 5 or more.</p>
-<p>The proof is by contradiction. <strong><em>Suppose we do have three ISC geons.</em></strong></p>
-<p>Then by appropriate use of Stern-Gelach polarizers we can conduct three simultaneous measurements using magnetic fields aligned by $\Delta \theta = \pi/3$ radians
+but it is a valid ISC state, and can be produced in quantum computers using Hadamard and CNOT gates.</p><p>The minus sign in the singlet paired state ensures rotational invariance in the
+Hilbert space.</p><p>The theorem is to prove these two are the only possible ISC states,
+for any number $n$ of coupled 4-geons.</p><p>As noted above, we only need a proof for $n=3$, because if we cannot get
+three ISC coupled 4-geons, we&rsquo;ll never get 4 or 5 or more.</p><p>The proof is by contradiction. <strong><em>Suppose we do have three ISC geons.</em></strong></p><p>Then by appropriate use of Stern-Gelach polarizers we can conduct three simultaneous measurements using magnetic fields aligned by $\Delta \theta = \pi/3$ radians
 angle spreads.
-As in the figure below:</p>
-<img src=../../images/Three_ISC_spin_measurements.png alt="Three geon spin measurement." style=width:600px;height:175px>
-<p>Denoting $\theta_{ij}$ the spread between the $i^\text{th}$ and $j^\text{th}$
+As in the figure below:</p><img src=../../images/Three_ISC_spin_measurements.png alt="Three geon spin measurement." style=width:600px;height:175px><p>Denoting $\theta_{ij}$ the spread between the $i^\text{th}$ and $j^\text{th}$
 electron&rsquo;s spins $\mathbf{S}$, and using the previous theory for the spin states,
 we can write down a few simple relations concerning the probabilities of
 observing various combinations of the spins, assuming they are ISC as our magic
-box specifies.</p>
-<p>For instance, if $S_i$ and $S_j$ are spread by $\theta_{ij}$ in the measurement plane,
+box specifies.</p><p>For instance, if $S_i$ and $S_j$ are spread by $\theta_{ij}$ in the measurement plane,
 or that&rsquo;s how they align relative to the magnetic fields, then, if
 $s_i = |+\rangle$ and $s_j=|-\rangle$ are the measurement outcomes,
 we&rsquo;d expect to see this with probability,
@@ -417,8 +235,7 @@ but with the same outcome for that pair in the sets just defined,
 we can see this inequality implies,
 $$
 \tfrac{1}{2}\sin^2(\theta_{ik}/2) \le \tfrac{1}{2}\left(\sin^2(\theta_{jk}/2) + \sin^2(\theta_{ij}/2) \right)
-$$</p>
-<p>Here is where we test the specific set-up in the above figure,
+$$</p><p>Here is where we test the specific set-up in the above figure,
 with the magnetic fields aligned at $\theta=\pi/3$ intervals.
 In this particular case we have $\theta_{ij}=\theta_{jk}=\pi/3$
 and $\theta_{ik}=2\pi/3$.
@@ -432,26 +249,20 @@ $$
 \tfrac{3}{4} \le \tfrac{1}{2}
 $$
 a contradiction. Therefore our supposition has to be false. Therefore
-ISC particles can only exist in pairs. Which completes the &ldquo;proof&rdquo;.</p>
-<p>The reason we know <em>paired</em> ISC states <em>can</em> occur is because we explicitly
+ISC particles can only exist in pairs. Which completes the &ldquo;proof&rdquo;.</p><p>The reason we know <em>paired</em> ISC states <em>can</em> occur is because we explicitly
 constructed two of them in <a href=#Eq.1>(Eq.1)</a>
-.</p>
-<p>For what it&rsquo;s worth, I think the above demonstration due to <a href=https://arxiv.org/pdf/quant-ph/0310016 target=_blank>Paul O'Hara</a>
+.</p><p>For what it&rsquo;s worth, I think the above demonstration due to <a href=https://arxiv.org/pdf/quant-ph/0310016 target=_blank>Paul O'Hara</a>
 is
 cleaner than the Wikipedia article on <a href=https://en.wikipedia.org/wiki/Monogamy_of_entanglement target=_blank>monogamy of entanglement,</a>
-but that too would do the job for us.</p>
-<h3 id=corollary-spin-singlet-isc-states-obey-fermi-dirac-statistics><a class=anchor href=#corollary-spin-singlet-isc-states-obey-fermi-dirac-statistics title="Anchor for: Corollary: spin singlet ISC states obey Fermi-Dirac statistics."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Corollary: spin singlet ISC states obey Fermi-Dirac statistics</h3>
-<p>We consider the second proper singlet state in <a href=#Eq.1>(Eq.1)</a>
+but that too would do the job for us.</p><h3 id=corollary-spin-singlet-isc-states-obey-fermi-dirac-statistics><a class=anchor href=#corollary-spin-singlet-isc-states-obey-fermi-dirac-statistics title='Anchor for: Corollary: spin singlet ISC states obey Fermi-Dirac statistics.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Corollary: spin singlet ISC states obey Fermi-Dirac statistics</h3><p>We consider the second proper singlet state in <a href=#Eq.1>(Eq.1)</a>
 .
 The argument for the pseudo-singlet state is the same only you imagine rotating
 the second magnetic field by $180^\circ$ every simulataneous measurement,
-so that with this one twist the $|{\scriptsize ++\rangle}$ outcome will become &ldquo;on paper&rdquo; $|{\scriptsize +-\rangle}$.</p>
-<p>For Fermi-Dirac statistics we require a parity transform flips the sign of the wave-function in real Euclidean position space. For this we need <em>all</em> the spatial variables $\lambda_i$ for each geon, not just the spin variables. So we require:
+so that with this one twist the $|{\scriptsize ++\rangle}$ outcome will become &ldquo;on paper&rdquo; $|{\scriptsize +-\rangle}$.</p><p>For Fermi-Dirac statistics we require a parity transform flips the sign of the wave-function in real Euclidean position space. For this we need <em>all</em> the spatial variables $\lambda_i$ for each geon, not just the spin variables. So we require:
 $$
 \text{Fermi-Dirac statistics:}\qquad \Pi_{ij} \left[ \psi(\lambda_i, \lambda_j)\right] = \psi(\lambda_j, \lambda_i)
 = -\psi(\lambda_i, \lambda_j).
-$$</p>
-<p>To prove the corollary then, start with the general two-particle ISC state:
+$$</p><p>To prove the corollary then, start with the general two-particle ISC state:
 <a name=Eq.2>(Eq.2)</a>
 $$
 \psi = |\lambda_1, \lambda_2\rangle = c_1|\lambda_1\rangle\otimes |\lambda_2\rangle +
@@ -489,47 +300,32 @@ yields:
 $$
 \psi(\lambda_1, \lambda_2) = - \psi(\lambda_2, \lambda_1)
 $$
-which is <em>the</em> Fermi-Dirac statistic. qed.</p>
-<h4 id=what-about-spin-12><a class=anchor href=#what-about-spin-12 title="Anchor for: What about spin $=1/2$?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> What about spin $=1/2$?</h4>
-<p>The above derivation shows obeying Fermi-Dirac statistics is not about
+which is <em>the</em> Fermi-Dirac statistic. qed.</p><h4 id=what-about-spin-12><a class=anchor href=#what-about-spin-12 title='Anchor for: What about spin $=1/2$?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>What about spin $=1/2$?</h4><p>The above derivation shows obeying Fermi-Dirac statistics is not about
 spin-${\scriptsize 1/2}$ geons.
 It is about isotropically spin-coupled geons, or ER=EPR entangled geons in the
-T4G language.</p>
-<blockquote>
-<p>For Pauli exclusion (Fermi-Dirac statistics) <strong><em>both</em></strong> the coupling and the
-rotational invariance are necessary.</p>
-</blockquote>
-<p>So, bosons can also be EPR wormhole coupled, but if not rotationally invariant
-we will not get the Fermi-Dirac statistics, we would get Bose-Einstein statistics.</p>
-<p>For example,
+T4G language.</p><blockquote><p>For Pauli exclusion (Fermi-Dirac statistics) <strong><em>both</em></strong> the coupling and the
+rotational invariance are necessary.</p></blockquote><p>So, bosons can also be EPR wormhole coupled, but if not rotationally invariant
+we will not get the Fermi-Dirac statistics, we would get Bose-Einstein statistics.</p><p>For example,
 $$
 |\psi\rangle = \tfrac{1}{\sqrt{2}}\left(|{\scriptsize + -}\rangle + |{\scriptsize - +}\rangle\right)
 $$
 is coupled, but not rotationally invariant. So would represent the state w.r.t
-spin measurements of a boson.</p>
-<p>Particles of spin-$n$ states can also be treated by the previous deduction of the
+spin measurements of a boson.</p><p>Particles of spin-$n$ states can also be treated by the previous deduction of the
 spin-statistics theorem. For example, there is a singlet state for spin$=2$,
 $$
 \psi = \tfrac{1}{\sqrt{5}}\left( |2,-2\rangle + |1,-1\rangle + |0,0\rangle - |-1,1\rangle - |2,2\rangle\right)
 $$
 which can be decomposed into two irreducible ISC forms plus a remaining
-$|0,0\rangle$ state that will exhibit Bose-Einstein statistics.</p>
-<p>The simplest geons that can be entangled isotropically are the elementary fermions,
+$|0,0\rangle$ state that will exhibit Bose-Einstein statistics.</p><p>The simplest geons that can be entangled isotropically are the elementary fermions,
 and we will see this in the next chapter when we repeat all this in the language of the
-geometric algebra or spacetime algebra (STA).</p>
-<p>The &ldquo;bosons&rdquo; do not have this property because they lack the rotational
+geometric algebra or spacetime algebra (STA).</p><p>The &ldquo;bosons&rdquo; do not have this property because they lack the rotational
 symmetry property required for this theorem. But this is hard to see in the
-orthodox QM context. It will be &ldquo;manifest&rdquo; in the STA treatment, next chapter.</p>
-<h4 id=the-tensor-product><a class=anchor href=#the-tensor-product title="Anchor for: The tensor product."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The tensor product</h4>
-<p>Just note that $a \otimes b$ is symmetric in the basis vectors,
-unlike the GA wedge product. So it is not the outer product.</p>
-<p>The tensor product has a different meaning, it is a product of entire spaces,
-so is used to describe a <em>composite</em> system, not a bivector or $k$-vector.</p>
-<p>Composition of vector spaces is a commutative operation, and so
+orthodox QM context. It will be &ldquo;manifest&rdquo; in the STA treatment, next chapter.</p><h4 id=the-tensor-product><a class=anchor href=#the-tensor-product title='Anchor for: The tensor product.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The tensor product</h4><p>Just note that $a \otimes b$ is symmetric in the basis vectors,
+unlike the GA wedge product. So it is not the outer product.</p><p>The tensor product has a different meaning, it is a product of entire spaces,
+so is used to describe a <em>composite</em> system, not a bivector or $k$-vector.</p><p>Composition of vector spaces is a commutative operation, and so
 $\vec{e}_1\otimes \vec{e}_2 = \vec{e}_2\otimes \vec{e}_1$.
 That&rsquo;s because, as we just said, those basis vectors &ldquo;live&rdquo; in totally
-different vector spaces.</p>
-<p>Thus, if we have a composite system of $n$-indistinguishable geons, a
+different vector spaces.</p><p>Thus, if we have a composite system of $n$-indistinguishable geons, a
 permutation of the &ldquo;quantum numbers&rdquo; $\lambda_i$ does not change the
 wave-function, provided we also permute the coefficients in the same way.
 So if we denote some arbitrary permutation of the label indices by the
@@ -541,12 +337,9 @@ $$
 \sum_P \varpi _P c_P \psi(\lambda_1, \lambda_2, \ldots , \lambda_n)
 $$
 the square bracket on the left here denoting the fully expanded linear
-combination over all permutations $P$.</p>
-<h4 id=the-wedge-product><a class=anchor href=#the-wedge-product title="Anchor for: The wedge product."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The wedge product</h4>
-<p>Closer to the outer product in geometric algebra, we can form a completely
+combination over all permutations $P$.</p><h4 id=the-wedge-product><a class=anchor href=#the-wedge-product title='Anchor for: The wedge product.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The wedge product</h4><p>Closer to the outer product in geometric algebra, we can form a completely
 anti-symmetrized product out of the tensor products, but again this is in
-Hilbert space, not real Euclidean space.</p>
-<p>I will not write out the formal definition using the tensor symbols,
+Hilbert space, not real Euclidean space.</p><p>I will not write out the formal definition using the tensor symbols,
 instead let&rsquo;s show exhibit the case for a triple product:
 $$
 \begin{array}{l}
@@ -559,39 +352,28 @@ a_2 \otimes a_1 \otimes a_3 \right).
 $$
 I think that should be clear enough. Put a $+$ on the even permutation of indices,
 and a $-$ on the odds. Then divide by the square root of the number of
-permutations to get a normalized state.</p>
-<p>Actually, this composite system <em>could</em> be one living in Euclidean space or
+permutations to get a normalized state.</p><p>Actually, this composite system <em>could</em> be one living in Euclidean space or
 spacetime, and we will need to consider this so very shortly,
 but for our present purposes we&rsquo;re focusing on the abstract
-spin sub-space which is defined for us by our choice of measurement system.</p>
-<p>So, ok, it&rsquo;s <strong><em>not</em></strong> the same as the geometric algebra outer product,
+spin sub-space which is defined for us by our choice of measurement system.</p><p>So, ok, it&rsquo;s <strong><em>not</em></strong> the same as the geometric algebra outer product,
 but let&rsquo;s not let that worry our heads for now.
 The Hilbert space wedge is a composition of systems operation, whereas the
 geometric algebra outer product is a formation of an $n$-volume in <em>real</em> space.
 So quite distinct meanings!
 If you keep in mind what space you are acting within then the context gives you the
-clarity to make the distinction.</p>
-<h2 id=the-pauli-exclusion-principle><a class=anchor href=#the-pauli-exclusion-principle title="Anchor for: The Pauli Exclusion Principle."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Pauli Exclusion Principle</h2>
-<p>To clear the air, the QFT version of Pauli Exclusion is stated in terms of
+clarity to make the distinction.</p><h2 id=the-pauli-exclusion-principle><a class=anchor href=#the-pauli-exclusion-principle title='Anchor for: The Pauli Exclusion Principle.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Pauli Exclusion Principle</h2><p>To clear the air, the QFT version of Pauli Exclusion is stated in terms of
 commutation relations for the creation and annihilation operators. But this is
 a tad baroque and does us no particular good in non-relativistic QM.
 We desire a more general statement of Pauli&rsquo;s spin-statistics theorem.
-The appropriate statement is <a name=Thm-2>(Theorem-2)</a>:</p>
-<blockquote>
-<p><strong>Theorem:</strong> (Pauli exclusion or Spin-Statistics.) A sufficient condition for a system of $n$ indistinguishable geons to obey Fermi-Dirac statistics is that the system
+The appropriate statement is <a name=Thm-2>(Theorem-2)</a>:</p><blockquote><p><strong>Theorem:</strong> (Pauli exclusion or Spin-Statistics.) A sufficient condition for a system of $n$ indistinguishable geons to obey Fermi-Dirac statistics is that the system
 contains a pair of ISC coupled particles, i.e., a pair of geons with an
-EPR wormhole bridge connection.</p>
-</blockquote>
-<p>As previously discussed on the T4GU website, we postulate that an EPR bridge is
+EPR wormhole bridge connection.</p></blockquote><p>As previously discussed on the T4GU website, we postulate that an EPR bridge is
 a minimal ER bridge wormhole connection, so one with horizons that encode only a
-single qubit or similar (an &ldquo;elementary particle&rdquo;.)</p>
-<p>We can use an inductive argument to show Fermi-Dirac statistics applies whenever
+single qubit or similar (an &ldquo;elementary particle&rdquo;.)</p><p>We can use an inductive argument to show Fermi-Dirac statistics applies whenever
 there is a pair of ISC coupled geons. To do so we use the Corollary above
 for pairs of ISC states.
-We use the permutation notation to write out a general $n$ geon state.</p>
-<p>Remember, an index on $\psi_k$ is the $k^\text{th}$ geon. Whereas an index on
-$\lambda_i$ is a spatial and spin coordinate, not a geon.</p>
-<p>For the case $n=3$, for maximal isotropic coupling we only have recourse to the pairs, but we can still show we will get Fermi-Dirac statistics.
+We use the permutation notation to write out a general $n$ geon state.</p><p>Remember, an index on $\psi_k$ is the $k^\text{th}$ geon. Whereas an index on
+$\lambda_i$ is a spatial and spin coordinate, not a geon.</p><p>For the case $n=3$, for maximal isotropic coupling we only have recourse to the pairs, but we can still show we will get Fermi-Dirac statistics.
 On the second line below, we insert the singlet state for $\psi_{23}$ and for $\psi_{31}$ and for $\psi_{12}$, and will see we only need these in pairs.
 We have,
 $$
@@ -607,84 +389,49 @@ $$
 \psi_2(\lambda_1)\otimes\psi_1(\lambda_2) ]\biggr\} \\
 &= \sqrt{3!}\, \psi_1(\lambda_1) \wedge \psi_2(\lambda_2) \wedge \psi_3(\lambda_3).
 \end{array}
-$$</p>
-<p>So this is the general three-geons spin coupled state, in full.
+$$</p><p>So this is the general three-geons spin coupled state, in full.
 It is clearly antisymmetric upon exchange of the <em>indistinguishable</em>
-geon&rsquo;s, so satisfies Fermi-Dirac statistics. qed.</p>
-<h2 id=what-about-bose-einstein><a class=anchor href=#what-about-bose-einstein title="Anchor for: What about Bose-Einstein?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> What about Bose-Einstein?</h2>
-<p>We already mentioned the singlet Bose-Einstein state above, which is coupled, but
-not rotationally invariant.</p>
-<p>Fermi-Dirac and Bose-Einstein statistics are not the only statistics physical
+geon&rsquo;s, so satisfies Fermi-Dirac statistics. qed.</p><h2 id=what-about-bose-einstein><a class=anchor href=#what-about-bose-einstein title='Anchor for: What about Bose-Einstein?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>What about Bose-Einstein?</h2><p>We already mentioned the singlet Bose-Einstein state above, which is coupled, but
+not rotationally invariant.</p><p>Fermi-Dirac and Bose-Einstein statistics are not the only statistics physical
 systems of particles can obey, we&rsquo;ve got Boltzmann statistics in classical regimes,
 and Maxwell-Boltzmann and whatnot. But I&rsquo;m not prepared at this stage to delve
 into much of that. If time permits, later I might go over O&rsquo;Hara&rsquo;s writing on how
 the ISC view on spin-statistics relates to phenomena involving baryons,
 but it is not central to the development of T4G theory, because once T4G theory
 motivates quantum mechanics formalisms we are basically done with T4G &mdash;
-at least until there are some tests that can probe the Planck scale topology.</p>
-<p>But if you want a justification in terms of Clebsch-Gordan coefficients for O&rsquo;Hara&rsquo;s
+at least until there are some tests that can probe the Planck scale topology.</p><p>But if you want a justification in terms of Clebsch-Gordan coefficients for O&rsquo;Hara&rsquo;s
 view of the Pauli exclusion principle as a result of rotationally invariant
 spin-coupling, then <a href=https://arxiv.org/pdf/quant-ph/0310016 target=_blank>Section 6</a>
 of his
 <a href=https://arxiv.org/pdf/quant-ph/0310016 target=_blank>paper here</a>
-is where you can find it.</p>
-<h2 id=caveats><a class=anchor href=#caveats title="Anchor for: Caveats."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Caveats</h2>
-<p>I had to gloss over why the fully entangled state of $n$ geons has to have
+is where you can find it.</p><h2 id=caveats><a class=anchor href=#caveats title='Anchor for: Caveats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Caveats</h2><p>I had to gloss over why the fully entangled state of $n$ geons has to have
 several EPR wormhole bridges. Since our (O&rsquo;Hara&rsquo;s) result was that only an
 $n=2$ geon system can be so <em>completely</em> connected, it did not matter too much!
 You could imagine any crazy wormhole topology that results in the wormhole
 horizons encoding the deterministic spin information.
 It&rsquo;s all academic, since even if you could imagine such a knot,
 it probably cannot exist in nature, or at least not stably, since orthodox QM is
-not sensitive to such effects. That was the result of <a href=#theorem-1>Theorem 1.</a>
-</p>
-<p>It is much simpler to visualize the more natural entanglement implied by O&rsquo;Hara&rsquo;s
+not sensitive to such effects. That was the result of <a href=#theorem-1>Theorem 1.</a></p><p>It is much simpler to visualize the more natural entanglement implied by O&rsquo;Hara&rsquo;s
 version of spin-statistics, which is that we always only have pair-wise
-EPR bridges connecting systems.</p>
-<p>One might debate about whether the rotational invariance or the coupling is the
+EPR bridges connecting systems.</p><p>One might debate about whether the rotational invariance or the coupling is the
 more important property of the entangled system. For Fermi-Dirac statistics it
 is clearly both that are required. So when O&rsquo;Hara says that, &ldquo;&mldr; it would seem
 that Fermi-Dirac statistics follows as a consequence of this coupling while
 Bose-Einstein follows by breaking it. &mldr;&rdquo; I am not so sure I fully agree.
 Could not one equally say that the rotational invariance can be broken but the
-coupling remain?</p>
-<p>In any case, from a T4G perspective this all makes sense to me, since an EPR wormhole
+coupling remain?</p><p>In any case, from a T4G perspective this all makes sense to me, since an EPR wormhole
 bridge connection implies coupling of the spins in a rotationally invariant manner.
 Although, having just written that, I think this will all make more sense when
-we review all this in geometric algebra.</p>
-<p>I am not yet sure about this, but I think, or suspect this is also all we will
+we review all this in geometric algebra.</p><p>I am not yet sure about this, but I think, or suspect this is also all we will
 need to account for multi-partite entanglement as seen in so-called GHZ states.
 In GHZ states any two geons are entangled, but all $n$ geons are not fully entangled,
-but are partially entangled.</p>
-<p>From a T4G perspective, this would be seen as a special kind of state preparation
+but are partially entangled.</p><p>From a T4G perspective, this would be seen as a special kind of state preparation
 where coupling of the entire system exists, but only via pair-wise ER bridges.
 But this is pretty much like the general $n$-geon coupled state we used in
 proving the Pauli exclusion principle for the three-geon state above.
 Although I did not rigorously go through the mathematical induction,
-it should be pretty clear this generalized to the $n$-geon system.</p>
-<p>If this is <em>not</em> related to GHZ states then I could be wrong about how T4G would
+it should be pretty clear this generalized to the $n$-geon system.</p><p>If this is <em>not</em> related to GHZ states then I could be wrong about how T4G would
 account for GHZ states.
 If you have any thoughts about this please <a href=https://ko-fi.com/achrononmaster/ target=_blank>consider donating via Achrononmaster @ Ko-fi</a>
-) and let me know.</p>
-<p><a href=../008_pauli_in_ga>Next chapter (Pauli Exclusion in GA)</a>
-<br>
-<a href=../006_spin_measurement_part1>Previous chapter (Spin Measurement, part-1)</a>
-<br>
-<a href=../>Back to Theory TOC</a>
-</p>
-</article>
-</main>
-</div>
-<footer>
-<div class=req-js>
-<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
-</div>
-<noscript>
-<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
-</noscript>
-</footer>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
-<script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
-<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
-</body>
-</html>
+) and let me know.</p><p><a href=../008_pauli_in_ga>Next chapter (Pauli Exclusion in GA)</a><br><a href=../006_spin_measurement_part1>Previous chapter (Spin Measurement, part-1)</a><br><a href=../>Back to Theory TOC</a></p></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.4268ce940bc6faa510d7b638acc3f08a63501d9504dd3155bfc48d6838ade320.js integrity="sha256-QmjOlAvG+qUQ17Y4rMPwimNQHZUE3TFVv8SNaDit4yA=" crossorigin=anonymous></script>
+<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>

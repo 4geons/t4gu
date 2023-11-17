@@ -1,131 +1,9 @@
-<!doctype html><html lang=en data-mode=dark>
-<head prefix="og: http://ogp.me/ns#">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.92.2">
-<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
-<title>Spacetime and Pauli Algebra | Topological 4-Geon Theory Unchained</title>
-<meta name=author content="Bijou M. Smith">
-<meta name=robots content="index follow">
-<link rel=canonical href=https://4geons.github.io/t4gu/theory/005_spacetime_algebra/>
-<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
-<meta property="og:title" content="Spacetime and Pauli Algebra">
-<meta property="og:url" content="https://4geons.github.io/t4gu/theory/005_spacetime_algebra/">
-<meta property="og:type" content="website">
-<meta name=twitter:dnt content="on">
-<meta name=theme-color content="#222">
-<meta name=apple-mobile-web-app-capable content="yes">
-<meta name=apple-mobile-web-app-status-bar-style content="default">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://4geons.github.io/t4gu/","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
-<noscript>
-<meta name=theme-color content="#26A269">
-<link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
-</noscript>
-<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<script src=https://4geons.github.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
-</head>
-<body>
-<header>
-<a href=/t4gu> <img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
-<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
-<nav aria-label="Main menu.">
-<ul>
-<li>
-<a class=btn href=/t4gu/t4gu/>Home</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
-</li>
-<li>
-<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
-</li>
-</ul>
-</nav>
-</header>
-<div class=filler>
-<main>
-<article>
-<header>
-<h1>Spacetime and Pauli Algebra</h1>
-<p>
-Published on <time datetime=2016-10-26>2016-10-26</time>
-</p>
-</header>
-<details class=toc open>
-<summary class=outline-dashed>
-Contents
-</summary>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#prerequisites>Prerequisites</a>
-<ul>
-<li><a href=#refresher-the-spacetime-clifford-geometric-algebra>Refresher: the spacetime Clifford geometric algebra</a></li>
-</ul>
-</li>
-<li><a href=#rotations-and-boosts>Rotations and Boosts</a>
-<ul>
-<li><a href=#skipping-a-bunch-of-stuff>Skipping a bunch of stuff&mldr;</a></li>
-</ul>
-</li>
-<li><a href=#the-pauli-algebra-for-3-space>The Pauli Algebra for 3-space</a>
-<ul>
-<li><a href=#a-couple-of-morals-for-quantum-mechanics>A couple of morals for quantum mechanics</a></li>
-<li><a href=#the-solution-relative-vectors-from-bivectors>The solution, relative vectors from bivectors</a></li>
-</ul>
-</li>
-<li><a href=#pauli-spinors>Pauli Spinors</a>
-<ul>
-<li><a href=#the-mapping-psirangle-longmapsto-sqrtrho-r->The mapping $|\psi\rangle \longmapsto \sqrt{\rho} R $</a></li>
-<li><a href=#what-have-we-done>What have we done?</a></li>
-</ul>
-</li>
-<li><a href=#mapping-the-typical-matrix-operations-to-pauli-ga>Mapping the typical matrix operations to Pauli-GA</a>
-<ul>
-<li><a href=#multiply-by-a-pauli-matrix-leftrightarrow-sigma_k-psi-sigma_3>Multiply by a Pauli matrix $\leftrightarrow \sigma_k \psi \sigma_3$</a></li>
-<li><a href=#the-bilinear-covariants>The bilinear covariants</a></li>
-</ul>
-</li>
-<li><a href=#conjugation-reversion-and-all-that>Conjugation, Reversion and All That</a>
-<ul>
-<li><a href=#reversion-tildem>Reversion $\tilde{M}$</a></li>
-<li><a href=#space-conjugate--mast>Space conjugate $M^\ast$</a></li>
-<li><a href=#hermitian-conjugate--mdagger>Hermitian conjugate $M^\dagger$</a></li>
-<li><a href=#hermitian-transpose--barm>Hermitian transpose $\bar{M}$</a></li>
-<li><a href=#exercise-what-is-time-inversion>Exercise: what is time inversion?</a></li>
-<li><a href=#quantum-scalar-product-hilbert-inner-product>Quantum scalar product (Hilbert inner product)</a></li>
-<li><a href=#a-new-scalar-product-and-orthogonal-and-norm>A new scalar product and &ldquo;orthogonal&rdquo; and norm</a></li>
-</ul>
-</li>
-<li><a href=#summary-of-pauli-algebra-in-ga>Summary of Pauli Algebra in GA</a></li>
-</ul>
-</nav>
-</details>
-<p>A good back-up reference on spacetime algebra (STA) is the classic book by David Hestenes <a href=https://link.springer.com/content/pdf/10.1007/978-3-319-18413-5.pdf target=_blank>Spacetime Algebra.</a>
-There is a free article length preprint <a href=http://reprints.gravitywaves.com/AJP/Hestenes-2002_SpacetimePhysicsWithGeometricAlgebra.pdf target=_blank>Spacetime physics with geometric algebra, here.</a>
-</p>
-<p>Please do note that I prefer the general relativist&rsquo;s metric convention $(-\!+\!++)$ whereas Hestenes, Doran and Lasenby use the particle physics convention $(+\! -\! -\,-)$.
-This makes a difference in some of the fussy details for the Lie Algebra commutation relations, which although a headache, can be a good exercise for you to get straight at least in your own private notes.</p>
-<p>Caveat: I have to admit spacetime algebra is tricky for me,
+<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.101.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Spacetime and Pauli Algebra | Topological 4-Geon Theory Unchained</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://4geons.github.io/t4gu/theory/005_spacetime_algebra/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Spacetime and Pauli Algebra"><meta property="og:url" content="https://4geons.github.io/t4gu/theory/005_spacetime_algebra/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://4geons.github.io/t4gu/","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://4geons.github.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://4geons.github.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://4geons.github.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://4geons.github.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
+<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Spacetime and Pauli Algebra</h1><p>Published on <time datetime=2016-10-26>2016-10-26</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#prerequisites>Prerequisites</a><ul><li><a href=#refresher-the-spacetime-clifford-geometric-algebra>Refresher: the spacetime Clifford geometric algebra</a></li></ul></li><li><a href=#rotations-and-boosts>Rotations and Boosts</a><ul><li><a href=#skipping-a-bunch-of-stuff>Skipping a bunch of stuff&mldr;</a></li></ul></li><li><a href=#the-pauli-algebra-for-3-space>The Pauli Algebra for 3-space</a><ul><li><a href=#a-couple-of-morals-for-quantum-mechanics>A couple of morals for quantum mechanics</a></li><li><a href=#the-solution-relative-vectors-from-bivectors>The solution, relative vectors from bivectors</a></li></ul></li><li><a href=#pauli-spinors>Pauli Spinors</a><ul><li><a href=#the-mapping-psirangle-longmapsto-sqrtrho-r->The mapping $|\psi\rangle \longmapsto \sqrt{\rho} R $</a></li><li><a href=#what-have-we-done>What have we done?</a></li></ul></li><li><a href=#mapping-the-typical-matrix-operations-to-pauli-ga>Mapping the typical matrix operations to Pauli-GA</a><ul><li><a href=#multiply-by-a-pauli-matrix-leftrightarrow-sigma_k-psi-sigma_3>Multiply by a Pauli matrix $\leftrightarrow \sigma_k \psi \sigma_3$</a></li><li><a href=#the-bilinear-covariants>The bilinear covariants</a></li></ul></li><li><a href=#conjugation-reversion-and-all-that>Conjugation, Reversion and All That</a><ul><li><a href=#reversion-tildem>Reversion $\tilde{M}$</a></li><li><a href=#space-conjugate--mast>Space conjugate $M^\ast$</a></li><li><a href=#hermitian-conjugate--mdagger>Hermitian conjugate $M^\dagger$</a></li><li><a href=#hermitian-transpose--barm>Hermitian transpose $\bar{M}$</a></li><li><a href=#exercise-what-is-time-inversion>Exercise: what is time inversion?</a></li><li><a href=#quantum-scalar-product-hilbert-inner-product>Quantum scalar product (Hilbert inner product)</a></li><li><a href=#a-new-scalar-product-and-orthogonal-and-norm>A new scalar product and &ldquo;orthogonal&rdquo; and norm</a></li></ul></li><li><a href=#summary-of-pauli-algebra-in-ga>Summary of Pauli Algebra in GA</a></li></ul></nav></details><p>A good back-up reference on spacetime algebra (STA) is the classic book by David Hestenes <a href=https://link.springer.com/content/pdf/10.1007/978-3-319-18413-5.pdf target=_blank>Spacetime Algebra.</a>
+There is a free article length preprint <a href=http://reprints.gravitywaves.com/AJP/Hestenes-2002_SpacetimePhysicsWithGeometricAlgebra.pdf target=_blank>Spacetime physics with geometric algebra, here.</a></p><p>Please do note that I prefer the general relativist&rsquo;s metric convention $(-\!+\!++)$ whereas Hestenes, Doran and Lasenby use the particle physics convention $(+\! -\! -\,-)$.
+This makes a difference in some of the fussy details for the Lie Algebra commutation relations, which although a headache, can be a good exercise for you to get straight at least in your own private notes.</p><p>Caveat: I have to admit spacetime algebra is tricky for me,
 do it for too long and I will make a $\pm$ sign mistake, which stuffs me up for hours.
-If you spot any let me know, please.</p>
-<p>We are not going to get to Dirac spinors in this chapter,
+If you spot any let me know, please.</p><p>We are not going to get to Dirac spinors in this chapter,
 since there is a bit of work to do just to get to the non-relativistic Pauli spinors.
 But what we find, and this is the big pay cheque,
 is that the Pauli spinors <em>have</em> to use a proper sub-algebra of the full
@@ -133,17 +11,12 @@ spacetime algebra, and we <strong><em>cannot drop</em></strong> the timelike bas
 $e_0$ or $\gamma_0$.
 The Pauli algebra is still only 8-dimensional,
 but we must use the timelike $\gamma_0$.
-It is embedded in spacetime.</p>
-<p>Quantum mechanics forces us into this position! So QM was already, all along,
+It is embedded in spacetime.</p><p>Quantum mechanics forces us into this position! So QM was already, all along,
 unified with Einstein&rsquo;s spacetime, people just did not know it,
 because they were doing matrix mechanics instead of geometric algebra.
-(At least that&rsquo;s my amateur take on a bit of academic physics sociology.)</p>
-<h2 id=prerequisites><a class=anchor href=#prerequisites title="Anchor for: Prerequisites."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Prerequisites</h2>
-<p>You should go through the <a href=../004_geometric_algebra>geometric algebra</a>
+(At least that&rsquo;s my amateur take on a bit of academic physics sociology.)</p><h2 id=prerequisites><a class=anchor href=#prerequisites title='Anchor for: Prerequisites.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Prerequisites</h2><p>You should go through the <a href=../004_geometric_algebra>geometric algebra</a>
 basics.
-We already introduced the basics there.</p>
-<h3 id=refresher-the-spacetime-clifford-geometric-algebra><a class=anchor href=#refresher-the-spacetime-clifford-geometric-algebra title="Anchor for: Refresher: the spacetime Clifford geometric algebra."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Refresher: the spacetime Clifford geometric algebra</h3>
-<p>To refresh your memory, locally at any
+We already introduced the basics there.</p><h3 id=refresher-the-spacetime-clifford-geometric-algebra><a class=anchor href=#refresher-the-spacetime-clifford-geometric-algebra title='Anchor for: Refresher: the spacetime Clifford geometric algebra.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Refresher: the spacetime Clifford geometric algebra</h3><p>To refresh your memory, locally at any
 point in spacetime we can define a 1-vector frame:
 $$ \{\gamma_\mu\}\quad\text{for}\quad \mu\in 0,1,2,3.
 $$
@@ -166,27 +39,20 @@ $$
 \end{array}
 $$
 where $\eta_{\mu\nu}$ is your Minkowski metric.
-I prefer $(-\!+\!++)$ if that&rsquo;s alright with you, but that puts me at $\pm$ sign odds with some sections of Hestenes, Lasenby & Doran, so I cope.</p>
-<h4 id=the-time-space-metric><a class=anchor href=#the-time-space-metric title="Anchor for: The time-space metric."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The time-space metric</h4>
-<p>The $(-\!+\!++)$ metric choice could be called time-space, since&mldr; time goes first,
+I prefer $(-\!+\!++)$ if that&rsquo;s alright with you, but that puts me at $\pm$ sign odds with some sections of Hestenes, Lasenby & Doran, so I cope.</p><h4 id=the-time-space-metric><a class=anchor href=#the-time-space-metric title='Anchor for: The time-space metric.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The time-space metric</h4><p>The $(-\!+\!++)$ metric choice could be called time-space, since&mldr; time goes first,
 if we care to use nice linguistics, which I do, but I tend to lapse
-into writing &ldquo;spacetime algebra&rdquo; which is my fault.</p>
-<p>My point is this distinction matters, although you would never know it if you
+into writing &ldquo;spacetime algebra&rdquo; which is my fault.</p><p>My point is this distinction matters, although you would never know it if you
 spent your whole life doing GR with tensor calculus.
 We can (later on) show that the time-space metric is a superior convention,
 and that&rsquo;ll be in the context of particle physics and the Standard Model
 gauge symmetries, but I have not written those notes yet,
 so you&rsquo;ll have to trust me somewhat on this, and that&rsquo;s just to willingly
 suffer the pain of getting $\pm$ signs occasionally wrong when we accidentally
-refer back to Hestenes, Lasenby & Doran (from hereon christened &ldquo;HLD&rdquo;).</p>
-<h2 id=rotations-and-boosts><a class=anchor href=#rotations-and-boosts title="Anchor for: Rotations and Boosts."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Rotations and Boosts</h2>
-<p>The space bivectors,
+refer back to Hestenes, Lasenby & Doran (from hereon christened &ldquo;HLD&rdquo;).</p><h2 id=rotations-and-boosts><a class=anchor href=#rotations-and-boosts title='Anchor for: Rotations and Boosts.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Rotations and Boosts</h2><p>The space bivectors,
 $$ \gamma_i\wedge\gamma_j = \gamma_i\gamma_j,\quad\text{for}\quad i,j\in 1,2,3
 $$
 define 3-space rotations <em>exactly</em> as in the geometric algebra $\mathcal{G}^3$
-studied in the <a href=../004_geometric_algebra>last chapter.</a>
-</p>
-<p>Recall if $\theta$ is the angle of rotation then we only need one other bit of data, the plane of the rotation, and this is true in any space dimension, not just $D=3$.
+studied in the <a href=../004_geometric_algebra>last chapter.</a></p><p>Recall if $\theta$ is the angle of rotation then we only need one other bit of data, the plane of the rotation, and this is true in any space dimension, not just $D=3$.
 Then the total bivector defining the rotation can be written,
 $$
 B = -\hat{B}\theta/2
@@ -202,17 +68,14 @@ $$
 M \longrightarrow M^\prime = R M \tilde{R}.
 $$
 So simple. We do not even need to number this equation for reference,
-it&rsquo;s so easy to remember. But wait, there&rsquo;s more!</p>
-<p>&ldquo;Why the blazes stop at the spacelike bivectors, dope?&rdquo; you ask. Indeed.
+it&rsquo;s so easy to remember. But wait, there&rsquo;s more!</p><p>&ldquo;Why the blazes stop at the spacelike bivectors, dope?&rdquo; you ask. Indeed.
 No reason to stop there.
 We get &ldquo;rotations&rdquo; also from the timelike bivectors which are of the form,
 $$
 A = -\gamma_0\gamma_i \theta/2,\quad\text{for}\quad i,j\in 1,2,3.
 $$
 or $A=-\gamma_i\gamma_0 \theta/2$, since I&rsquo;m never quite sure about
-my signs and metric signature.</p>
-<p>What the heck are these things when exponentiated into timespace rotors?</p>
-<p>The very cool thing about geometric algebra is that in the STA the Lorentz boosts are precisely these rotations!
+my signs and metric signature.</p><p>What the heck are these things when exponentiated into timespace rotors?</p><p>The very cool thing about geometric algebra is that in the STA the Lorentz boosts are precisely these rotations!
 Plain rotations.
 $$
 \text{Lorentz boost rotor:}\quad L = e^{A}
@@ -223,18 +86,14 @@ The Lorentz transform to the boosted frame for <em>any</em> geometric object
 $$
 M \longrightarrow M^\prime = L M \tilde{L}.
 $$
-No messy tensor or matrix algebra required.</p>
-<p>(Tensor products are needed in STA only when we look at entanglement.
+No messy tensor or matrix algebra required.</p><p>(Tensor products are needed in STA only when we look at entanglement.
 For general relativity you could also use tensors, but for most mundane
 purposes you can do calculations in GR using a fiducial frame basis and
 treat gravity as pure gauge.
 See the <a href=https://arxiv.org/pdf/gr-qc/0405033 target=_blank>Gauge Theory of Gravity papers.</a>
 I will not be looking much at solutions to GR on the T4GU website,
-except by reference and citation when solutions need to be referred to.)</p>
-<p><strong>Exercise 1.</strong> You should not miss out on the fun.
-So prove to yourself the $L$ do indeed perform Lorentz boosts.</p>
-<p><strong>Exercise 2.</strong> While you&rsquo;re at it, what does the boost angle $\theta$ correspond to in terms of the orthodox Lorentz &ldquo;rapidity&rdquo; $\alpha$?</p>
-<p>For Exercise 2, recall the terminology:
+except by reference and citation when solutions need to be referred to.)</p><p><strong>Exercise 1.</strong> You should not miss out on the fun.
+So prove to yourself the $L$ do indeed perform Lorentz boosts.</p><p><strong>Exercise 2.</strong> While you&rsquo;re at it, what does the boost angle $\theta$ correspond to in terms of the orthodox Lorentz &ldquo;rapidity&rdquo; $\alpha$?</p><p>For Exercise 2, recall the terminology:
 $$
 \begin{array}{rl}
 \beta &= v/c,\\
@@ -247,52 +106,19 @@ $$
 That should do it. In geometric algebra the natural parameter is the rapidity $\alpha$. In terms of which the rotor for each of the <em>standard</em> boosts becomes,
 $$
 L = e^{-\gamma_0\gamma_i \alpha/2}
-$$</p>
-<p>The previous textbook and article references tell you if you get stuck.
+$$</p><p>The previous textbook and article references tell you if you get stuck.
 But I recommend peeking at the solutions only a little and completing
-the exercise yourself, as far as possible.</p>
-<h3 id=skipping-a-bunch-of-stuff><a class=anchor href=#skipping-a-bunch-of-stuff title="Anchor for: Skipping a bunch of stuff&mldr;."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Skipping a bunch of stuff&mldr;</h3>
-<p>All sorts of basic identities and skills for being able to manipulate spacetime algebra (STA) objects should be studied now.
-I will skip all that and refer you instead to textbook references,</p>
-<ul>
-<li><a href=https://www.cambridge.org/core/books/geometric-algebra-for-physicists/FB8D3ACB76AB3AB10BA7F27505925091 target=_blank>Chapter 5</a>
-of Lasenby and Doran <a href=https://www.cambridge.org/core/books/geometric-algebra-for-physicists/FB8D3ACB76AB3AB10BA7F27505925091 target=_blank>Geometric Algebra for Physicists.</a>
-</li>
-<li>For free online study of the same stuff there is,
-<ul>
-<li>Doran&rsquo;s Thesis <a href=https://aspace.repository.cam.ac.uk/bitstream/handle/1810/251691/Doran_1994_PhD-18948_NewTypesetVersion.pdf target=_blank>Geometric algebra and its application to mathematical physics.</a>
-</li>
-<li>Hestenes, <a href=http://reprints.gravitywaves.com/AJP/Hestenes-2002_SpacetimePhysicsWithGeometricAlgebra.pdf target=_blank>Spacetime physics with geometric algebra</a>
-(a little quirky, if you like zitterbewegung).</li>
-</ul>
-</li>
-</ul>
-<h2 id=the-pauli-algebra-for-3-space><a class=anchor href=#the-pauli-algebra-for-3-space title="Anchor for: The Pauli Algebra for 3-space."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Pauli Algebra for 3-space</h2>
-<p>This next major bit of work is critical. We are getting closer to the
+the exercise yourself, as far as possible.</p><h3 id=skipping-a-bunch-of-stuff><a class=anchor href=#skipping-a-bunch-of-stuff title='Anchor for: Skipping a bunch of stuff&mldr;.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Skipping a bunch of stuff&mldr;</h3><p>All sorts of basic identities and skills for being able to manipulate spacetime algebra (STA) objects should be studied now.
+I will skip all that and refer you instead to textbook references,</p><ul><li><a href=https://www.cambridge.org/core/books/geometric-algebra-for-physicists/FB8D3ACB76AB3AB10BA7F27505925091 target=_blank>Chapter 5</a>
+of Lasenby and Doran <a href=https://www.cambridge.org/core/books/geometric-algebra-for-physicists/FB8D3ACB76AB3AB10BA7F27505925091 target=_blank>Geometric Algebra for Physicists.</a></li><li>For free online study of the same stuff there is,<ul><li>Doran&rsquo;s Thesis <a href=https://aspace.repository.cam.ac.uk/bitstream/handle/1810/251691/Doran_1994_PhD-18948_NewTypesetVersion.pdf target=_blank>Geometric algebra and its application to mathematical physics.</a></li><li>Hestenes, <a href=http://reprints.gravitywaves.com/AJP/Hestenes-2002_SpacetimePhysicsWithGeometricAlgebra.pdf target=_blank>Spacetime physics with geometric algebra</a>
+(a little quirky, if you like zitterbewegung).</li></ul></li></ul><h2 id=the-pauli-algebra-for-3-space><a class=anchor href=#the-pauli-algebra-for-3-space title='Anchor for: The Pauli Algebra for 3-space.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Pauli Algebra for 3-space</h2><p>This next major bit of work is critical. We are getting closer to the
 <em>Measurement Theory</em> heart of QM.
-So allow me a bit of discursive pedagogy.</p>
-<p>Sometimes the Pauli algebra can be denoted $\mathcal{G}^+_3$ but I dislike that suggestion because we are going to find that we need the spacetime basis vector
-$\gamma_0$, so sometimes I will just denoted the Pauli algebra $\mathscr{P}$.</p>
-<h3 id=a-couple-of-morals-for-quantum-mechanics><a class=anchor href=#a-couple-of-morals-for-quantum-mechanics title="Anchor for: A couple of morals for quantum mechanics."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A couple of morals for quantum mechanics</h3>
-<ol>
-<li>In a physical measurement theory (which is what QM is) all measurements should be able to be expressed geometrically.
-<br>
-<br>
-For sure this is a moral statement, but so what? I&rsquo;m making it! Measurement instruments are geometric objects. Got a problem with that?
-<br>
-<br></li>
-<li>The Pauli algebra is the apparatus for non-relativistic QM. But time is still a dimension, so we have to see how the Pauli Algebra is a sub-algebra of the full 16-dimensional timespace algebra (the Dirac Algebra).</li>
-</ol>
-<p>OK, so what morals 1 & 2 <em>together</em> say is that we cannot get away with dumb
-old Euclidean 3-space. We have to include time in the geometric basis!</p>
-<h3 id=the-solution-relative-vectors-from-bivectors><a class=anchor href=#the-solution-relative-vectors-from-bivectors title="Anchor for: The solution, relative vectors from bivectors."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The solution, relative vectors from bivectors</h3>
-<p>The elegant solution (and we&rsquo;ll see <em>a posteriori</em> the only realistic solution) is that the basis &ldquo;vectors&rdquo; for the 3-space Pauli Algebra have to be <strong>bivectors</strong>. Why?</p>
-<p>Because we need a complex structure, or more accurately, we need rotational symmetry built-in to the Pauli Algebra. But <em>why?</em></p>
-<p>Because in QM we already know from hard sweat and tears that the &ldquo;elementary
+So allow me a bit of discursive pedagogy.</p><p>Sometimes the Pauli algebra can be denoted $\mathcal{G}^+_3$ but I dislike that suggestion because we are going to find that we need the spacetime basis vector
+$\gamma_0$, so sometimes I will just denoted the Pauli algebra $\mathscr{P}$.</p><h3 id=a-couple-of-morals-for-quantum-mechanics><a class=anchor href=#a-couple-of-morals-for-quantum-mechanics title='Anchor for: A couple of morals for quantum mechanics.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A couple of morals for quantum mechanics</h3><ol><li>In a physical measurement theory (which is what QM is) all measurements should be able to be expressed geometrically.<br><br>For sure this is a moral statement, but so what? I&rsquo;m making it! Measurement instruments are geometric objects. Got a problem with that?<br><br></li><li>The Pauli algebra is the apparatus for non-relativistic QM. But time is still a dimension, so we have to see how the Pauli Algebra is a sub-algebra of the full 16-dimensional timespace algebra (the Dirac Algebra).</li></ol><p>OK, so what morals 1 & 2 <em>together</em> say is that we cannot get away with dumb
+old Euclidean 3-space. We have to include time in the geometric basis!</p><h3 id=the-solution-relative-vectors-from-bivectors><a class=anchor href=#the-solution-relative-vectors-from-bivectors title='Anchor for: The solution, relative vectors from bivectors.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The solution, relative vectors from bivectors</h3><p>The elegant solution (and we&rsquo;ll see <em>a posteriori</em> the only realistic solution) is that the basis &ldquo;vectors&rdquo; for the 3-space Pauli Algebra have to be <strong>bivectors</strong>. Why?</p><p>Because we need a complex structure, or more accurately, we need rotational symmetry built-in to the Pauli Algebra. But <em>why?</em></p><p>Because in QM we already know from hard sweat and tears that the &ldquo;elementary
 particles&rdquo; (a linguistic error) have intrinsic rotational symmetry,
 they are Lie algebra elements of the fundamental spacetime invariances,
-the Poincaré group.</p>
-<p>OK, so you could pretend to be Archimedes and fret and hack around with this
+the Poincaré group.</p><p>OK, so you could pretend to be Archimedes and fret and hack around with this
 moral idea for a while, and I hope you do. You&rsquo;ll eventually figure out that
 the proper Pauli bases are <em>relative vectors</em>, which are spacetime bivectors,
 defined by using the time basis vector $\gamma_0$ from the STA, in deference
@@ -301,15 +127,13 @@ For my preferred $(-\!+\!++)$ metric we have,
 $$
 \boldsymbol{\sigma}_i = \gamma_i\gamma_0
 $$
-(In most GA textbooks these $\sigma$ are boldfaced font, rather than over-arrowed. That&rsquo;s because over-arrows $\vec{v}$ are really <em>only</em> for 1-vectors, and these are bivectors!)</p>
-<p><strong>Note and Warning:</strong> If you use the $(+\!-\!- -)$ metric I think the
+(In most GA textbooks these $\sigma$ are boldfaced font, rather than over-arrowed. That&rsquo;s because over-arrows $\vec{v}$ are really <em>only</em> for 1-vectors, and these are bivectors!)</p><p><strong>Note and Warning:</strong> If you use the $(+\!-\!- -)$ metric I think the
 definitions have to be the opposite bivectors, so you&rsquo;d use
 timespace bivectors as the relative vectors,
 $$
 \boldsymbol{\sigma}_i = \gamma_0\gamma_i \quad \text{in the $(+\!-\!- -)$ metric.}
 $$
-((let me know if I&rsquo;ve got this &ldquo;wrong&rdquo;. It is only a convention.))</p>
-<p>Since we will use $\sigma$ only for the Pauli basis we can drop the boldface type,
+((let me know if I&rsquo;ve got this &ldquo;wrong&rdquo;. It is only a convention.))</p><p>Since we will use $\sigma$ only for the Pauli basis we can drop the boldface type,
 but for Pauli states that are vectors (column spinors) we will need boldface to distinguish them from Euclidean 1-vectors, hence,
 $$
 a \Rightarrow \text{it&rsquo;s a 1-vector},\quad\text{while}\quad \boldsymbol{a} \Rightarrow \text{it&rsquo;s a relative vector, a bivector.}
@@ -318,20 +142,16 @@ Nevertheless, for non-relativistic QM we treat the $\boldsymbol{\sigma}$
 <em>a bit like</em> basis vectors, for the Pauli Algebra.
 In fact <em>a lot like</em>, they <em>will be</em> the base vectors,
 or if your prefer&mldr; &ldquo;the base elements.&rdquo;
-The $\{\boldsymbol{\sigma}_i\}$ <em>define</em> the Pauli Algebra.</p>
-<p>The terminology &ldquo;relative vector&rdquo; should be used, since it correctly reminds us
+The $\{\boldsymbol{\sigma}_i\}$ <em>define</em> the Pauli Algebra.</p><p>The terminology &ldquo;relative vector&rdquo; should be used, since it correctly reminds us
 the objects built from the $\boldsymbol{\sigma}_k$ are vectors $(\gamma_k$) in a frame with a preferred time orientation $(\gamma_0$).
 You have to specify the particle&rsquo;s clock direction to do quantum mechanics
-properly in other words.</p>
-<p><strong>Exercise 4.</strong> Verify the algebra of the $\boldsymbol{\sigma}_k$ obey the same
+properly in other words.</p><p><strong>Exercise 4.</strong> Verify the algebra of the $\boldsymbol{\sigma}_k$ obey the same
 algebra as the orthodox Pauli matrices. (Up to possible $\pm$ signs, since
-recall I&rsquo;ve used the $(-\!+\!++)$ convention.)</p>
-<p>Hint: recall (or know) that the Pauli <em>matrix</em> algebra over $\mathbb{C}$ is,
+recall I&rsquo;ve used the $(-\!+\!++)$ convention.)</p><p>Hint: recall (or know) that the Pauli <em>matrix</em> algebra over $\mathbb{C}$ is,
 $$
 \hat{\sigma}^2 = -i\hat{\sigma}_1\hat{\sigma}_2\hat{\sigma}_3 = \mathbb{1},\quad\text{and}\quad \hat{\sigma}_i\hat{\sigma}_j = i\hat{\sigma}_k,\quad\text{and cyclic}.
 $$
-I should be damned if I write out the matrices in these web pages.</p>
-<p>However, I will here say that I did the exercise and for my convention the
+I should be damned if I write out the matrices in these web pages.</p><p>However, I will here say that I did the exercise and for my convention the
 Pauli matrices in $(-\!+\!++)$ signature are,
 $$
 \hat{\sigma}_1 = \left(\begin{array}{cc}
@@ -349,183 +169,141 @@ i & 0
 $$
 which agree with the HLD convention.
 So that means the &ldquo;mostly $+$&rdquo; metric signature must differ with HLD later on
-when we do the Hermitian conjugation and space conjugation, if memory serves.</p>
-<p>I did this a long time ago in Python with <code>galgebra</code> so today I decided to
+when we do the Hermitian conjugation and space conjugation, if memory serves.</p><p>I did this a long time ago in Python with <code>galgebra</code> so today I decided to
 try it with Julia <a href=https://github.com/digitaldomain/Multivectors.jl target=_blank>Multivectors.</a>
 I found it more annoying than Python, but it works.
 One tip is to define your own Pauli relative vectors as numeric types,
-which is what I do on the third line of the code list below.</p>
-<p>Another tip is because Julia array indexes from 1, 2,&mldr; it&rsquo;s best to use <code>e₄</code>
-as your $\gamma_0$.</p>
-<p>Another tip: note the <a href=https://docs.julialang.org/en/v1/manual/unicode-input/ target=_blank>Unicode input methods</a>
+which is what I do on the third line of the code list below.</p><p>Another tip is because Julia array indexes from 1, 2,&mldr; it&rsquo;s best to use <code>e₄</code>
+as your $\gamma_0$.</p><p>Another tip: note the <a href=https://docs.julialang.org/en/v1/manual/unicode-input/ target=_blank>Unicode input methods</a>
 for Julia, which the <a href=https://github.com/digitaldomain/Multivectors.jl target=_blank>Multivector</a>
-package uses extensively.</p>
-<p>Here are some scraps you can use to get you going.
+package uses extensively.</p><p>Here are some scraps you can use to get you going.
 First open up a Julia console session.
-I&rsquo;ll test the particle physics &ldquo;mostly minus metric&rdquo; convention:</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Multivectors</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@generate_basis</span><span class=p>(</span><span class=s>&#34;---+&#34;</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>s1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>s2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>s3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>I</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span>
-<span class=mf>1.0</span><span class=n>e₁₂₃₄</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>I</span><span class=p>)</span>
-<span class=p>(</span><span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=o>-</span><span class=mf>1.0</span><span class=p>)</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>)</span>
-<span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-</code></pre></div><p>All right. Try testing some of the other Pauli algebra identities for yourself.</p>
-<p>Now let&rsquo;s check the &ldquo;mostly $+$&rdquo; metric convention:</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Multivectors</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@generate_basis</span><span class=p>(</span><span class=s>&#34;+++-&#34;</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>s1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>s2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>s3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>I</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span>
-<span class=mf>1.0</span><span class=n>e₁₂₃₄</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>I</span><span class=p>)</span>
-<span class=p>(</span><span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=o>-</span><span class=mf>1.0</span><span class=p>)</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>)</span>
-<span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span><span class=o>-</span><span class=n>s2</span><span class=o>*</span><span class=n>s1</span> <span class=o>==</span> <span class=mi>2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span><span class=o>-</span><span class=n>s3</span><span class=o>*</span><span class=n>s2</span> <span class=o>==</span> <span class=mi>2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span><span class=o>-</span><span class=n>s1</span><span class=o>*</span><span class=n>s3</span> <span class=o>==</span> <span class=mi>2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>)</span>
-<span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=c># they should anti-commute:</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span><span class=o>+</span><span class=n>s2</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span><span class=o>+</span><span class=n>s3</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span><span class=o>+</span><span class=n>s1</span><span class=o>*</span><span class=n>s3</span><span class=p>)</span>
-<span class=p>(</span><span class=mf>0.0</span><span class=n>e₁₂</span><span class=p>,</span> <span class=mf>0.0</span><span class=n>e₂₃</span><span class=p>,</span> <span class=mf>0.0</span><span class=n>e₁₃</span><span class=p>)</span>
-</code></pre></div><p>Notice I did a few more checks there for safety. Looks all good to me.
+I&rsquo;ll test the particle physics &ldquo;mostly minus metric&rdquo; convention:</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Multivectors</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@generate_basis</span><span class=p>(</span><span class=s>&#34;---+&#34;</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>s1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>s2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>s3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>I</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span>
+</span></span><span class=line><span class=cl><span class=mf>1.0</span><span class=n>e₁₂₃₄</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>I</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=o>-</span><span class=mf>1.0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span></code></pre></div><p>All right. Try testing some of the other Pauli algebra identities for yourself.</p><p>Now let&rsquo;s check the &ldquo;mostly $+$&rdquo; metric convention:</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Multivectors</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@generate_basis</span><span class=p>(</span><span class=s>&#34;+++-&#34;</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>s1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>s2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>s3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>I</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span>
+</span></span><span class=line><span class=cl><span class=mf>1.0</span><span class=n>e₁₂₃₄</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>I</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>,</span> <span class=o>-</span><span class=mf>1.0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span> <span class=o>==</span> <span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span><span class=o>-</span><span class=n>s2</span><span class=o>*</span><span class=n>s1</span> <span class=o>==</span> <span class=mi>2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span><span class=o>-</span><span class=n>s3</span><span class=o>*</span><span class=n>s2</span> <span class=o>==</span> <span class=mi>2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span><span class=o>-</span><span class=n>s1</span><span class=o>*</span><span class=n>s3</span> <span class=o>==</span> <span class=mi>2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=c># they should anti-commute:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>s1</span><span class=o>*</span><span class=n>s2</span><span class=o>+</span><span class=n>s2</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=o>*</span><span class=n>s3</span><span class=o>+</span><span class=n>s3</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=o>*</span><span class=n>s1</span><span class=o>+</span><span class=n>s1</span><span class=o>*</span><span class=n>s3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=mf>0.0</span><span class=n>e₁₂</span><span class=p>,</span> <span class=mf>0.0</span><span class=n>e₂₃</span><span class=p>,</span> <span class=mf>0.0</span><span class=n>e₁₃</span><span class=p>)</span>
+</span></span></code></pre></div><p>Notice I did a few more checks there for safety. Looks all good to me.
 If you try reversing those <code>s1</code>, <code>s2</code>, <code>s3</code>, to the previous metric signature
 version I think you&rsquo;ll find the anticommutators change sign, disobedient to the
-Pauli algebra, naughty, naughty.</p>
-<p>I might still come a&rsquo;cropper when we get to the Dirac algebra with the
-$\pm$ signs.</p>
-<h4 id=why-did-we-not-do-this-in-classical-mechanics><a class=anchor href=#why-did-we-not-do-this-in-classical-mechanics title="Anchor for: Why did we not do this in classical mechanics?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Why did we not do this in classical mechanics?</h4>
-<p>CM is <em><strong>not</strong> a measurement theory</em>, that&rsquo;s why, so the moral constraints
+Pauli algebra, naughty, naughty.</p><p>I might still come a&rsquo;cropper when we get to the Dirac algebra with the
+$\pm$ signs.</p><h4 id=why-did-we-not-do-this-in-classical-mechanics><a class=anchor href=#why-did-we-not-do-this-in-classical-mechanics title='Anchor for: Why did we not do this in classical mechanics?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Why did we not do this in classical mechanics?</h4><p>CM is <em><strong>not</strong> a measurement theory</em>, that&rsquo;s why, so the moral constraints
 are not as severe. At risk of repeating some of the
 <a href=/t4gu/philosophy/>philosophy pages,</a>
 I want to emphasise this point.
 So far all we&rsquo;ve done is classical geometry, and yet we&rsquo;ve almost recovered
-Pauli spinors (and are about to do so, very soon).</p>
-<p>In CM we can be totally cavalier and do not have to give a fig about
+Pauli spinors (and are about to do so, very soon).</p><p>In CM we can be totally cavalier and do not have to give a fig about
 measurements. This is because we can always assume taking as low energy a
 probe as we care and making a measurement without disturbing the system
 <em>to within our desired tolerances</em>.
 We always disturb the system, so quantum mechanics via Heisenberg uncertainty
 is already present in classical mechanics!
-The point is, <em>we care not</em>, because we have $\hbar\rightarrow 0$.</p>
-<p><em>If</em> we constrain ourselves in classical mechanics to some minimal but
+The point is, <em>we care not</em>, because we have $\hbar\rightarrow 0$.</p><p><em>If</em> we constrain ourselves in classical mechanics to some minimal but
 large sized glob of a probe, then our <em>effective</em> $\hbar$ is <em>not</em> zero, and
 we then have to worry the fig about non-commuting observables, and we&rsquo;d have
-to invent quantum mechanics &mdash; a measurement theory.</p>
-<p>But we don&rsquo;t.</p>
-<p>Because no one from Adam to Newton to Planck gave a crap about how small a
+to invent quantum mechanics &mdash; a measurement theory.</p><p>But we don&rsquo;t.</p><p>Because no one from Adam to Newton to Planck gave a crap about how small a
 measurement probe could be.
 In fact olde physicists always idealized the heck out of nature and assumed all
 measurement probes could be taken to be so small they were invisible
-(except for their effects on our instruments and eyeballs).</p>
-<p>One other way to think about it is that the main difference between
+(except for their effects on our instruments and eyeballs).</p><p>One other way to think about it is that the main difference between
 QM and CM, choice of units permitting, is that one has $\hbar=1$
-and the other has $\hbar=0$.</p>
-<p>We will see this again when, eventually, we redo Wigner&rsquo;s classification of
+and the other has $\hbar=0$.</p><p>We will see this again when, eventually, we redo Wigner&rsquo;s classification of
 the elementary &ldquo;particles&rdquo; in a spacetime algebra framework.
 In classical mechanics (CM) we still get non-trivial commutators,
 but they always have an $\hbar$ in front,
 i.e., a factor of $1.0$, and it&rsquo;s only by making the gross &ldquo;mistake&rdquo; of
-setting that to $0.0$ that we recover CM.</p>
-<p>So in a sense classical mechanics was an inconsistent theory from the get go,
+setting that to $0.0$ that we recover CM.</p><p>So in a sense classical mechanics was an inconsistent theory from the get go,
 but no one cared because they could always imagine setting $\hbar=0$,
 and of course did not even bother thinking about that!
 Because none of us have a time machine we can go back with and worry them
-about it.</p>
-<p>Last note here: now don&rsquo;t be a nerd and tell me QM$\rightarrow$CM is more than
+about it.</p><p>Last note here: now don&rsquo;t be a nerd and tell me QM$\rightarrow$CM is more than
 just setting $\hbar>0$. For sure it is more, but that&rsquo;s due to dynamics,
 not to the underlying symmetry generators that classify the elementary particles.
 Anyone without a particle postulate is not going to be doing QM,
-and likely will be doing something a lot like CM.</p>
-<div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div>
-<p>At this point I&rsquo;d make a choice about whether to now teach Pauli spinors,
+and likely will be doing something a lot like CM.</p><div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div><p>At this point I&rsquo;d make a choice about whether to now teach Pauli spinors,
 or do more terminology, namely the conjugation, inversions and parity
 operations, or principle <em>involutions</em>.
 Since we can understand the Pauli spinors without spacetime and space
-conjugacy or time inversion, I&rsquo;ve decided to do the Pauli spinors first.</p>
-<h2 id=pauli-spinors><a class=anchor href=#pauli-spinors title="Anchor for: Pauli Spinors."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Pauli Spinors</h2>
-<p>By the end of the <a href=../010_hestenes_spinors>chapter on Hestenes spinors</a>
+conjugacy or time inversion, I&rsquo;ve decided to do the Pauli spinors first.</p><h2 id=pauli-spinors><a class=anchor href=#pauli-spinors title='Anchor for: Pauli Spinors.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Pauli Spinors</h2><p>By the end of the <a href=../010_hestenes_spinors>chapter on Hestenes spinors</a>
 we will have tamed Dirac spinors, but all in good time.
 The more modest aim for the current chapter is to just do the non-relativistic case of Pauli spinors.
-Since we need the spacetime relative vectors (bivectors) for this, it is still timespace algebra, so this is the appropriate chapter for this build-up work.</p>
-<p>I thought about diving right into this, ahistorically, but if you prefer a little
+Since we need the spacetime relative vectors (bivectors) for this, it is still timespace algebra, so this is the appropriate chapter for this build-up work.</p><p>I thought about diving right into this, ahistorically, but if you prefer a little
 motivation &mdash; why one would even <em>think</em> of looking for a GA representation of
 Pauli spinors &mdash; then the section 8.1 in
 <a href=https://www.cambridge.org/core/books/geometric-algebra-for-physicists/FB8D3ACB76AB3AB10BA7F27505925091 target=_blank>Lasenby and Doran</a>
 is a good enough read.
 I had a second thought and felt I should just make a comment or two in plain
-English about their lead-in, but from a slightly different perspective.</p>
-<p>What they say is that the matrix representation for the &ldquo;spinor&rdquo;, which is,
+English about their lead-in, but from a slightly different perspective.</p><p>What they say is that the matrix representation for the &ldquo;spinor&rdquo;, which is,
 $$
 |\psi\rangle = c_1 |\uparrow\rangle +c_2|\downarrow\rangle
 $$
 leads the blind physicist to think the state of the electron is in a
 superposition of up and down, relative to some magnetic field alignment
-(since that&rsquo;s how we measure the magnetic moment hence spin orientation).</p>
-<p>The trouble with that view is that there&rsquo;s no reason to suppose there is any
+(since that&rsquo;s how we measure the magnetic moment hence spin orientation).</p><p>The trouble with that view is that there&rsquo;s no reason to suppose there is any
 superposition, and one can instead take Ballentine&rsquo;s view that the mixture of
 the two orthogonal states is statistical.
-Which &ldquo;only&rdquo; leaves their interference to be puzzled over (a big puzzle to be sure).</p>
-<p>The coefficients $c_1$ and $c_2$ can thus be thought of as statistical weights,
+Which &ldquo;only&rdquo; leaves their interference to be puzzled over (a big puzzle to be sure).</p><p>The coefficients $c_1$ and $c_2$ can thus be thought of as statistical weights,
 but which can interfere, hence are geometric quantities
 (in the orthodox treatment they&rsquo;re complex numbers).
 And indeed this more &ldquo;Ballentinian view&rdquo; is more or less the stance of T4G theory
 &mdash; if we suppose we did not know about wormholes and ER=EPR.
 The interference will be accounted for later on when we study pairs of coupled spins,
 in our <a href=../5_pauli_ex_entanglement>chapter on the Pauli exclusion principle</a>
-and the <a href=../7_interference_from_entanglement>chapter after that one on Interference.</a>
-</p>
-<p>Lasenby & Doran have not got to this view yet, and so take a more relaxed view
+and the <a href=../7_interference_from_entanglement>chapter after that one on Interference.</a></p><p>Lasenby & Doran have not got to this view yet, and so take a more relaxed view
 that observes simply that the algebra of the Pauli matrices $\hat{\sigma}_i$ is
 the same (isomorphic to) the algebra of the spacetime relative vectors (time-like basis
-spacetime bivectors) in the even sub-algebra of the STA.</p>
-<p>So their motivation is simply to look at this similarity, and so seek to find
-a way to replace all the matrix mechanics with spacetime algebra mechanics.<br>
-They proceed to do just this, and that&rsquo;s what I&rsquo;ll cover here.
+spacetime bivectors) in the even sub-algebra of the STA.</p><p>So their motivation is simply to look at this similarity, and so seek to find
+a way to replace all the matrix mechanics with spacetime algebra mechanics.<br>They proceed to do just this, and that&rsquo;s what I&rsquo;ll cover here.
 But I wanted readers to know I have more sinister darker motives
 (if you like to think of wormholes as sinister) which I think is best kept in
-the back of your mind when reading this next stuff.</p>
-<p>Why? Because it primes you to follow me down the wormhole with the White Rabbit.</p>
-<p>OK. Enough jokes and lame humour. Once you&rsquo;ve got this mad idea to replace
+the back of your mind when reading this next stuff.</p><p>Why? Because it primes you to follow me down the wormhole with the White Rabbit.</p><p>OK. Enough jokes and lame humour. Once you&rsquo;ve got this mad idea to replace
 matrix mechanics with $\mathcal{G}^{1,3}$ geometric algebra, it&rsquo;s only at most an afternoon on your own (or a lazy week) to figure out what the mapping must be.
-The mapping exists, I&rsquo;ll give you that! So the exercise is to find it.</p>
-<p>If you do not have an afternoon to spare, let me spare you the time if you like,
+The mapping exists, I&rsquo;ll give you that! So the exercise is to find it.</p><p>If you do not have an afternoon to spare, let me spare you the time if you like,
 so just read on.
 But really you should stop at any point out from here to complete this mapping
 yourself and check it with the software, so you can avoid silly mistakes.
 It&rsquo;s a decent little challenge, and I just <em>hate</em> to deprive anyone of the chance
-to solve the puzzle.</p>
-<p>First note what needs to be done. The Pauli spinor is a $2\times 1$ column
+to solve the puzzle.</p><p>First note what needs to be done. The Pauli spinor is a $2\times 1$ column
 vector with complex entries. The clue to finding the mapping from Pauli&rsquo;s
 $\hat{\sigma_i}$ and $|\psi\rangle$ $\mapsto$ to HLD&rsquo;s $\boldsymbol{\sigma_i}$
 and rotor $\psi\propto R$ is firstly in the necessary
 relation between the coefficients $c_1$ and $c_2$, which I guess should really
-be labelled $c_\uparrow$ and $c_\downarrow$, if we were being nice.</p>
-<p>These are underdetermined up to a unit phase factor of course
+be labelled $c_\uparrow$ and $c_\downarrow$, if we were being nice.</p><p>These are underdetermined up to a unit phase factor of course
 (how highly unphysical!) so as long as we know that we can use either an
 analytical determination of their relationship, or a heuristic one that is
-just as good.</p>
-<p>Now I&rsquo;d prefer the analytic, but Lasenby & Doran give that already in their
+just as good.</p><p>Now I&rsquo;d prefer the analytic, but Lasenby & Doran give that already in their
 Section 8.1 pages 269&ndash;271, using conjugation relations and whatnot,
 it&rsquo;s a bit boring. So why repeat? Instead I&rsquo;ll give you a nice
 argument you can probably follow half drunk.
 The price we pay is more words, but the benefit is less math.
-(This&rsquo;ll be useful too, we&rsquo;ll use it again to get Pauli Exclusion.)</p>
-<ul>
-<li>The amplitudes must square sum to $1.0$ by unitarity (probability conservation).</li>
-<li>The spin measurements should be symmetric w.r.t. $\uparrow$ and $\downarrow$, hence w.r.t. $c_1$ and $c_2$.</li>
-</ul>
-<p>So $|c_1|^2 + |c_2|^2 = 1$. Now <em>physically</em> we should be able to smoothly go from
+(This&rsquo;ll be useful too, we&rsquo;ll use it again to get Pauli Exclusion.)</p><ul><li>The amplitudes must square sum to $1.0$ by unitarity (probability conservation).</li><li>The spin measurements should be symmetric w.r.t. $\uparrow$ and $\downarrow$, hence w.r.t. $c_1$ and $c_2$.</li></ul><p>So $|c_1|^2 + |c_2|^2 = 1$. Now <em>physically</em> we should be able to smoothly go from
 a magnetic field measurement aligned $\uparrow$ all the way to $\downarrow$
 by rotating our magnet, and nothing catastrophic should occur, it should
 change $c_1$ and $c_2$ smoothly (and in the laboratory it does,
-or so I&rsquo;ve been told).</p>
-<p>The functional relation is then a smooth one varying with the angle between the
+or so I&rsquo;ve been told).</p><p>The functional relation is then a smooth one varying with the angle between the
 electron&rsquo;s spin and the magnetic field direction say $z$, call this angle
 $\theta$ and let $\uparrow$ alignment of the magnetic field be $\theta=0$,
 and $\downarrow$ be $\theta=\pi$.
@@ -535,8 +313,7 @@ $$
 c_1=c_1(\theta),\quad c_2=c_2(\theta).
 $$
 If the electron is initially aligned $\uparrow$ then $c_1=1$,
-likewise if the electron is initially down then $c_2=1$.</p>
-<p>So far, we could set up any crazy experiment with magnetic field polarizers,
+likewise if the electron is initially down then $c_2=1$.</p><p>So far, we could set up any crazy experiment with magnetic field polarizers,
 and so the angular dependence of $c_1$ and $c_2$ could in general be with
 some arbitrary phase factor, say $\omega$,
 $$
@@ -547,12 +324,8 @@ $|c_1|^2 + |c_2|^2=1$.
 But for purposes of this derivation it&rsquo;s fine to take a specific measurement
 set-up with $\omega=1$, since if we can derive the relations with a specific
 set-up they have to generalize to <em>any</em> experiment, because the superposition
-$|\psi\rangle$ is independent of our measurement apparatus.</p>
-<p>The specific set-up to keep in mind is the Stern-Garlach filter:</p>
-<img src=../../images/Stern_Gerlach_filter.png alt="Stern-Gerlach apparatus set-up." style=width:600px;height:480px>
-<p>In <em>this</em> experiment we have more symmetry than some arbitrary crazy mix of spin filtering. This makes determination of the $c_1$ and $c_2$ from &ldquo;physical&rdquo;
-principles a lot easier. No quantum postulates required.</p>
-<p>For instance, by the symmetry principle at $\theta=\pi/2$ there should be no preferred
+$|\psi\rangle$ is independent of our measurement apparatus.</p><p>The specific set-up to keep in mind is the Stern-Garlach filter:</p><img src=../../images/Stern_Gerlach_filter.png alt="Stern-Gerlach apparatus set-up." style=width:600px;height:480px><p>In <em>this</em> experiment we have more symmetry than some arbitrary crazy mix of spin filtering. This makes determination of the $c_1$ and $c_2$ from &ldquo;physical&rdquo;
+principles a lot easier. No quantum postulates required.</p><p>For instance, by the symmetry principle at $\theta=\pi/2$ there should be no preferred
 spin measurement deflection by the magnetic field, so $c_1(\pi/2)=c_1(\pi/2)=1/\sqrt{2}$.
 So far then we&rsquo;ve got the constraints:
 $$
@@ -562,27 +335,20 @@ c_1(\pi/2)= 1/\sqrt{2}, & c_2(\pi/2)=1/\sqrt{2}, \\
 c_2(0)= 0, & c_2(\pi)=1.
 \end{array}
 $$
-(up to an overall multiplicative phase.)</p>
-<p>The next step is to again appeal to &ldquo;physicalism&rdquo;.
+(up to an overall multiplicative phase.)</p><p>The next step is to again appeal to &ldquo;physicalism&rdquo;.
 We say we expect symmetry between $|\uparrow\rangle$ and $|\downarrow\rangle$
 and between $c_1$ and $c_2$ as the magnetic field is rotated smoothly around
 from $\theta=0$ to $\theta=2\pi$.
-So a linear function like $c_1(\theta)= 1 - \theta/\pi$ is &ldquo;not physical.&rdquo;</p>
-<p>(That&rsquo;s because for this $|c_1|^2$ the first derivative is not defined at
+So a linear function like $c_1(\theta)= 1 - \theta/\pi$ is &ldquo;not physical.&rdquo;</p><p>(That&rsquo;s because for this $|c_1|^2$ the first derivative is not defined at
 $\theta=n\pi$, so it&rsquo;s &ldquo;not smooth&rdquo; as a probability amplitude.
 We physically desire a function that looks more like experimental
-spin projections, and so the functions $f(\theta)$ and $g(\theta)$ should slowly and smoothly approach their limits as $\theta\rightarrow n\pi$.)</p>
-<p>What we&rsquo;d expect is the spin $\mathbf{S}$ projects onto the
+spin projections, and so the functions $f(\theta)$ and $g(\theta)$ should slowly and smoothly approach their limits as $\theta\rightarrow n\pi$.)</p><p>What we&rsquo;d expect is the spin $\mathbf{S}$ projects onto the
 magnetic field direction &ldquo;like a phasor rotating around a circle&rdquo; projects
 onto a side-on view.
-But we know what that projection is from trigonometry, it&rsquo;s a cosine.</p>
-<p>However, not quite a cosine.</p>
-<p><strong>(i)</strong> first the probability $|c_1|^2$ has to go as above, from $1$ to $0$ as
-$\theta$ rotates from $0$ to $\pi$. But then also,<br>
-<strong>(ii)</strong> completing a full circle the
+But we know what that projection is from trigonometry, it&rsquo;s a cosine.</p><p>However, not quite a cosine.</p><p><strong>(i)</strong> first the probability $|c_1|^2$ has to go as above, from $1$ to $0$ as
+$\theta$ rotates from $0$ to $\pi$. But then also,<br><strong>(ii)</strong> completing a full circle the
 reverse must happen by symmetry (since for the spin experiment $\theta$ is the same
-as $\pi+\theta$).</p>
-<p>Hence,
+as $\pi+\theta$).</p><p>Hence,
 $$
 c_1(\theta) = \cos(\theta/2),\qquad\text{and}\qquad c_2(\theta) = \sin(\theta/2)
 $$
@@ -596,19 +362,15 @@ $$
 \right)
 $$
 where we&rsquo;ve changed notation, $|\uparrow\rangle = \bigl( \begin{smallmatrix}1\\ 0\end{smallmatrix}\bigr)$
-and $|\downarrow\rangle = \bigl(\begin{smallmatrix}0\\ 1\end{smallmatrix}\bigr)$.</p>
-<p>This half-angle result is the desired suggestion that the Pauli spinor is
+and $|\downarrow\rangle = \bigl(\begin{smallmatrix}0\\ 1\end{smallmatrix}\bigr)$.</p><p>This half-angle result is the desired suggestion that the Pauli spinor is
 related to a geometric algebra rotor.
 $$
 |\psi\rangle \sim \sqrt{\rho} R
 $$
 where $\rho$ is the statistical scale factor (the probability density), $\rho=\rho(\vec{r})$, which we ignore for now, since it&rsquo;s determined by the
 wormhole gas geometro-dynamics, which is all absorbed into a wave, i.e., &ldquo;field&rdquo;
-approximation, for now.</p>
-<p>That&rsquo;s Lasenby & Doran&rsquo;s motivation, only I took considerably more paragraphs
-to do it in plain English. You&rsquo;re welcome.</p>
-<h3 id=the-mapping-psirangle-longmapsto-sqrtrho-r-><a class=anchor href=#the-mapping-psirangle-longmapsto-sqrtrho-r- title="Anchor for: The mapping $|\psi\rangle \longmapsto \sqrt{\rho} R $."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The mapping $|\psi\rangle \longmapsto \sqrt{\rho} R $</h3>
-<p>In 3-space, our general rotor will be a scalar plus linear combination of
+approximation, for now.</p><p>That&rsquo;s Lasenby & Doran&rsquo;s motivation, only I took considerably more paragraphs
+to do it in plain English. You&rsquo;re welcome.</p><h3 id=the-mapping-psirangle-longmapsto-sqrtrho-r-><a class=anchor href=#the-mapping-psirangle-longmapsto-sqrtrho-r- title='Anchor for: The mapping $|\psi\rangle \longmapsto \sqrt{\rho} R $.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The mapping $|\psi\rangle \longmapsto \sqrt{\rho} R $</h3><p>In 3-space, our general rotor will be a scalar plus linear combination of
 the basis bivectors, since a rotor is an element of the even sub-algebra,
 recall.
 $$
@@ -620,8 +382,7 @@ relations in the <a href=../004_geometric_algebra/#duality-in-3d>previous chapte
 we can write these bivectors slickly as duals of the basis vectors,
 and since we know we want the Pauli algebra for these rotors we&rsquo;d better use
 the relative vectors $\boldsymbol{\sigma}_k$ instead of the primitive basis
-frame 1-vectors $\gamma_k$.</p>
-<p>With the pseudoscalar $i=\gamma_0\gamma_1\gamma_2\gamma_3$,
+frame 1-vectors $\gamma_k$.</p><p>With the pseudoscalar $i=\gamma_0\gamma_1\gamma_2\gamma_3$,
 which is the same as $I=\boldsymbol{\sigma}_1\boldsymbol{\sigma}_2\boldsymbol{\sigma}_3$,
 we thus have,
 $$
@@ -629,8 +390,7 @@ $$
 $$
 Now, as I just wrote, we can ignore $\rho$ since that comes from solving
 the wave equation in the Schrödinger&ndash;Pauli approximation for NRQM.
-So we can absorb $\rho$ into the coefficients $a^\mu$ for now.</p>
-<p>The mapping we seek is thus, <a name=Eq.2>(Eq.2)</a>
+So we can absorb $\rho$ into the coefficients $a^\mu$ for now.</p><p>The mapping we seek is thus, <a name=Eq.2>(Eq.2)</a>
 $$
 \mathcal{H} \ni \quad |\psi\rangle
 = \begin{pmatrix} x_1 + i x_2 \\ y_1 + i y_2 \end{pmatrix}
@@ -638,50 +398,42 @@ $$
 $$
 where $c_1(\theta)=x_1+ix_2$, and $c_2(\theta)=y_1+ iy_2$.
 $\mathcal{H}$ is for the Hilbert space, and $\mathcal{G}^+_3$ for the even
-sub-algebra of 3-space, in the $\gamma_0$ relative STA frame for our &ldquo;clocks.&rdquo;</p>
-<p>The &ldquo;$i$&rdquo; on the left side of the mapping is the unit imaginary,
+sub-algebra of 3-space, in the $\gamma_0$ relative STA frame for our &ldquo;clocks.&rdquo;</p><p>The &ldquo;$i$&rdquo; on the left side of the mapping is the unit imaginary,
 on the right it is both the 3-space relative pseudoscalar and the STA pseudoscalar
 (they&rsquo;re the same thing, as I just noted above):
 $$
 I = \sigma_1\sigma_2\sigma_3 = \gamma_1\gamma_0 \gamma_2\gamma_0 \gamma_3\gamma_0
 = - \gamma_1\gamma_0 \gamma_2\gamma_3 = \gamma_0\gamma_1\gamma_2\gamma_3 = i
-$$</p>
-<p>From here you can deduce what $(x_1, x_2, y_1, y_2)$ must be from the properties
+$$</p><p>From here you can deduce what $(x_1, x_2, y_1, y_2)$ must be from the properties
 of rotations, plus the convention we&rsquo;ve used that the magnetic field for the
 measurement of the spin axis is in the $\vec{z}$ direction,
-or in $\mathcal{G}^+_3$ the $\boldsymbol{\sigma}_3$ direction.</p>
-<p>You get one freedom here in quantum mechanics, since it&rsquo;s a measurement theory.
+or in $\mathcal{G}^+_3$ the $\boldsymbol{\sigma}_3$ direction.</p><p>You get one freedom here in quantum mechanics, since it&rsquo;s a measurement theory.
 The convention is the $z$ axis for the field, and the electron spin is then the
 thing that&rsquo;s somewhere relatively aligned, statistically,
-unless we&rsquo;ve already polarized it beforehand not too long ago.</p>
-<p>The way to find the mapping is funny, funny-ironic, since you have to consider
+unless we&rsquo;ve already polarized it beforehand not too long ago.</p><p>The way to find the mapping is funny, funny-ironic, since you have to consider
 the <em>reality</em> of the electron&rsquo;s spin, which is of course a 1-vector in 3D space,
 so it does not have just $\pm(\uparrow)$ and $\pm(\rightarrow)$ components,
 it has 3 components in cartesian 3-space coordinates, or you can say it has
 polar coordinates $(\hbar/2,\phi,\theta)$ and our experiment <strong><em>cannot</em></strong> possibly
 measure all three simultaneously, since they are non-commuting observables.
-(We deal with this in the next chapter.)</p>
-<p>I guess there&rsquo;s a magnetic moment $g$-factor correction that we&rsquo;re ignoring
+(We deal with this in the next chapter.)</p><p>I guess there&rsquo;s a magnetic moment $g$-factor correction that we&rsquo;re ignoring
 in the $\hbar/2$ magnitude, but let&rsquo;s continue to ignore it for now,
 and in any case we&rsquo;re only <em>abstractly</em> measuring the spin,
 so the magnetic moment is not the raw quantity we&rsquo;re recording here &ldquo;on paper&rdquo;.
 We&rsquo;ll just say the measurement of the spin yields $\hbar/2$ units registered by
-our detectors and whatnot.</p>
-<p>((The gyromagnetic ratio is usually explained as a &ldquo;quantum field theoretic effect.&rdquo;
+our detectors and whatnot.</p><p>((The gyromagnetic ratio is usually explained as a &ldquo;quantum field theoretic effect.&rdquo;
 But it is not the fields that make $g_e\approx -2.002319\ldots$, or whatever it is,
 the effect concerns precession of the electron spin plane.
 In T4G context we&rsquo;d explain this using the wormhole gas postulate,
 but since there&rsquo;s no way to collect data about the wormhole gas,
 we&rsquo;d be forced to invent fictional variables to account for the perturbations,
 and that would be the same as introducing field variables,
-which would be the same as employing QED.))</p>
-<p>((I have to say, I am not sure about the spin precession, how can one be?
+which would be the same as employing QED.))</p><p>((I have to say, I am not sure about the spin precession, how can one be?
 It is formally the way to explain $g_e$ but I still think that underlying the
 spin precession is some more statistical geometrodynamic kinematics.
 The picture I have in mind is that the wormhole gas effects mean we cannot
 pin the real spin plane down,
-so statistically it always gets perturbed &ldquo;as if&rdquo; it were precessing.))</p>
-<p>The usual treatment is to define the spin vector (a real vector now, not in Hilbert space, but in <em>physical</em> 3-space), by,
+so statistically it always gets perturbed &ldquo;as if&rdquo; it were precessing.))</p><p>The usual treatment is to define the spin vector (a real vector now, not in Hilbert space, but in <em>physical</em> 3-space), by,
 $$
 \boldsymbol{S}_k = \tfrac{\hbar}{2} \boldsymbol{n}_k$$
 where $\vec{n}$ is unit.
@@ -705,49 +457,41 @@ n_1 = \langle\psi| \hat{\sigma}_1 |\psi\rangle = xy^\ast + x^\ast y\\
 n_2 = \langle\psi| \hat{\sigma}_2 |\psi\rangle = i(xy^\ast - x^\ast y)\\
 n_3 = \langle\psi| \hat{\sigma}_3 |\psi\rangle = xx^\ast - yy^\ast .
 \end{array}
-$$</p>
-<p>where from above $x=c_1=c_\uparrow$, and $y=c_2=c_\downarrow$.
+$$</p><p>where from above $x=c_1=c_\uparrow$, and $y=c_2=c_\downarrow$.
 Don&rsquo;t ask me why I chose different symbols for the same stuff. I guess I had in
 mind the complex $(x_1,x_2)$ and $(y_1, y_2)$ were &ldquo;unknowns to be solved for&rdquo;
-no other reason.</p>
-<p>I do not recommend checking all that with pencil and paper if you have
+no other reason.</p><p>I do not recommend checking all that with pencil and paper if you have
 the Python or Julia software handy.
 The symbolic algebra package <a href=https://maxima.sourceforge.io/ target=_blank>Maxima</a>
 also is easy for matrix computations over the complex field.
 (I recommend using free-libre software whenever possible, avoid Mathcad,
 Maple and Mathematica.)
-If if you are super lazy I guess you could open Wolfram Alpha if you are online.</p>
-<p>Here&rsquo;s some Julia for it:</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=k>using</span> <span class=n>Symbolics</span>
-<span class=nd>@variables</span> <span class=n>x1</span> <span class=n>x2</span> <span class=n>y1</span> <span class=n>y2</span>
-<span class=n>S1</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span> 
-<span class=n>S2</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=nb>im</span><span class=p>;</span> <span class=o>-</span><span class=mf>1.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span> 
-<span class=n>S3</span><span class=o>=</span><span class=p>[</span><span class=mf>1.0</span> <span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>];</span>
-
-<span class=n>psi</span> <span class=o>=</span> <span class=p>[</span><span class=n>x1</span> <span class=o>+</span> <span class=nb>im</span><span class=o>*</span><span class=n>x2</span><span class=p>;</span> <span class=n>y1</span> <span class=o>+</span> <span class=nb>im</span><span class=o>*</span><span class=n>y2</span><span class=p>]</span>
-
-<span class=c># Now for the checks:julia&gt; *(*(transpose(conj(psi)), S1), psi) == X*conj(Y) + conj(X)*Y</span>
-<span class=p>((</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y1</span> <span class=o>+</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y2</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y1</span> <span class=o>+</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y2</span><span class=p>))</span> <span class=o>&amp;</span> <span class=nb>true</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=o>*</span><span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>transpose</span><span class=p>(</span><span class=n>conj</span><span class=p>(</span><span class=n>psi</span><span class=p>)),</span> <span class=n>S2</span><span class=p>),</span> <span class=n>psi</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=p>(</span><span class=n>X</span><span class=o>*</span><span class=n>conj</span><span class=p>(</span><span class=n>Y</span><span class=p>)</span> <span class=o>-</span> <span class=n>conj</span><span class=p>(</span><span class=n>X</span><span class=p>)</span><span class=o>*</span><span class=n>Y</span><span class=p>)</span>
-<span class=p>((</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y2</span> <span class=o>-</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y1</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y2</span> <span class=o>-</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y1</span><span class=p>))</span> <span class=o>&amp;</span> <span class=nb>true</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=o>*</span><span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>transpose</span><span class=p>(</span><span class=n>conj</span><span class=p>(</span><span class=n>psi</span><span class=p>)),</span> <span class=n>S3</span><span class=p>),</span> <span class=n>psi</span><span class=p>)</span> <span class=o>==</span> <span class=n>X</span><span class=o>*</span><span class=n>conj</span><span class=p>(</span><span class=n>X</span><span class=p>)</span> <span class=o>+</span> <span class=n>Y</span><span class=o>*</span><span class=n>conj</span><span class=p>(</span><span class=n>Y</span><span class=p>)</span>
-<span class=p>((</span><span class=n>x1</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>x2</span><span class=o>^</span><span class=mi>2</span> <span class=o>-</span> <span class=p>(</span><span class=n>y1</span><span class=o>^</span><span class=mi>2</span><span class=p>)</span> <span class=o>-</span> <span class=p>(</span><span class=n>y2</span><span class=o>^</span><span class=mi>2</span><span class=p>))</span> <span class=o>==</span> <span class=p>(</span><span class=n>x1</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>x2</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>y1</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>y2</span><span class=o>^</span><span class=mi>2</span><span class=p>))</span> <span class=o>&amp;</span> <span class=nb>true</span>
-
-</code></pre></div><p>All good.</p>
-<p>But in any case, pencil and paper will get you there in a long-ish jiffy.
+If if you are super lazy I guess you could open Wolfram Alpha if you are online.</p><p>Here&rsquo;s some Julia for it:</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=k>using</span> <span class=n>Symbolics</span>
+</span></span><span class=line><span class=cl><span class=nd>@variables</span> <span class=n>x1</span> <span class=n>x2</span> <span class=n>y1</span> <span class=n>y2</span>
+</span></span><span class=line><span class=cl><span class=n>S1</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span> 
+</span></span><span class=line><span class=cl><span class=n>S2</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=nb>im</span><span class=p>;</span> <span class=o>-</span><span class=mf>1.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span> 
+</span></span><span class=line><span class=cl><span class=n>S3</span><span class=o>=</span><span class=p>[</span><span class=mf>1.0</span> <span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>psi</span> <span class=o>=</span> <span class=p>[</span><span class=n>x1</span> <span class=o>+</span> <span class=nb>im</span><span class=o>*</span><span class=n>x2</span><span class=p>;</span> <span class=n>y1</span> <span class=o>+</span> <span class=nb>im</span><span class=o>*</span><span class=n>y2</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Now for the checks:julia&gt; *(*(transpose(conj(psi)), S1), psi) == X*conj(Y) + conj(X)*Y</span>
+</span></span><span class=line><span class=cl><span class=p>((</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y1</span> <span class=o>+</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y2</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y1</span> <span class=o>+</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y2</span><span class=p>))</span> <span class=o>&amp;</span> <span class=nb>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=o>*</span><span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>transpose</span><span class=p>(</span><span class=n>conj</span><span class=p>(</span><span class=n>psi</span><span class=p>)),</span> <span class=n>S2</span><span class=p>),</span> <span class=n>psi</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=p>(</span><span class=n>X</span><span class=o>*</span><span class=n>conj</span><span class=p>(</span><span class=n>Y</span><span class=p>)</span> <span class=o>-</span> <span class=n>conj</span><span class=p>(</span><span class=n>X</span><span class=p>)</span><span class=o>*</span><span class=n>Y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>((</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y2</span> <span class=o>-</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y1</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>2</span><span class=n>x1</span><span class=o>*</span><span class=n>y2</span> <span class=o>-</span> <span class=mi>2</span><span class=n>x2</span><span class=o>*</span><span class=n>y1</span><span class=p>))</span> <span class=o>&amp;</span> <span class=nb>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=o>*</span><span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>transpose</span><span class=p>(</span><span class=n>conj</span><span class=p>(</span><span class=n>psi</span><span class=p>)),</span> <span class=n>S3</span><span class=p>),</span> <span class=n>psi</span><span class=p>)</span> <span class=o>==</span> <span class=n>X</span><span class=o>*</span><span class=n>conj</span><span class=p>(</span><span class=n>X</span><span class=p>)</span> <span class=o>+</span> <span class=n>Y</span><span class=o>*</span><span class=n>conj</span><span class=p>(</span><span class=n>Y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>((</span><span class=n>x1</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>x2</span><span class=o>^</span><span class=mi>2</span> <span class=o>-</span> <span class=p>(</span><span class=n>y1</span><span class=o>^</span><span class=mi>2</span><span class=p>)</span> <span class=o>-</span> <span class=p>(</span><span class=n>y2</span><span class=o>^</span><span class=mi>2</span><span class=p>))</span> <span class=o>==</span> <span class=p>(</span><span class=n>x1</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>x2</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>y1</span><span class=o>^</span><span class=mi>2</span> <span class=o>+</span> <span class=n>y2</span><span class=o>^</span><span class=mi>2</span><span class=p>))</span> <span class=o>&amp;</span> <span class=nb>true</span>
+</span></span></code></pre></div><p>All good.</p><p>But in any case, pencil and paper will get you there in a long-ish jiffy.
 Continuing with solving for these, we can also use,
 $$
 |\vec{n}| = 1, \Rightarrow |c_1|^2 + |c_2|^2 = 1
 $$
-which we had noted earlier in our heuristic &ldquo;physicalist&rdquo; motivations.</p>
-<p>Comparing the above expression we can find $c_1(\theta)$ and $c_2(\theta)$ and we get,
+which we had noted earlier in our heuristic &ldquo;physicalist&rdquo; motivations.</p><p>Comparing the above expression we can find $c_1(\theta)$ and $c_2(\theta)$ and we get,
 $$
 c_1 = \cos(\theta/2) e^{i\alpha}, \quad\text{and}\quad c_1 = \sin(\theta/2) e^{i\beta}
 $$
-which agrees with our previous heuristics too.</p>
-<p>But the pedantic <em>point of all this</em> tedious coordinate trigonometry is to get
+which agrees with our previous heuristics too.</p><p>But the pedantic <em>point of all this</em> tedious coordinate trigonometry is to get
 the <em>real</em> 3-space spin vector $\vec{n}$ in terms of our real geometric algebra.
 Since they&rsquo;re objects in the <em>same geometric space</em>, they have a simple relation:
 <a name=Eq.3>(Eq.3)</a>
@@ -759,8 +503,7 @@ And because we&rsquo;re ignoring the phase factors and $\rho$, we can take $\vec
 to be a rotation of the magnetic field $z$ or $\boldsymbol{\sigma}_3$ axis vector,
 $$\vec{n} = R \boldsymbol{\sigma}_3 \tilde{R}
 $$
-for some rotor $R$. Suggestively!</p>
-<p>Now, compare this with <a href=#Eq.3>(Eq.3)</a>
+for some rotor $R$. Suggestively!</p><p>Now, compare this with <a href=#Eq.3>(Eq.3)</a>
 we just wrote down. Or use your software.
 What is this rotor?
 The solution is found on a few lines of scrap paper,
@@ -771,17 +514,15 @@ The easy thing to do is convert the rotor to &ldquo;rectangular&rdquo; coordinat
 $$
 e^{-B\omega} = \cos(\omega) - B \sin(\omega)
 $$
-(should that be $+B\sin\omega$ there or $-B\sin\omega$? Just askin'.)
+(should that be $+B\sin\omega$ there or $-B\sin\omega$? Just askin&rsquo;.)
 Then just compare terms with <a href=#Eq.3>(Eq.3)</a>
 to find the <em>relative</em> bivector $B$.
 You should find,
 $$
 B = -\phi I \sigma_3/2 - \theta I \sigma_2/2.
 $$
-at least I hope that&rsquo;s easy, should be if you&rsquo;re following not too half drunk.</p>
-<p>Well, now using that same expanded rectangular coordinate form of the rotor, we can do another comparison with the defined spinor $|\psi\rangle$ from <a href=#Eq.2>Eq.2</a>
-in our proposed mapping from $\mathcal{H}$ to $\mathcal{G}^+_3$.</p>
-<p>You should find for those unknowns $x_{1,2}$ and $y_{1,2}$,
+at least I hope that&rsquo;s easy, should be if you&rsquo;re following not too half drunk.</p><p>Well, now using that same expanded rectangular coordinate form of the rotor, we can do another comparison with the defined spinor $|\psi\rangle$ from <a href=#Eq.2>Eq.2</a>
+in our proposed mapping from $\mathcal{H}$ to $\mathcal{G}^+_3$.</p><p>You should find for those unknowns $x_{1,2}$ and $y_{1,2}$,
 $$
 x_1=a^0,\quad x_2=a^3, \quad y_1=-a^2,\quad y_2=a^1.
 $$
@@ -791,47 +532,26 @@ $$
 \mathcal{H} \ni \quad |\psi\rangle
 = \begin{pmatrix} a^0 + i a^3 \\ -a^2 + i a^1 \end{pmatrix}
 \longmapsto \sqrt{\rho}R = a^0 + I a^k \boldsymbol{\sigma}_k \quad \in \mathscr{P}
-$$</p>
-<p><strong>Remember this formula.</strong> We&rsquo;ll use it heavily in other conversions from matrix
-mechanics to real geometric QM.</p>
-<p>Obviously there&rsquo;ll be a very similar mapping for the Dirac algebra onto the even sub-algebra of $\mathcal{G}^{1,3}_+$, the latter $\mathcal{G}^{1,3}$ being the full 16-dimensional spacetime or timespace algebra over the real numbers.
-But that&rsquo;s for much later in the chapter on <a href=../010_hestenes_spinors>Hestenes spinors.</a>
-</p>
-<h3 id=what-have-we-done><a class=anchor href=#what-have-we-done title="Anchor for: What have we done?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> What have we done?</h3>
-<p>It&rsquo;s also worth bearing in mind, the above study of Pauli mechanics directly
+$$</p><p><strong>Remember this formula.</strong> We&rsquo;ll use it heavily in other conversions from matrix
+mechanics to real geometric QM.</p><p>Obviously there&rsquo;ll be a very similar mapping for the Dirac algebra onto the even sub-algebra of $\mathcal{G}^{1,3}_+$, the latter $\mathcal{G}^{1,3}$ being the full 16-dimensional spacetime or timespace algebra over the real numbers.
+But that&rsquo;s for much later in the chapter on <a href=../010_hestenes_spinors>Hestenes spinors.</a></p><h3 id=what-have-we-done><a class=anchor href=#what-have-we-done title='Anchor for: What have we done?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>What have we done?</h3><p>It&rsquo;s also worth bearing in mind, the above study of Pauli mechanics directly
 specializes to Schrödinger wave mechanics, since we then just turn off the
-magnetic field, $\vec{B}=0$.</p>
-<p>So apart from the statistical factor $\rho$, which we&rsquo;d get from solving the
+magnetic field, $\vec{B}=0$.</p><p>So apart from the statistical factor $\rho$, which we&rsquo;d get from solving the
 Schrödinger equation, we&rsquo;ve got most of non-relativistic quantum mechanics
-from pure classical geometry.</p>
-<p>How the hell did we do it? Were there any smoke and mirrors?</p>
-<p>No. we just demanded a Measurement Theory, and imposed a fundamental quantum
+from pure classical geometry.</p><p>How the hell did we do it? Were there any smoke and mirrors?</p><p>No. we just demanded a Measurement Theory, and imposed a fundamental quantum
 postulate, namely that matter only exists in discrete clumps, which we are
 calling topological 4-geons, but in the above Pauli mechanics we sneaked in
 with the postulate the spin of the electron (or other particles) has a
-fixed magnitude $=\hbar/2$.</p>
-<p>It&rsquo;s not an Earth shattering postulate, but so far it&rsquo;s all we need to &ldquo;do&rdquo; an awful lot of quantum mechanics.
-But it&rsquo;s not everything. Next we want to see how the Dirac theory drops out in the same way from the full $16$-dimensional STA.</p>
-<p>((The Pauli sub-algebra for 3-space time in a relative frame, was $8$-dimensional.
-One scalar, 3 relative vectors $\boldsymbol{\sigma}_k$, 3 relative bivectors $I\boldsymbol{\sigma}_k$, and one pseudoscalar $I=i$.))</p>
-<p>So in a <a href=../010_hestenes_spinors>later chapter</a>
-we bump this all up to 16-dimensions, five grades of $n$-blades, and in doing so get the Lorentz boosts added to our group structure.</p>
-<p>Before we get to Dirac Theory I want to do the more startling foundational work
+fixed magnitude $=\hbar/2$.</p><p>It&rsquo;s not an Earth shattering postulate, but so far it&rsquo;s all we need to &ldquo;do&rdquo; an awful lot of quantum mechanics.
+But it&rsquo;s not everything. Next we want to see how the Dirac theory drops out in the same way from the full $16$-dimensional STA.</p><p>((The Pauli sub-algebra for 3-space time in a relative frame, was $8$-dimensional.
+One scalar, 3 relative vectors $\boldsymbol{\sigma}_k$, 3 relative bivectors $I\boldsymbol{\sigma}_k$, and one pseudoscalar $I=i$.))</p><p>So in a <a href=../010_hestenes_spinors>later chapter</a>
+we bump this all up to 16-dimensions, five grades of $n$-blades, and in doing so get the Lorentz boosts added to our group structure.</p><p>Before we get to Dirac Theory I want to do the more startling foundational work
 on quantum gravity, for our koan: (GR+CTCS$\Rightarrow$QM),
 namely deriving the Pauli Exclusion Principle and Interference effects from
-the geometric algebra theory for T4G.</p>
-<p>The constraint we want to self-impose, for parsimony, is:</p>
-<blockquote>
-<p>No other quantum postulates other than the <strong>4-geon particle postulate.</strong>
-That&rsquo;s our paradigm.</p>
-</blockquote>
-<p>The other impressive thing we&rsquo;ve done is demonstrate that it&rsquo;s possible to conceive of NR Quantum Mechanics as a theory of measurement and one in which,</p>
-<blockquote>
-<p>the Pauli Spinors are <strong>not elementary particles</strong>, we have instead found
+the geometric algebra theory for T4G.</p><p>The constraint we want to self-impose, for parsimony, is:</p><blockquote><p>No other quantum postulates other than the <strong>4-geon particle postulate.</strong>
+That&rsquo;s our paradigm.</p></blockquote><p>The other impressive thing we&rsquo;ve done is demonstrate that it&rsquo;s possible to conceive of NR Quantum Mechanics as a theory of measurement and one in which,</p><blockquote><p>the Pauli Spinors are <strong>not elementary particles</strong>, we have instead found
 the spinors are part statistical factors and part &ldquo;instructions to rotate.&rdquo;
-So spinors are <strong><em>processes</em></strong> not objects."</p>
-</blockquote>
-<p>Orthodox QM thinking, or philosophy, has thus for over a century made a
+So spinors are <strong><em>processes</em></strong> not objects."</p></blockquote><p>Orthodox QM thinking, or philosophy, has thus for over a century made a
 fundamental category error, leading all other &ldquo;interpretations&rdquo; astray.
 At least that&rsquo;s my view.
 I will back up this view with further considerations in the next chapter on
@@ -839,48 +559,29 @@ I will back up this view with further considerations in the next chapter on
 This next chapter should consolidate in your mind the &ldquo;correct&rdquo; view that
 the spinors are part instructions to rotate, and part instructions for a
 probability density statistics (in orthodox QM unexplained,
-in T4G explained by the wormhole gas postulate).</p>
-<p>Much, much later we&rsquo;ll do a <a href=../011_spin_measurement_part2>Spin Measurements part-2</a>
-which will simulate a Stern-Gerlach experiment using the Dirac multivectors.</p>
-<p>Before continuing to the GA treatment of spin measurements,
+in T4G explained by the wormhole gas postulate).</p><p>Much, much later we&rsquo;ll do a <a href=../011_spin_measurement_part2>Spin Measurements part-2</a>
+which will simulate a Stern-Gerlach experiment using the Dirac multivectors.</p><p>Before continuing to the GA treatment of spin measurements,
 it is nice at this point to map the typical operations
 one might use in the Hilbert space formalism to corresponding operators in the
 Pauli algebra.
 Later when we do the proper relativistic spacetime algebra (STA)
 (16-dimensional, 4+1 grades) we will repeat all this,
 and it will look very similar.
-So it is nice to do this first as an exercise for the non-relativisitcPauli algebra. (8-dimensional 1+3 grades, one grade is the scalar).</p>
-<h2 id=mapping-the-typical-matrix-operations-to-pauli-ga><a class=anchor href=#mapping-the-typical-matrix-operations-to-pauli-ga title="Anchor for: Mapping the typical matrix operations to Pauli-GA."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Mapping the typical matrix operations to Pauli-GA</h2>
-<p>What we want to do then is show you what the Hilbert space matrix operations of:<br>
-     <strong>(o)</strong> Hermitian conjugation;<br>
-     <strong>(i)</strong> &ldquo;multiplication by the unit imaginary&rdquo;;<br>
-     <strong>(ii)</strong> multiplication by a Pauli matrix;<br>
-     <strong>(iii)</strong> inner product;<br>
-     <strong>(iv)</strong> the observable for $\rho = \psi^\dagger\psi$;<br>
-     <strong>(v)</strong> the spin observables = expectation value of $\langle\psi | \hat{\sigma}_k | \psi\rangle$<br>
-each of these operations can be mapped to one corresponding to our geometric algebra multivectors, sometimes in the GA treatment there is a distinction between &ldquo;left-multiply&rdquo; and &ldquo;right-multiply&rdquo;, as one would expect for any algebra with non-commutative elements.</p>
-<blockquote>
-<p>In particular, we will find multiplication of a stats $|\psi\rangle$ by the unit imaginary in Hilbert space corresponds to a right-multiplication by $I\sigma_3$ in the Pauli GA.</p>
-</blockquote>
-<p>This is fairly significant! It means to correctly encode spacetime geometry,
+So it is nice to do this first as an exercise for the non-relativisitcPauli algebra. (8-dimensional 1+3 grades, one grade is the scalar).</p><h2 id=mapping-the-typical-matrix-operations-to-pauli-ga><a class=anchor href=#mapping-the-typical-matrix-operations-to-pauli-ga title='Anchor for: Mapping the typical matrix operations to Pauli-GA.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Mapping the typical matrix operations to Pauli-GA</h2><p>What we want to do then is show you what the Hilbert space matrix operations of:<br>     <strong>(o)</strong> Hermitian conjugation;<br>     <strong>(i)</strong> &ldquo;multiplication by the unit imaginary&rdquo;;<br>     <strong>(ii)</strong> multiplication by a Pauli matrix;<br>     <strong>(iii)</strong> inner product;<br>     <strong>(iv)</strong> the observable for $\rho = \psi^\dagger\psi$;<br>     <strong>(v)</strong> the spin observables = expectation value of $\langle\psi | \hat{\sigma}_k | \psi\rangle$<br>each of these operations can be mapped to one corresponding to our geometric algebra multivectors, sometimes in the GA treatment there is a distinction between &ldquo;left-multiply&rdquo; and &ldquo;right-multiply&rdquo;, as one would expect for any algebra with non-commutative elements.</p><blockquote><p>In particular, we will find multiplication of a stats $|\psi\rangle$ by the unit imaginary in Hilbert space corresponds to a right-multiplication by $I\sigma_3$ in the Pauli GA.</p></blockquote><p>This is fairly significant! It means to correctly encode spacetime geometry,
 even in the non-relativistic case, we have to respect order of operations and
 non-commutativity. Or, you could say, the price we pay for proper geometric clarity
-is that we cannot afford to be maverick anymore about where the pseudoscalar appears.</p>
-<p>At the end this will mean we will have a pretty complete dictionary for
+is that we cannot afford to be maverick anymore about where the pseudoscalar appears.</p><p>At the end this will mean we will have a pretty complete dictionary for
 translating from any standard orthodox Hilbert space text on quantum mechanics
-to the preferred geometric algebra rendition of QM.</p>
-<p>It is worth noting none of this will take us out of QM, none of this depends upon
+to the preferred geometric algebra rendition of QM.</p><p>It is worth noting none of this will take us out of QM, none of this depends upon
 T4G theory being correct. It is simply a change of formal language from
 Hilbert spaces to geometric algebra.
 But the sinister and terribly dark demonic motive we have is certainly that of
 <em>meaning</em> to fully geometrize quantum mechanics.
 You are just not supposed to whisper this until we are done,
-in case the professors get nervous.</p>
-<p>What I recommend is that you do these as an exercise. On the Hilbert space side
+in case the professors get nervous.</p><p>What I recommend is that you do these as an exercise. On the Hilbert space side
 you only need the Pauli matrix basis and column vectors. Then on the GA side use
 the Julia or Python galgebra stuff we learned before,
-and then use the dictionary as the check.</p>
-<p>Let&rsquo;s repeat the dictionary <a href=#Eq.4>(Eq.4)</a>
+and then use the dictionary as the check.</p><p>Let&rsquo;s repeat the dictionary <a href=#Eq.4>(Eq.4)</a>
 (this never hurts):
 $$
 \mathcal{H} \ni \quad |\psi\rangle
@@ -888,12 +589,9 @@ $$
 \longmapsto \sqrt{\rho}R = a^0 + I a^k \boldsymbol{\sigma}_k \quad \in \mathscr{P}
 $$
 that&rsquo;s the basic dictionary. All else should follow, but let&rsquo;s write out the
-basic operations in any case.</p>
-<h3 id=multiply-by-a-pauli-matrix-leftrightarrow-sigma_k-psi-sigma_3><a class=anchor href=#multiply-by-a-pauli-matrix-leftrightarrow-sigma_k-psi-sigma_3 title="Anchor for: Multiply by a Pauli matrix $\leftrightarrow \sigma_k \psi \sigma_3$."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Multiply by a Pauli matrix $\leftrightarrow \sigma_k \psi \sigma_3$</h3>
-<p>If this relation is true it means in choosing the orthodox Pauli basis we have
+basic operations in any case.</p><h3 id=multiply-by-a-pauli-matrix-leftrightarrow-sigma_k-psi-sigma_3><a class=anchor href=#multiply-by-a-pauli-matrix-leftrightarrow-sigma_k-psi-sigma_3 title='Anchor for: Multiply by a Pauli matrix $\leftrightarrow \sigma_k \psi \sigma_3$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Multiply by a Pauli matrix $\leftrightarrow \sigma_k \psi \sigma_3$</h3><p>If this relation is true it means in choosing the orthodox Pauli basis we have
 implicitly chosen a preferred reference frame, namely the $\sigma_3$ plane for the spin.
-We cannot immediately see this in the dictionary. So we need to check it.</p>
-<p><strong>Define:</strong> a unit imaginary equivalent in GA can be defined,
+We cannot immediately see this in the dictionary. So we need to check it.</p><p><strong>Define:</strong> a unit imaginary equivalent in GA can be defined,
 $$
 J = I\boldsymbol{\sigma}_3
 $$
@@ -903,9 +601,7 @@ $$
 $$
 The point just being it can have a different effect depending on grade, if multiplying
 a multivector from the left compared to on the right.
-We will see why this makes sense in a few paragraphs.</p>
-<p>I won&rsquo;t take away the fun here, so let&rsquo;s make them &ldquo;show it&rdquo; exercises.</p>
-<p><a name=Ex.0></a>
+We will see why this makes sense in a few paragraphs.</p><p>I won&rsquo;t take away the fun here, so let&rsquo;s make them &ldquo;show it&rdquo; exercises.</p><p><a name=Ex.0></a>
 <strong>Exercise 0.</strong> This one does not involve just spinors, it is for <em>any</em>
 multivector $M$, say. The conjugation is supposed to change the sense of rotations,
 so has to invert bivectors. It is defined by,
@@ -916,12 +612,10 @@ that is, you reverse the multivector, which reverses time-like bivectors
 as well as spacelie-bivectors, so then to get just space bivector inversion we
 sandwich this between the timelike base vector
 $\gamma_0$, which restores the time direction in $M$ but keeps the spatial
-bivectors inverted.</p>
-<p>Note: In the &ldquo;mostly &ldquo;$-$&rdquo; metric there is a sign difference I think,
+bivectors inverted.</p><p>Note: In the &ldquo;mostly &ldquo;$-$&rdquo; metric there is a sign difference I think,
 $$
 M^\dagger = \gamma_0 \tilde{M} \gamma_0,\qquad \text{for $\eta = (+\! - - -)$}.
-$$</p>
-<p>The exercise is to check this does indeed &ldquo;invert&rdquo; spacelike bivectors
+$$</p><p>The exercise is to check this does indeed &ldquo;invert&rdquo; spacelike bivectors
 (change their sign).
 For example, the Faraday tensor becomes a bivector in spacetime algebra.
 In a later section on electromagnetism we can show there is a &ldquo;spacetime split&rdquo; of the Faraday bivector, which is not Lorentz invariant, since it can be used to pick out a preferred $\boldsymbol{E}$ and $\boldsymbol{B}$ field, it is defined by,
@@ -934,104 +628,87 @@ F^\dagger = \boldsymbol{E} - I \boldsymbol{B}
 $$
 $\boldsymbol{E}$ and $\boldsymbol{B}$ are bivectors here, but in the $\gamma_0$
 relative frame they&rsquo;re relative vectors, so composed from our $\boldsymbol{\sigma}_k$.
-The exercise, if you want to go deeper, is to check the relative vectors $\boldsymbol{\sigma}_k$ are not inverted by this conjugation, while the relative bivectors $I\boldsymbol{\sigma}_k$ are.</p>
-<p>&ldquo;Ah grasshopper, the previously hidden geometric mystery of Hermitian conjugation
+The exercise, if you want to go deeper, is to check the relative vectors $\boldsymbol{\sigma}_k$ are not inverted by this conjugation, while the relative bivectors $I\boldsymbol{\sigma}_k$ are.</p><p>&ldquo;Ah grasshopper, the previously hidden geometric mystery of Hermitian conjugation
 is revealed,&rdquo;
-(it&rsquo;s about inverting the <em>relative</em> space bivectors, but not the <em>relative</em> vectors).</p>
-<p><strong>Exercise <a name=Ex.1>1</a>.</strong> Show the mapping for action of Pauli matrix multiplication is:
+(it&rsquo;s about inverting the <em>relative</em> space bivectors, but not the <em>relative</em> vectors).</p><p><strong>Exercise <a name=Ex.1>1</a>.</strong> Show the mapping for action of Pauli matrix multiplication is:
 $$
 \hat{\sigma}_k |\psi\rangle \longmapsto \boldsymbol{\sigma}_k \psi \boldsymbol{\sigma}_3
 $$
-for $k=1,2,3$ and $\psi$ being the geometric algebra Pauli spinor.</p>
-<p><strong>Exercise <a name=Ex.2>2</a>.</strong> Show the mapping for &ldquo;multiplication by $i$&rdquo; is:
+for $k=1,2,3$ and $\psi$ being the geometric algebra Pauli spinor.</p><p><strong>Exercise <a name=Ex.2>2</a>.</strong> Show the mapping for &ldquo;multiplication by $i$&rdquo; is:
 $$
 i |\psi\rangle \longmapsto \psi I \boldsymbol{\sigma}_3 = \psi J
 $$
 and that the $J$ has to be on the right here, for rotors. You can only move the
-GA $J$ to the left if it commutes with the thing it is multiplying.</p>
-<p><strong>Exercise <a name=Ex.3-a>3.(a)</a>.</strong> Show the mapping for &ldquo;inner product&rdquo; is:
+GA $J$ to the left if it commutes with the thing it is multiplying.</p><p><strong>Exercise <a name=Ex.3-a>3.(a)</a>.</strong> Show the mapping for &ldquo;inner product&rdquo; is:
 $$
 \langle \phi | \psi \rangle \longmapsto \langle \phi^\dagger \psi \rangle_0 -
 \langle \phi^\dagger \psi J\rangle J
-$$</p>
-<p><strong>Exercise <a name=Ex.3-b>3.(b)</a>.</strong> Convince yourself what the quantum inner product is doing is thus,
+$$</p><p><strong>Exercise <a name=Ex.3-b>3.(b)</a>.</strong> Convince yourself what the quantum inner product is doing is thus,
 &ldquo;projecting out the $\{1, I\boldsymbol{\sigma}_3 \}$ components from the geometric
 product $\psi^\dagger \phi$.
-(Any idea why this is sort of pivotal in a Measurement theory?)</p>
-<p><strong>Definition:</strong> To distinguish this Dirac braket inner product from the geometric
-algebra inner product we denote it by $\langle\cdot\rangle_S$.</p>
-<p><strong>Exercise <a name=Ex.3-c>3.(c)</a>.</strong> Show this Dirac inner product has a simpler form for any
+(Any idea why this is sort of pivotal in a Measurement theory?)</p><p><strong>Definition:</strong> To distinguish this Dirac braket inner product from the geometric
+algebra inner product we denote it by $\langle\cdot\rangle_S$.</p><p><strong>Exercise <a name=Ex.3-c>3.(c)</a>.</strong> Show this Dirac inner product has a simpler form for any
 Pauli algebra <em>even</em> multivector (a general spinor):
 $$
 \langle A \rangle_S = \tfrac{1}{2} \left(A - J A J \right)
 $$
-for $A = \sum\limits_r M_r$ for $r$ even.</p>
-<p><strong>Exercise <a name=Ex.4>4</a>.</strong> Show the mapping for &ldquo;probability density&rdquo; is:
+for $A = \sum\limits_r M_r$ for $r$ even.</p><p><strong>Exercise <a name=Ex.4>4</a>.</strong> Show the mapping for &ldquo;probability density&rdquo; is:
 $$
 \langle \psi | \psi \rangle \longmapsto \psi\psi^\dagger
 $$
-or can it be $\psi\tilde{\psi}$?</p>
-<p><strong>Exercise <a name=Ex.5>5</a>.</strong> Show the mapping for &ldquo;spin expectation value&rdquo; is:
+or can it be $\psi\tilde{\psi}$?</p><p><strong>Exercise <a name=Ex.5>5</a>.</strong> Show the mapping for &ldquo;spin expectation value&rdquo; is:
 $$
 \langle\psi|\hat{s}_k|\psi\rangle \longmapsto \tfrac{\hbar}{2} \langle\boldsymbol{\sigma}_k\psi\boldsymbol{\sigma}_3\psi^\dagger\rangle = \boldsymbol{\sigma}_k \cdot \boldsymbol{s}
 $$
 For the solution to this exercise see the
 <a href=../006_spin_measurement_part1>next chapter</a>
-which has more on spin.</p>
-<p>I&rsquo;ll work through just the one or two of the exercises. We&rsquo;ll do the zeroth exercise
-in a hypothetical future chapter on electromagnetism.</p>
-<p><strong>Exercise <a name=Ex.6>6</a>.</strong> What corresponds to &ldquo;complex conjugate&rdquo;?</p>
-<p><strong>Solution <a href=#Ex.1>1</a>
+which has more on spin.</p><p>I&rsquo;ll work through just the one or two of the exercises. We&rsquo;ll do the zeroth exercise
+in a hypothetical future chapter on electromagnetism.</p><p><strong>Exercise <a name=Ex.6>6</a>.</strong> What corresponds to &ldquo;complex conjugate&rdquo;?</p><p><strong>Solution <a href=#Ex.1>1</a>
 .</strong> I may as well do this in Julia, since I already did it
-years ago on galgebra.</p>
-<p>Note how much more effort it is to define the matrices. I minor gripe about using matrices,
-but still&mldr; it is computationally telling.</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Multivectors</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@generate_basis</span><span class=p>(</span><span class=s>&#34;+++-&#34;</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>s1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>s2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>s3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>I</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>e1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>e2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>e3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>e4</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=p>;</span>
-
-<span class=c># The matrix stuff</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>S1</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>S2</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>1.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>S3</span><span class=o>=</span><span class=p>[</span><span class=mf>1.0</span> <span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>];</span>
-
-<span class=c># Quick checks:</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>S2</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S3</span><span class=p>,</span> <span class=o>*</span><span class=p>(</span><span class=n>S2</span><span class=p>,</span> <span class=n>S3</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S1</span><span class=p>,</span> <span class=o>*</span><span class=p>(</span><span class=n>S3</span><span class=p>,</span> <span class=n>S1</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S2</span><span class=p>)</span>
-<span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span> <span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>S2</span><span class=p>)</span> <span class=o>-</span> <span class=o>*</span><span class=p>(</span><span class=n>S2</span><span class=p>,</span> <span class=n>S1</span><span class=p>))</span><span class=o>/</span><span class=mi>2</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S3</span><span class=p>,</span> <span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S2</span><span class=p>,</span> <span class=n>S3</span><span class=p>)</span> <span class=o>-</span> <span class=o>*</span><span class=p>(</span><span class=n>S3</span><span class=p>,</span> <span class=n>S2</span><span class=p>))</span><span class=o>/</span><span class=mi>2</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S1</span><span class=p>,</span>
-<span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S3</span><span class=p>,</span> <span class=n>S1</span><span class=p>)</span> <span class=o>-</span> <span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>S3</span><span class=p>))</span><span class=o>/</span><span class=mi>2</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S2</span> <span class=p>)</span>
-<span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
-</code></pre></div><p>Ok. Next you might wish to run symbolic algebra tests. For this you&rsquo;ll need to
+years ago on galgebra.</p><p>Note how much more effort it is to define the matrices. I minor gripe about using matrices,
+but still&mldr; it is computationally telling.</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Multivectors</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@generate_basis</span><span class=p>(</span><span class=s>&#34;+++-&#34;</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>s1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>s2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>s3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>I</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₁</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₂</span><span class=o>*</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>e1</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₁</span><span class=p>;</span> <span class=n>e2</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₂</span><span class=p>;</span> <span class=n>e3</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₃</span><span class=p>;</span> <span class=n>e4</span><span class=o>=</span><span class=mf>1.0</span><span class=n>e₄</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># The matrix stuff</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>S1</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>S2</span><span class=o>=</span><span class=p>[</span><span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>1.0</span><span class=nb>im</span> <span class=mf>0.0</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>S3</span><span class=o>=</span><span class=p>[</span><span class=mf>1.0</span> <span class=mf>0.0</span><span class=nb>im</span><span class=p>;</span> <span class=mf>0.0</span> <span class=o>-</span><span class=mf>1.0</span><span class=o>+</span><span class=mf>0.0</span><span class=nb>im</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Quick checks:</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>S2</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S3</span><span class=p>,</span> <span class=o>*</span><span class=p>(</span><span class=n>S2</span><span class=p>,</span> <span class=n>S3</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S1</span><span class=p>,</span> <span class=o>*</span><span class=p>(</span><span class=n>S3</span><span class=p>,</span> <span class=n>S1</span><span class=p>)</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span> <span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>S2</span><span class=p>)</span> <span class=o>-</span> <span class=o>*</span><span class=p>(</span><span class=n>S2</span><span class=p>,</span> <span class=n>S1</span><span class=p>))</span><span class=o>/</span><span class=mi>2</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S3</span><span class=p>,</span> <span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S2</span><span class=p>,</span> <span class=n>S3</span><span class=p>)</span> <span class=o>-</span> <span class=o>*</span><span class=p>(</span><span class=n>S3</span><span class=p>,</span> <span class=n>S2</span><span class=p>))</span><span class=o>/</span><span class=mi>2</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=o>*</span><span class=p>(</span><span class=n>S3</span><span class=p>,</span> <span class=n>S1</span><span class=p>)</span> <span class=o>-</span> <span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>S3</span><span class=p>))</span><span class=o>/</span><span class=mi>2</span> <span class=o>==</span> <span class=nb>im</span><span class=o>*</span><span class=n>S2</span> <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>,</span> <span class=nb>true</span><span class=p>)</span>
+</span></span></code></pre></div><p>Ok. Next you might wish to run symbolic algebra tests. For this you&rsquo;ll need to
 install the <code>Symbolics.jl</code> library.
 When I did this it consumed 100% of my CPU, so hung everything I had running.
 It&rsquo;ll take about 20 minutes to compile, or a bit more or less depending on your CPU.
 If it takes more than a hour consider killing using the power off button!
 The next time you attempt the install it should run faster.
-(Using Python sympy is much simpler!)</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Symbolics</span>
-<span class=c># go make a cup of coffee...</span>
-</code></pre></div><p>That done, you want to define at least the four $a^i$ numbers.</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Symbolics</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@variables</span> <span class=n>a0</span> <span class=n>a1</span> <span class=n>a2</span> <span class=n>a3</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>A</span> <span class=o>=</span> <span class=p>[</span><span class=n>a0</span> <span class=o>+</span> <span class=nb>im</span><span class=o>*</span><span class=n>a3</span><span class=p>;</span> <span class=o>-</span><span class=n>a2</span><span class=o>+</span><span class=nb>im</span><span class=o>*</span><span class=n>a1</span><span class=p>]</span>
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>S1xA</span> <span class=o>=</span> <span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>A</span><span class=p>)</span>
-<span class=mi>2</span><span class=o>-</span><span class=n>element</span> <span class=kt>Vector</span><span class=p>{</span><span class=kt>Complex</span><span class=p>{</span><span class=kt>Num</span><span class=p>}}</span><span class=o>:</span>
- <span class=n>a1</span><span class=o>*</span><span class=nb>im</span> <span class=o>-</span> <span class=n>a2</span>
-    <span class=n>a0</span> <span class=o>+</span> <span class=n>a3</span><span class=o>*</span><span class=nb>im</span>
-
-<span class=c># The GA version</span>
-    
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>psi1</span> <span class=o>=</span> <span class=mf>1.0</span> <span class=o>+</span> <span class=mf>3.1</span> <span class=o>*</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span> <span class=o>+</span> <span class=mf>3.2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s2</span> <span class=o>+</span> <span class=mf>3.3</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s3</span>
-<span class=kt>Multivector</span><span class=p>{</span><span class=kt>Float64</span><span class=p>,</span> <span class=mi>2</span><span class=p>}</span>
-<span class=n>⟨1</span><span class=mf>.0</span><span class=n>⟩₀</span> <span class=o>+</span> <span class=n>⟨1</span><span class=mf>.0</span><span class=n>e₁₂</span><span class=p>,</span><span class=o>-</span><span class=mf>1.0</span><span class=n>e₁₃</span><span class=p>,</span><span class=mf>1.0</span><span class=n>e₂₃⟩₂</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>psi2</span> <span class=o>=</span> <span class=n>s1</span> <span class=o>*</span> <span class=n>psi1</span> <span class=o>*</span> <span class=n>s3</span>
-<span class=kt>Multivector</span><span class=p>{</span><span class=kt>Float64</span><span class=p>,</span> <span class=mi>4</span><span class=p>}</span>
-<span class=n>⟨</span><span class=o>-</span><span class=mf>3.2</span><span class=n>⟩₀</span> <span class=o>+</span> <span class=n>⟨1</span><span class=mf>.0</span><span class=n>e₁₃</span><span class=p>,</span><span class=mf>0.0</span><span class=n>e₁₄</span><span class=p>,</span><span class=o>-</span><span class=mf>0.0</span><span class=n>e₂₄</span><span class=p>,</span><span class=mf>3.3</span><span class=n>e₂₃</span><span class=p>,</span><span class=mf>0.0</span><span class=n>e₃₄</span><span class=p>,</span><span class=mf>3.1</span><span class=n>e₁₂⟩₂</span>
-
-</code></pre></div><p>Does this check? Well,&mldr; I have no idea, since we did not use symbols.
+(Using Python sympy is much simpler!)</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Symbolics</span>
+</span></span><span class=line><span class=cl><span class=c># go make a cup of coffee...</span>
+</span></span></code></pre></div><p>That done, you want to define at least the four $a^i$ numbers.</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=k>using</span> <span class=n>Symbolics</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=nd>@variables</span> <span class=n>a0</span> <span class=n>a1</span> <span class=n>a2</span> <span class=n>a3</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>A</span> <span class=o>=</span> <span class=p>[</span><span class=n>a0</span> <span class=o>+</span> <span class=nb>im</span><span class=o>*</span><span class=n>a3</span><span class=p>;</span> <span class=o>-</span><span class=n>a2</span><span class=o>+</span><span class=nb>im</span><span class=o>*</span><span class=n>a1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>S1xA</span> <span class=o>=</span> <span class=o>*</span><span class=p>(</span><span class=n>S1</span><span class=p>,</span> <span class=n>A</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=mi>2</span><span class=o>-</span><span class=n>element</span> <span class=kt>Vector</span><span class=p>{</span><span class=kt>Complex</span><span class=p>{</span><span class=kt>Num</span><span class=p>}}</span><span class=o>:</span>
+</span></span><span class=line><span class=cl> <span class=n>a1</span><span class=o>*</span><span class=nb>im</span> <span class=o>-</span> <span class=n>a2</span>
+</span></span><span class=line><span class=cl>    <span class=n>a0</span> <span class=o>+</span> <span class=n>a3</span><span class=o>*</span><span class=nb>im</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># The GA version</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>psi1</span> <span class=o>=</span> <span class=mf>1.0</span> <span class=o>+</span> <span class=mf>3.1</span> <span class=o>*</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span> <span class=o>+</span> <span class=mf>3.2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s2</span> <span class=o>+</span> <span class=mf>3.3</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s3</span>
+</span></span><span class=line><span class=cl><span class=kt>Multivector</span><span class=p>{</span><span class=kt>Float64</span><span class=p>,</span> <span class=mi>2</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>⟨1</span><span class=mf>.0</span><span class=n>⟩₀</span> <span class=o>+</span> <span class=n>⟨1</span><span class=mf>.0</span><span class=n>e₁₂</span><span class=p>,</span><span class=o>-</span><span class=mf>1.0</span><span class=n>e₁₃</span><span class=p>,</span><span class=mf>1.0</span><span class=n>e₂₃⟩₂</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>psi2</span> <span class=o>=</span> <span class=n>s1</span> <span class=o>*</span> <span class=n>psi1</span> <span class=o>*</span> <span class=n>s3</span>
+</span></span><span class=line><span class=cl><span class=kt>Multivector</span><span class=p>{</span><span class=kt>Float64</span><span class=p>,</span> <span class=mi>4</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>⟨</span><span class=o>-</span><span class=mf>3.2</span><span class=n>⟩₀</span> <span class=o>+</span> <span class=n>⟨1</span><span class=mf>.0</span><span class=n>e₁₃</span><span class=p>,</span><span class=mf>0.0</span><span class=n>e₁₄</span><span class=p>,</span><span class=o>-</span><span class=mf>0.0</span><span class=n>e₂₄</span><span class=p>,</span><span class=mf>3.3</span><span class=n>e₂₃</span><span class=p>,</span><span class=mf>0.0</span><span class=n>e₃₄</span><span class=p>,</span><span class=mf>3.1</span><span class=n>e₁₂⟩₂</span>
+</span></span></code></pre></div><p>Does this check? Well,&mldr; I have no idea, since we did not use symbols.
 But the numerics check out fine.
 $$
 \begin{array}{rll}
@@ -1046,134 +723,88 @@ because what if we did something weird like used some linear combination of the
 $\hat{\sigma}_k$? Would the $\mathcal{H}\mapsto \mathcal{G}^+_3$ still work?
 A dopey question really, since I can &ldquo;see&rdquo; how the algebra would work,
 even if the computer does not.
-So this is no proof for the general case. Although it convinces me.</p>
-<p>So far I have not worked out how to use Multivector together with Symbolics,
+So this is no proof for the general case. Although it convinces me.</p><p>So far I have not worked out how to use Multivector together with Symbolics,
 so I cannot check the general case. So this was all a bit of a bummer.
 I plan to continue learning Julia for later numerical solvers for the Dirac equation,
-but for theory checks I am going to personally stick with Python.</p>
-<p>Yes, it does all work out in Python&rsquo;s <a href=https://galgebra.readthedocs.io/en/latest/index.html target=_blank>galgebra</a>
+but for theory checks I am going to personally stick with Python.</p><p>Yes, it does all work out in Python&rsquo;s <a href=https://galgebra.readthedocs.io/en/latest/index.html target=_blank>galgebra</a>
 if you want to check that out.
 That is, if you want to make sure those coefficients I used did not just luckily
-turn out to be perfect.</p>
-<p>Nevertheless, if we wanted to make our own slowish high level symbolic library for the
+turn out to be perfect.</p><p>Nevertheless, if we wanted to make our own slowish high level symbolic library for the
 Julia symbolic multivectors we could, but we&rsquo;d have to pass multvectors to functions
 via two objects, one a list of the symbolic coefficients, and the other the actual
 rotor/multivector. Such a pair for each multivector!
 Then we&rsquo;d have to bother doing each basis blade computation separately in a loop,
 then gather terms at the end. A bit of a chore.
-So I have not gone to those lengths yet, I would default back to using Python <code>galgebra</code></p>
-<p>If you are serious about this stuff, let me know, and you can grab the basic
-test software for <code>galgebra</code> from the T4GU git repository.</p>
-<p>In Python <code>galgebra</code> it is also easy to write the check function, since the
-symbolics cooperate perfectly with the GA multivector objects.</p>
-<p>Maybe for luck I should do the last exercise.</p>
-<p><strong>Solution [6.]kate 2_ (#Ex.6)</strong> It make take some trial and erorr, since this was not a &ldquo;show it&rdquo; exercise. But peek now at the answer and you can then make it a &ldquo;show it&rdquo;.
+So I have not gone to those lengths yet, I would default back to using Python <code>galgebra</code></p><p>If you are serious about this stuff, let me know, and you can grab the basic
+test software for <code>galgebra</code> from the T4GU git repository.</p><p>In Python <code>galgebra</code> it is also easy to write the check function, since the
+symbolics cooperate perfectly with the GA multivector objects.</p><p>Maybe for luck I should do the last exercise.</p><p><strong>Solution [6.]kate 2_ (#Ex.6)</strong> It make take some trial and erorr, since this was not a &ldquo;show it&rdquo; exercise. But peek now at the answer and you can then make it a &ldquo;show it&rdquo;.
 $$
 |\psi\rangle^\ast \longmapsto \boldsymbol{\sigma}_2 \psi \boldsymbol{\sigma}_2
 $$
 Does it make any since only $\boldsymbol{\sigma}_2$ would work here?
 Since the chosen spin frame for the magnetic field measurement is,
 $\boldsymbol{\sigma}_3$, shouldn&rsquo;t complex conjugation
-also work with $\boldsymbol{\sigma}_1$ as well?</p>
-<p>Recall the principle mapping, so we need $a_3$ and $a_1$ only to change sign:</p>
-<div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>)</span>
-<span class=p>(</span><span class=mf>1.0</span><span class=n>e₂₃</span><span class=p>,</span> <span class=o>-</span><span class=mf>1.0</span><span class=n>e₁₃</span><span class=p>,</span> <span class=mf>1.0</span><span class=n>e₁₂</span><span class=p>)</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>psi1</span> <span class=o>=</span> <span class=mf>1.0</span> <span class=o>+</span> <span class=mf>3.1</span> <span class=o>*</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span> <span class=o>+</span> <span class=mf>3.2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s2</span> <span class=o>+</span> <span class=mf>3.3</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s3</span>
-
-<span class=n>julia</span><span class=o>&gt;</span> <span class=n>s2</span><span class=o>*</span><span class=n>psi1</span><span class=o>*</span><span class=n>s2</span>
-<span class=kt>Multivector</span><span class=p>{</span><span class=kt>Float64</span><span class=p>,</span> <span class=mi>4</span><span class=p>}</span>
-<span class=n>⟨1</span><span class=mf>.0</span><span class=n>⟩₀</span> <span class=o>+</span> <span class=n>⟨0</span><span class=mf>.0</span><span class=n>e₁₄</span><span class=p>,</span><span class=mf>0.0</span><span class=n>e₃₄</span><span class=p>,</span><span class=o>-</span><span class=mf>3.1</span><span class=n>e₂₃</span><span class=p>,</span><span class=o>-</span><span class=mf>3.3</span><span class=n>e₁₂</span><span class=p>,</span><span class=o>-</span><span class=mf>0.0</span><span class=n>e₂₄</span><span class=p>,</span><span class=o>-</span><span class=mf>3.2</span><span class=n>e₁₃⟩₂</span>
-</code></pre></div><p>The first line I just print out the bivectors for easy reference.
+also work with $\boldsymbol{\sigma}_1$ as well?</p><p>Recall the principle mapping, so we need $a_3$ and $a_1$ only to change sign:</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>I</span><span class=o>*</span><span class=n>s1</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>s2</span><span class=p>,</span> <span class=n>I</span><span class=o>*</span><span class=n>s3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=mf>1.0</span><span class=n>e₂₃</span><span class=p>,</span> <span class=o>-</span><span class=mf>1.0</span><span class=n>e₁₃</span><span class=p>,</span> <span class=mf>1.0</span><span class=n>e₁₂</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>psi1</span> <span class=o>=</span> <span class=mf>1.0</span> <span class=o>+</span> <span class=mf>3.1</span> <span class=o>*</span> <span class=n>I</span><span class=o>*</span><span class=n>s1</span> <span class=o>+</span> <span class=mf>3.2</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s2</span> <span class=o>+</span> <span class=mf>3.3</span><span class=o>*</span><span class=n>I</span><span class=o>*</span><span class=n>s3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>julia</span><span class=o>&gt;</span> <span class=n>s2</span><span class=o>*</span><span class=n>psi1</span><span class=o>*</span><span class=n>s2</span>
+</span></span><span class=line><span class=cl><span class=kt>Multivector</span><span class=p>{</span><span class=kt>Float64</span><span class=p>,</span> <span class=mi>4</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>⟨1</span><span class=mf>.0</span><span class=n>⟩₀</span> <span class=o>+</span> <span class=n>⟨0</span><span class=mf>.0</span><span class=n>e₁₄</span><span class=p>,</span><span class=mf>0.0</span><span class=n>e₃₄</span><span class=p>,</span><span class=o>-</span><span class=mf>3.1</span><span class=n>e₂₃</span><span class=p>,</span><span class=o>-</span><span class=mf>3.3</span><span class=n>e₁₂</span><span class=p>,</span><span class=o>-</span><span class=mf>0.0</span><span class=n>e₂₄</span><span class=p>,</span><span class=o>-</span><span class=mf>3.2</span><span class=n>e₁₃⟩₂</span>
+</span></span></code></pre></div><p>The first line I just print out the bivectors for easy reference.
 So we can see the two changes of sign are good: on $e_{23}$ and $e_{12}$.
 Note that the base for $a_2$ there should be $e_{31}$, so the minus sign
-on $3.2e_{13}$ is ok, it hasn&rsquo;t been flipped.</p>
-<p>Lastly, what about the $\boldsymbol{\sigma}_1\psi\boldsymbol{\sigma}_1$ sub-question?</p>
-<p>Well, you might be smart now and expect it to have a different meaning.
+on $3.2e_{13}$ is ok, it hasn&rsquo;t been flipped.</p><p>Lastly, what about the $\boldsymbol{\sigma}_1\psi\boldsymbol{\sigma}_1$ sub-question?</p><p>Well, you might be smart now and expect it to have a different meaning.
 What&rsquo;s the &ldquo;permuted&rdquo; version ($\vec{y} \leftrightarrow \vec{z}$) of complex conjugation
 in the other ($xz$) spin plane?
-Does your guess check out?</p>
-<h3 id=the-bilinear-covariants><a class=anchor href=#the-bilinear-covariants title="Anchor for: The bilinear covariants."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The bilinear covariants</h3>
-<p>Pretty critical in quantum mechanics are the symmetries, hence the invariants.
+Does your guess check out?</p><h3 id=the-bilinear-covariants><a class=anchor href=#the-bilinear-covariants title='Anchor for: The bilinear covariants.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The bilinear covariants</h3><p>Pretty critical in quantum mechanics are the symmetries, hence the invariants.
 In Schrödinger-Pauli-Dirac wave mechanics the more important invariants for a
 quantum state represented by $|\psi\rangle$ in the Hilbert space, or in the GA by
-$\psi = \sqrt{\rho}, R$, are called bilinear covariants.</p>
-<p>(Covariant being shorthand for coordinate choice invariant.)</p>
-<p>They&rsquo;re bilinear because they are computed from operations similar to the above
-Dirac inner product, for which we now have a geometric algebra version.</p>
-<p>At this point in pedagogy the &ldquo;usual&rdquo; thing is to write these down now, so getting a
+$\psi = \sqrt{\rho}, R$, are called bilinear covariants.</p><p>(Covariant being shorthand for coordinate choice invariant.)</p><p>They&rsquo;re bilinear because they are computed from operations similar to the above
+Dirac inner product, for which we now have a geometric algebra version.</p><p>At this point in pedagogy the &ldquo;usual&rdquo; thing is to write these down now, so getting a
 further extension of our basic mapping from $\mathcal{H}$ to $\mathcal{G}^+$.
-But why the hell would I do that? I&rsquo;m a <em>good</em> teacher, not a slimebag of a teacher.</p>
-<p>Also, won&rsquo;t we need the full Dirac theory for these things?</p>
-<p>Yes.</p>
-<p>So&mldr; I guess&mldr; &ldquo;haha! Fooled you&rdquo;? Well, so it&rsquo;s hard to be a slime bag even
+But why the hell would I do that? I&rsquo;m a <em>good</em> teacher, not a slimebag of a teacher.</p><p>Also, won&rsquo;t we need the full Dirac theory for these things?</p><p>Yes.</p><p>So&mldr; I guess&mldr; &ldquo;haha! Fooled you&rdquo;? Well, so it&rsquo;s hard to be a slime bag even
 if I wanted at this stage.
 I do want to get onto Dirac theory though, it is useful for elaborating a bit
 of T4G theory, but it is more nuanced, and more laborious.
 Most of T4G is understood non-relativistically with the Pauli spinors,
-and I hate hard labour.</p>
-<p>So I&rsquo;ll motivate why you might later on want to know these bilinear covariants,
+and I hate hard labour.</p><p>So I&rsquo;ll motivate why you might later on want to know these bilinear covariants,
 but I will not go and compute them, since we have not yet motivated their use.
-But from the plain English description you can see why some are useful.</p>
-<p>Here are a few:</p>
-<ul>
-<li>The probability density covariant.</li>
-<li>The Dirac current &mdash; will give the streamline type flow direction for the electric charge.</li>
-<li>The spin density.</li>
-</ul>
-<p>There are a couple of others. They can be ordered by STA grade, so you get a full set,
+But from the plain English description you can see why some are useful.</p><p>Here are a few:</p><ul><li>The probability density covariant.</li><li>The Dirac current &mdash; will give the streamline type flow direction for the electric charge.</li><li>The spin density.</li></ul><p>There are a couple of others. They can be ordered by STA grade, so you get a full set,
 {Scalar, Vector, Bivector, Pseudovector (trivector), Pseudoscalar} of covariants,
 one of each grade. That&rsquo;s pretty nice, given orthodox QM has no clue about the grades!
-They&rsquo;d say, &ldquo;Why five bilinear covariants man?&rdquo;</p>
-<p>Hestenes derives the formulae for them
+They&rsquo;d say, &ldquo;Why five bilinear covariants man?&rdquo;</p><p>Hestenes derives the formulae for them
 <a href=http://geocalc.clas.asu.edu/pdf/Geom_Dirac.pdf target=_blank>here,</a>
 and Doran and Lasenby
-<a href=http://geometry.mrao.cam.ac.uk/wp-content/uploads/2015/02/StatesAndOperators.pdf target=_blank>here.</a>
-</p>
-<div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div>
-<p>With what we&rsquo;ve done we can now, remarkably, attempt an account of the
+<a href=http://geometry.mrao.cam.ac.uk/wp-content/uploads/2015/02/StatesAndOperators.pdf target=_blank>here.</a></p><div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div><p>With what we&rsquo;ve done we can now, remarkably, attempt an account of the
 Pauli Exclusion Principle, and basic Interference, and do so all from
-pretty minimalist Topological 4-Geon theory.</p>
-<p>But I&rsquo;ll save that for the <a href=../007_pauli_ex_entanglement>chapter after next,</a>
+pretty minimalist Topological 4-Geon theory.</p><p>But I&rsquo;ll save that for the <a href=../007_pauli_ex_entanglement>chapter after next,</a>
 and here instead
 do some more terminological work, but this can be skimmed and kept in mind
 just for reference if you are in a hurry.
-We&rsquo;ve done most of it already in the above exercises.</p>
-<p>I know it&rsquo;s a bit deflating to go over terminology after the good stuff learning
+We&rsquo;ve done most of it already in the above exercises.</p><p>I know it&rsquo;s a bit deflating to go over terminology after the good stuff learning
 Pauli spinors are real geometric <strong><em>processes</em></strong>.
-So, maybe come back here when needed?</p>
-<h2 id=conjugation-reversion-and-all-that><a class=anchor href=#conjugation-reversion-and-all-that title="Anchor for: Conjugation, Reversion and All That."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Conjugation, Reversion and All That</h2>
-<p>The introduction of the timelike basis 1-vector $\gamma_0^2 = -1$ gives us more than
+So, maybe come back here when needed?</p><h2 id=conjugation-reversion-and-all-that><a class=anchor href=#conjugation-reversion-and-all-that title='Anchor for: Conjugation, Reversion and All That.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Conjugation, Reversion and All That</h2><p>The introduction of the timelike basis 1-vector $\gamma_0^2 = -1$ gives us more than
 one type of conjugation.
-It also gives us local &ldquo;clocks,&rdquo; so-to-speak, co-moving with the 4-geon.</p>
-<p>In fact there are so many different involutions I can never keep them
+It also gives us local &ldquo;clocks,&rdquo; so-to-speak, co-moving with the 4-geon.</p><p>In fact there are so many different involutions I can never keep them
 straight in my head, you have to be doing STA for a week straight to keep it all together.
-Which is no problem for a university lecturer, but hard for us dirtbag physicists.</p>
-<p>The gist of conjugation is simple though, it&rsquo;s an inversion sort of operation, either time-inversion, space-inversion, or a combined time-space inversion (a lot like doing a PT transform).</p>
-<p>By the way, PT transforms are pretty darn interesting in themselves, take a look at
+Which is no problem for a university lecturer, but hard for us dirtbag physicists.</p><p>The gist of conjugation is simple though, it&rsquo;s an inversion sort of operation, either time-inversion, space-inversion, or a combined time-space inversion (a lot like doing a PT transform).</p><p>By the way, PT transforms are pretty darn interesting in themselves, take a look at
 Carl Bender&rsquo;s papers on PT symmetry.
 Prof Bender (the dude, not the <a href=https://en.wikipedia.org/wiki/Bender_%28Futurama%29 target=_blank>Futurama robot</a>
 ) gets very close to identifying wormholes as a type of entanglement, but he is so fixated on the complex numbers he misses the spacetime algebra for the $\mathbb{C}$ trees &mdash; a shame and pity,
 because he&rsquo;d be able to do everything I want to do with T4GU over a summer sabbatical.
-&ldquo;Hellooo! Wake Up Carl!&rdquo;</p>
-<p>OK, that rant being done, the next business is to adopt one of the conventions for denoting the conjugations, and unfortunately there are several conventions.
-I&rsquo;m choosing one that&rsquo;s easiest here for KaTeX.</p>
-<p>It&rsquo;s a bit of an exercise to figure out which of these corresponds to complex conjugation, Hermitian conjugate, parity inversion, time inversion in QM, but since we&rsquo;ve not yet defined spinors from QM in terms of the timespace algebra, that&rsquo;s what we need to do next.
-Once we&rsquo;re done, it&rsquo;ll be terrific, since we will finally have a geometric intuition for what complex and Hermitian conjugates are really doing, as well as later on trace and determinants (determinants are easy though $\sim$ volumes of $n$-dimensional hedra, hence scale factors for any linear transform).</p>
-<p>The trace of a linear operator is not so straight forward in STA.
+&ldquo;Hellooo! Wake Up Carl!&rdquo;</p><p>OK, that rant being done, the next business is to adopt one of the conventions for denoting the conjugations, and unfortunately there are several conventions.
+I&rsquo;m choosing one that&rsquo;s easiest here for KaTeX.</p><p>It&rsquo;s a bit of an exercise to figure out which of these corresponds to complex conjugation, Hermitian conjugate, parity inversion, time inversion in QM, but since we&rsquo;ve not yet defined spinors from QM in terms of the timespace algebra, that&rsquo;s what we need to do next.
+Once we&rsquo;re done, it&rsquo;ll be terrific, since we will finally have a geometric intuition for what complex and Hermitian conjugates are really doing, as well as later on trace and determinants (determinants are easy though $\sim$ volumes of $n$-dimensional hedra, hence scale factors for any linear transform).</p><p>The trace of a linear operator is not so straight forward in STA.
 But from prior QM we know the trace should be the sum of eigenvalues,
-so that&rsquo;s a little head start.</p>
-<p>Anyway, let&rsquo;s make a start, first reviewing the main involutions we have already
-learned.</p>
-<h3 id=reversion-tildem><a class=anchor href=#reversion-tildem title="Anchor for: Reversion $\tilde{M}$."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Reversion $\tilde{M}$</h3>
-<p>We&rsquo;ve already got the tilde sign for a reversion (reverses ordering of strings
+so that&rsquo;s a little head start.</p><p>Anyway, let&rsquo;s make a start, first reviewing the main involutions we have already
+learned.</p><h3 id=reversion-tildem><a class=anchor href=#reversion-tildem title='Anchor for: Reversion $\tilde{M}$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Reversion $\tilde{M}$</h3><p>We&rsquo;ve already got the tilde sign for a reversion (reverses ordering of strings
 of 1-vectors in geometric products, (so <em>not</em> separately in not inner and
 outer products):
 $$
 \text{Reversion:}\qquad M=abcd \quad\Rightarrow \quad \tilde{M}=dcba.
-$$</p>
-<h3 id=space-conjugate--mast><a class=anchor href=#space-conjugate--mast title="Anchor for: Space conjugate  $M^\ast$."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Space conjugate $M^\ast$</h3>
-<p>One can split any $\mathcal{G}^n$ into even and odd parts, the even sub-algebra
+$$</p><h3 id=space-conjugate--mast><a class=anchor href=#space-conjugate--mast title='Anchor for: Space conjugate  $M^\ast$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Space conjugate $M^\ast$</h3><p>One can split any $\mathcal{G}^n$ into even and odd parts, the even sub-algebra
 will be closed, and similar to a &ldquo;complexification.&rdquo;
 The natural conjugate should thus go over to orthodox complex conjugation
 $z\longrightarrow z^\ast$, if you hack at this for a bit you&rsquo;ll discover the
@@ -1181,53 +812,40 @@ natural generalization is a grade dependent change of sign on every odd $r$-blad
 as follows:
 $$
 A_r \longrightarrow A^\ast = (-1)^r A_r
-$$</p>
-<p><strong>Exercise:</strong> Show that another way to write space conjugation for the <em>relative</em> vector Pauli algebra (not the normal Euclidean 3-space) is,
+$$</p><p><strong>Exercise:</strong> Show that another way to write space conjugation for the <em>relative</em> vector Pauli algebra (not the normal Euclidean 3-space) is,
 $$
 \mathcal{P}\ni\quad M^\ast = \gamma_0 M\gamma_0.
 $$
 Remember, in the Pauli algebra $\mathcal{P}$ the &ldquo;vectors&rdquo; are the bivectors
-$\boldsymbol{\sigma}_k$.</p>
-<p>In terms of the <em>entire</em> subspaces of the geometric algebra $\mathcal{G}_n$,
+$\boldsymbol{\sigma}_k$.</p><p>In terms of the <em>entire</em> subspaces of the geometric algebra $\mathcal{G}_n$,
 we&rsquo;ve got abstractly,
 $$
 (\mathcal{G}_n)^\ast = \bigl(\mathcal{G}^-_n + \mathcal{G}^+_n \bigr)^\ast = \mathcal{G}^-_n - \mathcal{G}^+_n.
-$$</p>
-<p>In <em>abstract</em> terms we can write this out explicitly for 3-space multivectors,
+$$</p><p>In <em>abstract</em> terms we can write this out explicitly for 3-space multivectors,
 $$
 M^\ast = \langle M\rangle_0 - \langle M\rangle_1 + \langle M\rangle_2 - \langle M\rangle_3
 $$
-or in plain English, flip the space 1-vectors.</p>
-<p>Now that we&rsquo;ve defined the space conjugate geometrically the meaning is clear
-(as it was in $\mathbb{C}$ I guess, but was not applicable to any space dimension).</p>
-<h3 id=hermitian-conjugate--mdagger><a class=anchor href=#hermitian-conjugate--mdagger title="Anchor for: Hermitian conjugate  $M^\dagger$."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Hermitian conjugate $M^\dagger$</h3>
-<p>We&rsquo;ve already encountered this one:
+or in plain English, flip the space 1-vectors.</p><p>Now that we&rsquo;ve defined the space conjugate geometrically the meaning is clear
+(as it was in $\mathbb{C}$ I guess, but was not applicable to any space dimension).</p><h3 id=hermitian-conjugate--mdagger><a class=anchor href=#hermitian-conjugate--mdagger title='Anchor for: Hermitian conjugate  $M^\dagger$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Hermitian conjugate $M^\dagger$</h3><p>We&rsquo;ve already encountered this one:
 $$
 M^\dagger = -\gamma_0 \tilde{M} \gamma_0
 $$
-it reversed the sense of bivectors, but did not change vectors.</p>
-<p><strong>Note:</strong> In the &ldquo;mostly &ldquo;$-$&rdquo; metric there is a sign difference I think,
+it reversed the sense of bivectors, but did not change vectors.</p><p><strong>Note:</strong> In the &ldquo;mostly &ldquo;$-$&rdquo; metric there is a sign difference I think,
 $$
 M^\dagger = \gamma_0 \tilde{M} \gamma_0,\qquad \text{for $\eta = (+\! - - -)$}.
-$$</p>
-<p>You should find in 3-space this Hermitian conjugate is the same as the matrix Hermitian conjugate. (Use the software Luke.)
+$$</p><p>You should find in 3-space this Hermitian conjugate is the same as the matrix Hermitian conjugate. (Use the software Luke.)
 We could abstractly by grade write it explicitly like this:
 $$
 M^\dagger = \langle M\rangle_0 + \langle M\rangle_1 - \langle M\rangle_2 - \langle M\rangle_3
 $$
-Again, there will be a similar involution for the proper spacetime algerba (STA) which will have five grades.</p>
-<h3 id=hermitian-transpose--barm><a class=anchor href=#hermitian-transpose--barm title="Anchor for: Hermitian transpose  $\bar{M}$."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Hermitian transpose $\bar{M}$</h3>
-<p>If we combine the space conjugation and Hermitian conjugate we get a type of transpose:
+Again, there will be a similar involution for the proper spacetime algerba (STA) which will have five grades.</p><h3 id=hermitian-transpose--barm><a class=anchor href=#hermitian-transpose--barm title='Anchor for: Hermitian transpose  $\bar{M}$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Hermitian transpose $\bar{M}$</h3><p>If we combine the space conjugation and Hermitian conjugate we get a type of transpose:
 $$
 \bar{M} = (M^\ast)^\dagger
-$$</p>
-<p>We are kinda running out of symbols here. But thankfully we will not need too
+$$</p><p>We are kinda running out of symbols here. But thankfully we will not need too
 many more than this. What we&rsquo;ve got to do later on is do this all again for
 the 16-dimensional 5-graded spacetime algebra (STA). There&rsquo;ll be a couple of
 differences, and we&rsquo;ll be able to use the $\gamma_\mu$ and pseudoscalar
-$i=\gamma_0\gamma_1\gamma_2\gamma_3$ to define some of these involutions.</p>
-<h3 id=exercise-what-is-time-inversion><a class=anchor href=#exercise-what-is-time-inversion title="Anchor for: Exercise: what is time inversion?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Exercise: what is time inversion?</h3>
-<p>Try to figure out a neat way to do time-inversion in the STA. I know we have not
+$i=\gamma_0\gamma_1\gamma_2\gamma_3$ to define some of these involutions.</p><h3 id=exercise-what-is-time-inversion><a class=anchor href=#exercise-what-is-time-inversion title='Anchor for: Exercise: what is time inversion?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Exercise: what is time inversion?</h3><p>Try to figure out a neat way to do time-inversion in the STA. I know we have not
 covered the STA in full yet, but you do not need the Dirac algebra mapping to
 figure this out, it&rsquo;s all just done in the STA.
 $$
@@ -1235,17 +853,13 @@ $$
 \text{What does time-inversion?}: \quad a^0\gamma_0& \longmapsto -a^0\gamma_0\\
 a^i\gamma_i &\longmapsto a^i\gamma_i.
 \end{array}
-$$</p>
-<p>Hint: is it &ldquo;multiply by $i$? Or by $i\gamma_0$? Something else?
-It&rsquo;s gotta be something to do with two $\gamma_0$&rsquo;s you might think?</p>
-<p>You could simply reverse $\gamma_0$, but what we are after here is a simple
+$$</p><p>Hint: is it &ldquo;multiply by $i$? Or by $i\gamma_0$? Something else?
+It&rsquo;s gotta be something to do with two $\gamma_0$&rsquo;s you might think?</p><p>You could simply reverse $\gamma_0$, but what we are after here is a simple
 operation that works for any multivector, without having the peer inside and
-find all the $\gamma_0$.</p>
-<p>Note, in the above Pauli 3-space relative algebra we &ldquo;do not know about&rdquo;
+find all the $\gamma_0$.</p><p>Note, in the above Pauli 3-space relative algebra we &ldquo;do not know about&rdquo;
 time-inversion, except by simply $\gamma_0 \mapsto -\gamma_0$.
 But in the full STA it is an important symmetry operation when combined
-with charge and parity symmetry, CPT.</p>
-<p><strong>Guess:</strong> No peeking! It&rsquo;s not hard to guess and check here.
+with charge and parity symmetry, CPT.</p><p><strong>Guess:</strong> No peeking! It&rsquo;s not hard to guess and check here.
 A diminished Hermitian seems to do the job for at least scalars and 1-vectors, we drop the reversion, so maybe guess,
 $$
 T(M)?: M \longmapsto \gamma_0 M \gamma_0 ?
@@ -1258,87 +872,38 @@ $$
 \end{array}
 $$
 The question is what about the bivectors, the pseudoscalar, and the trivectors
-in the STA? Homework?</p>
-<p>It does not work out, since, $\gamma_0 i\gamma_0 = + i$, and time inversion has to invert the pseudoscalar orientation, it should be $-i$.</p>
-<p>So what&rsquo;s the next guess?</p>
-<h3 id=quantum-scalar-product-hilbert-inner-product><a class=anchor href=#quantum-scalar-product-hilbert-inner-product title="Anchor for: Quantum scalar product (Hilbert inner product)."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Quantum scalar product (Hilbert inner product)</h3>
-<p>This was <a href=#Ex.3-a>Exercise 3</a>
+in the STA? Homework?</p><p>It does not work out, since, $\gamma_0 i\gamma_0 = + i$, and time inversion has to invert the pseudoscalar orientation, it should be $-i$.</p><p>So what&rsquo;s the next guess?</p><h3 id=quantum-scalar-product-hilbert-inner-product><a class=anchor href=#quantum-scalar-product-hilbert-inner-product title='Anchor for: Quantum scalar product (Hilbert inner product).'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Quantum scalar product (Hilbert inner product)</h3><p>This was <a href=#Ex.3-a>Exercise 3</a>
 above. For any Pauli spinors $\phi$ and $\psi$, we found,
 $$
 \langle\phi|\psi\rangle \longmapsto \langle\phi^\dagger\psi\rangle_S = \tfrac{1}{2}(\phi^\dagger\psi - J \phi^\dagger\psi J).
-$$</p>
-<h3 id=a-new-scalar-product-and-orthogonal-and-norm><a class=anchor href=#a-new-scalar-product-and-orthogonal-and-norm title="Anchor for: A new scalar product and &ldquo;orthogonal&rdquo; and norm."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A new scalar product and &ldquo;orthogonal&rdquo; and norm</h3>
-<p>This will <strong><em>not</em></strong> be the same as our previous inner product. A different scalar product is defined by $(A,B)$ as follows, take the scalar part of the geometric product of $\tilde{A}$ with $B$,
+$$</p><h3 id=a-new-scalar-product-and-orthogonal-and-norm><a class=anchor href=#a-new-scalar-product-and-orthogonal-and-norm title='Anchor for: A new scalar product and &ldquo;orthogonal&rdquo; and norm.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A new scalar product and &ldquo;orthogonal&rdquo; and norm</h3><p>This will <strong><em>not</em></strong> be the same as our previous inner product. A different scalar product is defined by $(A,B)$ as follows, take the scalar part of the geometric product of $\tilde{A}$ with $B$,
 $$
 (A,B) = \langle \tilde{A} B\rangle
 $$
 and thus can be applied to any GA numbers.
-This scalar product is symmetric, $(A,B)=(B,A)$.</p>
-<p><strong>Exercise <a name=Ex.7>7.</a></strong> Show $(,)$ is symmetric, hint: use a basis $\{\vec{e}_i\}$.</p>
-<p>I forgot to mention last chapter with the grade projection operator $\langle \cdot\rangle_k$ the convention is that if no grade $k$ is subscripted it&rsquo;s implied to be the grade-$0$ part, i.e., scalar part.
-So $ \langle \tilde{A} B\rangle \equiv \langle \tilde{A} B\rangle_0$.</p>
-<p>This makes it possible to generalize the notion of <em>orthogonality</em> for any blades, specifically,</p>
-<p><strong>Definition:</strong> $A$ is orthogonal to $B$ iff $(A,B)=0$.</p>
-<p><strong>Definition:</strong> The <strong>norm</strong> of $A$ is $||A|| = (A,A)$. For 1-vectors this is the same as the square of the length of the vector, $||a|| = a^2$.</p>
-<pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished section.  Work in progress. 
-We've got to do PT and T symmetry operations. 
+This scalar product is symmetric, $(A,B)=(B,A)$.</p><p><strong>Exercise <a name=Ex.7>7.</a></strong> Show $(,)$ is symmetric, hint: use a basis $\{\vec{e}_i\}$.</p><p>I forgot to mention last chapter with the grade projection operator $\langle \cdot\rangle_k$ the convention is that if no grade $k$ is subscripted it&rsquo;s implied to be the grade-$0$ part, i.e., scalar part.
+So $ \langle \tilde{A} B\rangle \equiv \langle \tilde{A} B\rangle_0$.</p><p>This makes it possible to generalize the notion of <em>orthogonality</em> for any blades, specifically,</p><p><strong>Definition:</strong> $A$ is orthogonal to $B$ iff $(A,B)=0$.</p><p><strong>Definition:</strong> The <strong>norm</strong> of $A$ is $||A|| = (A,A)$. For 1-vectors this is the same as the square of the length of the vector, $||a|| = a^2$.</p><pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished section.  Work in progress. 
+We&#39;ve got to do PT and T symmetry operations. 
 Quite a bit more, maybe put trace and determinants here, briefly, the 
 stock stuff one might use in simple QM applications, like QC.
-</code></pre>
-<h2 id=summary-of-pauli-algebra-in-ga><a class=anchor href=#summary-of-pauli-algebra-in-ga title="Anchor for: Summary of Pauli Algebra in GA."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Summary of Pauli Algebra in GA</h2>
-<p>Here for reference are the main results.</p>
-<p><strong>The main mapping</strong> (spinor equivalences):
+</code></pre><h2 id=summary-of-pauli-algebra-in-ga><a class=anchor href=#summary-of-pauli-algebra-in-ga title='Anchor for: Summary of Pauli Algebra in GA.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Summary of Pauli Algebra in GA</h2><p>Here for reference are the main results.</p><p><strong>The main mapping</strong> (spinor equivalences):
 $$
 \mathcal{H} \ni \quad |\psi\rangle
 = \begin{pmatrix} a^0 + i a^3 \\ -a^2 + i a^1 \end{pmatrix}
 \longmapsto \sqrt{\rho}R = a^0 + I a^k \boldsymbol{\sigma}_k \quad \in \mathscr{P}
-$$</p>
-<p><strong>Operator equivalences</strong>:
+$$</p><p><strong>Operator equivalences</strong>:
 $$
 \begin{array}{rcl}
 \hat{\sigma}_k |\psi\rangle &\longleftrightarrow& \boldsymbol{\sigma}_k\psi\boldsymbol{\sigma}_3.\\
 i |\psi\rangle &\longleftrightarrow& \psi I \boldsymbol{\sigma}_3 = \psi J.\\
 \langle\phi | \psi\rangle &\longleftrightarrow& \langle\phi^\dagger\psi\rangle_S = \tfrac{1}{2} ( \phi^\dagger\psi - J \phi^\dagger\psi J).
 \end{array}
-$$</p>
-<p><strong>Observables</strong>:
+$$</p><p><strong>Observables</strong>:
 $$
 \begin{array}{rcl}
 \rho & \longleftrightarrow& \psi\psi^\dagger.\\
 \langle\psi|\hat{s}_k |\psi\rangle &\longleftrightarrow& \langle\boldsymbol{\sigma}_k \psi \boldsymbol{\sigma}_3\psi^\dagger\rangle_0\\
 \hat{s} &\longleftrightarrow & \boldsymbol{s} = \psi \boldsymbol{\sigma}_3 \psi^\dagger
 \end{array}
-$$</p>
-<p>For the full 16-dimensional Spacetime Algebra mapping of the same nature, see the end of <a href=../010_hestenes_spinors#summary-dirac-hestenes>chapter on Hestenes Spinors here.</a>
-</p>
-<table style="border-collapse:collapse;border=0">
-<col span=1 style=width:25%>
-<col span=1 style=width:35%>
-<col span=1 style=width:25%>
-<tr style="border:1px solid color:#0f0f0f">
-<td style="border:1px solid color:#0f0f0f"><a href=../004_geometric_algebra>Previous</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Theory</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../006_spin_measurement_part1>Next chapter</a></td>
-</tr>
-<tr style="border:1px solid color:#0f0f0f">
-<td style="border:1px solid color:#0f0f0f"><a href=../004_geometric_algebra>Geometric Algebra</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
-<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../006_spin_measurement_part1>Spin Measurement</a></td>
-</tr>
-</table>
-</article>
-</main>
-</div>
-<footer>
-<div class=req-js>
-<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
-</div>
-<noscript>
-<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
-</noscript>
-</footer>
-<link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
-<script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
-<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
-</body>
-</html>
+$$</p><p>For the full 16-dimensional Spacetime Algebra mapping of the same nature, see the end of <a href=../010_hestenes_spinors#summary-dirac-hestenes>chapter on Hestenes Spinors here.</a></p><table style="border-collapse:collapse;border=0"><col span=1 style=width:25%><col span=1 style=width:35%><col span=1 style=width:25%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../004_geometric_algebra>Previous</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Theory</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../006_spin_measurement_part1>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../004_geometric_algebra>Geometric Algebra</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../006_spin_measurement_part1>Spin Measurement</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://4geons.github.io/t4gu/libs/katex@0.16.0/dist/katex.min.4268ce940bc6faa510d7b638acc3f08a63501d9504dd3155bfc48d6838ade320.js integrity="sha256-QmjOlAvG+qUQ17Y4rMPwimNQHZUE3TFVv8SNaDit4yA=" crossorigin=anonymous></script>
+<script defer src=https://4geons.github.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
