@@ -1,7 +1,7 @@
 # T4G Unchained
 
-Test KaTeX:
-$I\gamma_1 = \gamma_2\gamma_3$
+This is a new T4GU website replacing the old gitlab.io version which was failing 
+to render KaTeX.
 
 ## Developer Respository for Topological 4-Geon Theory
 
