@@ -3,6 +3,13 @@ title                 : "Welcome to the T4G Dev Community"
 disableTitleSeparator : false
 ---
 
+
+KaTeX test:
+$$
+\sigma_k = \gamma_k \gamma_0
+$$
+
+
 The [posts](/t4gu/blog) on this site give a blog journal style introduction to 
 topological 4-geon theory. 
 My current focus is on simulations, mostly quick & dirty RAD with Python and Nim, 
