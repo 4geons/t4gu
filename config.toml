@@ -1,5 +1,5 @@
 #baseURL = 'https://t4gu.gitlab.io/t4gu'
-baseURL = 'https://4geons.github.io/'
+baseURL = 'https://4geons.github.io/t4gu'
 languageCode = 'en-us'
 title = 'Topological 4-Geon Theory Unchained'
 theme = "color-your-world"
