@@ -1,51 +1,150 @@
-<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.119.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Why QFT is not fundamental</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/blog/02_why_fields/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Why QFT is not fundamental"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/blog/02_why_fields/"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-12-07"><meta property="article:modified_time" content="2022-12-07"><meta property="og:updated_time" content="2022-12-07"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://t4gu.gitlab.io/t4gu"},"headline":"Why QFT is not fundamental","description":"","url":"https://t4gu.gitlab.io/t4gu/blog/02_why_fields/","inLanguage":"en","datePublished":"2022-12-07","dateModified":"2022-12-07","wordCount":"3868","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
-<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Why QFT is not fundamental</h1><p>Published on <time datetime=2022-12-07>2022-12-07</time></p></header><h2 id=-and-how-qft-could-have-been-fundamental><a class=anchor href=#-and-how-qft-could-have-been-fundamental title='Anchor for: &mldr; and how QFT could have been fundamental.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>&mldr; and how QFT <em>could have been</em> fundamental</h2><p>Internet friend Curt Jaimungal of the <a href=https://www.youtube.com/@TheoriesofEverything target=_blank>Theories of Everything</a>
+<!doctype html><html lang=en data-mode=dark>
+<head prefix="og: http://ogp.me/ns#">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+<title>Why QFT is not fundamental</title>
+<meta name=author content="Bijou M. Smith">
+<meta name=robots content="index follow">
+<link rel=canonical href=https://t4gu.gitlab.io/t4gu/blog/02_why_fields/>
+<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
+<meta property="og:title" content="Why QFT is not fundamental">
+<meta property="og:url" content="https://t4gu.gitlab.io/t4gu/blog/02_why_fields/">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-12-07">
+<meta property="article:modified_time" content="2022-12-07">
+<meta property="og:updated_time" content="2022-12-07">
+<meta name=twitter:dnt content="on">
+<meta name=theme-color content="#222">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="default">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://t4gu.gitlab.io/t4gu"},"headline":"Why QFT is not fundamental","description":"","url":"https://t4gu.gitlab.io/t4gu/blog/02_why_fields/","inLanguage":"en","datePublished":"2022-12-07","dateModified":"2022-12-07","wordCount":"3868","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
+<noscript>
+<meta name=theme-color content="#26A269">
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
+</noscript>
+<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script src=https://t4gu.gitlab.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<a href=/t4gu> <img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
+<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
+<nav aria-label="Main menu.">
+<ul>
+<li>
+<a class=btn href=/t4gu/t4gu/>Home</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=filler>
+<main>
+<article>
+<header>
+<h1>Why QFT is not fundamental</h1>
+<p>
+Published on <time datetime=2022-12-07>2022-12-07</time>
+</p>
+</header>
+<h2 id=-and-how-qft-could-have-been-fundamental><a class=anchor href=#-and-how-qft-could-have-been-fundamental title="Anchor for: &mldr; and how QFT could have been fundamental."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> &mldr; and how QFT <em>could have been</em> fundamental</h2>
+<p>Internet friend Curt Jaimungal of the <a href=https://www.youtube.com/@TheoriesofEverything target=_blank>Theories of Everything</a>
 channel asked for my
-opinion on why I think fields are fictional. So here is an essay format reply.</p><h2 id=why-fields><a class=anchor href=#why-fields title='Anchor for: Why Fields?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Why Fields?</h2><p>I think fields are necessary for computing anything remotely useful from &ldquo;near-to
+opinion on why I think fields are fictional. So here is an essay format reply.</p>
+<h2 id=why-fields><a class=anchor href=#why-fields title="Anchor for: Why Fields?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Why Fields?</h2>
+<p>I think fields are necessary for computing anything remotely useful from &ldquo;near-to
 fundamental&rdquo; physics. This includes quantities like the electron magnetic moment
-and fundamental masses, and basic elementary scattering amplitudes, and whatnot.</p><p>But a tool used to obtain accurate calculations can be useful, even indispensable,
-without necessarily being a fundamental ontology.</p><p>So for me, the short answer is that fields are necessary, but not fundamental.</p><h2 id=but-why-are-fields-fictional-in-my-view><a class=anchor href=#but-why-are-fields-fictional-in-my-view title='Anchor for: But why are fields fictional in my view?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>But why are fields fictional in my view?</h2><p>I wanted to give Curt an idea of my thinking before I read the article he linked
+and fundamental masses, and basic elementary scattering amplitudes, and whatnot.</p>
+<p>But a tool used to obtain accurate calculations can be useful, even indispensable,
+without necessarily being a fundamental ontology.</p>
+<p>So for me, the short answer is that fields are necessary, but not fundamental.</p>
+<h2 id=but-why-are-fields-fictional-in-my-view><a class=anchor href=#but-why-are-fields-fictional-in-my-view title="Anchor for: But why are fields fictional in my view?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> But why are fields fictional in my view?</h2>
+<p>I wanted to give Curt an idea of my thinking before I read the article he linked
 me to by <a href=https://medium.com/starts-with-a-bang/why-we-need-quantum-fields-not-just-quantum-particles-c05e2260c594 target=_blank>Ethan Siegal</a>
-which was not a defense of QFT, but an advocacy for the view that QFT is &ldquo;pretty fundamental.&rdquo;</p><p>The thing is, right off-the-bat &mdash; before I read Siegal&rsquo;s article &mdash; I will agree.
-QFT is for sure &ldquo;pretty fundamental.&rdquo; You&rsquo;d be mad to think otherwise given the extraordinary empirical success of the QFT paradigm. So that&rsquo;s that, game over right?</p><p>Not quite.</p><p>Because I can also give an account for why despite QFT being phenomenally successful,
+which was not a defense of QFT, but an advocacy for the view that QFT is &ldquo;pretty fundamental.&rdquo;</p>
+<p>The thing is, right off-the-bat &mdash; before I read Siegal&rsquo;s article &mdash; I will agree.
+QFT is for sure &ldquo;pretty fundamental.&rdquo; You&rsquo;d be mad to think otherwise given the extraordinary empirical success of the QFT paradigm. So that&rsquo;s that, game over right?</p>
+<p>Not quite.</p>
+<p>Because I can also give an account for why despite QFT being phenomenally successful,
 it does not have to be <em>the theory</em> of fundamental physical ontology.
 In fact, it can&rsquo;t be, because QFT is not an ontological theory,
 it is a statistical correlation function theory. The reality QFT assumes as
 &ldquo;base marble&rdquo; is still of particle character, and what QFT mathematics describes is
 correlations between particulate forms of matter.
-But if you do not buy this view of what QFT is, then read on for more&mldr;</p><p>I wanted to give an outline of my thoughts prior to reading Siegal&rsquo;s article
+But if you do not buy this view of what QFT is, then read on for more&mldr;</p>
+<p>I wanted to give an outline of my thoughts prior to reading Siegal&rsquo;s article
 in case I regret reading it or that it totally changed my mind!
 So here is some of my baseline philosophy for physics prior to reading the QFT
-fanboi stuff:</p><ol><li>I&rsquo;m in the Newton and Feynman camp about particles &mdash; when we observe things this is fundamental reality, we just do not know if it is superficial or deep.
+fanboi stuff:</p>
+<ol>
+<li>I&rsquo;m in the Newton and Feynman camp about particles &mdash; when we observe things this is fundamental reality, we just do not know if it is superficial or deep.
 The story so far though has to be that nature is fundamentally &ldquo;particulate&rdquo;
 whatever that means, but one thing it means is that fields <em>could</em> be fictional,
 because we <em>never</em> observe fields, we only ever observe particles.
 Not that the fields <em>are</em> for sure fictional, but just that they <em>could be</em>
 fictions &mdash; necessary tools for the description of the <em>collective dynamics</em> of
-all the particles.</li><li>Spacetime is by all accounts a continuum &mdash; until proven otherwise.
+all the particles.</li>
+<li>Spacetime is by all accounts a continuum &mdash; until proven otherwise.
 Thus, gravity is a field theory, since spacetime curvature and topology determine
 gravitational interactions.
 This is an important point to stress. There is zero evidence that spacetime is discrete.
 A lot of research programs want spacetime to be discrete, but the truth is that is all in their heads.
 They may be correct, but they have zero evidence that they are correct.
 This seems an argument in favour of field theory. I do not doubt for one second,
-until proven otherwise, that fields do rule because spacetime, via GR, is a field theory.</li><li>Of course this is only empirical knowledge backed by a decent theory that breaks down at singularities in the metric. But we all suspect singularities are avoided thanks to &ldquo;quantum effects.&rdquo; No one knows what those effects are exactly, but there are many good competing ideas.</li><li>Now put these findings <em>together</em>:<ul><li>the elementary quanta are particulate whenever we observe them, so they have to be particles (or stringy $p$-branes or whatever).</li><li>But spacetime is probably a continuum, so the &ldquo;fabric&rdquo; which the elementary particles are built from endows the quanta with smooth structure, which is a field structure.</li></ul></li><li>So if you ask &ldquo;Where is an electron?&rdquo; you can get a definitive answer that is probabilistic,
+until proven otherwise, that fields do rule because spacetime, via GR, is a field theory.</li>
+<li>Of course this is only empirical knowledge backed by a decent theory that breaks down at singularities in the metric. But we all suspect singularities are avoided thanks to &ldquo;quantum effects.&rdquo; No one knows what those effects are exactly, but there are many good competing ideas.</li>
+<li>Now put these findings <em>together</em>:
+<ul>
+<li>the elementary quanta are particulate whenever we observe them, so they have to be particles (or stringy $p$-branes or whatever).</li>
+<li>But spacetime is probably a continuum, so the &ldquo;fabric&rdquo; which the elementary particles are built from endows the quanta with smooth structure, which is a field structure.</li>
+</ul>
+</li>
+<li>So if you ask &ldquo;Where is an electron?&rdquo; you can get a definitive answer that is probabilistic,
 and which has to be field theoretic, since the configuration space is a continuum manifold
-(spacetime) as far as anyone can tell.</li><li>The field here describing the particles is an abstraction that is based upon the
+(spacetime) as far as anyone can tell.</li>
+<li>The field here describing the particles is an abstraction that is based upon the
 <em>actual fields</em> which is spacetime, and spacetime is &ldquo;pretty real&rdquo; and &ldquo;pretty field-like&rdquo;.
 The chance of locating a particle anywhere is a probability measure on the spacetime,
 which is information theoretic probability, i.e., epistemological, not ontological.
-This information <em>describes</em> the particle, but is not <em>the</em> particle, not <em>the electron</em>.</li></ol><p>Is the <em>description</em> the same as the <em>thing in itself</em>?
+This information <em>describes</em> the particle, but is not <em>the</em> particle, not <em>the electron</em>.</li>
+</ol>
+<p>Is the <em>description</em> the same as the <em>thing in itself</em>?
 I cannot subscribe to a &lsquo;yes&rsquo; to that question. The information is not the medium.
 Your words are not your soul. Our books are not &ldquo;a piece of the author&rdquo; other than poetically.
-Physics should not descend to poetry.</p><p>I think this is a huge lesson most physicists seem to not learn, because they are never taught
+Physics should not descend to poetry.</p>
+<p>I think this is a huge lesson most physicists seem to not learn, because they are never taught
 philosophy. They just pick up bits and pieces of philosophy on-the-fly. But having giant egos
 and being incredibly smart, physicists tend to think whatever they grasp in philosophy is pretty
 superior, which is a trap and makes them prone to academic groupthink.
 But that&rsquo;s not a huge problem, it means there is space for people who think outside the norms,
 like Feynman in his early days.${}^\ast$
 &ldquo;Outside the groupthink people&rdquo; are still prized in physics, but they have to be very good,
-they have to be pretty smart, to survive.</p><p>${}^\ast$ When I wrote this Curt asked me what I meant by &ldquo;in his early days&rdquo;.
+they have to be pretty smart, to survive.</p>
+<p>${}^\ast$ When I wrote this Curt asked me what I meant by &ldquo;in his early days&rdquo;.
 That&rsquo;s just me hedging a little. Also just an opinion. Feynman always seemed to think
 elementary constituents of reality were &ldquo;corpuscular&rdquo;.
 But in later years he took a more agnostic view that &ldquo;we really just don&rsquo;t know.&rdquo;
@@ -55,171 +154,265 @@ elementary particles were not ultimately nothing but &ldquo;field modes&rdquo;.
 But I do not know that for sure. Weinberg started to not believe in fields as fundamental,
 and I suspect Feynman had a lot in common with Weinberg.
 Again, that&rsquo;s only my opinion. I&rsquo;d prefer to hear from a close friend of RPF&rsquo;s than
-to trust my opinion.</p><p>In any case, the thing most physicists never seem to learn is that the mathematical description
+to trust my opinion.</p>
+<p>In any case, the thing most physicists never seem to learn is that the mathematical description
 is almost always information-theoretic, and not ontological. So just because we employ field
 concepts to describe electrons and photons does not mean the electrons and photons are
-themselves fields.</p><p>And yet it can be true that currently we just cannot see any other way to describe
+themselves fields.</p>
+<p>And yet it can be true that currently we just cannot see any other way to describe
 electrons and photons other than by fields. I think that is incorrect,
 but it is a prevalent view,
 and I can understand where it comes from. How do non-local correlations get accounted
 for other than by weirdly acting fields?
 Well, one answer is via wormhole topology, which is my project. So I have no need for
-fields other than the one field of the spacetime manifold configuration space.</p><p>We endow these fields with magical properties and claim we are done with reality.
+fields other than the one field of the spacetime manifold configuration space.</p>
+<p>We endow these fields with magical properties and claim we are done with reality.
 But this could easily be a mirage. Why stop at magical reality? Why not suppose Einstein
 and John Bell were morally right to worry about a version of non-locality that has to appeal
-to weird ontology like parallel universes?</p><p>And yet, all topological geons &mdash; which are the particles in my account of things &mdash;
+to weird ontology like parallel universes?</p>
+<p>And yet, all topological geons &mdash; which are the particles in my account of things &mdash;
 are endowed with field theoretic properties just because they arise from spacetime topology.
 One cannot isolate a topological geon &mdash; being part of spacetime it only has an asymptotic
 definition, you have to be sufficiently far away to regard a topological geon as a
 particle and not instead as a piece of the spacetime manifold that is ill-defined,
-since it fades off smoothly in it&rsquo;s effect on curvature and gauge interaction via Feynman vertex processes (scattering).</p><p>Lastly, for this preface: as far as I am concerned, no one has ever ruled out a
+since it fades off smoothly in it&rsquo;s effect on curvature and gauge interaction via Feynman vertex processes (scattering).</p>
+<p>Lastly, for this preface: as far as I am concerned, no one has ever ruled out a
 realist local theory of elementary particles. We only think non-locality is baked in
 to nature because we cannot give up on strict light cone causality.
 And yet everyone knows a traversable wormhole breaks this causal structure,
 and so did the Feynman-Hibbs trajectories in the SOH formulation. So it is not clear
 at all to me that we have to give up on locality. Maybe instead we need to give up on
 strict causality, but only in a highly constrained context, which is quarantined
-to the Planck scale.</p><p>Back to the issue of information versus the real. They are not opposed, but they are not
+to the Planck scale.</p>
+<p>Back to the issue of information versus the real. They are not opposed, but they are not
 the same. Fields are more about information, description. The particle (or string) idea
 is more about <em>the thing</em>, the <em>noumena</em>. They are not the same. The field is
 used to describe the particle because the particle has some weird ass dynamics.
-The weird ass dynamics does not mean the field mode <em>is</em> the particle.</p><p>The play Hamlet is not the book it is written on, nor is it the stage and actors
+The weird ass dynamics does not mean the field mode <em>is</em> the particle.</p>
+<p>The play Hamlet is not the book it is written on, nor is it the stage and actors
 at The Globe. Those physical objects are an implementation of the information in the play,
 but collectively they are not the play. When the performance is carried out,
 then we have &ldquo;a play&rdquo; (a material bunch of stuff) but never <em>the play</em>
 (an ideal, a fiction). However, a Shakespeare play is not really a fiction,
-it is more like the number $\pi$, it exists, but platonically.</p><p>So the best I could offer Siegal or any field theorist, is that quantum fields
+it is more like the number $\pi$, it exists, but platonically.</p>
+<p>So the best I could offer Siegal or any field theorist, is that quantum fields
 might exist, and I think they <em>do</em> exist, but only as platonic ideals,
 they are not raw physics. I think quantum fields are realities in the
 platonic realm because I am a platonist. But they are not physics (I would bet,
 but I am not a betting person, so&mldr; I could be wrong and lose the bet).
 If I am dead sure of something I would not bet against someone on it, because I
 would consider it unfair. Even intellectual &ldquo;zero risk&rdquo; bets have stakes &mdash; the
-risk of embarrassment, so I wish to avoid that.</p><p>Weak analogy here, but fair enough to illustrate: the play Hamlet is a platonic ideal,
+risk of embarrassment, so I wish to avoid that.</p>
+<p>Weak analogy here, but fair enough to illustrate: the play Hamlet is a platonic ideal,
 the stage and the actors are what is real, not the play. The play is an idea,
 a fiction. It is made real, made physical, by the actors and the stage.
 No one ever confuses these categories, but field theorists who think
 quantum fields are real are making this sort of confusion. At least that&rsquo;s what I think.
 I could be wrong and have it all backwards: in which case the particles are the
-fictions and the fields the real. This is something I cannot however prove.</p><h3 id=feynmans-hint><a class=anchor href=#feynmans-hint title='Anchor for: Feynman&rsquo;s Hint.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Feynman&rsquo;s Hint</h3><p>In his Nobel Lecture Feynman points out that the &ldquo;whole spacetime&rdquo; picture he set up,
-which led to the Lagrangian action principle formulation of QED, was a theory without fields.</p><p>He realized the action principle formulation does not need fields because all that
+fictions and the fields the real. This is something I cannot however prove.</p>
+<h3 id=feynmans-hint><a class=anchor href=#feynmans-hint title="Anchor for: Feynman&rsquo;s Hint."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Feynman&rsquo;s Hint</h3>
+<p>In his Nobel Lecture Feynman points out that the &ldquo;whole spacetime&rdquo; picture he set up,
+which led to the Lagrangian action principle formulation of QED, was a theory without fields.</p>
+<p>He realized the action principle formulation does not need fields because all that
 happens are particle interactions. But they were &ldquo;non-classical&rdquo; and this meant they included
 both advanced and retarded propagators. Or anti-particles.
 This was a consequence of treating the entire global spacetime cobordism &ldquo;as a whole&rdquo;.
 As a whole, of course, there are no fields, because at the boundaries of a cobordism
 all we ever observe are particles. There can be no field degrees of freedom on the
-boundaries of a measurement process because we never observe measurements of fields.</p><p>Feynman realized the fields were thus fictional or &ldquo;metaphysical&rdquo; if you prefer.
-I go along with this.</p><p>However, deeply ingrained in the physicists psyche is the idea of differential
+boundaries of a measurement process because we never observe measurements of fields.</p>
+<p>Feynman realized the fields were thus fictional or &ldquo;metaphysical&rdquo; if you prefer.
+I go along with this.</p>
+<p>However, deeply ingrained in the physicists psyche is the idea of differential
 time evolution, because we also demand, since Newton and Laplace, a smooth structure,
 and so we desire a dual Hamiltonian time evolution principle, besides the global
-Lagrangian action principle.</p><p>However, there is no need to demand a Hamiltonian, since the action formulation
-suffices.</p><p>But yet we still demand a Hamiltonian!</p><p>OK.</p><p>If you demand a Hamiltonian for a differential time evolution then what Feynman
+Lagrangian action principle.</p>
+<p>However, there is no need to demand a Hamiltonian, since the action formulation
+suffices.</p>
+<p>But yet we still demand a Hamiltonian!</p>
+<p>OK.</p>
+<p>If you demand a Hamiltonian for a differential time evolution then what Feynman
 showed is that you must introduce &ldquo;fields&rdquo; to do the necessary accounting for the
 advanced and retarded particle solutions, to get all the QED corrections right.
 But this is <em>only</em> because you&rsquo;ve demanded a Hamiltonian time evolution.
 Which is a choice of description that you do not have to make. But if you make it,
-then yes, you need to employ fields.</p><p>This is not doing fundamental physics though, because it is merely a <em>description</em>
+then yes, you need to employ fields.</p>
+<p>This is not doing fundamental physics though, because it is merely a <em>description</em>
 and moreover it depends on a choice you make about how you wish to describe reality.
-That can never be <em>a priori</em> a fundamental theory. It could be so, but not <em>a priori</em>.</p><p>So even in Feynman&rsquo;s early days, we had the knowledge that the fields were
+That can never be <em>a priori</em> a fundamental theory. It could be so, but not <em>a priori</em>.</p>
+<p>So even in Feynman&rsquo;s early days, we had the knowledge that the fields were
 fictional accounting tools. Or, to be generous, &ldquo;possibly fictional accounting tools.&rdquo;
 But no one took Feynman seriously, and they all
-jumped on the QED and QCD field theory band-wagon.</p><p>That&rsquo;s fine too, nothing wrong with a band wagon that gets so many computations
+jumped on the QED and QCD field theory band-wagon.</p>
+<p>That&rsquo;s fine too, nothing wrong with a band wagon that gets so many computations
 empirically correct. But it is still a likely fictional construct.
 We are under no compulsion to take the fields as fundamental reality.
 If we think like Feynman did, early on, we can always write down a whole spacetime
-action principle, and have no use for fields.</p><p>But maybe nature does operate as a differential process? Maybe the fields are real
+action principle, and have no use for fields.</p>
+<p>But maybe nature does operate as a differential process? Maybe the fields are real
 and not fictions?
 Well,&mldr; sure. But what I told Curt was that I don&rsquo;t believe that and there is no
 argument I have ever read or heard that tells me the fields are real and not merely very
 useful fictions.
 But I guessed this was unhelpful, because it is not a scientific argument
-&ldquo;against quantum fields&rdquo;.</p><p>I do not have a scientific argument against QFT. All I have are parsimony arguments:
+&ldquo;against quantum fields&rdquo;.</p>
+<p>I do not have a scientific argument against QFT. All I have are parsimony arguments:
 we do not <em>need</em> fields, but they are useful. Are they then real? I have no idea,
 but I suspect not, because they are not the most parsimonious way to account for
 natural processes, and we never observe fields, we only ever observe particles.
 And for any quantum mechanics you show me, I can give you a topological 4-geon account.
 So I truly have no need for fields, but to compute a scattering amplitude? &mdash;
-yeah, I would need the field theory.</p><p>However, T4G theory would explain &mdash; and explain <em>causally</em> &mdash; <em>why</em> the field computation works.
-So I regard T4G theory as highly parsimonious and thus more likely to be fundamental.</p><p>This is always the way. The more fundamental a theory is, the less useful, but the more &ldquo;true.&rdquo;</p><p>The rest of my website is an account of a better more parsimonious description of nature,
+yeah, I would need the field theory.</p>
+<p>However, T4G theory would explain &mdash; and explain <em>causally</em> &mdash; <em>why</em> the field computation works.
+So I regard T4G theory as highly parsimonious and thus more likely to be fundamental.</p>
+<p>This is always the way. The more fundamental a theory is, the less useful, but the more &ldquo;true.&rdquo;</p>
+<p>The rest of my website is an account of a better more parsimonious description of nature,
 for just the fundamental processes.
 If you do not like it, too bad, but if you can see how it is wrong then good!
-Let me know, please!</p><div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div><h3 id=how-qft-might-have-been-true><a class=anchor href=#how-qft-might-have-been-true title='Anchor for: How QFT might have been true.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>How QFT might have been true</h3><p>When you dig deep into the foundations of QFT you find that it is simply a theory of
+Let me know, please!</p>
+<div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div>
+<h3 id=how-qft-might-have-been-true><a class=anchor href=#how-qft-might-have-been-true title="Anchor for: How QFT might have been true."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> How QFT might have been true</h3>
+<p>When you dig deep into the foundations of QFT you find that it is simply a theory of
 how to compute transition amplitudes, or equivalently correlation functions.
-Correlation is not causation. So in QFT we have an extraordinarily powerful statistical theory.</p><p>The statistics employ non-distributive lattices (via the operators, or in the STA picture
+Correlation is not causation. So in QFT we have an extraordinarily powerful statistical theory.</p>
+<p>The statistics employ non-distributive lattices (via the operators, or in the STA picture
 the geometric algebra multivectors), and so are not classical.
 This is the &ldquo;quantum mechanics&rdquo; part of QFT. But it does not make QFT into an ontology.
-QFT is statistical, so counts, to me, as epistemical, not ontological.</p><p>Any given epistemological description <em>could</em> of course also be ontological.
+QFT is statistical, so counts, to me, as epistemical, not ontological.</p>
+<p>Any given epistemological description <em>could</em> of course also be ontological.
 But for it to be so it has to have &ldquo;elements of reality&rdquo; (let&rsquo;s say) that are like
 &ldquo;base marble&rdquo;. And QFT has none of that. It has fields for sure, which are the
 &ldquo;base marble&rdquo; of QFT&rsquo;s, but there is no base marble account for the non-local correlations,
-they are pure magic. Pure description. Pure epistemology.</p><p>Nevertheless, there is a simple way in which QFT could be true.</p><p>Bring to mind the computer science <em><a href=https://www.warnerbros.com/movies/matrix target=_blank>Matrix</a></em> metaphor.</p><p>&ldquo;God&rdquo; (or our <em>relative god</em>, so Odin, Shiva, or Zeus, or whoever, let&rsquo;s say Lenora) is a galaxy brained scientist,
+they are pure magic. Pure description. Pure epistemology.</p>
+<p>Nevertheless, there is a simple way in which QFT could be true.</p>
+<p>Bring to mind the computer science <em><a href=https://www.warnerbros.com/movies/matrix target=_blank>Matrix</a>
+</em> metaphor.</p>
+<p>&ldquo;God&rdquo; (or our <em>relative god</em>, so Odin, Shiva, or Zeus, or whoever, let&rsquo;s say Lenora) is a galaxy brained scientist,
 and our universe is a bunch of bits in Her googolplex powered computer.
-(They do not even need to be qubits.)</p><p>So this Lenora decides to run our particular universe using a statistical algorithm,
+(They do not even need to be qubits.)</p>
+<p>So this Lenora decides to run our particular universe using a statistical algorithm,
 to give us a sort of &ldquo;free will.&rdquo; So to Lenora our universe is completely determined by
-Her pseudo-random number generator.</p><p>But then,&mldr; hey,&mldr; we&rsquo;ve got QFT for real. For a-b-s-o-l-u-t-e-l-y frickin real,
-it <em>is</em> our base marble.</p><div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div><p>OK, now I am set to think about how Ethan Siegal might argue against me.</p><h2 id=confronting-the-qft-fanboi><a class=anchor href=#confronting-the-qft-fanboi title='Anchor for: Confronting the QFT fanboi.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Confronting the QFT fanboi</h2><p>After <a href=https://medium.com/starts-with-a-bang/why-we-need-quantum-fields-not-just-quantum-particles-c05e2260c594 target=_blank>reading Siegal,</a>
+Her pseudo-random number generator.</p>
+<p>But then,&mldr; hey,&mldr; we&rsquo;ve got QFT for real. For a-b-s-o-l-u-t-e-l-y frickin real,
+it <em>is</em> our base marble.</p>
+<div style=text-align:center>* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div>
+<p>OK, now I am set to think about how Ethan Siegal might argue against me.</p>
+<h2 id=confronting-the-qft-fanboi><a class=anchor href=#confronting-the-qft-fanboi title="Anchor for: Confronting the QFT fanboi."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Confronting the QFT fanboi</h2>
+<p>After <a href=https://medium.com/starts-with-a-bang/why-we-need-quantum-fields-not-just-quantum-particles-c05e2260c594 target=_blank>reading Siegal,</a>
 I would say nothing he wrote in that article was terribly wrong,
 but it was just a story, a good story. I might use similar narratives to justify QFT myself,
-if I wanted to. And in the past I have, when motivating QFT to undergrads.</p><p>I do not really have an interest in refuting Siegal or debating his story,
-because I know it is only a story. It could be true as well.</p><p>So I will not backtrack or change any of my prefaced commentary. I think my story
+if I wanted to. And in the past I have, when motivating QFT to undergrads.</p>
+<p>I do not really have an interest in refuting Siegal or debating his story,
+because I know it is only a story. It could be true as well.</p>
+<p>So I will not backtrack or change any of my prefaced commentary. I think my story
 also stands up to everything Siegal wrote to try to justify QFT. But what he did not
 do was provide any scientific justification for QFT. Nothing he wrote forces us to
 accept QFT as fundamental physics. But it does force us to take QFT on as a distinct
-possibility for a fundamental theory.</p><p>I have seen this many times in science. People give a very strong plausibility argument,
-and then take the leap to infer their theory must be true.<br>A lot of Darwinian theorists do this,
+possibility for a fundamental theory.</p>
+<p>I have seen this many times in science. People give a very strong plausibility argument,
+and then take the leap to infer their theory must be true.<br>
+A lot of Darwinian theorists do this,
 and fail to realize they are telling themselves &ldquo;just so stories.&rdquo;
 Stephen J Gould was pretty good at pointing out such errors. It does not mean
 Darwinian Theory of NS is wrong, the Theory of NS is not wrong, but it is not complete.
 And it does mean a lot of the narratives evolutionary biologists spin are too simplistic
-and are missing boatloads of interesting biochemistry and possibly even teleology.</p><p>For human evolution teleology matters, because we can think about the possible future,
+and are missing boatloads of interesting biochemistry and possibly even teleology.</p>
+<p>For human evolution teleology matters, because we can think about the possible future,
 which changes what we do today, and allows human beings to go against genetic determinism.
 For humans, and any other sentient beings in our universe who can do science,
 our thought transcends our genetic drives to reproduce precisely at the point in our
 group evolution when our ideas matter more than our genes. That happened quite a
-long time ago in human history.</p><h3 id=but-dont-the-operators-tell-us-the-field-is-real><a class=anchor href=#but-dont-the-operators-tell-us-the-field-is-real title='Anchor for: But Don&rsquo;t the Operators Tell Us the Field is Real?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>But Don&rsquo;t the Operators Tell Us the Field is Real?</h3><p>No they do not.</p><p>You will frequently encounter such sloppy language in almost any standard textbook
+long time ago in human history.</p>
+<h3 id=but-dont-the-operators-tell-us-the-field-is-real><a class=anchor href=#but-dont-the-operators-tell-us-the-field-is-real title="Anchor for: But Don&rsquo;t the Operators Tell Us the Field is Real?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> But Don&rsquo;t the Operators Tell Us the Field is Real?</h3>
+<p>No they do not.</p>
+<p>You will frequently encounter such sloppy language in almost any standard textbook
 on quantum mechanics. Take <a href=https://www.google.co.nz/books/edition/Quantum_Mechanics/ppf9DwAAQBAJ target=_blank>Merzebacher</a>
-for instance:</p><p>&ldquo;We regard the radiation field as a single spacetime-dependent operator, which is a superposition of all modes defined by appropriate boundary conditions, whether or not they are excited. If interference is observed, the particular state as much as the omnipresent field operator is responsible for its occurrence.&rdquo;</p><p>This is not considered a controversial statement by anyone of respectable standing. And yet
+for instance:</p>
+<p>&ldquo;We regard the radiation field as a single spacetime-dependent operator, which is a superposition of all modes defined by appropriate boundary conditions, whether or not they are excited. If interference is observed, the particular state as much as the omnipresent field operator is responsible for its occurrence.&rdquo;</p>
+<p>This is not considered a controversial statement by anyone of respectable standing. And yet
 it contains the basic error I&rsquo;ve been harping on about. The &ldquo;field operator&rdquo; is not an
 element of fundamental physical reality, it is a construct in our own minds that we write
 down on paper or think about for making useful computations.
-There is no &ldquo;field operator&rdquo; out there in the world.</p><p>I am not claiming the field operators are not describing fundamental ontological reality,
+There is no &ldquo;field operator&rdquo; out there in the world.</p>
+<p>I am not claiming the field operators are not describing fundamental ontological reality,
 but whatever they are describing it is not a field operator. They are describing
-elementary natural processes such as the basic Feynman vertex interactions.</p><p>If you do not believe the Feynman vertices are elementary elements of physical reality
+elementary natural processes such as the basic Feynman vertex interactions.</p>
+<p>If you do not believe the Feynman vertices are elementary elements of physical reality
 then that is fine too, I am only using the Feynman vertex as yet another descriptor,
 like the words &ldquo;field operator.&rdquo;
 However, I have this prejudice in thinking the raw elements of physical reality are &ldquo;a
-little bit more like&rdquo; Feynman vertices than abstract field operators.</p><p>The field operator mathematical forms seem to me more platonic, more like <em>The Matrix</em> code
+little bit more like&rdquo; Feynman vertices than abstract field operators.</p>
+<p>The field operator mathematical forms seem to me more platonic, more like <em>The Matrix</em> code
 for our universe at a high conceptual level (so like a Python class).
 Whereas the Feynman vertices seem to me more like the actual
 bits and bytes in the hardware. But that&rsquo;s maybe just my bias and no one else will agree.
-No worries. This is my essay, not yours.</p><h2 id=an-economics-analogy><a class=anchor href=#an-economics-analogy title='Anchor for: An Economics Analogy.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>An Economics Analogy</h2><p>The macroeconomic theory of origins of money as a means to facilitate barter is a myth.
+No worries. This is my essay, not yours.</p>
+<h2 id=an-economics-analogy><a class=anchor href=#an-economics-analogy title="Anchor for: An Economics Analogy."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> An Economics Analogy</h2>
+<p>The macroeconomic theory of origins of money as a means to facilitate barter is a myth.
 But it does a good job of accounting for why we use money instruments.
 It just happens to be wrong (see <a href=https://www.goodreads.com/book/show/6617037-debt target=_blank>Graeber</a>
 and <a href=https://www.semanticscholar.org/paper/Credit-and-State-Theories-of-Money%3A-The-of-A.-Innes-Wray-Innes/33d30d281d676b3f81d5d8cb567deb1903c50f87 target=_blank>Wray</a>
-for example. )</p><p>This is pretty close to an analogy for QFT. QFT could be a myth but a good one
-that allows us to tell a good consistent story that agrees with observed reality.</p><p>Physics does not have the equivalent of archaeology though, to peer back in history
+for example. )</p>
+<p>This is pretty close to an analogy for QFT. QFT could be a myth but a good one
+that allows us to tell a good consistent story that agrees with observed reality.</p>
+<p>Physics does not have the equivalent of archaeology though, to peer back in history
 and discover the origins of money came from obligations and debts, so not from barter,
-but rather from moral and legal systems.</p><p>Or, I guess, physics does have a type of archaeology, which is the microscope and
+but rather from moral and legal systems.</p>
+<p>Or, I guess, physics does have a type of archaeology, which is the microscope and
 the atom smasher, and the like. But so far these tools have not permitted us a view
-of fundamental ontology.</p><p>This means current theoretical physics is in a position akin to the Neoclassical
+of fundamental ontology.</p>
+<p>This means current theoretical physics is in a position akin to the Neoclassical
 economists of the 19th and 20th centuries &mdash; with no understanding of the origins
 of money, and a decent story that &ldquo;explains&rdquo; commercial activity that has
-no concept of money and absolutely no understanding of the source of the price level.</p><p>But in the 21st century we have far better knowledge of macroeconomic history,
+no concept of money and absolutely no understanding of the source of the price level.</p>
+<p>But in the 21st century we have far better knowledge of macroeconomic history,
 and so we now know what drives money, and that money is not merely facilitating barter,
 but is an important (and highly abused) social instrument of control.
 Governments do not issue most of their currency, private banks do, who are only
-<em>licenced</em> by the governments, and not wisely enough regulated.</p><p>About 95% of currency in circulation derives from bank credit, not from government issue.
+<em>licenced</em> by the governments, and not wisely enough regulated.</p>
+<p>About 95% of currency in circulation derives from bank credit, not from government issue.
 This drives a tremendous amount of inequality and injustice, which economists are only
 dimly beginning to comprehend. There is no reason why someone contributing to their
 community ever needs to be in debt to a bank (a form of servitude). And yet we allow this,
 because the old Neoclassical economists (who still dominate in politics) still to this day
 believe money is unimportant, and that all that matters is the barter story.
 They are completely delusional, and dangerous to poor people and low income workers
-because of this ignorance.</p><p>Now I am not saying quantum field theorists are likewise dangerous, it&rsquo;s not the same
+because of this ignorance.</p>
+<p>Now I am not saying quantum field theorists are likewise dangerous, it&rsquo;s not the same
 branch of human endeavour, but I am saying the field theorist is a little bit like the
 Neoclassical economist. They have a great story, it is consistent, it sounds good,
-but it still has magical elements to it.</p><p>The Neoclassical cannot explain bank debt effects, and the field theorist cannot
+but it still has magical elements to it.</p>
+<p>The Neoclassical cannot explain bank debt effects, and the field theorist cannot
 explain non-local correlations. Both have magical accounts of these aspects of the
 real world that pollute their otherwise pristine mental theories.
-I am saying, &ldquo;so much the worse for their theory.&rdquo;</p><table style="border-collapse:collapse;border=0"><col span=1 style=width:30%><col span=1 style=width:15%><col span=1 style=width:35%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../01_scattered_thoughts>Previous chapter</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../03_nuances_tg4_writing>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../01_scattered_thoughts>Scattered Thoughts</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../03_nuances_tg4_writing>Nuances of T4G</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.5e5e5e3f11510a5488490612ff5c36a48c133ae81bb9d2e4e5c377309de5ece2.js integrity="sha256-Xl5ePxFRClSISQYS/1w2pIwTOugbudLk5cN3MJ3l7OI=" crossorigin=anonymous></script>
-<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
+I am saying, &ldquo;so much the worse for their theory.&rdquo;</p>
+<table style="border-collapse:collapse;border=0">
+<col span=1 style=width:30%>
+<col span=1 style=width:15%>
+<col span=1 style=width:35%>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../01_scattered_thoughts>Previous chapter</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../03_nuances_tg4_writing>Next chapter</a></td>
+</tr>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../01_scattered_thoughts>Scattered Thoughts</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../03_nuances_tg4_writing>Nuances of T4G</a></td>
+</tr>
+</table>
+</article>
+</main>
+</div>
+<footer>
+<div class=req-js>
+<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
+</div>
+<noscript>
+<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
+</noscript>
+</footer>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
+<script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
+<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
+</body>
+</html>

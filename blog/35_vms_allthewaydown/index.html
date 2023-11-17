@@ -1,29 +1,134 @@
-<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.119.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>VMs All the Way Down</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/blog/35_vms_allthewaydown/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="VMs All the Way Down"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/blog/35_vms_allthewaydown/"><meta property="og:type" content="article"><meta property="article:published_time" content="2023-06-19"><meta property="article:modified_time" content="2023-06-19"><meta property="og:updated_time" content="2023-06-19"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://t4gu.gitlab.io/t4gu"},"headline":"VMs All the Way Down","description":"","url":"https://t4gu.gitlab.io/t4gu/blog/35_vms_allthewaydown/","inLanguage":"en","datePublished":"2023-06-19","dateModified":"2023-06-19","wordCount":"3435","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
-<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>VMs All the Way Down</h1><p>Published on <time datetime=2023-06-19>2023-06-19</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#mann-gell-steel-manning>Mann-Gell Steel-manning</a></li><li><a href=#on-the-digital-dick-effect>On the &ldquo;Digital Dick Effect&rdquo;</a><ul><li><a href=#how-do-we-know>How Do We Know?</a></li></ul></li><li><a href=#a-sting-in-the-computation-tail>A sting in the computation tail</a><ul><li><a href=#the-question-for-current-ai>The Question for Current Ai</a></li></ul></li><li><a href=#why-cdt>Why CDT?</a></li><li><a href=#discretitis>Discretitis</a><ul><li><a href=#vmitis>VMitis</a></li></ul></li><li><a href=#t4g-hocus-pocus>T4G Hocus Pocus</a></li></ul></nav></details><p>Now that some extremes of Ai fear & loathing have calmed down to the relatively
+<!doctype html><html lang=en data-mode=dark>
+<head prefix="og: http://ogp.me/ns#">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+<title>VMs All the Way Down</title>
+<meta name=author content="Bijou M. Smith">
+<meta name=robots content="index follow">
+<link rel=canonical href=https://t4gu.gitlab.io/t4gu/blog/35_vms_allthewaydown/>
+<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
+<meta property="og:title" content="VMs All the Way Down">
+<meta property="og:url" content="https://t4gu.gitlab.io/t4gu/blog/35_vms_allthewaydown/">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-06-19">
+<meta property="article:modified_time" content="2023-06-19">
+<meta property="og:updated_time" content="2023-06-19">
+<meta name=twitter:dnt content="on">
+<meta name=theme-color content="#222">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="default">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://t4gu.gitlab.io/t4gu"},"headline":"VMs All the Way Down","description":"","url":"https://t4gu.gitlab.io/t4gu/blog/35_vms_allthewaydown/","inLanguage":"en","datePublished":"2023-06-19","dateModified":"2023-06-19","wordCount":"3435","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
+<noscript>
+<meta name=theme-color content="#26A269">
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
+</noscript>
+<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script src=https://t4gu.gitlab.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<a href=/t4gu> <img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
+<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
+<nav aria-label="Main menu.">
+<ul>
+<li>
+<a class=btn href=/t4gu/t4gu/>Home</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=filler>
+<main>
+<article>
+<header>
+<h1>VMs All the Way Down</h1>
+<p>
+Published on <time datetime=2023-06-19>2023-06-19</time>
+</p>
+</header>
+<details class=toc open>
+<summary class=outline-dashed>
+Contents
+</summary>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#mann-gell-steel-manning>Mann-Gell Steel-manning</a></li>
+<li><a href=#on-the-digital-dick-effect>On the &ldquo;Digital Dick Effect&rdquo;</a>
+<ul>
+<li><a href=#how-do-we-know>How Do We Know?</a></li>
+</ul>
+</li>
+<li><a href=#a-sting-in-the-computation-tail>A sting in the computation tail</a>
+<ul>
+<li><a href=#the-question-for-current-ai>The Question for Current Ai</a></li>
+</ul>
+</li>
+<li><a href=#why-cdt>Why CDT?</a></li>
+<li><a href=#discretitis>Discretitis</a>
+<ul>
+<li><a href=#vmitis>VMitis</a></li>
+</ul>
+</li>
+<li><a href=#t4g-hocus-pocus>T4G Hocus Pocus</a></li>
+</ul>
+</nav>
+</details>
+<p>Now that some extremes of Ai fear & loathing have calmed down to the relatively
 mild levels of only existential panic for human beings, not mice, I was happy to
 get back to some physics and find a Quanta Magazine report on Causal Dynamical
 Triangulations (CDT) that I thought was worth blogging about. See
 <a href="https://www.youtube.com/watch?v=A7NTNkYPr9Q" target=_blank>“The Digital Quest for Quantum Gravity”</a>
-.</p><h2 id=mann-gell-steel-manning><a class=anchor href=#mann-gell-steel-manning title='Anchor for: Mann-Gell Steel-manning.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Mann-Gell Steel-manning</h2><p>I don&rsquo;t feel the need to issue a bunch of qualifiers like &ldquo;I&rsquo;m not an expert on CDT,
+.</p>
+<h2 id=mann-gell-steel-manning><a class=anchor href=#mann-gell-steel-manning title="Anchor for: Mann-Gell Steel-manning."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Mann-Gell Steel-manning</h2>
+<p>I don&rsquo;t feel the need to issue a bunch of qualifiers like &ldquo;I&rsquo;m not an expert on CDT,
 but&mldr;&rdquo;. Astrophysicist Angela Collier did a
 <a href="https://www.youtube.com/watch?v=wBBnfu8N_J0" target=_blank>great review of the Gell-Mann Amnesia
 effect</a>
 and the Mann-Gell Effect, and
 the theory formally known as the Igon Value Problem. It&rsquo;s pretty funny. I think
-she also Mann-Gelled herself a few times, once without knowing it.</p><p>Henceforward, unless I feel like wasting my fingertips, I will try to
+she also Mann-Gelled herself a few times, once without knowing it.</p>
+<p>Henceforward, unless I feel like wasting my fingertips, I will try to
 refrain from writing a load of caveats up front on my blog, readers should know
 by now that nothing I write should be taken seriously unless you want to take it
 seriously (which you certainly may, but fact-check me, please, don&rsquo;t quote me
-mindlessly).</p><p>((I certainly take my blog seriously. Why all the jokes and coarse language then?
+mindlessly).</p>
+<p>((I certainly take my blog seriously. Why all the jokes and coarse language then?
 Well you may ask! I write colourfully, let&rsquo;s say, because to my mind it is more
 readable that way, and if people cannot tease apart the fun stuff from the serious
 content I cannot help them. Part of being a good scientist is to recognize truth from
 a lark, or at least the sincere attempt to seek truth from a bit of goofing off
-fun.))</p><p>The douchebag in chief himself, Richard Dawkins also came up on my radar recently, in
+fun.))</p>
+<p>The douchebag in chief himself, Richard Dawkins also came up on my radar recently, in
 unrelated matters to do with political economy, but that Dick is associated with the
 Michio Kaku future-prodding-dick effect, and the Steven Pinker Pecker effect, that
 Angela discusses. (The effect of becoming an extreme dick when you gain massive
-knowledge in one area of specialist expertise.)</p><p>I&rsquo;ll leave all that for another day, maybe for my other blog, but suffice to say
+knowledge in one area of specialist expertise.)</p>
+<p>I&rsquo;ll leave all that for another day, maybe for my other blog, but suffice to say
 for now I am striving to become a douchebag like all the rest of the egg-heads, but
 my Mother, bless her heart, instilled in me too much humility and self-deprecation
 that it is proving to be a struggle to reach the heights of douchebaggery required
@@ -31,158 +136,222 @@ to make thousands of dollars a month from that sort of Gell-Manning level 10 stu
 and until I reach such lofty heights of dickheadedness I will have to be content with
 being extremely uncertain in my expertise and a master of nothing-in-particular
 except my own opinions, which are as reliable as you all think they are (please let
-me know, I have no idea, really).</p><h2 id=on-the-digital-dick-effect><a class=anchor href=#on-the-digital-dick-effect title='Anchor for: On the &ldquo;Digital Dick Effect&rdquo;.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>On the &ldquo;Digital Dick Effect&rdquo;</h2><p>One thing Causal Dynamical Triangulations leverages in the intellectual sphere of
+me know, I have no idea, really).</p>
+<h2 id=on-the-digital-dick-effect><a class=anchor href=#on-the-digital-dick-effect title="Anchor for: On the &ldquo;Digital Dick Effect&rdquo;."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> On the &ldquo;Digital Dick Effect&rdquo;</h2>
+<p>One thing Causal Dynamical Triangulations leverages in the intellectual sphere of
 opinion and prejudice and research grant funding, is the whole zeitgeist of &ldquo;the
 digital&rdquo;. I am extremely wary of this social psychology effect. There is no reason on
 Earth to suppose all things are digital. It&rsquo;s the Matrix Fallacy &mdash; a great scifi
 movie, but it&rsquo;s one for the ages, not one for great science, you shouldn&rsquo;t place too
 much stock in the idea the universe is a computation. Maybe it is, maybe it isn&rsquo;t,
-wtf knows?</p><p>It&rsquo;s ok to hypothesise the universe is digital, I have no problem with that, see
-where it leads.</p><p>The problem I have with digital mania is that it&rsquo;s probably false psychology, and is
+wtf knows?</p>
+<p>It&rsquo;s ok to hypothesise the universe is digital, I have no problem with that, see
+where it leads.</p>
+<p>The problem I have with digital mania is that it&rsquo;s probably false psychology, and is
 rooted in a misunderstanding of quantum mechanics. People point to Igon Values
 (excuse me, I couldn&rsquo;t help myself) as being discrete, and then use that to claim
-&ldquo;the universe is digital&rdquo;. This is laughable, amateur.</p><p>Do they not know what linear algebra is in essence? Seriously. I&rsquo;m so annoyed by
-the idiocy. (Did I just do a Mann-Gell?)</p><p>Well, I did not name names, so call me innocent. What about Renata Loll? I think
-she&rsquo;s great. I have nothing against her CDT research. She should go for it.</p><p>What I have a beef with is the cargo cult of &ldquo;the digital&rdquo;. After studying quantum
+&ldquo;the universe is digital&rdquo;. This is laughable, amateur.</p>
+<p>Do they not know what linear algebra is in essence? Seriously. I&rsquo;m so annoyed by
+the idiocy. (Did I just do a Mann-Gell?)</p>
+<p>Well, I did not name names, so call me innocent. What about Renata Loll? I think
+she&rsquo;s great. I have nothing against her CDT research. She should go for it.</p>
+<p>What I have a beef with is the cargo cult of &ldquo;the digital&rdquo;. After studying quantum
 mechanics for longer than I can remember, I see no good reason to use any digital
-hypothesis.</p><p>Same goes for the Wolfram Research Group. Let them go forward with Hypergraph mania.
+hypothesis.</p>
+<p>Same goes for the Wolfram Research Group. Let them go forward with Hypergraph mania.
 It won&rsquo;t get anywhere, but that&rsquo;s just my opinion. Someone should look into that
 computational hypothesis stuff. At least to show it cannot be serious physics
-ontology.</p><h3 id=how-do-we-know><a class=anchor href=#how-do-we-know title='Anchor for: How Do We Know?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>How Do We Know?</h3><p>We know it is not physics ontology when the idea spawns Everything. Once you can
+ontology.</p>
+<h3 id=how-do-we-know><a class=anchor href=#how-do-we-know title="Anchor for: How Do We Know?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> How Do We Know?</h3>
+<p>We know it is not physics ontology when the idea spawns Everything. Once you can
 describe all possible worlds you have merely invented a language. A powerful
-language, a lot like Set Theory.</p><p>In fact, if they took Hypergraphs to the extreme that is all they&rsquo;d have, a
+language, a lot like Set Theory.</p>
+<p>In fact, if they took Hypergraphs to the extreme that is all they&rsquo;d have, a
 language for describing anything objective. Here are a couple of easily
-understood problems that make this <strong><em>not physics</em></strong>:</p><ol><li>Physics is constrained, it does not describe everything possible.</li><li>A language used to describe a thing is not the thing itself.</li><li>I personally think Hypergraphs and whatnot are near to universal computation,
+understood problems that make this <strong><em>not physics</em></strong>:</p>
+<ol>
+<li>Physics is constrained, it does not describe everything possible.</li>
+<li>A language used to describe a thing is not the thing itself.</li>
+<li>I personally think Hypergraphs and whatnot are near to universal computation,
 so their &ldquo;modelling&rdquo; of physical reality boils down to choosing &ldquo;the correct&rdquo;
 initial conditions or rules. This is not physics. Physics is a particular type of
 &ldquo;computation&rdquo; or probably not even computation. An arbitrarily accurate simulation
 of a thing is not the thing itself, the thing itself might be implementing
-something entirely different, which you&rsquo;ll never know until you know.</li></ol><p>The Hypergraph project is doomed imho for this reason, if their structure gets
+something entirely different, which you&rsquo;ll never know until you know.</li>
+</ol>
+<p>The Hypergraph project is doomed imho for this reason, if their structure gets
 too universal (whatever that means! It means simply &ldquo;gets universal&rdquo; of course,
 but the poet must <font style=color:hotpink;>colourize</font>). Orthodox physics
 works well precisely because it is not universal. There are computations that are
 not physically possible${}^\dagger$.
 It is kind of insane that this seems to be what they want at Wolfcorp, they want the
-thing to be universal.</p><p>I am pretty certain the Hypergraph &ldquo;physics&rdquo; is at least Turing Universal, so
+thing to be universal.</p>
+<p>I am pretty certain the Hypergraph &ldquo;physics&rdquo; is at least Turing Universal, so
 those guys (mostly guys) are already into language, not physics. Mathematics and
-computing are powerful languages of course, so they bleedin&rsquo; well aught to be able to
+computing are powerful languages of course, so they bleedin' well aught to be able to
 describe a boatload of physics. The idea of using graphs to do this rather than
 differential equations and manifold spaces is beyond my pay grade &mdash; to understand
 the motive is beyond my ppay grade. Perhaps there is some secret sauce one can
 discover by doing the same physics in a different dialect of mathematics? In fact I
-am sure there is, because we&rsquo;ve seen progress made in that manner before.</p><p>((Newton, for one. Described the celestial mechanics using geometry, I think,
-before he let calculus go loose.))</p><p>${}^\dagger$I know this is an inflammatory remark for some nerds. Let&rsquo;s note it
+am sure there is, because we&rsquo;ve seen progress made in that manner before.</p>
+<p>((Newton, for one. Described the celestial mechanics using geometry, I think,
+before he let calculus go loose.))</p>
+<p>${}^\dagger$I know this is an inflammatory remark for some nerds. Let&rsquo;s note it
 down as merely my crazy opinion? Of course, you all know damn well that the measure
 of computations that can physically be performed within the suspected lifetime of
 our era of the cosmos is vanishingly small as a subset of all possible computations.
-That&rsquo;s not in question.</p><h2 id=a-sting-in-the-computation-tail><a class=anchor href=#a-sting-in-the-computation-tail title='Anchor for: A sting in the computation tail.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A sting in the computation tail</h2><p>Above I noted:</p><blockquote><p>Physics is a particular type of “computation” or probably not even computation.</p></blockquote><p>This is both good and bad for my sort of thinking. Obviously I am one of those crazy
+That&rsquo;s not in question.</p>
+<h2 id=a-sting-in-the-computation-tail><a class=anchor href=#a-sting-in-the-computation-tail title="Anchor for: A sting in the computation tail."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> A sting in the computation tail</h2>
+<p>Above I noted:</p>
+<blockquote>
+<p>Physics is a particular type of “computation” or probably not even computation.</p>
+</blockquote>
+<p>This is both good and bad for my sort of thinking. Obviously I am one of those crazy
 kooks who believes in &ldquo;free will&rdquo; and the human &ldquo;soul&rdquo; (maybe many species with
 souls, but known because they can do abstract mathematics and whatnot, so I don&rsquo;t
 need to count apes, bonobos, chimps, dolphins and mice &mdash; I could count them, but I
-do not need to).</p><p>I do not need to count any animals I know about as beings created &ldquo;with souls&rdquo;
+do not need to).</p>
+<p>I do not need to count any animals I know about as beings created &ldquo;with souls&rdquo;
 (whatever that means, and I do not know what it means) because I do not need the
 concept of a soul to explain their behaviour. The reason why other animals might
 yet have conscious souls for all I know is because I do not subscribe to behavourism.
 I do not know what it is like to be a bonobo. Yet, most bonobo behaviour can be
 accounted for in purely behavioural terms, with stimulus and response mechanisms,
 no inner subjective mind. But there is no inherent danger in supposing some animals
-might experience inner subjective conscious states.</p><p>The more interesting thing I mentioned is that although in some sense &ldquo;physics
-is not even computation&rdquo; to me physics is a lot more than computation.</p><p>There are two slightly at odds, but not really at odds, things here.</p><p>In terms of getting things done physically a computation articulating some
+might experience inner subjective conscious states.</p>
+<p>The more interesting thing I mentioned is that although in some sense &ldquo;physics
+is not even computation&rdquo; to me physics is a lot more than computation.</p>
+<p>There are two slightly at odds, but not really at odds, things here.</p>
+<p>In terms of getting things done physically a computation articulating some
 powerful enough robot, can do an awful lot of amazing things, including the raw
 arithmetical stuff. That is the sense in which &ldquo;computation&rdquo; is less than physics,
-because no matter how powerful the computer, it is a physical machine.</p><p>The nuance here is that computation is in fact not limited by physics. The Turing
+because no matter how powerful the computer, it is a physical machine.</p>
+<p>The nuance here is that computation is in fact not limited by physics. The Turing
 Machine is not a physically possible device. Infinite memory. So the abstract space
-of computation is indeed &ldquo;more than physics&rdquo; in this sense.</p><p>So what&rsquo;s the real deal here?</p><p>The real deal is that a computation carried out in the physical world is possibly
+of computation is indeed &ldquo;more than physics&rdquo; in this sense.</p>
+<p>So what&rsquo;s the real deal here?</p>
+<p>The real deal is that a computation carried out in the physical world is possibly
 not a physical universal machine. There are things that can occur in physical
 reality that do not have physical causes. Namely those things that depend on
 cosmological boundary conditions. Thus, physics can support phenomena that would not
 exist based on purely computational means alone. In physics one needs input data.
 Same as computation. But a <em>physical computer</em> needs physical data, whereas <em>The
 Universe</em> does not, or might not, let&rsquo;s say, might not be operating solely on
-physical data.</p><p>How the data or initial condition effects &ldquo;get to us&rdquo;? &mdash; that is physical (as far
+physical data.</p>
+<p>How the data or initial condition effects &ldquo;get to us&rdquo;? &mdash; that is physical (as far
 as anyone knows). Where it originates from need not be, provided the cosmos is an
-open system of some type.</p><p>By &ldquo;open&rdquo; in this sense we must mean not a smaller cosmos within a larger
-physical cosmoi, but an ontological reality that is not causally self-contained.</p><h3 id=the-question-for-current-ai><a class=anchor href=#the-question-for-current-ai title='Anchor for: The Question for Current Ai.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Question for Current Ai</h3><p>The question is
+open system of some type.</p>
+<p>By &ldquo;open&rdquo; in this sense we must mean not a smaller cosmos within a larger
+physical cosmoi, but an ontological reality that is not causally self-contained.</p>
+<h3 id=the-question-for-current-ai><a class=anchor href=#the-question-for-current-ai title="Anchor for: The Question for Current Ai."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Question for Current Ai</h3>
+<p>The question is
 whether physics implements processes, or outputs something given certain inputs,
 that could not be generated by any computer. I suspect so, in a certain sense:
 obviously moving atoms around is just mechanics, so if physics can do it, so can a
 mechanical process of some sufficiently advanced nature, call these universal mimics.
 The question is whether moving the atoms around in the way humans or other sentient
-creatures can do is effectively computable &mdash; meaning is there an algorithm for it?</p><p>But the real question is even more acute than this, because if one knows an answer
+creatures can do is effectively computable &mdash; meaning is there an algorithm for it?</p>
+<p>But the real question is even more acute than this, because if one knows an answer
 ahead of time there is a trivial &ldquo;algorithm&rdquo; which is to plug in the answer at the
 beginning. This is kind of like what current Ai neural nets are doing, we give them
-answers in text, they look them up. More or less.</p><p>What most people would think of as a machine mimic is a little more subtle than this,
+answers in text, they look them up. More or less.</p>
+<p>What most people would think of as a machine mimic is a little more subtle than this,
 but that is roughly what the current Ai are doing. In a clever way it should be said,
 since they are searching a vast space of possible token streams. The cleverness is
 however not the machine&rsquo;s it is the programmer&rsquo;s. (And the prompt engineer&rsquo;s I would
-say.)</p><p>Chucking in random numbers and enough time can naturally eventually produce the
+say.)</p>
+<p>Chucking in random numbers and enough time can naturally eventually produce the
 &ldquo;correct&rdquo; mechanical motions, but those are essentially Boltzmann Brains, and <em>time
 is of the essence here.</em> What I mean is that human-like behaviours are among those
 that cannot be algorithmically produced in reasonable physical time. Why aren&rsquo;t <em>we</em>
-biological machines then? I have no idea.</p><p>Once you start admitting bizarre (and fantastical magical thinking) ontology like Many
+biological machines then? I have no idea.</p>
+<p>Once you start admitting bizarre (and fantastical magical thinking) ontology like Many
 Worlds you ruin all the science and get a pseudo-religion (an anti-religion it needs
-to be said, meaning a source of stupidity, not a source of The Good or The True).</p><p>Once you have an engine that any possible world can run on, you aren&rsquo;t doing
+to be said, meaning a source of stupidity, not a source of The Good or The True).</p>
+<p>Once you have an engine that any possible world can run on, you aren&rsquo;t doing
 physics anymore, you are doing language and mathematics. To be fair, the Wolfcorp
 efforts do seem to admit &ldquo;physics&rdquo; boils down to finding the One Rule to rule
 them all. I wish them good luck with that, but they&rsquo;re doomed. Don&rsquo;t tell their
-investors though.</p><p>Causal Dynamical Triangulations do not seem as unhinged from reality as Wolfcorp.
-But what is CDT doing? It&rsquo;s just imposing geometrical constraints. Why?</p><h2 id=why-cdt><a class=anchor href=#why-cdt title='Anchor for: Why CDT?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Why CDT?</h2><p>I think the &ldquo;why&rdquo; is because people easily get sucked into discretism &mdash; the
+investors though.</p>
+<p>Causal Dynamical Triangulations do not seem as unhinged from reality as Wolfcorp.
+But what is CDT doing? It&rsquo;s just imposing geometrical constraints. Why?</p>
+<h2 id=why-cdt><a class=anchor href=#why-cdt title="Anchor for: Why CDT?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Why CDT?</h2>
+<p>I think the &ldquo;why&rdquo; is because people easily get sucked into discretism &mdash; the
 ideology the universe must somehow fundamentally be a countable discrete structure.
 In mathematics it&rsquo;s Finitism. These are ideologies that have zero empirical basis,
-but you wouldn&rsquo;t know that getting a university education in quantum mechanics.</p><p>An awful lot of QM emphasises the discrete, but they&rsquo;re ignorant and superficial.
+but you wouldn&rsquo;t know that getting a university education in quantum mechanics.</p>
+<p>An awful lot of QM emphasises the discrete, but they&rsquo;re ignorant and superficial.
 The discrete arises from continuous Lie Groups, and no one has yet shown one jot of
-evidence it is anything otherwise.</p><p>A doom to the possibility of measuring spacetime structure smaller than the
+evidence it is anything otherwise.</p>
+<p>A doom to the possibility of measuring spacetime structure smaller than the
 Planck scale is not proof or evidence spacetime is discrete. It just means
 black holes will form. Nothing discrete about that, except that you can count
 black holes. Wow-wee! Write home to Mum about it! Isn&rsquo;t it remarkable you get
-discrete notions when you count things?</p><p>Elementary particles, on the other hand, do seem to be discrete structures, they are
+discrete notions when you count things?</p>
+<p>Elementary particles, on the other hand, do seem to be discrete structures, they are
 topological, but that does not imply the ambient spacetime itself is discrete. I
 for one think it is not discrete. If we are being ruthlessly honest no one has a
-clue, not even a probability estimate to weigh the opinion scales.</p><h2 id=discretitis><a class=anchor href=#discretitis title='Anchor for: Discretitis.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Discretitis</h2><p>This tendency for scientists loosely affiliated with quantum mechanics or
+clue, not even a probability estimate to weigh the opinion scales.</p>
+<h2 id=discretitis><a class=anchor href=#discretitis title="Anchor for: Discretitis."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Discretitis</h2>
+<p>This tendency for scientists loosely affiliated with quantum mechanics or
 fundamental physics, to want things to be discrete is a mental disease in my
 opinion. They might be right, but (a) they can&rsquo;t all be right, and (b) they
-might all be wrong. Profound stuff.</p><p>Particularly irksome are computer scientists who wade in to physics and think their
+might all be wrong. Profound stuff.</p>
+<p>Particularly irksome are computer scientists who wade in to physics and think their
 paradigm of the digital has to be the way the universe <strong><em>just is</em></strong>.
 Again, they may be right, but all they are doing is making one huge guess, which
 is biased by their profession. Everyone wants <em>their</em> profession to be the one
-cloaking the Theory of Everything, or so it seems.</p><p>That desire for grandiosity is a human foible, I don&rsquo;t begrudge it if it is
+cloaking the Theory of Everything, or so it seems.</p>
+<p>That desire for grandiosity is a human foible, I don&rsquo;t begrudge it if it is
 accompanied by appropriate humility, the trouble is that&rsquo;s not the case.
 All the big name break-though artists seem to want to hock their theory and diss
 others, they want to champion their paradigm, and that&rsquo;s when they cease being
 scientists and start becoming ideologues. And again, it seems like for the fourth or
 fifth time, let me say they might be right, one of them at least. But they might all
-be wrong too, and no one knows the friggin&rsquo; odds.</p><p>BTW, I don&rsquo;t mind ideologues if they are open about being ideologues and
+be wrong too, and no one knows the friggin' odds.</p>
+<p>BTW, I don&rsquo;t mind ideologues if they are open about being ideologues and
 explicitly take pains to point out they are not acting in this
 <em>theory championing</em> capacity as scientists.
 I myself am somewhat of an ideologue at times (not all the time) for
 Modern Monetary Theory (MMT) and for promoting the potential superior benefits of
 some varieties of post-capitalism. Life in theoretical fundamental
 physics would not be half the fun if there was no one shilling for String Theory
-and acting as, &ldquo;sub-routines for Ed Witten,&rdquo; (that&rsquo;s a Joe Polchinski one-liner).</p><h3 id=vmitis><a class=anchor href=#vmitis title='Anchor for: VMitis.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>VMitis</h3><p>Discretitis is related to another disease of computalionalism.
+and acting as, &ldquo;sub-routines for Ed Witten,&rdquo; (that&rsquo;s a Joe Polchinski one-liner).</p>
+<h3 id=vmitis><a class=anchor href=#vmitis title="Anchor for: VMitis."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> VMitis</h3>
+<p>Discretitis is related to another disease of computalionalism.
 If the idea is that we are living in a computer simulation what&rsquo;s the philosophy
 suggesting our computer master itself is a simulation, would &ldquo;It&rdquo; not draw the
-same conclusion? Where does it end? Is it Virtual Machines all the way down?</p><p>Such arguments reasoning to the absurd do not necessarily show the absurd is
+same conclusion? Where does it end? Is it Virtual Machines all the way down?</p>
+<p>Such arguments reasoning to the absurd do not necessarily show the absurd is
 not the case, but for my mind it is good reason to not have any faith in
-computationalism at all. It might be the correct metaphysics, but it&rsquo;s still stupid.</p><p>At about this point some wannabe logic nerd or weak philosopher may point out that an
-infinite regression is a logical possibility.</p><p>Yes it is. But not for elementary notions of causation. William Hatcher showed why,
+computationalism at all. It might be the correct metaphysics, but it&rsquo;s still stupid.</p>
+<p>At about this point some wannabe logic nerd or weak philosopher may point out that an
+infinite regression is a logical possibility.</p>
+<p>Yes it is. But not for elementary notions of causation. William Hatcher showed why,
 in his book <em>Logic & Logos</em>. If you accept the most rudimentary and non-substrate
 dependent axioms involving the metaphysical notion of &ldquo;causes&rdquo; then there can be no
-infinite regress, there has to be a unique universal cause of all things.</p><p>For this logic to hold, this UUC has to itself not be caused by anything else, so It
+infinite regress, there has to be a unique universal cause of all things.</p>
+<p>For this logic to hold, this UUC has to itself not be caused by anything else, so It
 is self-caused or uncaused, whatever that may mean. You cannot know what it means
 without some concrete idea of &ldquo;causation&rdquo;, but no one has reliably such concepts.
 I certainly do not. But I can easily understand the abstract relations, and that is
-all you need for the logic to hold.</p><p>I guess the ultranerd can always say, &ldquo;Well, I&rsquo;ll trust in the consistency of you
+all you need for the logic to hold.</p>
+<p>I guess the ultranerd can always say, &ldquo;Well, I&rsquo;ll trust in the consistency of you
 abstract axioms of causality if you can demonstrate a model.&rdquo;
 That would be some hypothetical concrete instance of a causal system obeying the
-axioms.</p><p>In fact there are such models. One is found in set theoretic relations in Set Theory,
-or algebraic relations in Number Theory.</p><p>Beware the ultranerds who do not accept simple toy models. They are missing the
+axioms.</p>
+<p>In fact there are such models. One is found in set theoretic relations in Set Theory,
+or algebraic relations in Number Theory.</p>
+<p>Beware the ultranerds who do not accept simple toy models. They are missing the
 point. A model is a model. The real world can only add to a toy model, once you have
 the base case, it cannot subtract. You get &ldquo;no-go&rdquo; theorems from a previously viable
 toy model only when one or more &ldquo;truths&rdquo; of the toy model no longer hold, for
 whatever contingent reasons. The toy model is still a good model, your
-contextualised real world is not.${}^\ddagger$</p><p>If numbers and sets are still too abstract for you I guess you can implement some
+contextualised real world is not.${}^\ddagger$</p>
+<p>If numbers and sets are still too abstract for you I guess you can implement some
 model in pebbles in a box. I don&rsquo;t know, I haven&rsquo;t thought about that sort of thing
-a lot.</p><p>${}^\ddagger$Unfortunately for some Christian friends this can be bad news for some
+a lot.</p>
+<p>${}^\ddagger$Unfortunately for some Christian friends this can be bad news for some
 of their dogmatic beliefs (so much the worse for their dogma, it need not refute the
 essential truths of Christianity, just the non-essentials, like their Priesthood).
 This is the point that God clearly has some stuff God would never do. So is that
@@ -190,10 +359,12 @@ non-Omnipotence? God cannot walk on Earth among us, for example, since that&rsqu
 imperfection (I imagine, maybe I&rsquo;m getting something subtle wrong here?)
 So the prophetic figure Jesus of Nazareth might have been a manifestation of God, a
 pure channel, so to us indistinguishable in spiritual virtues from The Divine, but
-Jesus can&rsquo;t have been <em>the actual God</em>.</p><p>Does any of that matter for one who has faith? No. I&rsquo;m just making the point
+Jesus can&rsquo;t have been <em>the actual God</em>.</p>
+<p>Does any of that matter for one who has faith? No. I&rsquo;m just making the point
 that allegories, metaphors and morality tales serve a different purpose to
 hard core reality &mdash; they do not need to be true to have the desired effect.
-Like a toy model.</p><p>The point of the Christian dogma, I think (but who am I to say?) is that Jesus
+Like a toy model.</p>
+<p>The point of the Christian dogma, I think (but who am I to say?) is that Jesus
 <em>may as well have been God</em> in a sense of display of virtues, because mere mortals
 could not make a meaningful distinction. But also because what really matters is the
 spiritual, not the material. Lest I alienate materialist humanists here, this has to
@@ -202,15 +373,50 @@ spiritual burdens is with material necessities. Material wealth is important for
 those who simply cannot act morally and ethically without some comforts, or who
 cannot find happiness without material comforts, and let&rsquo;s be honest, that&rsquo;s most of
 us. Extreme asceticism is not ethical, if for no other reason than that extreme
-asceticism is a withdrawal from society and a denial of benefits of cooperation.</p><p>The ascetic can maybe make themselves happy by denials, but does that improve
+asceticism is a withdrawal from society and a denial of benefits of cooperation.</p>
+<p>The ascetic can maybe make themselves happy by denials, but does that improve
 overall human well-being? Obviously not. Let me know if you find evidence
-otherwise, and I might advocate we all try to be more ascetic.</p><p>Obviously in terms of raw physics Jesus was not God, not literally. But allegorically
+otherwise, and I might advocate we all try to be more ascetic.</p>
+<p>Obviously in terms of raw physics Jesus was not God, not literally. But allegorically
 it is fine to say Jesus was a manifestation of God. Not all dogma should be taken
 literally, with some wise metaphor you can get it to go a longer way, and a more
-beneficial non-harmful longer way.</p><h2 id=t4g-hocus-pocus><a class=anchor href=#t4g-hocus-pocus title='Anchor for: T4G Hocus Pocus.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>T4G Hocus Pocus</h2><p>Yeah, I try to promote T4G. When I do I am not doing the science, alright!
+beneficial non-harmful longer way.</p>
+<h2 id=t4g-hocus-pocus><a class=anchor href=#t4g-hocus-pocus title="Anchor for: T4G Hocus Pocus."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> T4G Hocus Pocus</h2>
+<p>Yeah, I try to promote T4G. When I do I am not doing the science, alright!
 Fair enough? My aim is to get others working on T4G because I think it is worth
 exploring. But that&rsquo;s the extent of it. Why would I want to promote a fundamental
 theory for ideological reasons? I don&rsquo;t. I just want someone to figure out deeper
-truths about reality.</p><p>OK, maybe the desire to dig into deeper truths about Nature <em>is</em> an ideology.
-You got me Žižek! Guilty as charged! Total ideologue here.</p><table style="border-collapse:collapse;border=0"><col span=1 style=width:30%><col span=1 style=width:35%><col span=1 style=width:25%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../34_darwin>Previous chapter</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../36_retrocauseschmality>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../34_darwin>Darwinian Dualism?</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../36_retrocauseschmality>Retrocauschmality</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.5e5e5e3f11510a5488490612ff5c36a48c133ae81bb9d2e4e5c377309de5ece2.js integrity="sha256-Xl5ePxFRClSISQYS/1w2pIwTOugbudLk5cN3MJ3l7OI=" crossorigin=anonymous></script>
-<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
+truths about reality.</p>
+<p>OK, maybe the desire to dig into deeper truths about Nature <em>is</em> an ideology.
+You got me Žižek! Guilty as charged! Total ideologue here.</p>
+<table style="border-collapse:collapse;border=0">
+<col span=1 style=width:30%>
+<col span=1 style=width:35%>
+<col span=1 style=width:25%>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../34_darwin>Previous chapter</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../36_retrocauseschmality>Next chapter</a></td>
+</tr>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../34_darwin>Darwinian Dualism?</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../36_retrocauseschmality>Retrocauschmality</a></td>
+</tr>
+</table>
+</article>
+</main>
+</div>
+<footer>
+<div class=req-js>
+<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
+</div>
+<noscript>
+<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
+</noscript>
+</footer>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
+<script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
+<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
+</body>
+</html>

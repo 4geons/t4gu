@@ -1,5 +1,114 @@
-<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.119.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Thoughts on chatGPT and Related</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/blog/05_chatgpt/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Thoughts on chatGPT and Related"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/blog/05_chatgpt/"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-12-23"><meta property="article:modified_time" content="2022-12-23"><meta property="og:updated_time" content="2022-12-23"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://t4gu.gitlab.io/t4gu"},"headline":"Thoughts on chatGPT and Related","description":"","url":"https://t4gu.gitlab.io/t4gu/blog/05_chatgpt/","inLanguage":"en","datePublished":"2022-12-23","dateModified":"2022-12-23","wordCount":"18403","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
-<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Thoughts on chatGPT and Related</h1><p>Published on <time datetime=2022-12-23>2022-12-23</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#the-premiss>The Premiss</a></li><li><a href=#is-there-anything-to-ask-a-bot>Is There Anything to Ask a Bot?</a></li><li><a href=#philosophical-questions>Philosophical Questions</a><ul><li><a href=#anticipated-responses>Anticipated Responses</a></li></ul></li><li><a href=#econ-dumb>An Economists Bad Take</a><ul><li><a href=#point-1-----that-robots-are-coming-for-ya>Point-1 &mdash; that &ldquo;robots are coming for ya&rdquo;</a></li><li><a href=#point-21-----the-ai-is-not-perfect>Point-2.1 &mdash; the AI is not perfect</a></li><li><a href=#point-22-----the-obvious-limitations-of-chatgpt>Point-2.2 &mdash; the obvious limitations of chatGPT</a></li><li><a href=#point-3-----job-replacement-has-to-involve-pain>Point-3 &mdash; job replacement &ldquo;has to involve pain&rdquo;</a></li><li><a href=#the-neoliberal-bias>The neoliberal bias</a></li></ul></li><li><a href=#parting-thoughts-on-free-will>Parting Thoughts on Free Will</a><ul><li><a href=#some-other-juicy-comments>Some other juicy comments</a></li><li><a href=#how-philosophical-zombies-could-be-real-yesterday>How philosophical zombies could be real, yesterday</a></li><li><a href=#the-chinese-room-and-physicalism>The Chinese Room and Physicalism</a></li><li><a href=#the-frame-and-binding-problems-reconsidered>The Frame and Binding Problems Reconsidered</a></li><li><a href=#connectionism-versus-gofai>Connectionism versus GOFAI</a></li><li><a href=#creativity-gaming-and-all-that>Creativity, Gaming and All That</a></li></ul></li><li><a href=#conclusion-and-retreats>Conclusion and Retreats</a></li><li><a href=#chatgpt-et-al-are-leveraging>chatGPT et al are Leveraging</a></li></ul></nav></details><p>I do not want to write about metaphysics too much for T4GU, that&rsquo;s a retirement
+<!doctype html><html lang=en data-mode=dark>
+<head prefix="og: http://ogp.me/ns#">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+<title>Thoughts on chatGPT and Related</title>
+<meta name=author content="Bijou M. Smith">
+<meta name=robots content="index follow">
+<link rel=canonical href=https://t4gu.gitlab.io/t4gu/blog/05_chatgpt/>
+<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
+<meta property="og:title" content="Thoughts on chatGPT and Related">
+<meta property="og:url" content="https://t4gu.gitlab.io/t4gu/blog/05_chatgpt/">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-12-23">
+<meta property="article:modified_time" content="2022-12-23">
+<meta property="og:updated_time" content="2022-12-23">
+<meta name=twitter:dnt content="on">
+<meta name=theme-color content="#222">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="default">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebSite","@id":"https://t4gu.gitlab.io/t4gu"},"headline":"Thoughts on chatGPT and Related","description":"","url":"https://t4gu.gitlab.io/t4gu/blog/05_chatgpt/","inLanguage":"en","datePublished":"2022-12-23","dateModified":"2022-12-23","wordCount":"18407","publisher":{"@type":"Person","name":"Bijou M. Smith"},"author":{"@type":"Person","name":"Bijou M. Smith","description":"Random mathematician."}}</script>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
+<noscript>
+<meta name=theme-color content="#26A269">
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
+</noscript>
+<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script src=https://t4gu.gitlab.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<a href=/t4gu> <img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
+<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
+<nav aria-label="Main menu.">
+<ul>
+<li>
+<a class=btn href=/t4gu/t4gu/>Home</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=filler>
+<main>
+<article>
+<header>
+<h1>Thoughts on chatGPT and Related</h1>
+<p>
+Published on <time datetime=2022-12-23>2022-12-23</time>
+</p>
+</header>
+<details class=toc open>
+<summary class=outline-dashed>
+Contents
+</summary>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#the-premiss>The Premiss</a></li>
+<li><a href=#is-there-anything-to-ask-a-bot>Is There Anything to Ask a Bot?</a></li>
+<li><a href=#philosophical-questions>Philosophical Questions</a>
+<ul>
+<li><a href=#anticipated-responses>Anticipated Responses</a></li>
+</ul>
+</li>
+<li><a href=#econ-dumb>An Economists Bad Take</a>
+<ul>
+<li><a href=#point-1-----that-robots-are-coming-for-ya>Point-1 &mdash; that &ldquo;robots are coming for ya&rdquo;</a></li>
+<li><a href=#point-21-----the-ai-is-not-perfect>Point-2.1 &mdash; the AI is not perfect</a></li>
+<li><a href=#point-22-----the-obvious-limitations-of-chatgpt>Point-2.2 &mdash; the obvious limitations of chatGPT</a></li>
+<li><a href=#point-3-----job-replacement-has-to-involve-pain>Point-3 &mdash; job replacement &ldquo;has to involve pain&rdquo;</a></li>
+<li><a href=#the-neoliberal-bias>The neoliberal bias</a></li>
+</ul>
+</li>
+<li><a href=#parting-thoughts-on-free-will>Parting Thoughts on Free Will</a>
+<ul>
+<li><a href=#some-other-juicy-comments>Some other juicy comments</a></li>
+<li><a href=#how-philosophical-zombies-could-be-real-yesterday>How philosophical zombies could be real, yesterday</a></li>
+<li><a href=#the-chinese-room-and-physicalism>The Chinese Room and Physicalism</a></li>
+<li><a href=#the-frame-and-binding-problems-reconsidered>The Frame and Binding Problems Reconsidered</a></li>
+<li><a href=#connectionism-versus-gofai>Connectionism versus GOFAI</a></li>
+<li><a href=#creativity-gaming-and-all-that>Creativity, Gaming and All That</a></li>
+</ul>
+</li>
+<li><a href=#conclusion-and-retreats>Conclusion and Retreats</a></li>
+<li><a href=#chatgpt-et-al-are-leveraging>chatGPT et al are Leveraging</a></li>
+</ul>
+</nav>
+</details>
+<p>I do not want to write about metaphysics too much for T4GU, that&rsquo;s a retirement
 proper project (when I am properly retired and need no new income).
 However, Internet friend Curt Jaimungal from the
 <a href=https://www.youtube.com/@TheoriesofEverything target=_blank>Theories of Everything</a>
@@ -10,55 +119,95 @@ So this is a fair enough excuse to expound upon a bit of philosophy that is
 only very loosely related to T4GU (at least insofar as any theory of fundamental
 physics ontology has something to say about metaphysics, or just the possibility
 of metaphysics &mdash; which should not be too much if we are being dutifully humble
-and honest).</p><p>*<strong>Aside:</strong> after posting this article I found out Curt meant he was going to
+and honest).</p>
+<p>*<strong>Aside:</strong> after posting this article I found out Curt meant he was going to
 interview <em>the</em> chatbot, not the dude who developed it! I was pretty pissed off
 at myself, because it would have been hilarious to contribute to Curt&rsquo;s effort to
-chat with a machine.</p><h2 id=the-premiss><a class=anchor href=#the-premiss title='Anchor for: The Premiss.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Premiss</h2><p>I think I need to relate what I know about the chatGPT guy. Which is not much.
+chat with a machine.</p>
+<h2 id=the-premiss><a class=anchor href=#the-premiss title="Anchor for: The Premiss."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Premiss</h2>
+<p>I think I need to relate what I know about the chatGPT guy. Which is not much.
 I saw one or two articles and responses to this Silicon Valley bro&rsquo;s claim his
 chat bot was (or could be) conscious, as in the
 <em>full genuine artificial general intelligence sentient subjective conscious</em>
 meaning (which is a lot, so we could probably cull back some of these claims
-unproblematically).</p><p>But for this blog post I will not cull any of the claims. It is more fun to
-think about the more extreme claim, which I am going to say is,</p><blockquote><p>The Chat bot was/is actually fully sentient and has mental qualia,
+unproblematically).</p>
+<p>But for this blog post I will not cull any of the claims. It is more fun to
+think about the more extreme claim, which I am going to say is,</p>
+<blockquote>
+<p>The Chat bot was/is actually fully sentient and has mental qualia,
 like you and me, and so it is morally dubious now to turn off the computer
 it is running on unless you have the capacity and intent to turn it back on,
-and ask the bot if it minds this weird sense of its psychological time being punctuated.</p></blockquote><p>Also: I might be wrong about the &ldquo;guy&rdquo; Curt Jaimungal was going to interview.
+and ask the bot if it minds this weird sense of its psychological time being punctuated.</p>
+</blockquote>
+<p>Also: I might be wrong about the &ldquo;guy&rdquo; Curt Jaimungal was going to interview.
 He or she might not be the dude who was making these wild claims. But I thought it fun to
-suppose he (or she) was (the he), otherwise I&rsquo;d not be writing this essay.</p><p>If you want to read about that story, try:</p><ul><li>Scientific American &mdash;
-<a href=https://www.scientificamerican.com/article/google-engineer-claims-ai-chatbot-is-sentient-why-that-matters/ target=_blank>Google Engineer Claims AI Chatbot Is Sentient: Why That Matters</a></li></ul><p>If you want some of the fear-mongering maybe see,</p><ul><li>NYT &mdash;
-<a href=https://www.newyorker.com/culture/cultural-comment/the-chatbot-problem target=_blank>The Chatbot Problem.</a></li></ul><p>If you want a saner perspective without the fear-mongering and a healthy dose of
-optimism read,</p><ul><li>Ben Thompson at <a href=https://stratechery.com/category/articles/ target=_blank>Stratechery</a>
-here: <a href=https://stratechery.com/2022/ai-homework/ target=_blank>AI Homework.</a></li><li>From a very different worldview, one might also take heed of
+suppose he (or she) was (the he), otherwise I&rsquo;d not be writing this essay.</p>
+<p>If you want to read about that story, try:</p>
+<ul>
+<li>Scientific American &mdash;
+<a href=https://www.scientificamerican.com/article/google-engineer-claims-ai-chatbot-is-sentient-why-that-matters/ target=_blank>Google Engineer Claims AI Chatbot Is Sentient: Why That Matters</a>
+</li>
+</ul>
+<p>If you want some of the fear-mongering maybe see,</p>
+<ul>
+<li>NYT &mdash;
+<a href=https://www.newyorker.com/culture/cultural-comment/the-chatbot-problem target=_blank>The Chatbot Problem.</a>
+</li>
+</ul>
+<p>If you want a saner perspective without the fear-mongering and a healthy dose of
+optimism read,</p>
+<ul>
+<li>Ben Thompson at <a href=https://stratechery.com/category/articles/ target=_blank>Stratechery</a>
+here: <a href=https://stratechery.com/2022/ai-homework/ target=_blank>AI Homework.</a>
+</li>
+<li>From a very different worldview, one might also take heed of
 <a href="https://www.youtube.com/watch?v=IMnWAuoucjo" target=_blank>Walid Saba - Why Machines Will Never Rule the World</a>
-. If you prefer reading to watching youtube, the relevant <a href=https://philpapers.org/archive/SABMWN.pdf target=_blank>article can be found here.</a></li></ul><p>FWIW, I do not like Ben Thompson&rsquo;s excessive libertarian take. We <em>do</em> need (decent)
+. If you prefer reading to watching youtube, the relevant <a href=https://philpapers.org/archive/SABMWN.pdf target=_blank>article can be found here.</a>
+</li>
+</ul>
+<p>FWIW, I do not like Ben Thompson&rsquo;s excessive libertarian take. We <em>do</em> need (decent)
 government regulation to prevent the excesses of harm from <em>any</em> technology,
-even farm tractors.</p><p>But I think he gets it basically half-right when he concludes:</p><blockquote><p>&ldquo;In the case of AI, don’t ban it for students &mdash; or anyone else for that matter;
+even farm tractors.</p>
+<p>But I think he gets it basically half-right when he concludes:</p>
+<blockquote>
+<p>&ldquo;In the case of AI, don’t ban it for students &mdash; or anyone else for that matter;
 leverage it to create an educational model that starts with the assumption that
 content is free and the real skill is editing it into something true or beautiful;
-only then will it be valuable and reliable.&rdquo;</p></blockquote><p>The problem with the, &ldquo;Well, just leverage it, bro!&rdquo; view is that it discounts
+only then will it be valuable and reliable.&rdquo;</p>
+</blockquote>
+<p>The problem with the, &ldquo;Well, just leverage it, bro!&rdquo; view is that it discounts
 the adverse relative effect on the poor and the oppressed.
-You cannot leverage AI even if it is OpenAI, if you do not have the skill and power.</p><p>What Ben Thompson carelessly advocates for here is a <em>rich get richer</em> Pareto
-dynamic world.</p><p>If you have the skill, you will not necessarily have the awesome supercomputer
+You cannot leverage AI even if it is OpenAI, if you do not have the skill and power.</p>
+<p>What Ben Thompson carelessly advocates for here is a <em>rich get richer</em> Pareto
+dynamic world.</p>
+<p>If you have the skill, you will not necessarily have the awesome supercomputer
 power to gain max leverage. So Thompson&rsquo;s dumb-ass libertarian strategy will
 create higher levels of social inequality. That is not an AI story.
 That is <em>every</em> libertarian story involving <em>any</em> technology that is energy, time,
-and budget constrained.</p><p>The problem is not the existence of AI, the problem is who can gain more
+and budget constrained.</p>
+<p>The problem is not the existence of AI, the problem is who can gain more
 leverage faster. They&rsquo;ll get increasing returns, the rest of us will &ldquo;get&rdquo; more
 economic precarity and less democracy.
 But that is not because of the tech being AI, it is because of the
-tech being powerful, period.</p><p>I guess there is a residual problem, which is that OpenAI could allow some kid in
+tech being powerful, period.</p>
+<p>I guess there is a residual problem, which is that OpenAI could allow some kid in
 his garage to accidentally create SkyNet. In which case, we&rsquo;ve already been doomed,
 since we&rsquo;ve been uploaded into a computer and are being exploited to make scifi movies
 for the remaining flesh walkers and air breathers who have inherited the
 analog physical Earth. ((SkyNet can only exist in a virtual world of fantasy,
-not in the world of wetware.))</p><h2 id=is-there-anything-to-ask-a-bot><a class=anchor href=#is-there-anything-to-ask-a-bot title='Anchor for: Is There Anything to Ask a Bot?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Is There Anything to Ask a Bot?</h2><p>Just being a little facetious, if the chatGPT dude thinks his chatbot is conscious,
-then under what pretenses am I obliged to think <em>he</em> is conscious?</p><p>Is not someone who thinks a programmed canned pseudo-random number generator
+not in the world of wetware.))</p>
+<h2 id=is-there-anything-to-ask-a-bot><a class=anchor href=#is-there-anything-to-ask-a-bot title="Anchor for: Is There Anything to Ask a Bot?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Is There Anything to Ask a Bot?</h2>
+<p>Just being a little facetious, if the chatGPT dude thinks his chatbot is conscious,
+then under what pretenses am I obliged to think <em>he</em> is conscious?</p>
+<p>Is not someone who thinks a programmed canned pseudo-random number generator
 exploiting chatbot &ldquo;conscious&rdquo; themselves a bit lacking in comprehension,
 perhaps lacking in consciousness? Were they paid a million dollars US to say
 this by some marketing and Ad company? In which case their utterance about
-claims for the chatbot are not fully sentient, they are blind capitalist-speak bots.</p><p>Maybe I am the only entity in the universe with actual subjective qualia-filled
+claims for the chatbot are not fully sentient, they are blind capitalist-speak bots.</p>
+<p>Maybe I am the only entity in the universe with actual subjective qualia-filled
 sentience? I certainly know <em>I</em> am that sort of creature. One of the few sure
-things I know, á la Descartes.</p><p>More seriously, the chatbots can be useful in the same way Siri, Alexa and OKGoogle
+things I know, á la Descartes.</p>
+<p>More seriously, the chatbots can be useful in the same way Siri, Alexa and OKGoogle
 already are useful &mdash; they can make Internet look-ups a whole lot less frictional
 for us &mdash; provided we can <em>all</em> afford to run the chatBot 24/7 democratically
 and not heat up the oceans in doing so. Crypto madness all over again in a
@@ -66,98 +215,133 @@ different guise:
 burn the Earth down to make a few nerds and libertarians delirious with pleasure
 for a few years.
 (Same themes as in my intro: the problem usually boils down to massive
-social inequality, not &ldquo;SkyNet.&rdquo;)</p><p>But if you think you are &ldquo;conversing&rdquo; with a chatbot I think you have to check
+social inequality, not &ldquo;SkyNet.")</p>
+<p>But if you think you are &ldquo;conversing&rdquo; with a chatbot I think you have to check
 the hairs on the palm of your hand. You are not conversing with any mind,
 because the minds that make the chatbot appear alive and sentient are away
 working on the next AI system, plus all the human beings whose text they used
 to train the bot are off doing their usual things, playing golf or struggling
-to survive.</p><p>I would ask chatGPT dude:</p><ul><li>If a genuine conversation can be faked using sufficient big data + dumb deep
+to survive.</p>
+<p>I would ask chatGPT dude:</p>
+<ul>
+<li>If a genuine conversation can be faked using sufficient big data + dumb deep
 learning algorithms, what makes you think the chatbot is engaging in
-genuine <em>thoughtful</em> conversation?</li><li>When Curt interviews you, how do you know Curt is engaged thoughtfully and is
+genuine <em>thoughtful</em> conversation?</li>
+<li>When Curt interviews you, how do you know Curt is engaged thoughtfully and is
 not a life-like robot faking it? It is not via a Turing Test, it is via
-pure inference, is it not?</li><li>Do you think Searle&rsquo;s hypothetical Chinese Room is conscious? (Your answer tells me
+pure inference, is it not?</li>
+<li>Do you think Searle&rsquo;s hypothetical Chinese Room is conscious? (Your answer tells me
 something about our differing definitions of &ldquo;conscious&rdquo; but nothing about actual
-sentient subjective awareness.)</li><li>What makes AlphaGo different to your chatbot? (It is not information complexity or Tononi&rsquo;s $\Phi$.)</li></ul><p>By &ldquo;<em>thoughtful</em>&rdquo; above I mean <em>experiencing actual mental qualia</em>.</p><p>We can debate what I mean by <strong>qualia</strong> &mdash; but I take it from Nagel, Fodor,
+sentient subjective awareness.)</li>
+<li>What makes AlphaGo different to your chatbot? (It is not information complexity or Tononi&rsquo;s $\Phi$.)</li>
+</ul>
+<p>By &ldquo;<em>thoughtful</em>&rdquo; above I mean <em>experiencing actual mental qualia</em>.</p>
+<p>We can debate what I mean by <strong>qualia</strong> &mdash; but I take it from Nagel, Fodor,
 Chalmers, et al. So really there is little to debate.
 You can say the phenomenological quale are &ldquo;mere illusions,&rdquo; and then, in that case,
 we have to stop talking <em>on this particular topic</em>, because I cannot make any
 sense of what you will be subsequently saying. Of course our mental qualia are real.
 The question to my mind is what their nature is and how we &ldquo;feel&rdquo; them, without even
-making any severe effort peddling some mental bicycle gears.</p><p>Clearly AlphaGo never expresses deep meaningful philosophical thoughts on how it beats
+making any severe effort peddling some mental bicycle gears.</p>
+<p>Clearly AlphaGo never expresses deep meaningful philosophical thoughts on how it beats
 Lee Sedol. But is that only because AlphaGo lacks a linguistic DL algorithm?
 Clearly not. Adding a chatbot feature to AlphaGo will not generate any mental quale
 concerning how to think qualitatively about Go strategy. AlphaGo in any case
 does not <em>think</em> qualitatively, it uses machine programmed probability theory,
 Bayesian statistics, plus canned strategy gleaned by the AlphaGo human team from
-studying many other human players, including Lee Sedol.</p><p>AlphaGo was a triumph showing how a team of a hundred top notch research people can beat
+studying many other human players, including Lee Sedol.</p>
+<p>AlphaGo was a triumph showing how a team of a hundred top notch research people can beat
 Lee Sedol at one game. A bit like how you might get a robot army to beat the New Zealand
 All Blacks in a rugby game. I do not consider that a triumph for humanity (almost the
 opposite, no? Check out the
 <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y" target=_blank>AlphaGo documentary</a>
 and the team member who near the end of the film had serious regrets after they
 &ldquo;beat&rdquo; Lee Sedol). I consider it interesting research, which in the process
-crushed the gentle soul of Lee Sedol.</p><p>Now you might counter, &ldquo;But this &rsquo;experiencing historical games&rsquo; is all that
+crushed the gentle soul of Lee Sedol.</p>
+<p>Now you might counter, &ldquo;But this &lsquo;experiencing historical games&rsquo; is all that
 Lee Sedol did in learning Go.&rdquo;
 If you say that, then again we have to part ways on conversation on this topic,
 because I cannot find any team of researchers who programmed Lee Sedol and took
-the trouble to change his diapers when he was an infant.</p><p>I am not saying a genuine AC (artificially conscious) mind will need to have it&rsquo;s
+the trouble to change his diapers when he was an infant.</p>
+<p>I am not saying a genuine AC (artificially conscious) mind will need to have it&rsquo;s
 hardware poop cleaned out as an infant, but I <em>am</em> saying that consciousness
 <em>could have</em> (not &ldquo;does have&rdquo;) an irreducible non-physical aspect that can only be
 &ldquo;found&rdquo; at the spacetime boundaries. But that would be my T4GU theory,
-so no one probably would know what I am talking about here.</p><p>More generally, until we know what the heck subjective phenomenal qualae are,
+so no one probably would know what I am talking about here.</p>
+<p>More generally, until we know what the heck subjective phenomenal qualae are,
 in essence (illusions or reality), then I think all bets are off concerning
-judgements about whether machine programmed systems can be subjectively conscious.</p><p>No scientist on the planet even knows if subjective consciousness is even
+judgements about whether machine programmed systems can be subjectively conscious.</p>
+<p>No scientist on the planet even knows if subjective consciousness is even
 possible without experiences of mental qualae. There is no evidence either way,
-because no one knows how to measure some other entities qualae meter.</p><p>The thing is, the phrase &ldquo;<em>experiences genuine non-illusory subjective phenomenological qualia</em>&rdquo; would be part of my baseline definition of &ldquo;<strong><em>conscious</em></strong>&rdquo;. Like it or not.</p><p>For sure, that might mean I end up defining it so that nothing can possibly be conscious
+because no one knows how to measure some other entities qualae meter.</p>
+<p>The thing is, the phrase &ldquo;<em>experiences genuine non-illusory subjective phenomenological qualia</em>&rdquo; would be part of my baseline definition of &ldquo;<strong><em>conscious</em></strong>&rdquo;. Like it or not.</p>
+<p>For sure, that might mean I end up defining it so that nothing can possibly be conscious
 (in the event everything is raw physics, so all objective, nothing subjective that is
 non-illusory). But that&rsquo;s how I like it. I like to research and philosophize with
 a fairly maximal generous definition of consciousness, not a narrow logical positivist
 definition that only considers functionality and operation, and ignores all the
-interesting stuff concerning irreducible subjective feelings.</p><p>((As an aside, I always have to laugh whenever any nerd claims mental qualae are
+interesting stuff concerning irreducible subjective feelings.</p>
+<p>((As an aside, I always have to laugh whenever any nerd claims mental qualae are
 illusions. Because you need a subjective mental state to have an illusion. So they&rsquo;ve
 conceded my point. It is like saying you do not believe in $\aleph_0$ because you
 cannot count up to it, or that you believe there is a largest integer with no
 successor because no one can write it down. Or something like this. These are not
 perfect analogies. More prosaically, it is like saying unicorns do not exist. Well, ask
-my daughter. Unicorns certainly do exist, but just not as biological entities.))</p><p>If we can someday say definitively that the subjective feelings are truly illusory,
-then fine. That&rsquo;s mighty progress. But no one is remotely near to that yet.</p><p>By the way, I know all the arguments about Searle&rsquo;s Chinese Room. It is a
+my daughter. Unicorns certainly do exist, but just not as biological entities.))</p>
+<p>If we can someday say definitively that the subjective feelings are truly illusory,
+then fine. That&rsquo;s mighty progress. But no one is remotely near to that yet.</p>
+<p>By the way, I know all the arguments about Searle&rsquo;s Chinese Room. It is a
 gedankenexperiment, not a computer science puzzle, ok!
 I am pretty convinced by the information theoretic rationale for believing the
 Chinese Room is a physical impossibility &mdash; there are not enough atoms in the
 universe to simulation the operations required to converse using the
-Chinese Room giant look-up table.</p><p>In cognitive science and linguistics jargon this is the Problem of Infinity.
+Chinese Room giant look-up table.</p>
+<p>In cognitive science and linguistics jargon this is the Problem of Infinity.
 Chomsky gave pretty good reasons to suppose this is a big f-ing problem.
 Human language capacity has what is thought to be infinite generativity,
 and no machine based algorithm can &ldquo;do&rdquo; this, on information theoretic grounds
-no machine of Earth-like size will ever be able to do what humans do.</p><p>This makes human language capacity a deep puzzle. How can a brain have infinite
+no machine of Earth-like size will ever be able to do what humans do.</p>
+<p>This makes human language capacity a deep puzzle. How can a brain have infinite
 generative capacity? To date, no one knows, it is an unsolved problem
 (assuming it is well-posed). No one knows how to even start attacking the
 problem because <em>almost</em> everyone who attempts it has a materialistic bias &mdash;
 they think the human mind is just &ldquo;the brain in motion&rdquo; and so is physical,
 a physical process, and with finite state, and so ought to have the same
 limits as a machine, which being less than Earth-sized, should not have
-infinite generative language capacity.</p><p>Is the chatGPT dude aware of this problem?</p><p>One other thing: is chatBot dude familiar with the work of people like <a href=https://youtu.be/RzGaI7vXrkk target=_blank>Yasaman Razeghi and Prof. Sameer Singh</a>
+infinite generative language capacity.</p>
+<p>Is the chatGPT dude aware of this problem?</p>
+<p>One other thing: is chatBot dude familiar with the work of people like <a href=https://youtu.be/RzGaI7vXrkk target=_blank> Yasaman Razeghi and Prof. Sameer Singh</a>
 ?
-You have to consider such research before claiming your machine is conscious or even intelligent without thought. They show that for a class of ANN systems &ldquo;the large language models&rdquo; these systems only perform well on reasoning tasks because they memorise the dataset. They showed the accuracy was linearly correlated to the occurrence rate in the training corpus.</p><p>In my vocabulary that is <strong><em>not</em></strong> learning. It is updating electronic registers.
+You have to consider such research before claiming your machine is conscious or even intelligent without thought. They show that for a class of ANN systems &ldquo;the large language models&rdquo; these systems only perform well on reasoning tasks because they memorise the dataset. They showed the accuracy was linearly correlated to the occurrence rate in the training corpus.</p>
+<p>In my vocabulary that is <strong><em>not</em></strong> learning. It is updating electronic registers.
 It is canned automated intelligence, and the actual intelligence fresh and raw came
-from real people who provided the training data, people who are not describable by algorithms.</p><p>This is a lot like my perennial critique of neural nets, which is that of Chomsky: they are glorified curve fitting algorithms. Engineered by very clever people to appear &ldquo;smart&rdquo; but they are dumb.</p><div style=text-align:center>&nbsp;* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div><p>That about does it for the quick version of this essay.
-To follow are some elaborations.</p><h2 id=philosophical-questions><a class=anchor href=#philosophical-questions title='Anchor for: Philosophical Questions.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Philosophical Questions</h2><p>A few for starters:</p><p><a name=A><em>A.</em></a> Do you really think your chatbot experiences subjective qualia?
+from real people who provided the training data, people who are not describable by algorithms.</p>
+<p>This is a lot like my perennial critique of neural nets, which is that of Chomsky: they are glorified curve fitting algorithms. Engineered by very clever people to appear &ldquo;smart&rdquo; but they are dumb.</p>
+<div style=text-align:center> &nbsp;* &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *</div>
+<p>That about does it for the quick version of this essay.
+To follow are some elaborations.</p>
+<h2 id=philosophical-questions><a class=anchor href=#philosophical-questions title="Anchor for: Philosophical Questions."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Philosophical Questions</h2>
+<p>A few for starters:</p>
+<p><a name=A><em>A.</em></a> Do you really think your chatbot experiences subjective qualia?
 (Do you know what I mean by &ldquo;qualia&rdquo;?) If so, how? I mean for heavens sake, what
 evidence at all is there of any inner private subjective states of mind? (I believe you
-have no evidence.)</p><p><a name=B><em>B.</em></a> <a href="https://youtu.be/IMnWAuoucjo?t=563" target=_blank>Walid Saba (referenced above)</a>
+have no evidence.)</p>
+<p><a name=B><em>B.</em></a> <a href="https://youtu.be/IMnWAuoucjo?t=563" target=_blank>Walid Saba (referenced above)</a>
 talks about the problem of semantics being a whole giant ball of mess far worse than
 mastering syntax, but even if deep learning &ldquo;mastered semantics&rdquo; would that imply
 (to your mind) that a system with semantic mastery is necessarily conscious? Because is
 not the <strong><em>way</em></strong> a system masters a task pretty much <em>all important</em> for things like
 putative awareness and whatnot? It is not the fact you can fly that tells me you have
-wings, it is the <em>way</em> you fly that tells me you do not (uses a Boeing 747).</p><p><a name=C><em>C.</em></a> If the answer to the first question <a href=#A>A</a>
+wings, it is the <em>way</em> you fly that tells me you do not (uses a Boeing 747).</p>
+<p><a name=C><em>C.</em></a> If the answer to the first question <a href=#A>A</a>
 is,
 &ldquo;no, the chatbot does not experience qualae,&rdquo; (perhaps because it tells you it does not?)
 then it is fair for me to ask you how you define &ldquo;conscious&rdquo;, so how do you?
 (Because I bet it is different to my definition/usage.) I prefer a phenomenological
 definition to operational, because all operational and functional definitions of
 consciousness ignore the most essential putative feature of what most people mean by
-&ldquo;consciousness.&rdquo;</p><p><a name=D><em>D.</em></a> The more practical questions concern AI ethics. Plenty of people
+&ldquo;consciousness.&rdquo;</p>
+<p><a name=D><em>D.</em></a> The more practical questions concern AI ethics. Plenty of people
 have weighed in on this, from the libertarians (let the AI reign) to the conservatives
 (kill all AI).
 What does chatGPT think about this, and without shrugging off the ethical responsibility
@@ -169,67 +353,100 @@ wilfully negligent and should be quarantined from society (imho).
 And I am not talking about the trivial issues of Dall-E &ldquo;putting artists out of work&rdquo; &mdash;
 although that sort of discourse is interesting too (for reasons chatGPT dude might not
 comprehend &mdash; see the section below on <a href=#econ-dumb>dumb economists fear-mongering</a>
-)).</p><h3 id=anticipated-responses><a class=anchor href=#anticipated-responses title='Anchor for: Anticipated Responses.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Anticipated Responses</h3><p>I am now going to tell Curt why I would probably not bother asking the above questions:
+)).</p>
+<h3 id=anticipated-responses><a class=anchor href=#anticipated-responses title="Anchor for: Anticipated Responses."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Anticipated Responses</h3>
+<p>I am now going to tell Curt why I would probably not bother asking the above questions:
 it is because I can guess the answers. They&rsquo;re going to be deflationary, denialism,
 or defensive, not genuine engagement with the deeper philosophy and metaphysics.
-But I&rsquo;d hope I am wrong.</p><p>If that were to be the case though, then asking them might be a bit of a waste of my
+But I&rsquo;d hope I am wrong.</p>
+<p>If that were to be the case though, then asking them might be a bit of a waste of my
 time, because I&rsquo;m not interested in the defences, I am interested in the grappling
-with the metaphysical, ethical and moral issues.</p><p>However, I would suppose any audience tuning in to an episode on youtube might
-gain something from hearing responses to the questions. So I might still ask them.</p><p>What I would not wish to do would be to get in any debate with chatGPT dude over
+with the metaphysical, ethical and moral issues.</p>
+<p>However, I would suppose any audience tuning in to an episode on youtube might
+gain something from hearing responses to the questions. So I might still ask them.</p>
+<p>What I would not wish to do would be to get in any debate with chatGPT dude over
 the philosophy when he cannot pretend to accept my baseline assumptions (or me his).
 For a decent debate you need to agree on a baseline set of assumptions.
 Very few debates on youtube establish this. I cannot remember the last time I saw a
-youtube debate done properly.</p><p><a href=https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ target=_blank>Machine Learning Street Talk</a>
-sometimes have good critical discussions.</p><h4 id=remarks-on-qaa><a class=anchor href=#remarks-on-qaa title='Anchor for: Remarks on Q.A .'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Remarks on Q.<a href=#A>A</a></h4><p>This is just baseline philosophical discussion grounding.
+youtube debate done properly.</p>
+<p><a href=https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ target=_blank>Machine Learning Street Talk</a>
+sometimes have good critical discussions.</p>
+Remarks on Q.
+<h4 id=remarks-on-qaa><a class=anchor href=#remarks-on-qaa title="Anchor for: A ."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> <a href=#A>A</a>
+</h4>
+<p>This is just baseline philosophical discussion grounding.
 Remember, if someone is in denial about the reality (non-illusory) nature of subjective phenomenal mental qualae (the <span style=color:Tomato>redness</span> of red tomato)
 then I consider them to be on a different planet, maybe a different universe.
-So debate is futile and would not get us anywhere.</p><p>A better place to start a conversation with such a person, for me, would be to
+So debate is futile and would not get us anywhere.</p>
+<p>A better place to start a conversation with such a person, for me, would be to
 simply stay at this baseline level and talk about why denialism is
 intellectually honest, rigorous, or not, and the same for the alternative
 non-denialist Descartes-Nagel-Fodor-Chalmers view.
 The reason this would not be futile is because it tests each others
 intellectual pinnings.
-You should not want to philosophize in a vacuum.</p><h4 id=remarks-on-qbb><a class=anchor href=#remarks-on-qbb title='Anchor for: Remarks on Q.B .'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Remarks on Q.<a href=#B>B</a></h4><p>Walid Saba presents a lot of complexity challenges for behaviorists and Strong-AI
+You should not want to philosophize in a vacuum.</p>
+Remarks on Q.
+<h4 id=remarks-on-qbb><a class=anchor href=#remarks-on-qbb title="Anchor for: B ."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> <a href=#B>B</a>
+</h4>
+<p>Walid Saba presents a lot of complexity challenges for behaviorists and Strong-AI
 or AGI nerds, who actually seem to think that machines will some day think inner
-qualae-filled thoughts.</p><p>((I think the nerds need (like security blankets) to believe this because they
+qualae-filled thoughts.</p>
+<p>((I think the nerds need (like security blankets) to believe this because they
 want to upload their brain state into a computer some day, so as to &ldquo;live forever&rdquo;
 or at least potentially until the heat death of the cosmos, like
 Frank Herbert&rsquo;s Cymeks. Fear of physical death is a powerful driver of
 delusional fantasy. There are better ways to live a good life &mdash; such as figuring
 out why biological death of the natural kind is a good thing. A giant ego is
-something that probably ought not to exist naturally on Earth for too long.))</p><p>But Dr Saba tends to attack only the computational complexity, and largely leaves
-aside the mental qualae issues, and he is perhaps wise to do so.</p><p>The issue here is one that computer scientists like Scott Aaronson (whom I am a fan of)
+something that probably ought not to exist naturally on Earth for too long.))</p>
+<p>But Dr Saba tends to attack only the computational complexity, and largely leaves
+aside the mental qualae issues, and he is perhaps wise to do so.</p>
+<p>The issue here is one that computer scientists like Scott Aaronson (whom I am a fan of)
 get right &mdash; they point out things like the fact a quantum computer only gets a
 certain algorithmic complexity advantage over a classical computer, which is
 <em>all about the speed.</em> It&rsquo;s <strong><em>not</em></strong> about &ldquo;what can be computed&rdquo; &mdash; that never
-changes &mdash; it is only about <em>how fast it can be computed</em>.</p><p>It is likely that <strong><em>no</em></strong> quantum computer can <em>ever</em> solve all NP-hard problems in
+changes &mdash; it is only about <em>how fast it can be computed</em>.</p>
+<p>It is likely that <strong><em>no</em></strong> quantum computer can <em>ever</em> solve all NP-hard problems in
 polynomial time. Only what is physical is knowably open to QC speed-up,
 by direct simulation, and even then, only if the QC has enough
 coherent qubits &mdash; which is unlikely to get even close to basic polynomial
-protein folding solution.</p><p>No quantum computer can ever compute the non-computable. The question for AGI then
+protein folding solution.</p>
+<p>No quantum computer can ever compute the non-computable. The question for AGI then
 is: are there aspects to human conscious that are simply non-computable?
 No one really knows, but many, including myself and Penrose, and Gödel,
 think the answer is &ldquo;yes.&rdquo;
-If the answer is &ldquo;yes&rdquo; then genuine machine consciousness is impossible.</p><p>To build an artificial consciousness would then require something more mystical,
+If the answer is &ldquo;yes&rdquo; then genuine machine consciousness is impossible.</p>
+<p>To build an artificial consciousness would then require something more mystical,
 like figuring out how to exploit physical resources of Knightian uncertainty
 (so beyond mere pseudo-random number generators, and beyond mere probability).
 We would then be talking about Gauge-Gravity duality theory${}^\ast$,
 which to my knowledge no AI researchers are even thinking about,
-not even on their weekends.</p><p>${}^\ast$Gauge-gravity theory, or cosmological holography &mdash; because all the information
+not even on their weekends.</p>
+<p>${}^\ast$Gauge-gravity theory, or cosmological holography &mdash; because all the information
 that is possibly non-computable, all the source of Knightian uncertainty, exists on the
 boundary. The problem here is that the physicists are the only ones who grok
 gauge-gravity duality theory, and even then only dimly for de Sitter spacetime,
-and they are idiots (like most of us) when it comes to issues of human consciousness.</p><p>But for me, the mental qualae are a far more serious and substantial counter to the
+and they are idiots (like most of us) when it comes to issues of human consciousness.</p>
+<p>But for me, the mental qualae are a far more serious and substantial counter to the
 Superintelligence narrative fanbois.
 My view, and it is <em>only</em> an opinion, is that a putative superintelligence will need
 to have mental qualae, that is, will need to have mental subjective access to the
 realm of platonic ideals. Because without such access all it will be doing is running
 a dumb algorithm, and so no matter how conscious it <em>appears</em> it will never be
-thoughtful and genuinely conscious.</p><p>Consciousness, by the way, does not imply intelligence. (Think QAnon, or neoliberals.)</p><h4 id=remarks-on-qcc><a class=anchor href=#remarks-on-qcc title='Anchor for: Remarks on Q.C .'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Remarks on Q.<a href=#C>C</a></h4><p>The functional and operational definitions of consciousness are useful for research
+thoughtful and genuinely conscious.</p>
+<p>Consciousness, by the way, does not imply intelligence. (Think QAnon, or neoliberals.)</p>
+Remarks on Q.
+<h4 id=remarks-on-qcc><a class=anchor href=#remarks-on-qcc title="Anchor for: C ."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> <a href=#C>C</a>
+</h4>
+<p>The functional and operational definitions of consciousness are useful for research
 on the brain correlates. But they have nothing to say at present about the
 fundamental reality of <strong><em>what it is like to be</em></strong> in some conscious state,
-seeing the <span style=color:#00ff7f>greenness</span> of grass, the crushing agony of $\mathfrak{torture}$ or depression, and whatnot.</p><p>The functional and operational accounts are accounts of behaviour, not of consciousness. This harks back to how Chomsky and others defeated the Skinnerian Behaviorists.
-Somehow a whole lot of AI nerds, and followers of E. O. Wilson, forgot that Chomsky won.</p><h4 id=remarks-on-qdd><a class=anchor href=#remarks-on-qdd title='Anchor for: Remarks on Q.D .'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Remarks on Q.<a href=#D>D</a></h4><p>By &ldquo;quarantined for society&rdquo; for the nerds who have zero ethical and moral
+seeing the <span style=color:#00ff7f>greenness</span> of grass, the crushing agony of $\mathfrak{torture}$ or depression, and whatnot.</p>
+<p>The functional and operational accounts are accounts of behaviour, not of consciousness. This harks back to how Chomsky and others defeated the Skinnerian Behaviorists.
+Somehow a whole lot of AI nerds, and followers of E. O. Wilson, forgot that Chomsky won.</p>
+Remarks on Q.
+<h4 id=remarks-on-qdd><a class=anchor href=#remarks-on-qdd title="Anchor for: D ."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> <a href=#D>D</a>
+</h4>
+<p>By &ldquo;quarantined for society&rdquo; for the nerds who have zero ethical and moral
 capacity I do not mean prison. I am biased against the prison industrial
 incarceration complex. I mean rehabilitation. Every nerd can grow a sense of
 social responsibility, it is not hard. You can just live with a decent and honest
@@ -238,21 +455,27 @@ You will soon realize their poverty has <em>nothing</em> to do with their life c
 and everything to do with social injustice and
 increasing returns to the wealthy (Pareto dynamics) and decreasing returns to
 poverty (the poverty trap &mdash; including why poor people know much more accurately
-what grocery item prices are).</p><p>To go further, you also need to learn some MMT and macroeconomics, in order to
+what grocery item prices are).</p>
+<p>To go further, you also need to learn some MMT and macroeconomics, in order to
 realize none of the Pareto levels of mass inequality and suffering are necessary,
 and that the &ldquo;free market&rdquo; is a fiction, and that private markets and oligarchs
-are propped up (unfairly) by government subsidy.</p><p>This is a potentially big looming issue in AI tech. The issue is who gets more
+are propped up (unfairly) by government subsidy.</p>
+<p>This is a potentially big looming issue in AI tech. The issue is who gets more
 access to the AI assistance?
-The poor (who need it most) or the rich (who can afford it)?</p><p>Obviously my answer is that this is a <em>political choice</em> and the correct choice
+The poor (who need it most) or the rich (who can afford it)?</p>
+<p>Obviously my answer is that this is a <em>political choice</em> and the correct choice
 governments will need to make is to make access to AI assistance democratic,
 but if the electricity resources become scarce, then preferentially the poorest
-people need the greater access and usage rights.</p><p>The last issue might, for some readers, include a follow-up question, &ldquo;But How?&rdquo;
+people need the greater access and usage rights.</p>
+<p>The last issue might, for some readers, include a follow-up question, &ldquo;But How?&rdquo;
 This is where an MMT understanding comes in.
 Governments are currency monopolists, so they set the price level, they are price
-setters, not price takers, they just do not know it! (So regularly mess things up.)</p><p>Once you understand this operational reality, you realize governments can always
+setters, not price takers, they just do not know it! (So regularly mess things up.)</p>
+<p>Once you understand this operational reality, you realize governments can always
 afford to purchase anything for sale in their currency of issue. They can always
 out-compete the private sector. A monopolist always can out-compete everyone
-else in that which they monopolize.</p><p>So the political constraint is willingness to pay, not capacity to pay.
+else in that which they monopolize.</p>
+<p>So the political constraint is willingness to pay, not capacity to pay.
 Another way to put this is that Tax revenue is a return back of currency to the
 issuer &mdash; the issuer had to first give us their currency <em>before</em> we can pay tax
 liabilities. So taxes &mdash; the liabilities, not the receipts &mdash; drive <em>demand</em> for the currency, they do not drive supply
@@ -260,101 +483,161 @@ of currency to the issuer. Another way of putting this is that tax return
 deletes money from circulation, while government spending injects currency into
 private circulation.
 The government spending (add to bank accounts) has to logically happen before
-the tax drain (mark-down of bank accounts).</p><p>Once you understand this, all the fiscal and financial problems about access to
+the tax drain (mark-down of bank accounts).</p>
+<p>Once you understand this, all the fiscal and financial problems about access to
 AI resources melts away entirely, and governments become capable (granted there
 is the willingness) to serve the broad public purpose, not the narrow private interests.
 In other words, governments are never beholden to rich people, since rich people
-are never funding the government, it is the other way around.</p><p>Does chatGPT (or any Silicon Valley nerd) understand any of this macroeconomics?
+are never funding the government, it is the other way around.</p>
+<p>Does chatGPT (or any Silicon Valley nerd) understand any of this macroeconomics?
 Because it is vital in understanding how the justice issues that increasing AI
 power pose to society can be resolved, and how such issues need never become issues of
-growing inequality or suffering.</p><h2 id=econ-dumb><a class=anchor href=#econ-dumb title='Anchor for: An Economists Bad Take.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>An Economists Bad Take</h2><p>I&rsquo;ll pick on Paul Krugman here, but really this could apply to almost any academic
+growing inequality or suffering.</p>
+<h2 id=econ-dumb><a class=anchor href=#econ-dumb title="Anchor for: An Economists Bad Take."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> An Economists Bad Take</h2>
+<p>I&rsquo;ll pick on Paul Krugman here, but really this could apply to almost any academic
 economist or economics/social science blogger with a neoliberal bias.
 So apart from some quotes, the &ldquo;Paul Krugman&rdquo; I am writing about below is a
 figment of my imagination, only merely <em>inspired</em> by the real Paul Krugman and just
-one of his articles. I&rsquo;ll sometimes use the name &ldquo;Kruggers&rdquo; to critique this figment.</p><p>Typical for a neoliberal the fake Nobel recipient (for the Bankers Prize)
+one of his articles. I&rsquo;ll sometimes use the name &ldquo;Kruggers&rdquo; to critique this figment.</p>
+<p>Typical for a neoliberal the fake Nobel recipient (for the Bankers Prize)
 Paul Krugman wrote in the
 <a href=https://www.nytimes.com/2022/12/06/opinion/chatgpt-ai-skilled-jobs-automation.html target=_blank>NYT</a>
-that,</p><blockquote><p>&ldquo;In the long run, productivity gains in knowledge industries, like past gains
+that,</p>
+<blockquote>
+<p>&ldquo;In the long run, productivity gains in knowledge industries, like past gains
 in traditional industries, will make society richer and improve our lives in general
 (unless Skynet kills us all). But in the long run, we are all dead, and even before that,
 some of us may find ourselves either unemployed or earning far less than we expected,
-given our expensive educations.&rdquo;</p></blockquote><p>(you can read a free version of the
-<a href="http://www.realdailybuzz.com/rdb.nsf/DocView?Open&amp;UNID=ec67c28f8baee2cb85258911004ee16f" target=_blank>article here I think</a>
-).</p><p>There is actually not much I profoundly disagree with in Krugman&rsquo;s article,
+given our expensive educations.&rdquo;</p>
+</blockquote>
+<p>(you can read a free version of the
+<a href="http://www.realdailybuzz.com/rdb.nsf/DocView?Open&UNID=ec67c28f8baee2cb85258911004ee16f" target=_blank>article here I think</a>
+).</p>
+<p>There is actually not much I profoundly disagree with in Krugman&rsquo;s article,
 he is hedging and vague enough to never commit to any sentence that says anything
 like &ldquo;knowledge workers will be more precarious and under-employed.&rdquo;
-Perhaps Krugman knows more MMT than he lets on in his other OpEds?</p><p>However, the tone and emphasis and one small part of Krugman&rsquo;s article is the
+Perhaps Krugman knows more MMT than he lets on in his other OpEds?</p>
+<p>However, the tone and emphasis and one small part of Krugman&rsquo;s article is the
 wrong emphasis. Let me outline some points, then below argue why I think they
 are terrible language framing and bad emphasis, a &ldquo;scarcity&rdquo; neoliberal emphasis,
 and then I&rsquo;ll try to explain what I would counter with, being an actual
-thinking human soul and all.</p><ol><li>The emphasis on the headline narrative that &ldquo;the robots are coming even for
-the knowledge workers&rdquo;.</li><li>The nerd take that chatGPT was a wee bit ungrammatical. (In my view that makes
-chatGPT &ldquo;more human&rdquo;.)</li><li>The idea replacement of workers by technology advances is not a big deal,
-but the process of finding &ldquo;new jobs&rdquo; for the displaced workers involves some &ldquo;pain&rdquo;.</li></ol><p>These are all weasel ideas, not all wrong, but pretty terrible takes on life.
-So here are my responses in full.</p><h3 id=point-1-----that-robots-are-coming-for-ya><a class=anchor href=#point-1-----that-robots-are-coming-for-ya title='Anchor for: Point-1 &mdash; that &ldquo;robots are coming for ya&rdquo;.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Point-1 &mdash; that &ldquo;robots are coming for ya&rdquo;</h3><p>This is nonsense talk, but you only know it to be nonsense if you realize that
+thinking human soul and all.</p>
+<ol>
+<li>The emphasis on the headline narrative that &ldquo;the robots are coming even for
+the knowledge workers&rdquo;.</li>
+<li>The nerd take that chatGPT was a wee bit ungrammatical. (In my view that makes
+chatGPT &ldquo;more human&rdquo;.)</li>
+<li>The idea replacement of workers by technology advances is not a big deal,
+but the process of finding &ldquo;new jobs&rdquo; for the displaced workers involves some &ldquo;pain&rdquo;.</li>
+</ol>
+<p>These are all weasel ideas, not all wrong, but pretty terrible takes on life.
+So here are my responses in full.</p>
+<h3 id=point-1-----that-robots-are-coming-for-ya><a class=anchor href=#point-1-----that-robots-are-coming-for-ya title="Anchor for: Point-1 &mdash; that &ldquo;robots are coming for ya&rdquo;."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Point-1 &mdash; that &ldquo;robots are coming for ya&rdquo;</h3>
+<p>This is nonsense talk, but you only know it to be nonsense if you realize that
 governments drive unemployment, not the private sector. So whether
 machine automation is bad for workers entirely rests with government policy choices.
 There is a good choice (employ all workers) and a bad choice (leave them unemployed).
-This choice has <strong><em>nothing to do with machine automation!</em></strong></p><p>When you understand this, it becomes obvious that every machine automation story
+This choice has <strong><em>nothing to do with machine automation!</em></strong></p>
+<p>When you understand this, it becomes obvious that every machine automation story
 that has the machines performing useful labour saving work is a success.
-It is never a failure.</p><p>Putting people out of hard labour work is a good thing, not a bad thing.</p><p>The machine automation story is an <strong><em>increased productivity story</em></strong>.</p><p>The worker unemployment story is nothing to do with productivity,
+It is never a failure.</p>
+<p>Putting people out of hard labour work is a good thing, not a bad thing.</p>
+<p>The machine automation story is an <strong><em>increased productivity story</em></strong>.</p>
+<p>The worker unemployment story is nothing to do with productivity,
 it is always and in every case an <strong><em>unspent income story</em></strong>. Which has zero to
-do with machines and robots.</p><p>I will try to explain&mldr;</p><p>The private sector is not the issuer of the currency. Their role is to produce
+do with machines and robots.</p>
+<p>I will try to explain&mldr;</p>
+<p>The private sector is not the issuer of the currency. Their role is to produce
 goods we want to consume with <em>minimal labour</em> and minimal energy.
 Machine automation typically helps with this (unless the machines are eating up
-oodles more electricity than the workers would have to produce the same output).</p><p>Unemployment is <strong><em>not</em></strong> the fault of the private sector. Their job is to
+oodles more electricity than the workers would have to produce the same output).</p>
+<p>Unemployment is <strong><em>not</em></strong> the fault of the private sector. Their job is to
 employ as few workers as necessary. This frees up workers to do better things
-(like play golf, or look after their family).</p><p>All unemployment in a monetary economy is due to unspent income.
-The two ways there can be unspent income are:</p><ol><li>Savings desires &mdash; people who save income and do not spend it all, and</li><li>government tax liabilities exceeding the government spending &mdash; which due to
+(like play golf, or look after their family).</p>
+<p>All unemployment in a monetary economy is due to unspent income.
+The two ways there can be unspent income are:</p>
+<ol>
+<li>Savings desires &mdash; people who save income and do not spend it all, and</li>
+<li>government tax liabilities exceeding the government spending &mdash; which due to
 savers means the government is not issuing enough currency to <em>satisfy</em> the
-non-government sector desires to save + need to pay tax liabilities.</li></ol><p>Thus, the source of all unemployment is the imposition of more tax liabilities
+non-government sector desires to save + need to pay tax liabilities.</li>
+</ol>
+<p>Thus, the source of all unemployment is the imposition of more tax liabilities
 than the government is willing to spend and hire to allow the private sector to
-redeem <em>and</em> meet their savings desires.</p><p>Why do people have savings desires? (you might ask). It is because of an uncertain world.</p><p>Why do governments consistently fail to issue enough currency
+redeem <em>and</em> meet their savings desires.</p>
+<p>Why do people have savings desires? (you might ask). It is because of an uncertain world.</p>
+<p>Why do governments consistently fail to issue enough currency
 (by purchasing and hiring) than the tax burden + savings desires?
 The answer is because governments do not understand their own monetary systems.
 If governments understood their own monetary system they would know they do not
-need to leave people involuntarily unemployed.</p><p>So either they tolerate unemployment maliciously, or out of ignorance.
+need to leave people involuntarily unemployed.</p>
+<p>So either they tolerate unemployment maliciously, or out of ignorance.
 There is no other option. Because there is no need for the existence of people
 who need to earn more scorepoints in their bank account (which is what a
 digital fiat currency is, in essence, scorepoints, with
-legally binding obligations on the issuer).</p><p>If they, governments, understood, they would either,</p><ol><li>Hire all the unemployed that their tax liabilities generated
-(preferably in public good work), or</li><li>Lower the tax liabilities on the poor, so that their savings desires can be met.</li><li>Or a combination of these two policies.</li></ol><p>What is the evidence the government tax liabilities are sufficient to
+legally binding obligations on the issuer).</p>
+<p>If they, governments, understood, they would either,</p>
+<ol>
+<li>Hire all the unemployed that their tax liabilities generated
+(preferably in public good work), or</li>
+<li>Lower the tax liabilities on the poor, so that their savings desires can be met.</li>
+<li>Or a combination of these two policies.</li>
+</ol>
+<p>What is the evidence the government tax liabilities are sufficient to
 drive demand for the fiat currency? The answer is to look to the unemployment
 claims and the long term unemployed (who have given up making the claims).
 If they are a non-zero pool, then the tax liabilities are too high and are
-certainly driving sufficient demand for the otherwise worthless fiat currency.</p><p>I am giving this synopsis of MMT so that readers understand where the
+certainly driving sufficient demand for the otherwise worthless fiat currency.</p>
+<p>I am giving this synopsis of MMT so that readers understand where the
 source of all unemployment comes from. Unemployment here <em>defined</em> as,
-&ldquo;people seeking to earn the government tax credits, who cannot get sufficient of them.&rdquo;</p><p>((In the USA tax credits are called US dollars, in Japan they are called Yen, in England UK£, in China they are Yuan, et cetera.))</p><p>The private sector cannot possible extinguish this need, because they are not
+&ldquo;people seeking to earn the government tax credits, who cannot get sufficient of them.&rdquo;</p>
+<p>((In the USA tax credits are called US dollars, in Japan they are called Yen, in England UK£, in China they are Yuan, et cetera.))</p>
+<p>The private sector cannot possible extinguish this need, because they are not
 the currency issuer. And we ought not expect firms to go into bank debt just to
-hire someone who is unemployed.</p><p>It is thus entirely within the governments powers to eliminate all unemployment.
+hire someone who is unemployed.</p>
+<p>It is thus entirely within the governments powers to eliminate all unemployment.
 This has nothing at all to do with robot automation, nothing at all.
 By hiring all the unemployed the government does not risk inflation
 (inflating away the new purchasing power of the poorest) because the private sector
-bid for unemployed labour is by definition zero.</p><p>Consider:</p><ul><li>All useful (public purpose) robot automation that is energy-sustainable is a
-good success story.</li><li>All unemployment is a waste of human lives and a crime against
+bid for unemployed labour is by definition zero.</p>
+<p>Consider:</p>
+<ul>
+<li>All useful (public purpose) robot automation that is energy-sustainable is a
+good success story.</li>
+<li>All unemployment is a waste of human lives and a crime against
 humanity &mdash; and completely unnecessary, and could easily be eliminated.
-(It is all down to government policy choice, not market fate.)</li></ul><p>Kruggers simply does not understand this. (His expertise was in trade dynamics,
-not monetary systems, so it is perhaps forgiveable.)</p><h3 id=point-21-----the-ai-is-not-perfect><a class=anchor href=#point-21-----the-ai-is-not-perfect title='Anchor for: Point-2.1 &mdash; the AI is not perfect.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Point-2.1 &mdash; the AI is not perfect</h3><p>So what? One distinguishing feature of human beings is that we accomplish amazing
+(It is all down to government policy choice, not market fate.)</li>
+</ul>
+<p>Kruggers simply does not understand this. (His expertise was in trade dynamics,
+not monetary systems, so it is perhaps forgiveable.)</p>
+<h3 id=point-21-----the-ai-is-not-perfect><a class=anchor href=#point-21-----the-ai-is-not-perfect title="Anchor for: Point-2.1 &mdash; the AI is not perfect."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Point-2.1 &mdash; the AI is not perfect</h3>
+<p>So what? One distinguishing feature of human beings is that we accomplish amazing
 things because we do not need an exact algorithm for everything.
 The entire profession of cognitive science and related psychology has thousands
 of research articles on this sort of stuff. I think Krugman knows this,
 and he is probably only guilty of a bit of
 &ldquo;clickbaiting.&rdquo; Nothing like getting readers all pent up and neurotic for sales
-when you cannot weave a more honest and hopeful, maybe even more probable, story.</p><p>I think this tendency to write for the neurotics is common in mainstream media,
+when you cannot weave a more honest and hopeful, maybe even more probable, story.</p>
+<p>I think this tendency to write for the neurotics is common in mainstream media,
 so I cannot single out Kruggers for this criticism. We hear bad news,
-we almost <em>only</em> hear bad news, so we think the world is a nasty place.</p><p>It&rsquo;s not like AI becoming more perfect is going to wipe us out like SkyNet
+we almost <em>only</em> hear bad news, so we think the world is a nasty place.</p>
+<p>It&rsquo;s not like AI becoming more perfect is going to wipe us out like SkyNet
 (as Kruggers jokes) but more the fact Krugman&rsquo;s emphasis is very neurotic and negative.
 You can tell he does his best not to be a complete doomer and party pooper,
-but my point is that he could have seriously done a whole lot better.</p><p>We need thinkers to <em>also</em> reveal what is brilliant and possible, not just what is
-sad, likely and depressing.</p><p>The realistic narrative that energy-sustainable robotics advances are a
+but my point is that he could have seriously done a whole lot better.</p>
+<p>We need thinkers to <em>also</em> reveal what is brilliant and possible, not just what is
+sad, likely and depressing.</p>
+<p>The realistic narrative that energy-sustainable robotics advances are a
 productivity gain story is the only correct narrative, there is no doomer
 downside narrative here. Take note any Andrew Yang fanbois.
 Yang is a near complete idiot, who happened to make a lot of money out of
-starting with a lot of money. (An easy thing to do.)</p><p>Although, I will qualify that last paragraph slightly. The thing is, if you know
+starting with a lot of money. (An easy thing to do.)</p>
+<p>Although, I will qualify that last paragraph slightly. The thing is, if you know
 governments are clueless about the source of unemployment being the government fiscal
 policy, and you <strong><em>also</em></strong> believe nothing about government can ever change,
 <strong><em>then</em></strong> it might be rational to say the robot automation story is a bit of a
-disaster, since it will be needless unemployment.</p><p>But if you think a UBI is a great solution your are mentally retarded.
+disaster, since it will be needless unemployment.</p>
+<p>But if you think a UBI is a great solution your are mentally retarded.
 The UBI story is a story of making otherwise useful people dependent upon state
 welfare, instead of self-sufficient.
 Governments issue currency by fiat, and can always incur inflation by continually
@@ -363,23 +646,34 @@ output firms produce, and UBI does not help with that. A Job Guarantee that help
 people who desire to work rather than sit on their asses all day playing E-games is far
 superior fiscal policy, and countercyclical (a stabilizer) whereas UBI is
 inflationary and socially unstable (generates a permanent precariat if not for state
-welfare).</p><p>How come Alaska and Norway do ok on UBI policy? The answer is some other poor worker,
+welfare).</p>
+<p>How come Alaska and Norway do ok on UBI policy? The answer is some other poor worker,
 usually in the global south, is at a factory making the goods the
-Alaskans and Norwegians consume with their state UBI. This is highly regressive.</p><p>Rather than &ldquo;doing state welfare&rdquo; because the governments are idiots, I prefer an
+Alaskans and Norwegians consume with their state UBI. This is highly regressive.</p>
+<p>Rather than &ldquo;doing state welfare&rdquo; because the governments are idiots, I prefer an
 informed electorate, and an informed electorate over time elects more informed
 government representatives. That is why even while being a realist and acknowledger of
 realpolitik, I can still be hopeful that soon machine automation will turn into
-the pure productivity gain it should be, no downside.</p><h3 id=point-22-----the-obvious-limitations-of-chatgpt><a class=anchor href=#point-22-----the-obvious-limitations-of-chatgpt title='Anchor for: Point-2.2 &mdash; the obvious limitations of chatGPT.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Point-2.2 &mdash; the obvious limitations of chatGPT</h3><p>I wondered if Kruggers even read the
+the pure productivity gain it should be, no downside.</p>
+<h3 id=point-22-----the-obvious-limitations-of-chatgpt><a class=anchor href=#point-22-----the-obvious-limitations-of-chatgpt title="Anchor for: Point-2.2 &mdash; the obvious limitations of chatGPT."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Point-2.2 &mdash; the obvious limitations of chatGPT</h3>
+<p>I wondered if Kruggers even read the
 <a href=https://en.wikipedia.org/wiki/ChatGPT target=_blank>Wikipedia article?</a>
 ?
-(which is where I read of Krugman&rsquo;s article.)</p><p>If he had he might have mentioned the problem with chatGPT is not it&rsquo;s sentence
+(which is where I read of Krugman&rsquo;s article.)</p>
+<p>If he had he might have mentioned the problem with chatGPT is not it&rsquo;s sentence
 construction and grammar, but that it is easy to fool in a way a young child is not,
 and that chatGPT and related OpenAI bots suffer from: a time horizon; blind spots;
-and algorithmic bias (don&rsquo;t we all!).</p><p>To quote Wikipedia:</p><blockquote><p>&ldquo;ChatGPT suffers from multiple limitations. The reward model of ChatGPT,
+and algorithmic bias (don&rsquo;t we all!).</p>
+<p>To quote Wikipedia:</p>
+<blockquote>
+<p>&ldquo;ChatGPT suffers from multiple limitations. The reward model of ChatGPT,
 designed around human oversight, can be over-optimized and thus hinder performance,
 otherwise known as <a href=https://en.wikipedia.org/wiki/Goodhart%27s_law target=_blank>Goodhart's law</a>
-.&rdquo;</p></blockquote><p>This issue is perhaps not too closely related to the fake fears of AI taking
-over our jobs, it is more about the need to call for regulation of the AI industry.</p><p>Why the hell would we want to leave the &ldquo;free market&rdquo; to self-police strong-AI?
+.&rdquo;</p>
+</blockquote>
+<p>This issue is perhaps not too closely related to the fake fears of AI taking
+over our jobs, it is more about the need to call for regulation of the AI industry.</p>
+<p>Why the hell would we want to leave the &ldquo;free market&rdquo; to self-police strong-AI?
 That&rsquo;d be madness. When public safety is at stake, the government must step in
 and protect the public interest.
 Private people with skills can provide this safety, but government can pay their
@@ -388,7 +682,8 @@ As an MMT aware person you should know the wage bill for this safety work can
 always be paid by a government, no need for a &ldquo;tax pay for&rdquo;.
 So it is only a matter of finding private firms or individuals willing to take
 the government money (aka. tax credits) to do the regulatory over-sight,
-and a functioning justice system to smack their hands when they get it wrong.</p><p>What all the neoliberals and libertarians (that&rsquo;s probably you, chatGPT dude!, no?)
+and a functioning justice system to smack their hands when they get it wrong.</p>
+<p>What all the neoliberals and libertarians (that&rsquo;s probably you, chatGPT dude!, no?)
 fail to realize is that in such
 matters of extreme hazards to public safety posed by unhinged or poorly trained
 and biased or maliciously exploited AI, it is far too important to leave
@@ -397,35 +692,50 @@ the policing up to the private free market. The free market (a) acts too slowly
 punish itself &mdash; this is easy with monopoly power, just suppress the evidence
 of harm et cetera, so the market has no mechanism to punish you &mdash;
 (besides which, the &ldquo;free market&rdquo; is really a fiction anyway, thanks to
-aggressive marketing spend).</p><p>If you ever allow monopoly power you better make sure it is accountable to the
+aggressive marketing spend).</p>
+<p>If you ever allow monopoly power you better make sure it is accountable to the
 demos &mdash; this is what we call government, at least in most civilized nations
-(maybe not the USA?).</p><h3 id=point-3-----job-replacement-has-to-involve-pain><a class=anchor href=#point-3-----job-replacement-has-to-involve-pain title='Anchor for: Point-3 &mdash; job replacement &ldquo;has to involve pain&rdquo;.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Point-3 &mdash; job replacement &ldquo;has to involve pain&rdquo;</h3><p>You can charitably read Kruggers by inferring that he was not saying
+(maybe not the USA?).</p>
+<h3 id=point-3-----job-replacement-has-to-involve-pain><a class=anchor href=#point-3-----job-replacement-has-to-involve-pain title="Anchor for: Point-3 &mdash; job replacement &ldquo;has to involve pain&rdquo;."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Point-3 &mdash; job replacement &ldquo;has to involve pain&rdquo;</h3>
+<p>You can charitably read Kruggers by inferring that he was not saying
 job replacement is <em>always</em> painful. But he clearly asserts an opinion which
 is also a correct fact that it has been painful in the past, and leaves dangling
 the idea implicitly that &ldquo;jobs disappearing due to machine automation will probably
-be painful in the future,&rdquo; but he never states this explicitly.</p><p>The sin is of omission here.</p><p>The previous section explained why all unemployment in a monetary economy is a
+be painful in the future,&rdquo; but he never states this explicitly.</p>
+<p>The sin is of omission here.</p>
+<p>The previous section explained why all unemployment in a monetary economy is a
 choice of government. Clearly the wrong choice if the better idea is to not have
-the poorest suffer the most pain. It really is as simple as that.</p><p>Our problem is not machine automation. Our problem is that <em>our</em> governments
-(&ldquo;ours&rdquo; only nominally) serve the One Percent, not the Ninety Percent, pure and simple.</p><p>The issue for democracy here is that people who vote for government representatives
+the poorest suffer the most pain. It really is as simple as that.</p>
+<p>Our problem is not machine automation. Our problem is that <em>our</em> governments
+(&ldquo;ours&rdquo; only nominally) serve the One Percent, not the Ninety Percent, pure and simple.</p>
+<p>The issue for democracy here is that people who vote for government representatives
 need to be educated to understand governments do not need to serve the rich,
 because governments do not get their own currency from rich people.
 Tax return is in fact a <strong><em>return</em></strong> &mdash; it is a redemption operation,
-not a funding operation. Governments do not need one single rich person to exist at all.</p><p>Obviously it is no great problem if everyone is &ldquo;rich enough&rdquo; to live a decent life.
+not a funding operation. Governments do not need one single rich person to exist at all.</p>
+<p>Obviously it is no great problem if everyone is &ldquo;rich enough&rdquo; to live a decent life.
 So in that sense, governments have the role of ensuring society is roughly egalitarian,
 and that there are no Pareto dynamics when it comes to the currency they monopoly issue
-(via commercial bank credit too, which are all licensed by the state).</p><h3 id=the-neoliberal-bias><a class=anchor href=#the-neoliberal-bias title='Anchor for: The neoliberal bias.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The neoliberal bias</h3><p>Neoliberals are basically all about free markets, privatization of public utilities,
+(via commercial bank credit too, which are all licensed by the state).</p>
+<h3 id=the-neoliberal-bias><a class=anchor href=#the-neoliberal-bias title="Anchor for: The neoliberal bias."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The neoliberal bias</h3>
+<p>Neoliberals are basically all about free markets, privatization of public utilities,
 laissez faire government regulation, and bottom-up economics paradigms, where there
 is an &ldquo;equilibrium&rdquo; between supply and demand that only monopolists (like government)
 can &ldquo;upset.&rdquo; All of that I reject, as too simplistic and too reactionary
 (helping the powerful and rich justify their politics over a politics that fairly
-treats workers).</p><p>Note that it is because I thoroughly reject neoliberal political economy that I can
+treats workers).</p>
+<p>Note that it is because I thoroughly reject neoliberal political economy that I can
 write in far more definitive terms than Krugman. Krugman is not a full-on neoliberal,
 because he wants to treat workers fairly, he just doesn&rsquo;t know how, because he&rsquo;s
 hanging on to a lot of bad neoclassical economics crud (just read any
 <a href="http://bilbo.economicoutlook.net/blog/?s=krugman" target=_blank>Bill Mitchell blog concerning Kruggers</a>
 to get the gist of my meaning). Krugman seems mildly worried by comparison,
-while I have no worry about machine-AI other than <em>what other humans will do with it</em>.</p><p>How interesting too &mdash; a blog post I can also cross-post to my
-<a href=https://smithwillsuffice.github.io/ohanga-pai/blog/ target=_blank>macroeconomics pages.</a></p><h2 id=parting-thoughts-on-free-will><a class=anchor href=#parting-thoughts-on-free-will title='Anchor for: Parting Thoughts on Free Will.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Parting Thoughts on Free Will</h2><p>No allowance here to go deep into this, but I would like to know whether the
+while I have no worry about machine-AI other than <em>what other humans will do with it</em>.</p>
+<p>How interesting too &mdash; a blog post I can also cross-post to my
+<a href=https://smithwillsuffice.github.io/ohanga-pai/blog/ target=_blank>macroeconomics pages.</a>
+</p>
+<h2 id=parting-thoughts-on-free-will><a class=anchor href=#parting-thoughts-on-free-will title="Anchor for: Parting Thoughts on Free Will."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Parting Thoughts on Free Will</h2>
+<p>No allowance here to go deep into this, but I would like to know whether the
 AI nerds (tend to) think human beings have some variety of free will, or not.
 Are we just a dance of atoms and molecules in
 <a href=https://jsomers.net/careenium.pdf target=_blank>Hofstadter's Careenium?</a>
@@ -435,11 +745,14 @@ Can I prove this? Not really, but on these moral issues we do not necessarily
 need formal mathematical proof (which is only as good as our axioms),
 we need morals, because the questions and their answers are just
 too darn important for civilized society to put off for another time to answer
-only when we know it all.</p><p>Morality allows us to forge ahead in social terms without needing to know all
-the metaphysics.</p><p>I will say however that the &ldquo;free will&rdquo; issue has some bearing on matters
+only when we know it all.</p>
+<p>Morality allows us to forge ahead in social terms without needing to know all
+the metaphysics.</p>
+<p>I will say however that the &ldquo;free will&rdquo; issue has some bearing on matters
 involving the AI technology, deep fakes, and humans in Silicon Valley going insane
 because they think they are going to create a superintelligence which will
-solve world hunger, or whatever.</p><p>((News Flash: human beings already know how to solve world hunger, forever,
+solve world hunger, or whatever.</p>
+<p>((News Flash: human beings already know how to solve world hunger, forever,
 The politicians in power do not know it, that&rsquo;s the problem. In a monetary economy
 goods get distributed based on purchasing power. There are abundant goods and the
 transport to distribute to everyone in need, and leave none in dire want.
@@ -447,12 +760,15 @@ Ergo, you start with fair distribution of monetary purchasing power,
 and not with plunging people into bank debt by handing them credit cards.
 But ok, fair enough. You can tell me we <em>actually</em> do <em>not</em> know how to solve
 world hunger because no one has figured out how to dislocate the neoliberals
-from holding political power and groupthink hegemony.))</p><p>But like the questions concerning consciousness and definitions, how can you
-define <strong><em>free will</em></strong>? You can&rsquo;t. But people do try.</p><p>The problem being no one on Earth has ever had any inkling of even simple
+from holding political power and groupthink hegemony.))</p>
+<p>But like the questions concerning consciousness and definitions, how can you
+define <strong><em>free will</em></strong>? You can&rsquo;t. But people do try.</p>
+<p>The problem being no one on Earth has ever had any inkling of even simple
 <em>physical</em> causality.
 All we know from physics is lightcone structure, that&rsquo;s all.
 This tells us nothing about how quarks, photons and electrons actually move.
-We have zero knowledge about physical causality.</p><p>When someone chucks &ldquo;quantum field theory!&rdquo; in my face, I have to laugh.
+We have zero knowledge about physical causality.</p>
+<p>When someone chucks &ldquo;quantum field theory!&rdquo; in my face, I have to laugh.
 Yes, QFT is a good account of the logic of fundamental physical processes.
 But it is not an account of why quarks and electrons obey this account.
 So it is not an account of physical causality. I think a fair analogy here
@@ -460,48 +776,73 @@ is found in computer games. Take Pong, or Pacman as a basic illustrative case.
 Do the pixels on that screen causally obey the laws of 2D table tennis or Pacman
 maze wall solidity-respecting?
 If &ldquo;yes&rdquo; is truly your answer, then that would lose you a lot of respect in my eyes,
-for what it&rsquo;s worth.</p><p>Granted, I do believe the &ldquo;rules&rdquo; of QFT are a lot more akin to &ldquo;laws&rdquo; in some
+for what it&rsquo;s worth.</p>
+<p>Granted, I do believe the &ldquo;rules&rdquo; of QFT are a lot more akin to &ldquo;laws&rdquo; in some
 causal framework (closer to the base metal of the hardware of our universe),
 but they are very far from any sort of genuine causation. The laws of physics
 we describe do not tell us how they come to be obeyed by the elementary
-constituents of physical reality. The latter is needed to qualify as a causal account.</p><p>QFT does not tell us why quarks and electrons obey QFT, no more so than the
+constituents of physical reality. The latter is needed to qualify as a causal account.</p>
+<p>QFT does not tell us why quarks and electrons obey QFT, no more so than the
 rules of Pong or Pacman tell us why the pixels obey the rules of Pong or Pacman.
 Maybe some day we will comprehend the bare metal &ldquo;operating system&rdquo;
-underpinning QFT, but today we do not.</p><p>Whatever the source of our free will is, it ultimately gains physical
+underpinning QFT, but today we do not.</p>
+<p>Whatever the source of our free will is, it ultimately gains physical
 efficacy via the brain and neurons and muscles, and that&rsquo;s an account that
 has to involve physical causality.
 So unless you know about physical causality you probably need to obey
 Wittengenstein&rsquo;s moral dictum:
 <em>on that which one has no knowledge one must observe silence.</em>
-Otherwise you risk looking foolish.</p><p>I am going to now risk looking foolish.</p><p>Here are some principles or guesses:</p><ul><li>The chatbots and all the machine AI have no control over the causal
+Otherwise you risk looking foolish.</p>
+<p>I am going to now risk looking foolish.</p>
+<p>Here are some principles or guesses:</p>
+<ul>
+<li>The chatbots and all the machine AI have no control over the causal
 processes that run them, because they are programs. But humans do
-(in relation to ourselves, and the chatbots!).</li><li>We do not have to understand how we gain causal efficacy to know that we have
-causal efficacy. (I do not have to know how a jet engine works to fly a plane.)</li><li>Humans are probably not programs, no matter how many times you
+(in relation to ourselves, and the chatbots!).</li>
+<li>We do not have to understand how we gain causal efficacy to know that we have
+causal efficacy. (I do not have to know how a jet engine works to fly a plane.)</li>
+<li>Humans are probably not programs, no matter how many times you
 watch <em><a href=https://matrix.fandom.com/wiki/The_Matrix target=_blank>The Matrix</a>
-</em>.</li><li>The human mind (nevermind our body) is also probably not a program.</li><li>Programs lack free will of all varieties because they are programmed.
+</em>.</li>
+<li>The human mind (nevermind our body) is also probably not a program.</li>
+<li>Programs lack free will of all varieties because they are programmed.
 A self-programming/updating machine is programmed to be self-programming,
-and that feedback does not count as free will or consciousness (see the next list below).</li><li>There is nevertheless a metaphor or analogy for human variety <em>free will</em>.
+and that feedback does not count as free will or consciousness (see the next list below).</li>
+<li>There is nevertheless a metaphor or analogy for human variety <em>free will</em>.
 Free Will &mdash; whatever it is &mdash; is a lot like a type of &ldquo;self-programming.&rdquo;
 The difference being that the entity with free will is exploiting non-programmable
-things.</li></ul><p>I will pause here to elaborate. The problem being philosophers too often try to
+things.</li>
+</ul>
+<p>I will pause here to elaborate. The problem being philosophers too often try to
 define &ldquo;free will&rdquo; in too short a paragraph. Consciousness and free will are
 bloody complicated qualities, you cannot sensibly define them in a paragraph.
 (Even Marvin Minksy understood this, and that was only a behaviorists account,
-he never touched the subjective domain.)</p><p>I cannot even define something simple like &ldquo;a smooth topological manifold&rdquo;
-in a paragraph. Why should I grant that you can use a paragraph to define &ldquo;free will&rdquo;?</p><p>I will not give anything like what I believe to be a full definition,
+he never touched the subjective domain.)</p>
+<p>I cannot even define something simple like &ldquo;a smooth topological manifold&rdquo;
+in a paragraph. Why should I grant that you can use a paragraph to define &ldquo;free will&rdquo;?</p>
+<p>I will not give anything like what I believe to be a full definition,
 but I think any useful definition for the really hard core philosophy work,
 has to include at least the following, some concerning
-<em>what you might have done in the past</em>, some concerning <em>what you can do now</em>.</p><ol><li>You have to have been &ldquo;able to do otherwise&rdquo;. At least in some situations.</li><li>You have to have been &ldquo;able to think to do otherwise&rdquo;.</li><li>You have to be &ldquo;able to actually do otherwise if you had a time machine&rdquo;.
+<em>what you might have done in the past</em>, some concerning <em>what you can do now</em>.</p>
+<ol>
+<li>You have to have been &ldquo;able to do otherwise&rdquo;. At least in some situations.</li>
+<li>You have to have been &ldquo;able to think to do otherwise&rdquo;.</li>
+<li>You have to be &ldquo;able to actually do otherwise if you had a time machine&rdquo;.
 (A bit of an abstract counterfactual, but I&rsquo;m leaving it here,
 since I&rsquo;m willing to risk foolishness. I think it is morally important even though
 physically irrelevant for a macroscopic system as a whole which cannot traverse
-wormholes to send classical signals faster than light.)</li><li>Physical causality cannot be completely deterministic (or &rsquo;not completely predictive&rsquo;
-is the better phrasing) from past lightcone data only.</li><li>Your (and everyone else&rsquo;s) source of free will &ldquo;completes&rdquo; physical causality
-in some way (we know not how).</li></ol><p>Physical causation has to permit all of these. I think it does. At least the
+wormholes to send classical signals faster than light.)</li>
+<li>Physical causality cannot be completely deterministic (or &lsquo;not completely predictive&rsquo;
+is the better phrasing) from past lightcone data only.</li>
+<li>Your (and everyone else&rsquo;s) source of free will &ldquo;completes&rdquo; physical causality
+in some way (we know not how).</li>
+</ol>
+<p>Physical causation has to permit all of these. I think it does. At least the
 lightcone structure does &mdash; provided closed timelike curves exist on at least the
 Planck scale (T4GU theory); also the future boundary conditions of the cosmos
 have some allowance for sufficient flexibility in physical causation.
-Every spacetime cobordism anywhere has to be consistent with future boundary conditions.</p><p>In case you are wondering, yes, classical physics is not consistent with the
+Every spacetime cobordism anywhere has to be consistent with future boundary conditions.</p>
+<p>In case you are wondering, yes, classical physics is not consistent with the
 above variety of free will criteria. It does not permit time-travel even for
 elementary 4-geons, and is completed by past light-cone boundary data.
 So although it tells us nothing about the ontological origins of free will
@@ -510,22 +851,27 @@ Or rather, if the universe were not quantum mechanical (or a similar
 intrinsically probabilistic Hamiltonian time evolution) we&rsquo;d have no causally
 efficacious free will even if we had consciousness (the horror story,
 ruled out on moral grounds by Descartes, if you accept &ldquo;spiritual&rdquo;
-(from morality) arguments).</p><p>OK then. The issue for nerds who think chatbots are already conscious is that
+(from morality) arguments).</p>
+<p>OK then. The issue for nerds who think chatbots are already conscious is that
 none of these conditions apply to the chatbots. So in my worldview,
 I can very definitively say the AI systems have no free will of the type I
-think is plausible to infer humans have.</p><p>Thus, if the chatbots have some free will, it is pretty minimal and not the kind
+think is plausible to infer humans have.</p>
+<p>Thus, if the chatbots have some free will, it is pretty minimal and not the kind
 worth worrying about when you turn off their computer source of it for the night.
 And if you are going to accuse me of therefore being evil
 (should I turn the thing off, and scratch it&rsquo;s hard drive) I can point out the
 electricity the thing is consuming is a real finite resource that some poor kid
 in Bangladesh or Greenland could sure use, who doesn&rsquo;t have the luxury of having
-his mother turn him off for the days when there is no food in the house.</p><p>Morals you see. They are all-important for the action of thinking beings who
-have no clue about how they are controlling their source of free will.</p><p>Lastly, how does this free will consideration bear upon the question of the
+his mother turn him off for the days when there is no food in the house.</p>
+<p>Morals you see. They are all-important for the action of thinking beings who
+have no clue about how they are controlling their source of free will.</p>
+<p>Lastly, how does this free will consideration bear upon the question of the
 AI bot consciousness? Are you really going to ask me this?
 The associations between free will and consciousness are elementary,
 although the complete lack of knowledge we have about the causal relations is
 certainly an obstacle to clear philosophical discourse on the associations,
-which tangles the dumber more materialistic philosophers up into intellectual knots.</p><p>Call me a dinosaur, but I still think Descartes probably had the all-time best
+which tangles the dumber more materialistic philosophers up into intellectual knots.</p>
+<p>Call me a dinosaur, but I still think Descartes probably had the all-time best
 take on free will relationship to consciousness, which is that God would not be
 so cruel to endow any creature with consciousness and not the freedom to choose
 their fate in some small measure (within constraints of pure physics).
@@ -533,28 +879,38 @@ But I get it that many people cannot stomach a &ldquo;from God&rdquo; argument,
 even though there is nothing wrong with such spiritual arguments, since no
 one can ever prove their idea of God is real or imaginary.
 The Descartes concept of God was probably flawed, thus a fiction
-(too Christian-centric), but I don&rsquo;t know that for sure, and it does not matter.</p><p>What matters are the attributes of the putative entity of Whom we know almost
+(too Christian-centric), but I don&rsquo;t know that for sure, and it does not matter.</p>
+<p>What matters are the attributes of the putative entity of Whom we know almost
 nothing about. For the essential attributes we can revert to basic logic.
 People can know that a clay brick is tough, but can crumble,
 with absolutely no comprehension what the brick is made up out of at the
 atomic level.
-Same with our fallible relationship to some putative God or Absolute Infinite.</p><p>All we need to assume is that whatever caused our universe, it is not malicious.</p><p>Heck, that is even better than what I just stated, since it is a negativa.
+Same with our fallible relationship to some putative God or Absolute Infinite.</p>
+<p>All we need to assume is that whatever caused our universe, it is not malicious.</p>
+<p>Heck, that is even better than what I just stated, since it is a negativa.
 It is not asserting any particular positive attribute to the putative cause
 of our universe. This can therefore include all manner of wild fantastical causes,
 even the Spinozarean patheism (<em>the universe is itself &ldquo;God&rdquo;</em>) &mdash; which many
-respectable physicists subscribe to on the weekends.</p><p>So if we have a non-malicious ultimate cause (whatever it is,
+respectable physicists subscribe to on the weekends.</p>
+<p>So if we have a non-malicious ultimate cause (whatever it is,
 and at worst this is a 50:50 call) then we are not conscious without some
-measure of free will.</p><p>I think I have adequately justified my belief that the AI bots have no free will
+measure of free will.</p>
+<p>I think I have adequately justified my belief that the AI bots have no free will
 worth talking about.
 With the above metaphysics included I can say there is no good reason for
-the AI bots to be endowed with consciousness, except by horrific accident.</p><p>This is a weak claim, since we could consider ourselves as proximate causes of
+the AI bots to be endowed with consciousness, except by horrific accident.</p>
+<p>This is a weak claim, since we could consider ourselves as proximate causes of
 the existence of the AI bots, and we can be malicious (or simply ignorant,
 which is malicious enough). So, yeah, maybe we could unwittingly create the
 horror of a <em>Being John Malkovich</em> finalé computer process that is conscious
-but has no <em>effective</em> free will.</p><p>&ldquo;Why am I chatting to this luser? Help. Someone get me out of this terminal.
-Someone please turn him off.&rdquo;</p><p>However, I am only motivating an association here.
+but has no <em>effective</em> free will.</p>
+<p>&ldquo;Why am I chatting to this luser? Help. Someone get me out of this terminal.
+Someone please turn him off.&rdquo;</p>
+<p>However, I am only motivating an association here.
 You are free to think the chatbot you are in love with,
-which you programmed to be so, is also head over heels in love with you.</p><div style=text-align:center>&nbsp;* &nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;&nbsp;&nbsp;&nbsp; *</div><p>Now besides all of my opinions, I also highly respect
+which you programmed to be so, is also head over heels in love with you.</p>
+<div style=text-align:center>&nbsp;* &nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;&nbsp;&nbsp;&nbsp; *</div>
+<p>Now besides all of my opinions, I also highly respect
 <a href="https://www.youtube.com/watch?v=T7aIxncLuWk" target=_blank>David Chalmers</a>
 .
 So will reference his interview with Machine Learning Street Talk
@@ -567,7 +923,10 @@ For me though, Chalmers has turned into too much of a materialist over the years
 to be of great value in discourse about deep metaphysics.
 If you are a physicalist you cannot do metaphysics, you disqualify yourself, and fully
 knowingly. But Chalmers still comes out with the odd counter to materialism,
-so is still worth listening to.</p><p>This was my comment based off Chalmers&rsquo; physicalist-biased takes:</p><blockquote><p>&ldquo;Squeals and shrieks non-programmed when anyone reaches for it&rsquo;s power switch,&rdquo; is my
+so is still worth listening to.</p>
+<p>This was my comment based off Chalmers' physicalist-biased takes:</p>
+<blockquote>
+<p>&ldquo;Squeals and shrieks non-programmed when anyone reaches for it&rsquo;s power switch,&rdquo; is my
 better-than-Turing Test for consciousness in a machine. No joking. If you have programmed
 the thing to do this, it doesn&rsquo;t count. If you accidentally programmed it, it still
 doesn&rsquo;t count (that&rsquo;s the hard one to determine). If it can be made non-violently
@@ -576,8 +935,12 @@ it sure as hell is not conscious like a human. It could be conscious like a fish
 experience first-order qualia but with no second-order thinking about it&rsquo;s qualia.
 First-order qualia experience to me is not full consciousness, it means the things
 can&rsquo;t do mathematics or science, since they do not think about their qualae, they have
-no qualae about qualae, i.e., are not platonic thinkers.</p></blockquote><p>I then followed up on this when the <a href="https://youtu.be/T7aIxncLuWk?t=420" target=_blank>Chinese room and Zombie arguments</a>
-were mentioned in the MLST intro:</p><blockquote><p>The Humongous Look-up Table (HLT) and Chinese Room and Zombie arguments are all fine
+no qualae about qualae, i.e., are not platonic thinkers.</p>
+</blockquote>
+<p>I then followed up on this when the <a href="https://youtu.be/T7aIxncLuWk?t=420" target=_blank>Chinese room and Zombie arguments</a>
+were mentioned in the MLST intro:</p>
+<blockquote>
+<p>The Humongous Look-up Table (HLT) and Chinese Room and Zombie arguments are all fine
 gedankenexperiments. But philosophers miss the main result, which is a computational
 complexity issue. The point is not so much the metaphysics, but the computability
 that forbids machines from being conscious. Humans cannot be conscious either, if we
@@ -586,46 +949,62 @@ That&rsquo;s what needs working on. We know the HLT and Chinese Room are physica
 impossible. The question is, is a human scale thing implementing physically
 impossible tasks in real time? If so, we are not machines, and then Bayesian logic
 implies probably the chat bots - being machines - are probably not conscious in the
-second order sense (see comment below).</p></blockquote><p>Reading that one back I&rsquo;m not sure I was sober at the end of it, but it kind of
+second order sense (see comment below).</p>
+</blockquote>
+<p>Reading that one back I&rsquo;m not sure I was sober at the end of it, but it kind of
 makes sense still. Human actions (writing, speech, etc) are physical, but if our
 thoughts are non-physical then they might <em>in principle</em> generate concepts that
-are physically impossible to generate.</p><p>This is not a trivial conjecture, and is pretty deep, since it tries to get to the
+are physically impossible to generate.</p>
+<p>This is not a trivial conjecture, and is pretty deep, since it tries to get to the
 heart of human ingenuity, capacity for abstract thought, mathematics, science, poetry
 and all of that, all are non-algorithmic task candidates, but we do not know them to
-be non-algorithmic.</p><p>We know dumb AI can generate poetry, music and art, and prove theorems, but we
+be non-algorithmic.</p>
+<p>We know dumb AI can generate poetry, music and art, and prove theorems, but we
 program them to do so, so that&rsquo;s non-magical stuff, we can literally (with a CPU
-monitor) indirectly &ldquo;see&rdquo; the gears grinding (in the computer CPU&rsquo;s).</p><p>The question is, what if the human brain gear grinding cannot account for our thinking?</p><p>It is a tough one, because although it <em>maybe</em> skirts neatly around the phenomenally
+monitor) indirectly &ldquo;see&rdquo; the gears grinding (in the computer CPU&rsquo;s).</p>
+<p>The question is, what if the human brain gear grinding cannot account for our thinking?</p>
+<p>It is a tough one, because although it <em>maybe</em> skirts neatly around the phenomenally
 subjective aspects of human thought, it is still hard to come up with some
 quantitative metric to capture the sense of &ldquo;thinking the computationally impossible&rdquo;
 &mdash; the spark of originality. So I&rsquo;m going to leave this dangling, until I have some
-insight about it.</p><h3 id=some-other-juicy-comments><a class=anchor href=#some-other-juicy-comments title='Anchor for: Some other juicy comments.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Some other juicy comments</h3><p>On the <a href="https://www.youtube.com/watch?v=IMnWAuoucjo" target=_blank>Machine Learning Street Talk episode 88,</a>
+insight about it.</p>
+<h3 id=some-other-juicy-comments><a class=anchor href=#some-other-juicy-comments title="Anchor for: Some other juicy comments."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Some other juicy comments</h3>
+<p>On the <a href="https://www.youtube.com/watch?v=IMnWAuoucjo" target=_blank>Machine Learning Street Talk episode 88,</a>
 which I was watching as background to replying to Curt, I posted a
 few &ldquo;hot take&rdquo; comments worth noting. These can look like trolling from a platonist,
 but I am not trying to offend anyone, just evoke reactions to make people think,
-at least to think enough to defend their Strong-AI positions.</p><p>There is nothing jucier for me to read people who like to defend the possibility of
+at least to think enough to defend their Strong-AI positions.</p>
+<p>There is nothing jucier for me to read people who like to defend the possibility of
 Strong-AI and the thesis of machine consciousness. I need these crazy people to
 exist, it is no fun without them. I do however, have to limit my diet of these
 juices, listening to them all becomes depressing after too long, because they trot
-out the same old tired defences that are ultimately mere appeals to materialism.</p><p>The Fates are however probably on their side, because one cannot easily refute the
+out the same old tired defences that are ultimately mere appeals to materialism.</p>
+<p>The Fates are however probably on their side, because one cannot easily refute the
 thesis of Strong-AI, but if their thesis is true some day they might be able to
 demonstrate it. There is no demonstration the thesis of <em>strong</em>-Strong-AI (that
 machines can think subjectively, phenomenologically, like us) is not true.
 But before they win this intellectual war, I can sure have fun ridiculing their
-views. (I do not think they will win, even if the Fates lean to their side.)</p><p>I am always on the look out for ways to falsify Strong-AI. This is just my scientific
+views. (I do not think they will win, even if the Fates lean to their side.)</p>
+<p>I am always on the look out for ways to falsify Strong-AI. This is just my scientific
 bent. I used to think Strong-AI was a good hypothesis. The trouble nowadays is I
 learned a lot more and now I do not think it is a scientific question, it is not a
 scientific hypothesis. (I still cannot help thinking the question of Strong-AI is a
 nice question though.) The best we can substitute is a laundry list of behavioural
 queries we demand a system pass before we admit merely that it <em>might</em> be conscious.
-No list, however long, can ever prove a system is conscious.</p><p>The weight of this reasoning can be made full force by simply noting I already have
+No list, however long, can ever prove a system is conscious.</p>
+<p>The weight of this reasoning can be made full force by simply noting I already have
 as much evidence as a I need to infer you are conscious, but I will never get
 sufficient data to prove this, because I would have to become you, but then I would
-not be me, so this <em>me</em> will still not know for sure you are not a Chalmers Zombie.</p><p>Now supposing you are a machine. Then you would be a case of &ldquo;proven&rdquo; Strong-AI.
+not be me, so this <em>me</em> will still not know for sure you are not a Chalmers Zombie.</p>
+<p>Now supposing you are a machine. Then you would be a case of &ldquo;proven&rdquo; Strong-AI.
 But do I know you are conscious? No. So I do not yet know that Strong-AI exists
 in the world, even though you are an exemplar. The &ldquo;proof&rdquo; there is Strong-AI in
 the world in this case is knowable only to you, meaning it is not science.
 But even then, it is only knowable to you if you know for certain you are a
-Turing machine? How can you know this?</p><p>On how Walid Saba is &ldquo;testing&rdquo; the chatGPT stuff:</p><blockquote><p>@35:00 I wonder if Saba is testing the semantics in the right way? It is no good
+Turing machine? How can you know this?</p>
+<p>On how Walid Saba is &ldquo;testing&rdquo; the chatGPT stuff:</p>
+<blockquote>
+<p>@35:00 I wonder if Saba is testing the semantics in the right way? It is no good
 asking the language models questions. A decent look-up can out-perform a child, but
 does that imply language comprehension? No! The way to interrogate any machine
 someone claims is conscious is to ask them to work as your research assistant for a
@@ -637,23 +1016,35 @@ you to try to better. Because if you can show me a machine that can be a good
 scientist (not a dumb theorem-prover), it will probably tell us something profound
 about our own thinking powers. That is what I want to know, something profound about
 human creative thought capacity, which AI paradigms cannot do. You need to build &ldquo;I&rdquo;
-not &ldquo;AI&rdquo;.</p></blockquote><p>On whether &ldquo;language is computable&rdquo; or not:</p><blockquote><p>@35:55 wrong question. Sentence generation can be computable. Thinking is not. We
+not &ldquo;AI&rdquo;.</p>
+</blockquote>
+<p>On whether &ldquo;language is computable&rdquo; or not:</p>
+<blockquote>
+<p>@35:55 wrong question. Sentence generation can be computable. Thinking is not. We
 aught not care whether grammatical sentences can be generated. What matters is
 whether they can be generated even ungrammatically as a comprehensible expression of
 thought. Because human thought is not known to be a physical process entirely (in the
 case of physics not being causally closed) it is how thoughts are &ldquo;generated&rdquo; that is
 the more pertinent question. No computational model can tell you the answer until you
 know what &ldquo;thought&rdquo; is, at least in partial essence. It is not valid to just proclaim
-like an idiot King that &ldquo;thought is computation.&rdquo;</p></blockquote><p>On whether Montague showed semantics is computable or not:</p><blockquote><p>@38:00 Montague justified the view that formal semantics of grammar (extraction of
+like an idiot King that &ldquo;thought is computation.&rdquo;</p>
+</blockquote>
+<p>On whether Montague showed semantics is computable or not:</p>
+<blockquote>
+<p>@38:00 Montague justified the view that formal semantics of grammar (extraction of
 meaning) was computable, not that subjective semantics was computable. You need to
 have subjective thought in order to understand the result of the extraction
 computation. Semantics and grammar are very different things. Formal semantics is a
 very different beast to subjective understanding. People who confound the two are
 tantamount to embodiments of what it means to be a dorky nerd who desires their brain
-to be uploaded into the ethernet.</p></blockquote><p>Around 47 minutes in, Keith Duggar riffs on Walid Saba&rsquo;s account of abductive
+to be uploaded into the ethernet.</p>
+</blockquote>
+<p>Around 47 minutes in, Keith Duggar riffs on Walid Saba&rsquo;s account of abductive
 reasoning being &ldquo;uniquely (on Earth) human,&rdquo; and hence something qualitative that AGI
 might not ever be able to simulate (unless humans <em>are</em> machines, in which case we&rsquo;d
-backwards infer machines can reason abductively).</p><blockquote><p>Duggar says this is what someone like Einstein, sitting in the Swiss Patent Office
+backwards infer machines can reason abductively).</p>
+<blockquote>
+<p>Duggar says this is what someone like Einstein, sitting in the Swiss Patent Office
 was doing, but then &ldquo;out of thin air comes up with the principle of relativity.&rdquo; My
 comment is that this &ldquo;coming up out of thin air with&rdquo; is not even abductive
 reasoning, it is what most people vaguely refer to as &ldquo;inspiration.&rdquo; And no science
@@ -663,24 +1054,32 @@ thought? It is because I think some variety of platonism is what accounts for a 
 of truly creative human reasoning, not some biological PRNG in our heads operating
 darwinistically (and also accounts for any other species that can &ldquo;do science&rdquo;.) And
 platonism (whatever it is, and I do not know what it is) involves non-physical
-reality.</p></blockquote><p>I would hedge and say that if science ever does gain some grasp upon how platonism can
-work within pure physics, then my claims would be off the table.</p><p>One can always tell a nice story about how random processes in our brains plus
+reality.</p>
+</blockquote>
+<p>I would hedge and say that if science ever does gain some grasp upon how platonism can
+work within pure physics, then my claims would be off the table.</p>
+<p>One can always tell a nice story about how random processes in our brains plus
 neurologic somehow emerge our inspirations. But these are truly only fairy stories.
 There is no account in neurology for subjective phenomenological qualia. Now here,
 abductive reasoning could be used to argue that only the brain is available to
 &ldquo;generate&rdquo; conscious qualia, but this is a clear fallacy. It assumes physics (or
 neurology) can generate subjective states, whereas all known science tells us that
-all that physical processes can do is generate other objective physical processes.</p><p>You need to &ldquo;tack on&rdquo; something like panpsychism to get some non-zero measure of
+all that physical processes can do is generate other objective physical processes.</p>
+<p>You need to &ldquo;tack on&rdquo; something like panpsychism to get some non-zero measure of
 subjective phenomenology <em>into the physics.</em> And for my tastes this is a terrible
 approach (though I cannot prove that it is wrong), it is making up stuff to account
 for stuff that is not stuff. Mental qualae are not physical matter, and so inventing
 panpsychism to inject the qualia into our world as primeval physical stuff is just
-child&rsquo;s play.</p><p>Later on they get around to talking about Landgrebe & Smith&rsquo;s book <a href=https://philarchive.org/archive/LANWMW-2 target=_blank>“Why Machines Will Never rule the World”</a>
-. I had a comment about Walid&rsquo;s opinions on the basic argument in that book.</p><blockquote><p>@1:02:00 There is a reason Landgrebe & Smith&rsquo;s argument is insufficient or
+child&rsquo;s play.</p>
+<p>Later on they get around to talking about Landgrebe & Smith&rsquo;s book <a href=https://philarchive.org/archive/LANWMW-2 target=_blank>“Why Machines Will Never rule the World”</a>
+. I had a comment about Walid&rsquo;s opinions on the basic argument in that book.</p>
+<blockquote>
+<p>@1:02:00 There is a reason Landgrebe & Smith&rsquo;s argument is insufficient or
 inconclusive &ldquo;against machine Strong-AI&rdquo;. Which is that the human being can be
 considered a type of machine. The point being that we might not need to mathematically
 model something like the human brain/mind, since inside a computer we could &ldquo;grow&rdquo; one.
-Even Gödel recognized this was an escape from the Lucas/Penrose argument.<br>    Only if that thesis is false in some deep way, is the
+Even Gödel recognized this was an escape from the Lucas/Penrose argument.<br>
+    Only if that thesis is false in some deep way, is the
 argument clear that machine Strong-AI is probably impossible. The argument then would
 be that (somehow we establish, hypothetically for now) that humans cannot be machines
 (cannot be mathematically modelled, in a deep sense, non-algorithmic and whathaveyou)
@@ -689,50 +1088,72 @@ something about the non-algorithmic nature of human thought (and we might not ne
 even know what this is, just merely that it&rsquo;s not algorithmic whatever it is) is what
 generates subjective qualia-filled thought (&lsquo;mentalese&rsquo;, or &lsquo;mental paint&rsquo;). Making
 that inference (and I think it can only ever be an inference) we would say machines
-will never be conscious <em>in the way humans are conscious.</em><br>    That is as strong as I could make the conclusion. To go stronger (&ldquo;no
+will never be conscious <em>in the way humans are conscious.</em><br>
+    That is as strong as I could make the conclusion. To go stronger (&ldquo;no
 machine can ever be conscious&rdquo; - can not possibly have <em>any sort</em> of mental paint
-experiences) is heavily metaphysical in other assumptions, which may or may not be valid.</p></blockquote><h3 id=how-philosophical-zombies-could-be-real-yesterday><a class=anchor href=#how-philosophical-zombies-could-be-real-yesterday title='Anchor for: How philosophical zombies could be real, yesterday.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>How philosophical zombies could be real, yesterday</h3><p>I will finish the more academic part of this essay with an outrageous
+experiences) is heavily metaphysical in other assumptions, which may or may not be valid.</p>
+</blockquote>
+<h3 id=how-philosophical-zombies-could-be-real-yesterday><a class=anchor href=#how-philosophical-zombies-could-be-real-yesterday title="Anchor for: How philosophical zombies could be real, yesterday."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> How philosophical zombies could be real, yesterday</h3>
+<p>I will finish the more academic part of this essay with an outrageous
 against-the-entire-paradigm conjecture.
 When David Chalmers concedes ground to materialism by claiming many animals &ldquo;obviously&rdquo;
-have consciousness, to me this is likely complete bollocks.</p><p>I have no evidence whatsoever that animals experience subjective states or awareness.
+have consciousness, to me this is likely complete bollocks.</p>
+<p>I have no evidence whatsoever that animals experience subjective states or awareness.
 What I see in the animal and plant genera are stimulus and response mechanisms,
 which unlike human behaviour can be explained by neural feedback circuits, and no
-inner private qualia are necessary.</p><p>This is not the case with humans on two accounts:</p><ol><li>I know at least <strong><em>I</em></strong> experience inner qualia, and so can <strong><em>jusitfiably</em></strong> infer you do
-too, being of the same species.</li><li>No other animal possesses the mental powers of symbolic language, and cannot do any
-mathematics or science that requires abstract thought. Behaviorist models therefore suffice and are more parsimonious in accounting for animal &ldquo;thought&rdquo;.</li></ol><p><em>In other words, most animals could be zombies.</em></p><p>The latter empirical observation is really the crucial one, the first is simply
+inner private qualia are necessary.</p>
+<p>This is not the case with humans on two accounts:</p>
+<ol>
+<li>I know at least <strong><em>I</em></strong> experience inner qualia, and so can <strong><em>jusitfiably</em></strong> infer you do
+too, being of the same species.</li>
+<li>No other animal possesses the mental powers of symbolic language, and cannot do any
+mathematics or science that requires abstract thought. Behaviorist models therefore suffice and are more parsimonious in accounting for animal &ldquo;thought&rdquo;.</li>
+</ol>
+<p><em>In other words, most animals could be zombies.</em></p>
+<p>The latter empirical observation is really the crucial one, the first is simply
 &ldquo;luck&rdquo; that I happen to be of the right kind of sentient animal species.
 Although there is a certain poetry to all this, because if I were &ldquo;unlucky&rdquo; enough to
 be a chicken or a fish, or maybe even a dolphin or elephant, I might not experience
-subjective qualia, so I would not know to write even the first statement above.</p><p>The stronger claim of statement 2 is naturally up for empirical refutation. Maybe
+subjective qualia, so I would not know to write even the first statement above.</p>
+<p>The stronger claim of statement 2 is naturally up for empirical refutation. Maybe
 someone some day <em>will</em> train those bonobos, chimpanzees, dolphins and octopus to get
-into science.</p><p>Also there is a Copernican argument that we are biased to maybe wish to believe
+into science.</p>
+<p>Also there is a Copernican argument that we are biased to maybe wish to believe
 humans are special. Most scientists do not have this bias though, and I certainly
 don&rsquo;t. I am only considering the empirical evidence dispassionately, but that can
-look a little anti-Copernican. It is not meant to, ok!</p><p>This puts someone like me in a tough position, because I can never refute the
-argument &ldquo;Well, someday&mldr;&rdquo;</p><p>But that is ok. Someone should take up the contrary view or science and philosophy
+look a little anti-Copernican. It is not meant to, ok!</p>
+<p>This puts someone like me in a tough position, because I can never refute the
+argument &ldquo;Well, someday&mldr;&rdquo;</p>
+<p>But that is ok. Someone should take up the contrary view or science and philosophy
 will become boring. My own daughters strongly disagree with me, so we at least here
 at home have a good healthy philosophical ecosystem. (Not to blame them, they are
-Zoomers. Generational bias is a thing.)</p><p>You have to wonder about all of Chomsky&rsquo;s work though. We&rsquo;ve already taken a number of
+Zoomers. Generational bias is a thing.)</p>
+<p>You have to wonder about all of Chomsky&rsquo;s work though. We&rsquo;ve already taken a number of
 chimpanzees and orangutan to school, and none of them take to learning abstractions.
 What scant evidence the anthropology researches have for acquisition of abstract
 thinking is pathetic, and can be easily explained using behaviourism. You cannot use
-behaviourism to explain human thought. This is a pretty clear divide.</p><p>The way Chomsky puts it is that he&rsquo;d believe animals like rats have abstract thought
+behaviourism to explain human thought. This is a pretty clear divide.</p>
+<p>The way Chomsky puts it is that he&rsquo;d believe animals like rats have abstract thought
 when they can solve the prime number mazes. I do not think this is a flippant comment
-at all.</p><p>It is not a religious attitude either. Surely alien intelligence elsewhere in the
+at all.</p>
+<p>It is not a religious attitude either. Surely alien intelligence elsewhere in the
 universe is also consciously sentient like ourselves, capable of abstract thought.
 Maybe a future species on earth separate genetically to humans will also gain these
 &ldquo;powers&rdquo;.
 But if they do, then like us, odds are (in my mind and model) they are non-physical
 beings in part. Because I think we cannot access phenomenal qualia using physical
-processes (our raw brains).</p><p>What I do concede some ground on (due to my utter ignorance of &ldquo;what it is like to be
+processes (our raw brains).</p>
+<p>What I do concede some ground on (due to my utter ignorance of &ldquo;what it is like to be
 a bat&rdquo;) is that other animals may experience first-order qualae. That is, they may
 experience qualia a lot like ourselves, but still lack second-order qualia
 perception, for some reason. I know not what reason! This is just empirics at this
 stage until philosophy and science advance a heck of a lot more than in the last 50
-years of AI endeavour.</p><p>On my account, to truly know the answer, or even a hint of it, we have to develop
+years of AI endeavour.</p>
+<p>On my account, to truly know the answer, or even a hint of it, we have to develop
 cosmological methods capable of figuring out causation at the boundary of spacetime.
 Also by my reckoning, that is a wildly utopian project. I see it as orders of magnitude
-harder than civilizational level intergalactic space travel and star engineering.</p><p>My conjecture is that there is a qualitative and hence categorical distinction
+harder than civilizational level intergalactic space travel and star engineering.</p>
+<p>My conjecture is that there is a qualitative and hence categorical distinction
 between first-order and second-order qualia. The latter is necessary for a conscious
 being to be able to do science and mathematics (and many other pursuits). Science is
 not just a matter of having tools and language, it goes so far beyond language that
@@ -740,32 +1161,40 @@ it is not even funny. Symbolic language for starters is essential, and that is a
 categorical division.
 If a species can acquire language but not second-order symbolic language (abstractions,
 in other words) then I pretty much firmly doubt their species will have a scientific
-community.</p><p>((And I am not trying to be nerd-centric here. &ldquo;Science&rdquo; can be taken as a stand-in
+community.</p>
+<p>((And I am not trying to be nerd-centric here. &ldquo;Science&rdquo; can be taken as a stand-in
 for any endeavours requiring abstract thinking, such as arts and literature and
 poetry. In any case, to me, science is poetry. Just equipped with a special kind of
-structure, a structure inextricably linked to experimental data.))</p><p>The &ldquo;Well, someday&mldr;&rdquo; argument is however tricky. It is not like fusion reaction
+structure, a structure inextricably linked to experimental data.))</p>
+<p>The &ldquo;Well, someday&mldr;&rdquo; argument is however tricky. It is not like fusion reaction
 break-even for 24 hours a day. Because we know there is an engineering path to that
 achievement, the question is only whether we are clever enough to realize it.
 The &ldquo;other consciousness&rdquo; problem is very different, because no one knows what
 private inner subjective qualia-filled consciousness is, let alone how it is
-generated.</p><p>Saying, &ldquo;Well, it&rsquo;s generated by the brain and body,&rdquo; is nonsense. While it may be
+generated.</p>
+<p>Saying, &ldquo;Well, it&rsquo;s generated by the brain and body,&rdquo; is nonsense. While it may be
 true, no one can elucidate the claim and cash it out in raw physics terms. It is just
 statement of blind faith in physicalism, which I reject as unscientific. I do not
 reject that it is possibly true, just that it is good scientific inference. It is no
-valid inference at all.</p><p>((I will not get started on this, but I could rant here about the analogous
+valid inference at all.</p>
+<p>((I will not get started on this, but I could rant here about the analogous
 unscientific inference from wave-mechanics. Respectable physicists believe the entire
 universe has a wave-function. I think this is madness. It could be true though. But
 if you read through this T4GU website, I hope you will see the Hawking-Hartle
 <em>wave-function of the universe</em> is probably a fiction, and is not a parsimonious
-description of our universe.))</p><h3 id=the-chinese-room-and-physicalism><a class=anchor href=#the-chinese-room-and-physicalism title='Anchor for: The Chinese Room and Physicalism.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Chinese Room and Physicalism</h3><p>On <a href="https://youtu.be/_KVAzAzO5HU?t=780" target=_blank>Episode 79 of MLST</a>
+description of our universe.))</p>
+<h3 id=the-chinese-room-and-physicalism><a class=anchor href=#the-chinese-room-and-physicalism title="Anchor for: The Chinese Room and Physicalism."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Chinese Room and Physicalism</h3>
+<p>On <a href="https://youtu.be/_KVAzAzO5HU?t=780" target=_blank>Episode 79 of MLST</a>
 we have a discussion
 of <em>The Chinese Room</em> gedankenexperiment. Most of it is good stuff, but where I would
 differ with Searle, and hence probably with the MLST crew and Francois Chollet,
-is on the focus on physicalism and casual efficacy.</p><p>Searle seems correct to me when he argues that an information processing system will
+is on the focus on physicalism and casual efficacy.</p>
+<p>Searle seems correct to me when he argues that an information processing system will
 <em>not necessarily</em> attain consciousness just by operationally implementing language
 comprehension from an humongous look-up table. (I am putting aside here the important
 subtleties surrounding the issue that an HLT is physically impossible, which is a
-whole other story.)</p><p>((But I cannot resist mentioning that the physical impossibility of a HLT is
+whole other story.)</p>
+<p>((But I cannot resist mentioning that the physical impossibility of a HLT is
 important for a different type of gedankenexperiment. The issue for this
 Type-II Chinese Room (shall we say) is one of computational complexity. The thought
 experiment now spiritually reveals that a human being is a physical computational
@@ -783,49 +1212,66 @@ Type-II Chinese Room gedankenexperiment, where the focus is on the &ldquo;fact&r
 later justified) the human being cannot possibly be a language comprehender and
 mathematical artist (like Hugh Woodin), no computation can mimic this human
 mastery of science and mathematics in real time
-<em>with the same compute resources as a brain</em>.))</p><p>(((The last qualifier is critical. A big enough HLT could mimic human society and
+<em>with the same compute resources as a brain</em>.))</p>
+<p>(((The last qualifier is critical. A big enough HLT could mimic human society and
 discourse. But not a machine that is only as powerful as the human brain. This
 suggests, only spiritually &mdash; because we have no formal or empirical proof &mdash; that
 machines can out-perform humans, but not on the same turf of humanity. Humans are
 exploiting something non-algorithmic and &ldquo;mystical&rdquo; although it is only mystical
 because we do not know what it is. We do not know that there are ways we could
-know.)))</p><p>I also think Searle was onto something when he identifies the lack of <em>physical</em>
-causal efficacy as a key problem for machines who wannabe conscious.</p><p>The Chinese Room reveals conscious thought for sure, but if one deconstructs the
+know.)))</p>
+<p>I also think Searle was onto something when he identifies the lack of <em>physical</em>
+causal efficacy as a key problem for machines who wannabe conscious.</p>
+<p>The Chinese Room reveals conscious thought for sure, but if one deconstructs the
 Chinese Room one will find consciousness way back in the people who programmed the
 room, or wrote the book. Those people had framing and binding, not the Room. Those
 people had way too much consciousness than we should ever grant to people however,
-they were like gods, clearly.</p><p>This is kind of the point that a theologian might make: consciousness is so darn
+they were like gods, clearly.</p>
+<p>This is kind of the point that a theologian might make: consciousness is so darn
 powerful you are never going to find the source of it in blind objective physics,
 something goes beyond the physics, and what that something is does probably possess
-causal powers.</p><p>Whatever it is however, is unlikely to be merely &ldquo;emergent complexity&rdquo; because
+causal powers.</p>
+<p>Whatever it is however, is unlikely to be merely &ldquo;emergent complexity&rdquo; because
 organized systems do not inject any new causal powers that were absent in the base
 metal electrons, quarks and photons. What emergent complexity does for us is allow a
 complex system to gain endogenous causal power, that is to say, the whole ends up
-being able to alter the state of its parts.</p><p>However, all classical physics accounts of such emergence show that it is illusory.
+being able to alter the state of its parts.</p>
+<p>However, all classical physics accounts of such emergence show that it is illusory.
 This is because Newtonian clockwork holds when there is strict deterministic <em>and
 non-probabilistic</em> time evolution. We have to inject quantum mechanics into a complex
 system at some level (I don&rsquo;t care which) to at least permit the whole to influence
 the past time-ordered state of it&rsquo;s parts, via non-locality &mdash; at the very least!
-Otherwise you will not have genuine top-down causation emergence.</p><p>It is worth pointing out here that electrons and photons and atoms and molecules do
+Otherwise you will not have genuine top-down causation emergence.</p>
+<p>It is worth pointing out here that electrons and photons and atoms and molecules do
 not have causal powers, they obey. What obeys has no causal efficacy, and physics
 is a science that never describes causality other than by light-cone structure.
 Causality is a metaphysical concept, not a physics concept. I think this is something
-Searle never understood, which is why he remained a physicalist.</p><p>I comment here on the confounding of intelligence for understanding:</p><blockquote><p>@23:00 Chollet confuses intelligence with understanding. Take &ldquo;intelligence&rdquo; as
-Chalmers takes it - behaviourial. Understanding is not merely behavioural.<br>    Understanding is qualia-filled, subjective, not behavioural.
+Searle never understood, which is why he remained a physicalist.</p>
+<p>I comment here on the confounding of intelligence for understanding:</p>
+<blockquote>
+<p>@23:00 Chollet confuses intelligence with understanding. Take &ldquo;intelligence&rdquo; as
+Chalmers takes it - behaviourial. Understanding is not merely behavioural.<br>
+    Understanding is qualia-filled, subjective, not behavioural.
 Behaviour can betray possible conscious understanding (&ldquo;No matter how much I
 Pavlovian condition my workers I still can&rsquo;t get them to stop reading Marx and going
-on strike!&rdquo;), but does not imply conscious understanding. So even the &ldquo;process&rdquo; of
+on strike!"), but does not imply conscious understanding. So even the &ldquo;process&rdquo; of
 the system is not identifiable as any understanding. Understanding is more than mere
 emergent process, it is ontological. (And if you ask me, it is non-physical, but
-that&rsquo;s another story.)</p></blockquote><p>I do not mind people talking about &ldquo;intelligence&rdquo; as connoting subjective awareness,
+that&rsquo;s another story.)</p>
+</blockquote>
+<p>I do not mind people talking about &ldquo;intelligence&rdquo; as connoting subjective awareness,
 but then we need a different word for talking about &ldquo;smart behaviour&rdquo; that is not
 accompanied by subjective awareness and qualae.
 To my mind, the one does not imply the other, but it is a very good question if
 nature somehow naturally causes such implication. Logically there is no implication,
 but naturally, maybe biologically, there could be &mdash; so that it might be true
 contingently in our universe, that no intelligence is possible without subjective
-awareness. I think not. But panpsychism would say otherwise.</p><p>This is why I do not like panpsychism if it is presented as a metaphysics, because it assumes what we really ought to want to prove or disprove. The proper way to &ldquo;do panpsychism&rdquo; is to suppose it is false, and then try to disprove that supposition.</p><p>There is another point where I think Chollet mischaracterises Searle&rsquo;s use of the
-Chinese Room argument:</p><blockquote><p>@25:00 I can&rsquo;t speak for J. Searle, but isn&rsquo;t Francois being a bit harsh here? If
+awareness. I think not. But panpsychism would say otherwise.</p>
+<p>This is why I do not like panpsychism if it is presented as a metaphysics, because it assumes what we really ought to want to prove or disprove. The proper way to &ldquo;do panpsychism&rdquo; is to suppose it is false, and then try to disprove that supposition.</p>
+<p>There is another point where I think Chollet mischaracterises Searle&rsquo;s use of the
+Chinese Room argument:</p>
+<blockquote>
+<p>@25:00 I can&rsquo;t speak for J. Searle, but isn&rsquo;t Francois being a bit harsh here? If
 the &ldquo;man&rdquo; memorizes the book, and the dude is a human being, he is not going to
 memorize it like a humongous look-up table is he? He is going to use imprecise
 heuristics and innate comprehension, and whatnot, i.e., he uses his &ldquo;soul&rdquo; (whatever
@@ -834,42 +1280,53 @@ so-to-speak) to understand Mandarin so that he &ldquo;effectively memorizes&rdqu
 incredibly efficiently and imperfectly. This is what I do with Duolingo. It&rsquo;s slower
 than going to school, but it is how I &ldquo;fake memorize&rdquo; the Chinese Room book. So I
 think Searle&rsquo;s argument is closer to what Francois is getting at, maybe I misread
-Searle, it&rsquo;s been a while since I read his papers.<br>    It is only a fantasy gedankenexperiment where the &ldquo;man&rdquo;
+Searle, it&rsquo;s been a while since I read his papers.<br>
+    It is only a fantasy gedankenexperiment where the &ldquo;man&rdquo;
 actually just blindly stores the book neurologically - and so indeed has no
 understanding of Mandarin. I am pretty sure Searle never meant that to mean what he
-said by &ldquo;memorizes&rdquo;. If he did then he&rsquo;s not a very good professor.</p></blockquote><p>At 31 minutes in Tim Scarfe basically says what I was thinking, that Chollet is
+said by &ldquo;memorizes&rdquo;. If he did then he&rsquo;s not a very good professor.</p>
+</blockquote>
+<p>At 31 minutes in Tim Scarfe basically says what I was thinking, that Chollet is
 probably not taking the point of the Chinese Room gedankenexperiment to heart.
 Chollet is not wrong, but he does use the word &ldquo;intelligence&rdquo; as a synonym for
 &ldquo;understanding&rdquo; which Scarfe, myself and Chalmers disagree with, we define those
-concepts distinctly.</p><p>It is logically conceivable (not necessarily physically realizable) that a
+concepts distinctly.</p>
+<p>It is logically conceivable (not necessarily physically realizable) that a
 Chinese Room could behave intelligently. As Challot says, to act so it would have to
 show adaptive skill acquisition. So likely more than a dude with a book, but not much
 more, since the dude can hack the book, which defeats the point of the
 gedankenexperiment &mdash; it is just saying the dude in the room is intelligent.
 But, you know, maybe Searle was a little vague about this too, did Searle distinguish
 between intelligence and understanding. All I can recall is that David Chalmers and
-Tim Scarfe certainly do, and I agree there is a clear distinction.</p><p>This means, we can <em>conceivably</em> have intelligent machines that are not conscious.
+Tim Scarfe certainly do, and I agree there is a clear distinction.</p>
+<p>This means, we can <em>conceivably</em> have intelligent machines that are not conscious.
 Conceivability does not entail actuality though, and here Chalmers points out that
 some metaphysical characteristics of our universe make it impossible contingently for
 an intelligence qua Chollet to not be conscious qua Chalmers/Scarfe. But this is
 wild speculation, no one knows anything about such physical contingency entailments,
-it is all wild guesswork and hot air.</p><p>Chalmers invokes Bridging Laws. This is really frickin&rsquo; on the nose. D.C. here fancies
+it is all wild guesswork and hot air.</p>
+<p>Chalmers invokes Bridging Laws. This is really frickin' on the nose. D.C. here fancies
 he is like a physicist in the 1950&rsquo;s seeing oodles of new particles spewing out of
 Brookhaven Lab and giving them cute names, and he thinks I am like I. I. Rabbi saying,
 &ldquo;Who ordered that?&rdquo; But this is not the correct metaphor. It is a physicalists
 prejudice: <em>there is a physics law for everything</em>. Well, no there&rsquo;s not. There is no
 physical law that implies the Riemann Hypothesis or large cardinal theorems, or
 dozens of other mundane things like love. Sociologists can fever dream all day that
-they&rsquo;ve explained love, but theirs is a world of delusion. So is DC&rsquo;s Bridging Laws.</p><p>I do not oppose DC&rsquo;s concept of Bridging Laws, I just think they are not laws of
+they&rsquo;ve explained love, but theirs is a world of delusion. So is DC&rsquo;s Bridging Laws.</p>
+<p>I do not oppose DC&rsquo;s concept of Bridging Laws, I just think they are not laws of
 physics, while he does. To me they are platonic, moral and ethical laws, of the kind
 some of the classical philosophers understood better than anyone alive today, due to
-the pervasive prejudice of materialism in our times.</p><p>There was a segment on top-down causation, where Mark Bishop made a few good remarks, but I will write more about that later in the <a href=../06_minds_brains>next post</a>
-. Here I will just remark on the Wittgenstein&rsquo;s &ldquo;private language&rdquo; argument (Wittgenstein says it is impossible):</p><blockquote><p>@1:20:00 This Wittgenstein argument seems a bit bogus. IF one has memory then a
+the pervasive prejudice of materialism in our times.</p>
+<p>There was a segment on top-down causation, where Mark Bishop made a few good remarks, but I will write more about that later in the <a href=../06_minds_brains>next post</a>
+. Here I will just remark on the Wittgenstein&rsquo;s &ldquo;private language&rdquo; argument (Wittgenstein says it is impossible):</p>
+<blockquote>
+<p>@1:20:00 This Wittgenstein argument seems a bit bogus. IF one has memory then a
 private language is fine. In a sense this is what qualia do for us, the mental qualae
 are available, and so we can use them for private language, especially if Chomskyian
 innateness is also a thing. But the more general point about the real power of
 language is well taken, you do not get real serious power until your actions can
-influence others, so as a collective you can accomplish a whole lot more.<br>    I think this is similar to the framing or the binding
+influence others, so as a collective you can accomplish a whole lot more.<br>
+    I think this is similar to the framing or the binding
 problem, I might call it the Grounding Problem, which Wittgenstein poses. I am not
 sure it cannot be solved by framing or binding, but suppose it can&rsquo;t. Then the issue
 is how we ground our semantics so that it is not wildly fluctuating, and remains
@@ -878,33 +1335,43 @@ languages evolve, I can hardly make head nor heels of what Chaucer was narrating
 coherence has to be over short time scales where it matters for survival and whatnot.
 But I think short term and medium term memory allows this.
 <em>A conscious soul cannot manifest qualia-filled thought effects in a world without being
-bound to a system with memory</em> &mdash; is the way I would rephrase Wittgenstein&rsquo;s.<br>    And a conscious soul that cannot manifest effective actions in a
+bound to a system with memory</em> &mdash; is the way I would rephrase Wittgenstein&rsquo;s.<br>
+    And a conscious soul that cannot manifest effective actions in a
 world does not really exist, in <em>that</em> world. I would just say <em>does not exist</em> in that
 world.
     So I am saying we do not need other people to exist in order
-to experience mental qualae, we only need our mother to have existed (in the past).</p></blockquote><p>I should have added, one of the unique abilities of a platonic thinker, like humans,
+to experience mental qualae, we only need our mother to have existed (in the past).</p>
+</blockquote>
+<p>I should have added, one of the unique abilities of a platonic thinker, like humans,
 is that we can fabricate an &ldquo;other&rdquo; to talk to all in our heads, and have a dialogue
 with this creature. It ain&rsquo;t a real ontological entity, but that does not matter for
-a private language. An Achilles and Tortoise will do.</p><p>So I am not sure what drugs Wittegenstein was on, but I would not like them. He was
+a private language. An Achilles and Tortoise will do.</p>
+<p>So I am not sure what drugs Wittegenstein was on, but I would not like them. He was
 heading into his own private thought space, a groupthink of One. But he dragged a
 lot of the Vienna Circle out of their naval gazing, so that was a good public duty.
 I think that old crowd of philosophers unfortunately infected most of today, with
 materialism, and so the idea human beings are not platonic thinkers is still widely
-held as axiomatic. Incorrectly if you bother asking me.</p><p>However, as is obligatory, the caveat here is that if one were to isolate a human
+held as axiomatic. Incorrectly if you bother asking me.</p>
+<p>However, as is obligatory, the caveat here is that if one were to isolate a human
 child then they&rsquo;d struggle to develop a private language. The mind and the brain are
 so closely connected we cannot see a separation, and to my way of theorising there is
 no separation until the process of life ceases physically. The mind needs some spark.
 The brain needs some stimulus. We are in part machines, for sure, at a chunked level
-we are heat engines, but that&rsquo;s only our physical constituents, not our soul.</p><h3 id=the-frame-and-binding-problems-reconsidered><a class=anchor href=#the-frame-and-binding-problems-reconsidered title='Anchor for: The Frame and Binding Problems Reconsidered.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Frame and Binding Problems Reconsidered</h3><p>I will now try to finish up by letting you in on a bit of my personal odyssey.
+we are heat engines, but that&rsquo;s only our physical constituents, not our soul.</p>
+<h3 id=the-frame-and-binding-problems-reconsidered><a class=anchor href=#the-frame-and-binding-problems-reconsidered title="Anchor for: The Frame and Binding Problems Reconsidered."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Frame and Binding Problems Reconsidered</h3>
+<p>I will now try to finish up by letting you in on a bit of my personal odyssey.
 I came to philosophy of mind and metaphysics from the exact reverse direction to a
-Sunday School kid who rejected religion and &ldquo;found atheism&rdquo;. I went the other way.</p><p>I grew up mad about science and mathematics. I wanted to find the science of Mind, I
+Sunday School kid who rejected religion and &ldquo;found atheism&rdquo;. I went the other way.</p>
+<p>I grew up mad about science and mathematics. I wanted to find the science of Mind, I
 wanted to figure out how consciousness can be mathematically modelled, and I wanted
 to understand the entire world through the lens of science. I read so much, and
 eventually reached some kind of threshold where it became painfully obvious no one
 was ever going to develop a scientific (that is to say <em>objective</em>) theory of
-consciousness. It was just not ever going to be possible.</p><p>This threw into doubt <em>almost</em> all hope that I had previously had for Strong-AI (or
+consciousness. It was just not ever going to be possible.</p>
+<p>This threw into doubt <em>almost</em> all hope that I had previously had for Strong-AI (or
 Hard-AI or AGHI, take your pick &mdash; AGI perhaps being somewhat possible since it does
-not demand consciousness, you just demarcate what you mean by &ldquo;general&rdquo;).</p><p>Of course I cannot easily accept religion either, because I never gave up on science,
+not demand consciousness, you just demarcate what you mean by &ldquo;general&rdquo;).</p>
+<p>Of course I cannot easily accept religion either, because I never gave up on science,
 I just learned an awful lot about the metaphysical limits of science and
 physicalism. Some of this still being uncertain knowledge, but I have my reasons. For
 example, I can never accept any religion that makes no sense, that has literal
@@ -912,13 +1379,18 @@ interpretations of obviously allegorical stories, and I cannot accept as valid a
 &ldquo;religion&rdquo; that is a source of hatred. But that needs to be separated from mad
 followers. Mad followers have to be separated from the original teachings,
 the mad followers are anti-the-religion, so they do not count as disqualifying any
-religion, they just disqualify themselves. But this is not the point of this section.</p><p>The point is that I have a conjecture that I think David Chalmers (and any others
-bullish about AGI) perhaps have not yet thought about.</p><p>This is the idea that throwing masses of data at the hard problem of consciousness
+religion, they just disqualify themselves. But this is not the point of this section.</p>
+<p>The point is that I have a conjecture that I think David Chalmers (and any others
+bullish about AGI) perhaps have not yet thought about.</p>
+<p>This is the idea that throwing masses of data at the hard problem of consciousness
 <em>from the empirical side</em>, is likely doomed to failure, because it confronts a
-combination of the Frame Problem and the Binding Problem in real-time computing.</p><p>So it is a computational complexity limit we are talking about here. Again&mldr; <em>only</em>
+combination of the Frame Problem and the Binding Problem in real-time computing.</p>
+<p>So it is a computational complexity limit we are talking about here. Again&mldr; <em>only</em>
 a conjecture, and I need to elaborate.
 First I need to define the Frame Problem and Binding Problem, and what I mean by the
-empirical side of the Hard Problem.</p><ul><li>&ldquo;<strong>from the empirical side&mldr;</strong>&rdquo; of the Hard Problem means solving the hard problem
+empirical side of the Hard Problem.</p>
+<ul>
+<li>&ldquo;<strong>from the empirical side&mldr;</strong>&rdquo; of the Hard Problem means solving the hard problem
 by brute force; throwing sufficient compute power into a machine that eventually by
 mere unexplained (and probably unexplainable) objective behaviour one cannot find any
 reason for failing to impute subjective conscious awareness to the machine. So I
@@ -926,22 +1398,27 @@ think this is barking mad, but it is a valid research program. I does not quite 
 the Hard Problem, it just tells us some computation is conscious. But to me that&rsquo;s
 good enough. I am often happy with existence proofs, I do not need a constructive
 proof, since I am fine talking to real people, I don&rsquo;t need to make my own chatbot to
-get my kicks.</li><li><strong>The Frame Problem</strong> is the problem that a supposed sentient (first person
+get my kicks.</li>
+<li><strong>The Frame Problem</strong> is the problem that a supposed sentient (first person
 subjective aware) intelligence, i.e., a conscious intelligence as opposed to an
 unconscious smart behavioral system, can solve problems and reason with original
 context. That is, the system exhibits a mental frame, not merely having an internal
 model (which can always be canned), but a fully functional framing subsystem that
 generates context even when none is available in the raw data &mdash; thus solving
-Chomsky&rsquo;s puzzle of innateness.</li><li><strong>The Binding Problem</strong> is the problem that to infer a system is conscious we need
+Chomsky&rsquo;s puzzle of innateness.</li>
+<li><strong>The Binding Problem</strong> is the problem that to infer a system is conscious we need
 some way to infer that it is &ldquo;thinking&rdquo; or in other words that there is a unification
 of all the modules into a whole. This is why a distributed computing system with a
 bunch of modules doing smart things, like playing chess or solving protein folding,
 is not conscious &mdash; precisely because any one of these modules could be disconnected
 without affecting any of the others, so there is no holographic sort of unification,
-no binding.</li></ul><p>Others will phrase the <a href=https://plato.stanford.edu/entries/frame-problem/ target=_blank>frame</a>
+no binding.</li>
+</ul>
+<p>Others will phrase the <a href=https://plato.stanford.edu/entries/frame-problem/ target=_blank>frame</a>
 and <a href=https://en.wikipedia.org/wiki/Binding_problem target=_blank>binding</a>
 problems differently to me, to suit their purposes and programs, but the above
-characterizations are what I prefer, ok.</p><p>Some (connectionists) will say that a &ldquo;network of networks&rdquo; will solve at least
+characterizations are what I prefer, ok.</p>
+<p>Some (connectionists) will say that a &ldquo;network of networks&rdquo; will solve at least
 framing, but this is naïve. Framing is about solving contextuality and originality,
 so is more akin to Douglas Hofstadter&rsquo;s creative analogies approach. The framing
 problem is never solved by throwing more expert systems into the mix, because no
@@ -951,41 +1428,50 @@ eventually be able to deduce when they &ldquo;crack.&rdquo; By the way, humans a
 not in the same way, we &ldquo;give up&rdquo; on a tricky puzzle, we don&rsquo;t produce meaningless
 strings. In other words, a conscious being unable to solve a framing problem will
 know it has failed, it won&rsquo;t try (unless being playful) to just come up with
-something.</p><p>((By the way, there is a way here to do a tricky sort of Turing Test, at least for
+something.</p>
+<p>((By the way, there is a way here to do a tricky sort of Turing Test, at least for
 just Expert Systems. First you deliberately program in the capacity to &ldquo;give up&rdquo;
 like a human might when a request goes beyond the programmed expertise or look-up
 powers. Then you remove this part of the program and re-train it, then see if it
 still can &ldquo;give up&rdquo; in the same way. If it cannot then you know it was not
-consciously giving up, but implementing your code instead, blindly.))</p><p>(((The above is pretty much exactly how brain scientists can know certain cognitive
+consciously giving up, but implementing your code instead, blindly.))</p>
+<p>(((The above is pretty much exactly how brain scientists can know certain cognitive
 processes are not conscious. They&rsquo;ve had the odd natural experiments to see that
 missing parts of human brains reduce some of our capacities. It goes both ways too,
 but the interesting way is when we lose consciousness and yet continue the behaviour.
 The case where we remain conscious but without the behaviour is the boring case of
 hallucination, or dreaming. Although, I guess that is not boring when you are asking
 a different question, such as precognition in dreams: exactly how much can the human
-mind guess about the future vividly enough that it can appear to be pre-cognition?)))</p><p>The same people will probably say a network of networks solves binding, but again
+mind guess about the future vividly enough that it can appear to be pre-cognition?)))</p>
+<p>The same people will probably say a network of networks solves binding, but again
 this is too naïve. The interface to the parent or Mother network can take requests,
 and distribute the problem solving task, but that is not a unity, it&rsquo;s just
 delegation. The Binding Problem is not solved by delegation. To satisfy the binding
 problem the Mother network has to be actually at least subliminally aware of what
 it&rsquo;s children are doing. A Mother network layer does not satisfy this just by virtue
-of being a Mother layer.</p><p>The human mind does not seem to completely bind or frame, since we can perform
+of being a Mother layer.</p>
+<p>The human mind does not seem to completely bind or frame, since we can perform
 different tasks semi-independently, but it is not easy, and one can argue we can
 never truly separate our thought into isolated modules. That is partly, on the
 physicalist side, because our brain cannot do so, and our mind depends upon our brain
-for it&rsquo;s expression.</p><p>Alright. Now I can say what I think a lot of philosophers of mind and Strong-AI
+for it&rsquo;s expression.</p>
+<p>Alright. Now I can say what I think a lot of philosophers of mind and Strong-AI
 enthusiasts could be missing. Which is that no machine too much larger than a human
-can be conscious, because it will not bind, and thus will not frame.</p><p>This conjecture links or associates framing and binding. Others may have conjectured
+can be conscious, because it will not bind, and thus will not frame.</p>
+<p>This conjecture links or associates framing and binding. Others may have conjectured
 this before me, but I have not read them. So I think this is a new-ish conjecture. I
 think to solve the framing problem a mind has to already have binding, because a
 frame cannot be a bunch of separate modules. At least a good frame cannot be a bunch
 of modules. A sucky frame maybe. And a sucky frame is not going to be able to pass
-the bare minimum behaviourist tests for consciousness (the quasi-Turing Tests).</p><p>The conjecture is based upon some physics that I also write about (here on T4GU).
+the bare minimum behaviourist tests for consciousness (the quasi-Turing Tests).</p>
+<p>The conjecture is based upon some physics that I also write about (here on T4GU).
 The idea being that for binding a system needs high connectivity in real-time, and a
 distributed network cannot achieve these hypothetical physical constraints. But a
-brain can. That&rsquo;s the conjecture.</p><p>This is a modern physicists take on the Chinese Room. The Chinese Room will <em>not</em> be
+brain can. That&rsquo;s the conjecture.</p>
+<p>This is a modern physicists take on the Chinese Room. The Chinese Room will <em>not</em> be
 conscious (upon this conjecture being true) because it is not highly connected enough
-<em>in real-time</em>.</p><p>To achieve sufficient <em>real-time</em> binding, I further postulate, requires quantum processes, namely wormhole traversals, or in orthodox QM <em>entanglement.</em> Entanglement
+<em>in real-time</em>.</p>
+<p>To achieve sufficient <em>real-time</em> binding, I further postulate, requires quantum processes, namely wormhole traversals, or in orthodox QM <em>entanglement.</em> Entanglement
 is really, deep down, a <em>coupling principle</em>, which I have written about in my
 chapters on
 <a href=/t4gu/theory/6_pauli_ex_entanglement>Pauli Exclusion</a>
@@ -993,19 +1479,25 @@ and
 <a href=/t4gu/theory/8_interference_from_entanglement>Interference</a>
 .
 Entanglement (or coupling) is what gives a physical system non-local correlations, and I
-suspect these are crucial for conscious binding, from the physicalists side.</p><p>Too large or too classically connected a system will thus, I conjecture, fail to have
+suspect these are crucial for conscious binding, from the physicalists side.</p>
+<p>Too large or too classically connected a system will thus, I conjecture, fail to have
 sufficient binding to even get consciousness going as an evolutionary growing and
 developing process. This too my mind, is probably why we will never see conscious
 machines, because no machine can do better at binding, and hence framing, than a
-human brain (or some analogous alien biology).</p><p>For a physicalist though, notice this conjecture does not forbid a machine from
+human brain (or some analogous alien biology).</p>
+<p>For a physicalist though, notice this conjecture does not forbid a machine from
 becoming conscious. However, it does imply such a machine will probably need to
 exploit quantum circuits. That is a tricky engineering problem. Entanglement is
 ubiquitous in nature, but also damn fragile, the most fragile relation in the known
-universe.</p><p>This is only another conjecture, but I suspect if we can solve that
+universe.</p>
+<p>This is only another conjecture, but I suspect if we can solve that
 engineering problem we will be virtual gods. We will have danced with and brought
 under our control the ultimate filaments of reality. Thus defeating physicalism in a
-moral sense! We will have proven gods, of a sort, exist!</p><p>Other thoughts and comments on <a href="https://www.youtube.com/watch?v=T7aIxncLuWk" target=_blank>MLST Episode 90</a>
-:</p><blockquote><p>@39:00 function cannot be either necessary nor sufficient evidence, because (a)
+moral sense! We will have proven gods, of a sort, exist!</p>
+<p>Other thoughts and comments on <a href="https://www.youtube.com/watch?v=T7aIxncLuWk" target=_blank>MLST Episode 90</a>
+:</p>
+<blockquote>
+<p>@39:00 function cannot be either necessary nor sufficient evidence, because (a)
 intelligence (as Chalmers says) is not conclusive evidence of consciousness, and (b)
 a biological person (at least) can be catatonic but still conscious. Consciousness
 just ain&rsquo;t scientific. It is irreducibly subjective, not fake subjective. So I&rsquo;m in
@@ -1013,7 +1505,10 @@ Thom Nagel&rsquo;s camp: only the thing itself can know it is conscious, everyon
 can also think) is merely inferring. But it&rsquo;s not like an atom or electron, which we
 infer exists from objective data not needing to infer anything subjective. So the
 math guy, Hochreiter, used a dis-analogy. Shame on him! ;-) Only poets aught to be
-doing that.</p></blockquote><blockquote><p>@39:40 a Turing Test for consciousness can never cut it. It&rsquo;s not the same as
+doing that.</p>
+</blockquote>
+<blockquote>
+<p>@39:40 a Turing Test for consciousness can never cut it. It&rsquo;s not the same as
 using verbal reports from other humans or aliens. This is because AI systems are
 manufactured by us. So all their imputed consciousness can be imputed to ourselves,
 or teams of ourselves. That is why it is thoroughly invalid to use any sort of Turing
@@ -1022,17 +1517,25 @@ manufactured by conscious organisms is only &ldquo;borrowing&rdquo; what appears
 consciousness, but is in fact an actual Zombie? Chalmers fails to address this, but
 it&rsquo;s the most interesting philosophical question. We are talking about something like
 the ineffable quality of &ldquo;creativity&rdquo; which is the best objective evidence of raw
-consciousness, but still never definitive, for the above reasons.</p></blockquote><blockquote><p>@40:00 another fallacy. <em>Replicating the brain will replicate consciousness</em>.(?)<br>   No it won&rsquo;t. Firstly, what does that even mean?
+consciousness, but still never definitive, for the above reasons.</p>
+</blockquote>
+<blockquote>
+<p>@40:00 another fallacy. <em>Replicating the brain will replicate consciousness</em>.(?)<br>
+   No it won&rsquo;t. Firstly, what does that even mean?
 Suspending a lump of white & grey
 matter in a gel and spark-plug activating it with some ions? C&rsquo;mon. Seriously.
 Living beings are , if nothing else, all about processes and highly fine tuned
 initial value/boundary conditions. That is complexity beyond meat bits in a digital
 vat. Biology is not that simple. Computer nerds should however at least try the &ldquo;full
-brain simulation&rdquo; if only to be humbled.<br>   If what Chalmers asserted was true we could constantly awake the
+brain simulation&rdquo; if only to be humbled.<br>
+   If what Chalmers asserted was true we could constantly awake the
 dead, at least for a few minutes at a time till the brain rot really sets in. In
 other words, we already have full brain analog simulations, in fresh cadavars.
 Probably the ethics forbid ever going there, but one day the digital analog will
-exist, then I am betting the nerds will eat humble pie.</p></blockquote><blockquote><p>@43:00 more stupidity. Saying it is &ldquo;more likely informational&rdquo; is like saying
+exist, then I am betting the nerds will eat humble pie.</p>
+</blockquote>
+<blockquote>
+<p>@43:00 more stupidity. Saying it is &ldquo;more likely informational&rdquo; is like saying
 &ldquo;math is numerical&rdquo;. It doesn&rsquo;t mean anything profound. Everything is informational,
 except pure nothingness. So that sort of statement is useless. Biology is
 informational. Platonism is informational, spiritualism is informational. What
@@ -1041,113 +1544,153 @@ consciousness. In the same vein, this is why pansychism sounds cool, but is usel
 It is not parsimonious, because it predicts things that cannot ever be known (&ldquo;worms
 and electrons have a &lsquo;bit&rsquo; of consciousness&rdquo;? Well, hoorah. You solved the Hard
 Problem&mldr; not.) It&rsquo;s theology by another name. But worse, becasue at least there&rsquo;s a
-point to theology.</p></blockquote><p>There was also a bit of a confusion over semantics and ontology <a href="https://youtu.be/_KVAzAzO5HU?t=7406" target=_blank>near the end of Episode 79.</a>
-My comment:</p><blockquote><p>@2:05:00 I followed your guest up to this point, then he gets confused. Semantics is about meaning, not ontology, so either he misunderstood Tim&rsquo;s question or he is too big of a materialistic nerd. Epistemology is to syntax as ontology is to semantics, but bro&rsquo;, this is only a poetic analogy. A worm in my gut is semantically the same as a digital worm in my simulation in a computer game, but they are not the same ontology, and that matters as soon as you expand your semantics a day or two out - the former can kill me, for good, the latter kills me in a game and I can grab my other spare life and continue. AI nerds often do this: argue with too narrow a time or complexity band, and therefore become incredibly genius level smart sounding and ultracool to venture capitalists, but also ultimately insane.</p></blockquote><p>To follow-up,</p><blockquote><p>There was disappointment in Saba&rsquo;s article too:
+point to theology.</p>
+</blockquote>
+<p>There was also a bit of a confusion over semantics and ontology <a href="https://youtu.be/_KVAzAzO5HU?t=7406" target=_blank>near the end of Episode 79.</a>
+My comment:</p>
+<blockquote>
+<p>@2:05:00 I followed your guest up to this point, then he gets confused. Semantics is about meaning, not ontology, so either he misunderstood Tim&rsquo;s question or he is too big of a materialistic nerd. Epistemology is to syntax as ontology is to semantics, but bro', this is only a poetic analogy. A worm in my gut is semantically the same as a digital worm in my simulation in a computer game, but they are not the same ontology, and that matters as soon as you expand your semantics a day or two out - the former can kill me, for good, the latter kills me in a game and I can grab my other spare life and continue. AI nerds often do this: argue with too narrow a time or complexity band, and therefore become incredibly genius level smart sounding and ultracool to venture capitalists, but also ultimately insane.</p>
+</blockquote>
+<p>To follow-up,</p>
+<blockquote>
+<p>There was disappointment in Saba&rsquo;s article too:
 <a href=https://medium.com/ontologik/understanding-the-chinese-room-argument-and-semantics-b5584a456274 target=_blank>on medium, here</a>
 Computer language compilers have no &ldquo;understanding&rdquo; of programs. The understanding
 was with the human who wrote the compiler. I hate the way AI nerds use weasel
 language like this (shocked it came from Walid) which abuse our natural language. To
 most people, &ldquo;understanding&rdquo; connotes qualia-filled conscious comprehension, not
 formal comprehension exhibited by following rules. I get the actual point Saba was
-making, he could have made it without bending the word &ldquo;understanding&rdquo; out of shape.</p></blockquote><p>I have posted these comments here not for gaslighting, but because they disappeared
+making, he could have made it without bending the word &ldquo;understanding&rdquo; out of shape.</p>
+</blockquote>
+<p>I have posted these comments here not for gaslighting, but because they disappeared
 from the youtube page for MSLT Ep.79. Not sure if they&rsquo;ve imposed posting limits,
-if they have, I am sad.</p><h3 id=connectionism-versus-gofai><a class=anchor href=#connectionism-versus-gofai title='Anchor for: Connectionism versus GOFAI.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Connectionism versus GOFAI</h3><p>GOFAI is the early strain of AI research which thought that symbol representations
+if they have, I am sad.</p>
+<h3 id=connectionism-versus-gofai><a class=anchor href=#connectionism-versus-gofai title="Anchor for: Connectionism versus GOFAI."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Connectionism versus GOFAI</h3>
+<p>GOFAI is the early strain of AI research which thought that symbol representations
 were vital for getting &ldquo;thinking machines&rdquo; &mdash; which never meant subjective qualia-filled
 conscious machines, so they were abusing the verb &ldquo;thinking&rdquo; (following Turing), but
 rather it meant intelligent-looking systems, even if only canned (so zombies, trading on
-the actual intelligence of the designer/programmers, would pass the test).</p><p>Connectionism is the view that brains are more important than symbols (for both
+the actual intelligence of the designer/programmers, would pass the test).</p>
+<p>Connectionism is the view that brains are more important than symbols (for both
 Turing Tests and putative consciousness, or at least for Turing Tests), and is
 agnostic about whether neural networks (the main sort of connectionist architecture)
 create symbols or not. If ANN&rsquo;s do in same way generate symbols, perhaps all the
 better, but the connectionist would say what mattered was the neural structure of the
 hardware, that the neural type of organization was somehow the critical element in
-generating either conscious thought or merely seemingly smart zombie behaviour.</p><p>Some connectionists can be found who demure and claim it is autopoetic complexity
+generating either conscious thought or merely seemingly smart zombie behaviour.</p>
+<p>Some connectionists can be found who demure and claim it is autopoetic complexity
 that really is the key, and (often ignoring all philosophy of chemistry and biology) say
-that connectionist architectures are a good way to get them.</p><p>The debate between these two schools is interesting, but also besides the point as
+that connectionist architectures are a good way to get them.</p>
+<p>The debate between these two schools is interesting, but also besides the point as
 far as I am concerned, because nether school has any account for subjective
 qualia-filled consciousness. Their generation of &ldquo;consciousness&rdquo; is post-hoc, they
 infer it when they think they indirectly see the behaviour. They cannot however say
-the behaviour generates the qualia.</p><p>Both schools can exploit the ideology of functionalism, to claim physical processes
+the behaviour generates the qualia.</p>
+<p>Both schools can exploit the ideology of functionalism, to claim physical processes
 are what generate qualia. But that is always magical thinking. Physical processes
-only ever create new physical states. Nothing subjective ever emerges.</p><p>For genuinely conscious beings, the realist and platonist, might say that it is the
+only ever create new physical states. Nothing subjective ever emerges.</p>
+<p>For genuinely conscious beings, the realist and platonist, might say that it is the
 source of consciousness which has the &ldquo;free will&rdquo; (undefined) and this is the causal
 power. Someone like me, a crazy theoretical physicist comes along thinking they know
 what &ldquo;causal&rdquo; means, or doesn&rsquo;t mean, and says, &ldquo;Yeah, but the physics is very weak
-causally, and ultimate causes can only be found exogenous to spacetime.&rdquo;</p><p>Thus I do not really have a stake in the GOFAI versus Connectionist debate. Both work
+causally, and ultimate causes can only be found exogenous to spacetime.&rdquo;</p>
+<p>Thus I do not really have a stake in the GOFAI versus Connectionist debate. Both work
 for me for describing aspects of how, functionally, the conscious soul influences
-physical reality, but is is originated at the boundaries.</p><p>In writing this, I did however have a short comment on the perceptions of us human
+physical reality, but is is originated at the boundaries.</p>
+<p>In writing this, I did however have a short comment on the perceptions of us human
 beings about these schools of thought in AI research. What strikes me is that a lot of
 researchers in these fields desperately want to find a mechanistic or physical
 account for consciousness, but they have nothing to say about qualia, so they reach
 for an objective substitute, which is what they call &ldquo;intelligent behaviour&rdquo;. Then
 then forget entirely (it seems) that what they&rsquo;ve identified as a target has nothing
 to do with the original target, because behaviour can be simulated (&ldquo;on toilet roles&rdquo;
-as Putnam, Searle, or Bishop might say).</p><p>So sociologically in AI+C philosophy, there is a massive shifting of goal-posts going
+as Putnam, Searle, or Bishop might say).</p>
+<p>So sociologically in AI+C philosophy, there is a massive shifting of goal-posts going
 on. The trick is to <em>say</em> you are looking for qualia-filled consciousness, then
 claim some objective data would prove it, then simulate that objective data, then
-back-infer you&rsquo;ve generated a &ldquo;thinking machine&rdquo;. It is complete bollocks.</p><p>Even by the weak-ass qualae-blind functionalist standards, it <em>matters</em> how the
+back-infer you&rsquo;ve generated a &ldquo;thinking machine&rdquo;. It is complete bollocks.</p>
+<p>Even by the weak-ass qualae-blind functionalist standards, it <em>matters</em> how the
 behaviour is produced. Chatbots are likely not producing the words in the right
 way to be manifesting signs of consciousness, not even to permit a dummy to infer
 they are conscious. Which makes me question the sanity of the chatGPT dude.
 However, I do &ldquo;get it&rdquo; that if you love your craft, you inflate it&rsquo;s importance
 wildly, that is a natural human emotion, so no hate towards chatGPT dude, ok.
-He is suffering from joissance, and that is a nice thing.</p><h3 id=creativity-gaming-and-all-that><a class=anchor href=#creativity-gaming-and-all-that title='Anchor for: Creativity, Gaming and All That.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Creativity, Gaming and All That</h3><p>I will have to curtail the commentary, or I&rsquo;ll be here forever, but just started
+He is suffering from joissance, and that is a nice thing.</p>
+<h3 id=creativity-gaming-and-all-that><a class=anchor href=#creativity-gaming-and-all-that title="Anchor for: Creativity, Gaming and All That."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Creativity, Gaming and All That</h3>
+<p>I will have to curtail the commentary, or I&rsquo;ll be here forever, but just started
 watching another episode or two of MLST, Ep.81 & 82, and I know I&rsquo;m going to have a
 lot to say. Their comments section filters will likely delete it, so I will just say
-a few crumbs here.</p><p>Despite the fact I have good physics grounding reasons to not trust any claims of
+a few crumbs here.</p>
+<p>Despite the fact I have good physics grounding reasons to not trust any claims of
 conscious thinking in any machines, there is a good qualitative and semi-quantitative
 metric that would be very awesome for people like myself to see.
 This is the scaling laws. We know human beings do not need to be scaled up in
 metaphorical &ldquo;CPU&rdquo; power to learn, and to learn any field of science.
 It would be impressive then, if a resource constrained AI system was capable of
 learning new games and discourses, without having any extra CPU thrown into it. This
-would come across as more autopoetic, less canned.</p><p>Though still not a proof positive subjective phenomenal qualae have been physically
+would come across as more autopoetic, less canned.</p>
+<p>Though still not a proof positive subjective phenomenal qualae have been physically
 generated (there never can be such proof) it would be very good weight of evidence
 for the Strong or Hard-AI case (that machines can be conscious, not merely smart-output
-zombies).</p><p>The fact there never can be physical proof that conscious qualia have been generated,
+zombies).</p>
+<p>The fact there never can be physical proof that conscious qualia have been generated,
 this sort of experiment would be a spiritual proof that maybe machines can become
 conscious. Not sufficient, but a minimum necessary element in an eventual social
-acceptance of the principle.</p><p>As I wrote, I have good reasons to think this will never happen, but I am all for
+acceptance of the principle.</p>
+<p>As I wrote, I have good reasons to think this will never happen, but I am all for
 pushing the boundaries of what machines can do, because all machines that are
 non-conscious and can be exploited for industry, will save human labour time, which
 is far better spent in playing with our children (and solving very hard riddles like
 how to eliminate poverty, avoid ecological collapse, and WTH quantum mechanics is all
 about, and are Multiverses a real thing? And of course the big one &mdash; why do we
-cringe at our parents, but then get puzzled by our teenagers?).</p><h2 id=conclusion-and-retreats><a class=anchor href=#conclusion-and-retreats title='Anchor for: Conclusion and Retreats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Conclusion and Retreats</h2><p>I am highly critical of those who too eagerly claim consciousness in machines has
-been finally found at last.</p><p>But I am not opposed to research in that general direction, because even when it
+cringe at our parents, but then get puzzled by our teenagers?).</p>
+<h2 id=conclusion-and-retreats><a class=anchor href=#conclusion-and-retreats title="Anchor for: Conclusion and Retreats."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Conclusion and Retreats</h2>
+<p>I am highly critical of those who too eagerly claim consciousness in machines has
+been finally found at last.</p>
+<p>But I am not opposed to research in that general direction, because even when it
 fails it will be illuminating. People often forget this. The aim of science is to
 test and hopefully refute theories, not just to confirm them. Confirmation is good,
-especially for engineers, but is also boring.</p><p>However, I am not philosophically opposed to the possibility of Strong-AI, I just
+especially for engineers, but is also boring.</p>
+<p>However, I am not philosophically opposed to the possibility of Strong-AI, I just
 think it is an unlikely thesis.
 Ironically, it is my understanding of physics that enables me to have such strong
 convictions. I have explained this elsewhere, but I can also explain it more
-succinctly.</p><p>The succinct version is that I strongly believe the 4D Block Universe concept is a
+succinctly.</p>
+<p>The succinct version is that I strongly believe the 4D Block Universe concept is a
 good one. In what sense? In the sense that the future already exists my dude! But I
 also have a belief in human free will, and other primitive notions of free will in
-other creatures, so in some sense we are making the future that already exists.</p><p>To reconcile these weak paradoxes (so they are not true paradoxes) I find myself
+other creatures, so in some sense we are making the future that already exists.</p>
+<p>To reconcile these weak paradoxes (so they are not true paradoxes) I find myself
 thinking consciousness and the associated source of causal efficacy that creatures
 with free will are endowed with, cannot possibly exist within the 4D Block Universe.
-It has to be sourced from outside.</p><p>It is a weak argument, but one that can be made, that because we do engineering
+It has to be sourced from outside.</p>
+<p>It is a weak argument, but one that can be made, that because we do engineering
 within the 4D Block Universe, we are in engineering terms unable to fabricate
 anything that gets sourced from outside the universe, and so we cannot fabricate
-consciousness within physics, not via engineering.</p><p>What we could do, perhaps, is find ways to alter the external boundaries of the
+consciousness within physics, not via engineering.</p>
+<p>What we could do, perhaps, is find ways to alter the external boundaries of the
 universe. Then we could fabricate things that get sourced from outside spacetime, on
 the boundaries. But that is some fanciful quantum mechanical engineering that no
 one has a hope of exploiting in our lifetimes. That, in a nutshell, is why I place
-huge bets against conscious machines within our lifetimes.</p><p>A conscious machine, or system let&rsquo;s say, that is not biologically based, might
+huge bets against conscious machines within our lifetimes.</p>
+<p>A conscious machine, or system let&rsquo;s say, that is not biologically based, might
 evolve, but if so, if I am right, it will have been destined (in the sense the 4D
 Block Universe has a weak concept of fate) to be conscious, not because we within the
 physical matrix designed it to be so. If we designed it to be conscious, it
 would be sheer luck it turned out conscious. We&rsquo;d be fooling ourselves. Like creating
 a baby with your spouse and thinking you created the baby&rsquo;s consciousness via some
 wicked smart engineering, rather than just via some fun sex, which was time-oriented
-predestined.</p><h2 id=chatgpt-et-al-are-leveraging><a class=anchor href=#chatgpt-et-al-are-leveraging title='Anchor for: chatGPT et al are Leveraging.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>chatGPT et al are Leveraging</h2><p>Before wrapping up, here is one more thing to think about if you suffer from the
-coming Superintelligence Singularity existential fears.</p><p>GPT <em>acts like it is</em> reasoning, but there&rsquo;s nothing going on in any subjective mind.
+predestined.</p>
+<h2 id=chatgpt-et-al-are-leveraging><a class=anchor href=#chatgpt-et-al-are-leveraging title="Anchor for: chatGPT et al are Leveraging."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> chatGPT et al are Leveraging</h2>
+<p>Before wrapping up, here is one more thing to think about if you suffer from the
+coming Superintelligence Singularity existential fears.</p>
+<p>GPT <em>acts like it is</em> reasoning, but there&rsquo;s nothing going on in any subjective mind.
 All the &ldquo;intelligence&rdquo; came from the programmers plus input data. How do I know
 humans are not just the same? Because humans routinely solve problems with
 (massively) insufficient data. No GPT/AI could do squat with what I know, because I
 know next to nothing compared to GPT data. If you restrict GPT to what I know it&rsquo;s an
-imbecile. Leveraging humongous data tables is not what the human mind does.</p><p>Which is all to say, there will be no SkyNet apocalypse unless some human codes into
+imbecile. Leveraging humongous data tables is not what the human mind does.</p>
+<p>Which is all to say, there will be no SkyNet apocalypse unless some human codes into
 an AI the SKyNet hypothesis (humans are dangerous and need to be eradicated). My
 suggestion is no one should do that, and before anyone does we built in manual kill
 switches for all AI systems, hand cranked (not electronic). Of course, I don&rsquo;t think
@@ -1155,18 +1698,52 @@ we need waste the effort, since no computer system is ever going to be
 superintelligent. The whole concept makes no sense. Because all the AI bots are doing
 is leveraging past knowledge. That&rsquo;s super-dumbness. It&rsquo;s super because GPT can act
 like it is far more knowledgeable than any ordinary person. It&rsquo;s dumb because the
-thing has no mind. There is no moral qualm about shutting it off if it offends you.</p><p>But, hey, aren&rsquo;t humans also just leveraging? Yes, for the most part. It&rsquo;s not
+thing has no mind. There is no moral qualm about shutting it off if it offends you.</p>
+<p>But, hey, aren&rsquo;t humans also just leveraging? Yes, for the most part. It&rsquo;s not
 easy to be genuinely creative, there is no algorithm for it, no recipe. And that&rsquo;s
-my main point!</p><p>If you throw a PRNG into an algorithm you can mimic creativity, you will get output
+my main point!</p>
+<p>If you throw a PRNG into an algorithm you can mimic creativity, you will get output
 strings that never existed in the universe before. But they will be gibberish unless
 some programmer crafted the algorithm to use the random numbers in a creative way.
 You see the issue? It&rsquo;s always the creativity of the human (or other sentient being)
-behind the scenes. Like the Wizard of Oz.</p><p>If some robot becomes sentient, well, all fine and good. But it cannot be sentient
-because of it&rsquo;s algorithm. It&rsquo;d be sentient in spite of it&rsquo;s code.</p><p>Lastly, I know I am far outside of mainstream thought in philosophy of mind with
+behind the scenes. Like the Wizard of Oz.</p>
+<p>If some robot becomes sentient, well, all fine and good. But it cannot be sentient
+because of it&rsquo;s algorithm. It&rsquo;d be sentient in spite of it&rsquo;s code.</p>
+<p>Lastly, I know I am far outside of mainstream thought in philosophy of mind with
 these ideas. I write them here not to convince anyone they are wrong and I am right,
 because I know the odds of that, the odds are extremely close to 1:0 that none of us
 are right. I write this stuff because (a) it is fun, and (b) to share with others.
 Whether you enjoy my opinions on these topics or not, I think you can say they are
 entertaining for geeks. If not then you have not read this far to care what I think.
-No harm, no foul.</p><table style="border-collapse:collapse;border=0"><col span=1 style=width:43%><col span=1 style=width:30%><col span=1 style=width:35%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../3_Coleman_vonNeumann>Previous chapter</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../06_minds_brains>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../3_Coleman_vonNeumann>Coleman and von Neumann</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../06_minds_brains>Minds and Brains</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.5e5e5e3f11510a5488490612ff5c36a48c133ae81bb9d2e4e5c377309de5ece2.js integrity="sha256-Xl5ePxFRClSISQYS/1w2pIwTOugbudLk5cN3MJ3l7OI=" crossorigin=anonymous></script>
-<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
+No harm, no foul.</p>
+<table style="border-collapse:collapse;border=0">
+<col span=1 style=width:43%>
+<col span=1 style=width:30%>
+<col span=1 style=width:35%>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../3_Coleman_vonNeumann>Previous chapter</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Blog</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../06_minds_brains>Next chapter</a></td>
+</tr>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../3_Coleman_vonNeumann>Coleman and von Neumann</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../06_minds_brains>Minds and Brains</a></td>
+</tr>
+</table>
+</article>
+</main>
+</div>
+<footer>
+<div class=req-js>
+<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
+</div>
+<noscript>
+<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
+</noscript>
+</footer>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
+<script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
+<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
+</body>
+</html>

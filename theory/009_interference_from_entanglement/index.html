@@ -1,10 +1,93 @@
-<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.119.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Interference from Entanglement | Topological 4-Geon Theory Unchained</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/009_interference_from_entanglement/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Interference from Entanglement"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/009_interference_from_entanglement/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
-<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Interference from Entanglement</h1><p>Published on <time datetime=2016-12-02>2016-12-02</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#coupling-entanglement-and-interference>Coupling, Entanglement and Interference</a></li><li><a href=#todo>todo</a></li><li><a href=#caveats>Caveats</a></li></ul></nav></details><p>Worth reading the <a href=../5_pauli_ex_entanglement>previous chapter on Pauli Exclusion</a>
-before this one.</p><p>Here we use the same idea that isotropically spin-correlated 4-geons are connected by an
+<!doctype html><html lang=en data-mode=dark>
+<head prefix="og: http://ogp.me/ns#">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+<title>Interference from Entanglement | Topological 4-Geon Theory Unchained</title>
+<meta name=author content="Bijou M. Smith">
+<meta name=robots content="index follow">
+<link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/009_interference_from_entanglement/>
+<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
+<meta property="og:title" content="Interference from Entanglement">
+<meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/009_interference_from_entanglement/">
+<meta property="og:type" content="website">
+<meta name=twitter:dnt content="on">
+<meta name=theme-color content="#222">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="default">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
+<noscript>
+<meta name=theme-color content="#26A269">
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
+</noscript>
+<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script src=https://t4gu.gitlab.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<a href=/t4gu> <img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
+<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
+<nav aria-label="Main menu.">
+<ul>
+<li>
+<a class=btn href=/t4gu/t4gu/>Home</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=filler>
+<main>
+<article>
+<header>
+<h1>Interference from Entanglement</h1>
+<p>
+Published on <time datetime=2016-12-02>2016-12-02</time>
+</p>
+</header>
+<details class=toc open>
+<summary class=outline-dashed>
+Contents
+</summary>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#coupling-entanglement-and-interference>Coupling, Entanglement and Interference</a></li>
+<li><a href=#todo>todo</a></li>
+<li><a href=#caveats>Caveats</a></li>
+</ul>
+</nav>
+</details>
+<p>Worth reading the <a href=../5_pauli_ex_entanglement>previous chapter on Pauli Exclusion</a>
+before this one.</p>
+<p>Here we use the same idea that isotropically spin-correlated 4-geons are connected by an
 ER=EPR wormhole bridge.
 While the previous chapter derived from this hypothesis the Pauli Exclusion Principle,
 in this chapter we show that the same physics (entanglement via wormholes) leads
-to double-slit interference.</p><p>These insights were made long ago by
+to double-slit interference.</p>
+<p>These insights were made long ago by
 <a href=https://arxiv.org/pdf/quant-ph/0608202 target=_blank>Paul O'Hara,</a>
 and we will follow his work,
 basically just shamelessly reproducing it for popular consumption.
@@ -12,80 +95,113 @@ But Susskind and Maldacena provided real ontology in the form of
 <a href=https://arxiv.org/abs/1604.02589 target=_blank>ER=EPR,</a>
 which gives O&rsquo;Hara&rsquo;s theoretical abstractions true meat & potato reality.
 Meaning, there is good reason to think O&rsquo;Hara&rsquo;s insights are proper physics,
-not merely fancy cute mathematics.</p><p>Moreover, pioneers in quantum computing have managed to produce traversable
+not merely fancy cute mathematics.</p>
+<p>Moreover, pioneers in quantum computing have managed to produce traversable
 wormhole effects in the laboratory, see the work of
 <a href=https://authors.library.caltech.edu/117895/6/41586_2022_5424_MOESM1_ESM.pdf target=_blank>Davis, Lauk, Neven and Spiropulu here.</a>
 This is the first <em>direct</em> evidence in the history of physics for the existence of
 fundamental non-trivial topology in our spacetime. The Minkowski manifold is not
-the local asymptotic for GR at the elementary particle scale.</p><p><strong>Up-front caveat:</strong> it is only a conjecture that, &ldquo;<em>all</em> interference effects can be
+the local asymptotic for GR at the elementary particle scale.</p>
+<p><strong>Up-front caveat:</strong> it is only a conjecture that, &ldquo;<em>all</em> interference effects can be
 obtained from this same physics,&rdquo; since that is an empirical statement.
-How do we know we know of all interference effects?</p><p>There is for instance, multi-slit interference, which seems to be explicable in
+How do we know we know of all interference effects?</p>
+<p>There is for instance, multi-slit interference, which seems to be explicable in
 terms of pair-wise entanglement (only pairs of slits can interfere) but the
 jury is still out on this.
 It is very difficult to do experimental tests of three-way interference.
 However, in the <a href=#caveats>Caveats</a>
-below we make a comment on this.</p><p>However, the good news is that Delayed Choice, Quantum Eraser and Aharonov&ndash;Bohm
+below we make a comment on this.</p>
+<p>However, the good news is that Delayed Choice, Quantum Eraser and Aharonov&ndash;Bohm
 interference effects are well explained by O&rsquo;Hara and Susskind&rsquo;s insights.
 These are <em>by inheritance</em> T4G insights. Not meaning to be parasitic,
-more symbiotic.</p><h2 id=coupling-entanglement-and-interference><a class=anchor href=#coupling-entanglement-and-interference title='Anchor for: Coupling, Entanglement and Interference.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Coupling, Entanglement and Interference</h2><p>There is an irksome way that Paul O&rsquo;Hara goes about explaining two-slit interference using isotropic spin coupling, which we learned about a couple of
+more symbiotic.</p>
+<h2 id=coupling-entanglement-and-interference><a class=anchor href=#coupling-entanglement-and-interference title="Anchor for: Coupling, Entanglement and Interference."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Coupling, Entanglement and Interference</h2>
+<p>There is an irksome way that Paul O&rsquo;Hara goes about explaining two-slit interference using isotropic spin coupling, which we learned about a couple of
 <a href=../007_pauli_ex_entanglement>chapters ago - On Pauli Exclusion</a>
 and that irksome thing is that the idea of O&rsquo;Hara&rsquo;s is too simple,
 and at the same time leaves a residual perplexion.
 The context is a particle explanation, no fields.
-So it suits T4G theory, but I have problems with it as I&rsquo;ll now try to explain.</p><p>The simplicity is in the derivation of two-slit (and multiple slit) interference
+So it suits T4G theory, but I have problems with it as I&rsquo;ll now try to explain.</p>
+<p>The simplicity is in the derivation of two-slit (and multiple slit) interference
 patterns from singlet states, where the aperture slits are supposed to polarize
 the spin somehow. The perplexing things are; <strong>(i)</strong> no account is offered for how that happens,
-and <strong>(ii)</strong> no account is given for how a particle gets self-entangled.</p><p>In T4G theory we can explain (ii), which is that 4-geons contain ER=EPR bridges.
+and <strong>(ii)</strong> no account is given for how a particle gets self-entangled.</p>
+<p>In T4G theory we can explain (ii), which is that 4-geons contain ER=EPR bridges.
 (And recent experiments with quantum computers are confirming these previously
 theoretical ideas, see the <a href=https://www.quantamagazine.org/physicists-create-a-wormhole-using-a-quantum-computer-20221130/ target=_blank>Quanta Magazine article here.</a>
 )
 The quantum computers manipulate 2D systems, so could be considered pretty idealized
 geons, not full t4g-geons, but I think the physical principles of T4G have nevertheless
-been plausibly confirmed.</p><p>But what about problem (i)?</p><p>This is less obvious, but I think one way to go at it from T4G theory is to
+been plausibly confirmed.</p>
+<p>But what about problem (i)?</p>
+<p>This is less obvious, but I think one way to go at it from T4G theory is to
 hypothesize the elementary particles have wormhole topologies as per T4G,
 and that when a geon traverses a two-slit apparatus basically only one of two
 things can happen, maybe three things &mdash; absent looping back in time through
-other wormholes in the vacuum &mdash; which are either,</p><ol><li>both ends of the ER bridge go through one slit, or</li><li>each end goes through a different slit.</li><li>maybe one end hits the walls of the apperature and the other goes through one slit.</li></ol><p>I think case 3 can be ignored, since if the stray end of the geon wormhole hits
+other wormholes in the vacuum &mdash; which are either,</p>
+<ol>
+<li>both ends of the ER bridge go through one slit, or</li>
+<li>each end goes through a different slit.</li>
+<li>maybe one end hits the walls of the apperature and the other goes through one slit.</li>
+</ol>
+<p>I think case 3 can be ignored, since if the stray end of the geon wormhole hits
 the walls then it is most likely &ldquo;measured&rdquo; (blindly) and the ER bridge collapses,
 and the geon ends up being &ldquo;detected&rdquo; (blindly) at the walls, where it&rsquo;s energy is
-deposited or it gets scattered, so is not counted by the experiment&rsquo;s lab detector.</p><p>Both other possibilities are however still ISC singlet states, we just describe
+deposited or it gets scattered, so is not counted by the experiment&rsquo;s lab detector.</p>
+<p>Both other possibilities are however still ISC singlet states, we just describe
 them differently by slit labels. One is a singlet state, the other the
-pseudo-singlet state.</p><p>But unlike O&rsquo;Hara&rsquo;s analysis, I will not claim the slits polarize the geon
+pseudo-singlet state.</p>
+<p>But unlike O&rsquo;Hara&rsquo;s analysis, I will not claim the slits polarize the geon
 (although maybe that is what happens, I would not know). What I will suggest T4G
 theory says is that we have to account for both possibilities, and the EPR
 wormhole means we must employ one or the other singlet state.
 But rather than spins being coupled rotationally covariantly, here it is <em>the
-trajectories</em> that are coupled.</p><p>The spin values of the Pauli spinor are, I will assume, not significantly altered
+trajectories</em> that are coupled.</p>
+<p>The spin values of the Pauli spinor are, I will assume, not significantly altered
 by the aperture slits. Nevertheless, the measurement logic is entirely analogous
 to a Stern-Gerlach polarizer. The polarization is not of the spin vector,
-but of the paths.</p><p>The T4G view here is harking back to the original T4G philosophy that QM is a
+but of the paths.</p>
+<p>The T4G view here is harking back to the original T4G philosophy that QM is a
 <em>Measurement Theory</em> and so we care about what can be observed, and &ldquo;going through
 one slit or both&rdquo; is the critical measurement observable here,
-in whatever way the geometrodynamics permits the two possibilities to happen.</p><p>Which, so far, sounds like just classical mechanics. But in CM the geon does not
+in whatever way the geometrodynamics permits the two possibilities to happen.</p>
+<p>Which, so far, sounds like just classical mechanics. But in CM the geon does not
 have two ends connected by an ER=EPR bridge, so in CM it simply does not have
-the option of &ldquo;going through both slits.&rdquo;</p><blockquote><p>An entangled particle does have this option. But here &ldquo;entangled&rdquo; means <strong>self-entangled</strong>,
-not entangled with another geon.</p></blockquote><p>The lesson of T4G theory (if it has any truthful lessons) is that
+the option of &ldquo;going through both slits.&rdquo;</p>
+<blockquote>
+<p>An entangled particle does have this option. But here &ldquo;entangled&rdquo; means <strong>self-entangled</strong>,
+not entangled with another geon.</p>
+</blockquote>
+<p>The lesson of T4G theory (if it has any truthful lessons) is that
 Susskind and Maldacena were right, and all entanglement is non-trivial spacetime topology.
 Or as Renata Loll described it: &ldquo;filament structure&rdquo; of spacetime geometry
 &mdash; an apt verbiage because the minimal EPR wormholes are as thin as you can imagine
 (basically a lot like strings, but with only qubit degrees of freedom,
-not CY manifold freedoms).</p><h2 id=todo><a class=anchor href=#todo title='Anchor for: todo.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>todo</h2><pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished.  Work in progress.]
-</code></pre><h2 id=caveats><a class=anchor href=#caveats title='Anchor for: Caveats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Caveats</h2><p>This is one of my more speculative chapters, so since they&rsquo;re all speculative
+not CY manifold freedoms).</p>
+<h2 id=todo><a class=anchor href=#todo title="Anchor for: todo."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> todo</h2>
+<pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished.  Work in progress.]
+</code></pre>
+<h2 id=caveats><a class=anchor href=#caveats title="Anchor for: Caveats."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Caveats</h2>
+<p>This is one of my more speculative chapters, so since they&rsquo;re all speculative
 it is pretty &ldquo;out there&rdquo; &mdash;so <em>speculative</em> speculation. But I was heartened
 by the laboratory achievements of Daniel Jafferis, Maria Spiropulu, Alex Zlokapa
 and colleagues, which are amazing baby steps towards laboratory
-exploration of spacetime topology fine structure.</p><p>But I think the story of two-slit interference has not been finished.
+exploration of spacetime topology fine structure.</p>
+<p>But I think the story of two-slit interference has not been finished.
 I just had to put forward an alternative to O&rsquo;Hara that better fits,
 as far as I can tell, with T4G premises. I&rsquo;d be happy to hear from readers who
-think there is an even nicer way to account for single geon interference.</p><p>Three slit interference is just on the border of being experimentally discernable${}^\ast$.
+think there is an even nicer way to account for single geon interference.</p>
+<p>Three slit interference is just on the border of being experimentally discernable${}^\ast$.
 The issue for $n>3$ slit interference is whether the coupling is only ever pair-wise,
 so that the interference terms are from a sum over <strong><em>only</em></strong> pairs of slits,
 or whether the Feynman-Hibbs Sum Over Histories has any gritty teeth in
 predicting three, four and all $n>2$ slits can interfere? No one really yet knows.
 But the <a href=https://arxiv.org/pdf/1112.2665 target=_blank>available experiments</a>
-suggest full-blown SOH is probably wrong.</p><p>What that means is that not all possible paths really do occur in nature,
+suggest full-blown SOH is probably wrong.</p>
+<p>What that means is that not all possible paths really do occur in nature,
 just &ldquo;an awful lot of them.&rdquo; Which, by the way, seems to rule out Many Worlds and
-Deutsch parallel worlds, at least to my mind.</p><p>${}^\ast$ <a href=https://arxiv.org/pdf/1112.2665 target=_blank>De Readt et al (2012)</a>
+Deutsch parallel worlds, at least to my mind.</p>
+<p>${}^\ast$ <a href=https://arxiv.org/pdf/1112.2665 target=_blank>De Readt et al (2012)</a>
 seem to conclude multi-slit interference is non-zero (in accord with SOH).
 <a href=https://arxiv.org/pdf/1007.4193 target=_blank>Sinha et al (2010)</a>
 seem to think there is no $n>2$ way interference.
@@ -96,13 +212,17 @@ experiment cannot really tell the difference, or that at least the so-called
 coupling (entanglement) interference.
 <a href=https://www.nature.com/articles/ncomms13987 target=_blank>Magaña et al (2016)</a>
 provide some experimental support for existence of &ldquo;exotic looped trajectories&rdquo;
-that can give rise to observable three-way interference patterns, these are very subtle.</p><p>For what it is worth, Magaña et al, obtain extra sensitivity by examining the <em>near field</em> components of the electromagnetic waves. They claim to see evidence for the exotic loops, which cannot be explained using the conventional naïve Born rule with pair-wise entanglement.
-But the Born rule still holds provided one sums all possible Feynman-Hibbs paths.</p><p>For myself, I&rsquo;m agnostic, because T4G theory accords with two-way only interference
+that can give rise to observable three-way interference patterns, these are very subtle.</p>
+<p>For what it is worth, Magaña et al, obtain extra sensitivity by examining the <em>near field</em> components of the electromagnetic waves. They claim to see evidence for the exotic loops, which cannot be explained using the conventional naïve Born rule with pair-wise entanglement.
+But the Born rule still holds provided one sums all possible Feynman-Hibbs paths.</p>
+<p>For myself, I&rsquo;m agnostic, because T4G theory accords with two-way only interference
 (since entanglement is monogamous in T4G too), but also permits multi-slit terms
 <em>à la</em> SOH because of atemporal wormhole gas effects.
-What we do not know in T4G theory is the magnitude of significance of the wormhole gas.</p><p>There is still monogamy of entanglement in the T4G picture. The exotic Feynman-Hibbs
+What we do not know in T4G theory is the magnitude of significance of the wormhole gas.</p>
+<p>There is still monogamy of entanglement in the T4G picture. The exotic Feynman-Hibbs
 paths can occur extremely rarely, but they only create entanglement between different
-paths, they do not generate any extra exotic entanglement.</p><p>Once again, and as Magaña et al obliquely hint at, the critical phenomenology is
+paths, they do not generate any extra exotic entanglement.</p>
+<p>Once again, and as Magaña et al obliquely hint at, the critical phenomenology is
 the imposed measurement boundary conditions. QM is a Measurement Theory,
 it is <strong><em>not</em></strong> a wave-particle dual ontology theory.
 If one conducts a three-slit experiment where exotic looped trajectories are blindly
@@ -110,12 +230,34 @@ detected, then their effects will not be observed and the SOH calculation will b
 but not because SOH is incorrect,
 rather because one has to then change the simple SOH computation to one that excludes
 the exotic loops, and that&rsquo;s simply because one has changed the measurement boundary
-conditions, not because SOH is wrong.</p><p>Some of the philosophy chapters delved into slightly more exotic alternatives,
+conditions, not because SOH is wrong.</p>
+<p>Some of the philosophy chapters delved into slightly more exotic alternatives,
 such as considering how a vacuum wormhole gas could statistically also contribute
 or account for self-interference of single geons.
 I am still very open to that avenue of thinking.
 Recall that this is along the lines of the &ldquo;universal reservoir for action&rdquo;
 ideas of Lisi, Baez, Munkhammer and Pollard, for which one needs to motivate
 geometric probability amplitudes &mdash; in order to turn statistical mechanics into
-quantum mechanics.</p><p><a href=../010_hestenes_spinors>Next chapter (Hestenes Spinors)</a><br><a href=../008_pauli_in_ga>Previous chapter (Pauli Exclusion in GA)</a><br><a href=../>Back to Theory TOC</a></p></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.5e5e5e3f11510a5488490612ff5c36a48c133ae81bb9d2e4e5c377309de5ece2.js integrity="sha256-Xl5ePxFRClSISQYS/1w2pIwTOugbudLk5cN3MJ3l7OI=" crossorigin=anonymous></script>
-<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
+quantum mechanics.</p>
+<p><a href=../010_hestenes_spinors>Next chapter (Hestenes Spinors)</a>
+<br>
+<a href=../008_pauli_in_ga>Previous chapter (Pauli Exclusion in GA)</a>
+<br>
+<a href=../>Back to Theory TOC</a>
+</p>
+</article>
+</main>
+</div>
+<footer>
+<div class=req-js>
+<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
+</div>
+<noscript>
+<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
+</noscript>
+</footer>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
+<script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
+<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
+</body>
+</html>

@@ -1,5 +1,107 @@
-<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.119.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Dirac-Hestenes-Greider Spinors | Topological 4-Geon Theory Unchained</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/010_hestenes_spinors/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Dirac-Hestenes-Greider Spinors"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/010_hestenes_spinors/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
-<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Dirac-Hestenes-Greider Spinors</h1><p>Published on <time datetime=2016-12-04>2016-12-04</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#spinor-fields-and-geons>Spinor Fields and Geons</a></li><li><a href=#prerequisites>Prerequisites</a><ul><li><a href=#warnings-on-the-metric-signature>Warnings on the metric signature</a></li><li><a href=#boomerangs>Boomerangs</a></li></ul></li><li><a href=#how-then-to-proceed>How then to proceed?</a><ul><li><a href=#using-noethers-theorem>Using Noether&rsquo;s Theorem?</a></li><li><a href=#the-spacetime-element>The spacetime element</a></li><li><a href=#the-geometric-algebra-expression-for-relativity>The geometric algebra expression for relativity</a></li></ul></li><li><a href=#spacetime-spinors>Spacetime Spinors</a></li><li><a href=#the-basic-mapping-from-phirangle-mapsto-sqrtrhor>The basic mapping from $|\phi\rangle \mapsto \sqrt{\rho}R$</a></li><li><a href=#caveats>Caveats</a><ul><li><a href=#fractal-spacetime>Fractal spacetime?</a></li></ul></li><li><a href=#summary-dirac-hestenes>Summary of Dirac-Hestenes Algebra in STA</a></li><li><a href=#caveats-1>Caveats</a></li></ul></nav></details><p>This is going to be a loooong chapter, buckle up, grab a drink, permit a few days of eyeball time (unless you are some sort of savant).</p><p>The promise is that after some exciting diversions in NRQM, that were foundational
+<!doctype html><html lang=en data-mode=dark>
+<head prefix="og: http://ogp.me/ns#">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+<title>Dirac-Hestenes-Greider Spinors | Topological 4-Geon Theory Unchained</title>
+<meta name=author content="Bijou M. Smith">
+<meta name=robots content="index follow">
+<link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/010_hestenes_spinors/>
+<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
+<meta property="og:title" content="Dirac-Hestenes-Greider Spinors">
+<meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/010_hestenes_spinors/">
+<meta property="og:type" content="website">
+<meta name=twitter:dnt content="on">
+<meta name=theme-color content="#222">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="default">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
+<noscript>
+<meta name=theme-color content="#26A269">
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
+</noscript>
+<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script src=https://t4gu.gitlab.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<a href=/t4gu> <img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
+<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
+<nav aria-label="Main menu.">
+<ul>
+<li>
+<a class=btn href=/t4gu/t4gu/>Home</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=filler>
+<main>
+<article>
+<header>
+<h1>Dirac-Hestenes-Greider Spinors</h1>
+<p>
+Published on <time datetime=2016-12-04>2016-12-04</time>
+</p>
+</header>
+<details class=toc open>
+<summary class=outline-dashed>
+Contents
+</summary>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#spinor-fields-and-geons>Spinor Fields and Geons</a></li>
+<li><a href=#prerequisites>Prerequisites</a>
+<ul>
+<li><a href=#warnings-on-the-metric-signature>Warnings on the metric signature</a></li>
+<li><a href=#boomerangs>Boomerangs</a></li>
+</ul>
+</li>
+<li><a href=#how-then-to-proceed>How then to proceed?</a>
+<ul>
+<li><a href=#using-noethers-theorem>Using Noether&rsquo;s Theorem?</a></li>
+<li><a href=#the-spacetime-element>The spacetime element</a></li>
+<li><a href=#the-geometric-algebra-expression-for-relativity>The geometric algebra expression for relativity</a></li>
+</ul>
+</li>
+<li><a href=#spacetime-spinors>Spacetime Spinors</a></li>
+<li><a href=#the-basic-mapping-from-phirangle-mapsto-sqrtrhor>The basic mapping from $|\phi\rangle \mapsto \sqrt{\rho}R$</a></li>
+<li><a href=#caveats>Caveats</a>
+<ul>
+<li><a href=#fractal-spacetime>Fractal spacetime?</a></li>
+</ul>
+</li>
+<li><a href=#summary-dirac-hestenes>Summary of Dirac-Hestenes Algebra in STA</a></li>
+<li><a href=#caveats-1>Caveats</a></li>
+</ul>
+</nav>
+</details>
+<p>This is going to be a loooong chapter, buckle up, grab a drink, permit a few days of eyeball time (unless you are some sort of savant).</p>
+<p>The promise is that after some exciting diversions in NRQM, that were foundational
 for T4G theory, we now want to see if Dirac spinors
 (four component complex column vectors)
 exist in timespace algebra with the same algebra as the Dirac matrices.
@@ -7,77 +109,108 @@ The <em>Dirac matrices</em> ($\hat{\gamma}_\mu$) being the basis for the
 linear operators which act on the
 <em>Dirac spinors</em> ($|\phi\rangle$).
 The Dirac spinors being the solutions to Dirac&rsquo;s Equation in relativistic
-single-particle quantum mechanics.</p><p>Along the way we will find plenty of insights into the nature of spinors,
+single-particle quantum mechanics.</p>
+<p>Along the way we will find plenty of insights into the nature of spinors,
 including more realist interpretations, that were hardly possible
-(hard to discern) before Hestenes came up with the timespace algebra (STA) approach.</p><h2 id=spinor-fields-and-geons><a class=anchor href=#spinor-fields-and-geons title='Anchor for: Spinor Fields and Geons.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Spinor Fields and Geons</h2><p>Up front I want to emphasis T4G theory views the topological 4-geons as fundamental
+(hard to discern) before Hestenes came up with the timespace algebra (STA) approach.</p>
+<h2 id=spinor-fields-and-geons><a class=anchor href=#spinor-fields-and-geons title="Anchor for: Spinor Fields and Geons."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Spinor Fields and Geons</h2>
+<p>Up front I want to emphasis T4G theory views the topological 4-geons as fundamental
 (not that we can prove this is the true ontology, but just that is a working
 assumption if one is doing T4G theory). However, we make extensive use of the study
-of spinor fields. Why?</p><p>It is because we regard the spinor fields as <em>not</em> &ldquo;the particles&rdquo; but as
+of spinor fields. Why?</p>
+<p>It is because we regard the spinor fields as <em>not</em> &ldquo;the particles&rdquo; but as
 instructions that we need to model experiments, in particular the spinors are
 transformation of the other operators. In the STA (or any Clifford algebra you care
 to use as a geometric algebra for studying physics) the linear operators do not
 occupy a separate space, they can be constructed from the elements of the Clifford
 algebra itself, as previous chapters have shown. This, to our minds, is what makes it
 intellectually a little bit more comprehensible to think of the fields $\psi$ as
-instructions.</p><p>The instructions of course can be applied anywhere in spacetime, <em>which is why they
+instructions.</p>
+<p>The instructions of course can be applied anywhere in spacetime, <em>which is why they
 are fields!</em> This, conceptually, corresponds to the fact we can (with enough effort)
-perform a measurement anywhere in spacetime (in principle).</p><p>You do not have to like this interpretation of the spinors. I am not asking you to
+perform a measurement anywhere in spacetime (in principle).</p>
+<p>You do not have to like this interpretation of the spinors. I am not asking you to
 like it, but you will need to accept it to contribute to T4G theory (you might
 contribute by debunking the whole T4G program, please do try if you like that
-approach!).</p><p>Just like in the Pauli theory we ended up realizing the spinors were
+approach!).</p>
+<p>Just like in the Pauli theory we ended up realizing the spinors were
 &ldquo;instructions to dilate and rotate some object&rdquo; and the &ldquo;objects&rdquo;
 so acted upon were our <em>abstract</em> measurement frames and operators,
-so too we will have exactly the same interpretation for the Dirac spinors.</p><p>That is to say, it&rsquo;s the spinors $|\phi\rangle$ that perform the process of a
+so too we will have exactly the same interpretation for the Dirac spinors.</p>
+<p>That is to say, it&rsquo;s the spinors $|\phi\rangle$ that perform the process of a
 Lorentz transform boost (or rotation), and the objects they act upon
 (the operators in QM) were the <em>physical stuff</em>, more or less, crudely speaking.
 Although by &ldquo;physical stuff&rdquo; in this context we really mean measurement instruments
 and that sort of thing, which includes the 4-geons because they are what get
-entangled with the measurement instruments.</p><p>The 4-geons though <em>themselves</em> almost fade into the background in this perspective,
-since we are describing them statistically in QM.</p><blockquote><p>This answers Sir Michael Atiya&rsquo;s ancient riddle of quantum lore,
-&ldquo;<em>What the hell are spinors, yo?</em>&rdquo;</p></blockquote><p>((There&rsquo;s a very geeky joke in there for those galaxy brained readers who
-need a laugh.))</p><p>Although this <em>seems</em> like merely a mathematical extension of Pauli theory,
+entangled with the measurement instruments.</p>
+<p>The 4-geons though <em>themselves</em> almost fade into the background in this perspective,
+since we are describing them statistically in QM.</p>
+<blockquote>
+<p>This answers Sir Michael Atiya&rsquo;s ancient riddle of quantum lore,
+&ldquo;<em>What the hell are spinors, yo?</em>&rdquo;</p>
+</blockquote>
+<p>((There&rsquo;s a very geeky joke in there for those galaxy brained readers who
+need a laugh.))</p>
+<p>Although this <em>seems</em> like merely a mathematical extension of Pauli theory,
 it will turn out much later on in our T4GU explorations,
 that it&rsquo;s not such a trivial thing to explore Dirac theory,
 even if you&rsquo;re not a relativist.
 That&rsquo;s because grokking how the Dirac matrices are pure <strong><em>classical</em></strong>
 spacetime geometry, sets you up nicely for brain re-wiring that can accept the
 Gell-Mann &ldquo;gamma matrices&rdquo; are also elements of classical geometry,
-once written in terms of spacetime algebra.</p><p>&ldquo;Where does that go&mldr;?&rdquo; you ask, &ldquo;&mldr; chromodynamics?&rdquo;</p><p>Why yes it does!</p><p>But we&rsquo;re not even close to that yet.</p><h2 id=prerequisites><a class=anchor href=#prerequisites title='Anchor for: Prerequisites.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Prerequisites</h2><p>You should go through the <a href=../004_geometric_algebra>geometric algebra</a>
+once written in terms of spacetime algebra.</p>
+<p>&ldquo;Where does that go&mldr;?&rdquo; you ask, &ldquo;&mldr; chromodynamics?&rdquo;</p>
+<p>Why yes it does!</p>
+<p>But we&rsquo;re not even close to that yet.</p>
+<h2 id=prerequisites><a class=anchor href=#prerequisites title="Anchor for: Prerequisites."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Prerequisites</h2>
+<p>You should go through the <a href=../004_geometric_algebra>geometric algebra</a>
 and <a href=../005_spacetime_algebra>spacetime algebra (STA)</a>
-basics.</p><p>In order to better understand and cement the lessons from the previous few chapters on
+basics.</p>
+<p>In order to better understand and cement the lessons from the previous few chapters on
 Pauli Exclusion and entanglement, I offer this chapter and the next as
 auxiliary pedagogy for those unfamiliar with the geometric algebra (GA)
 approach to spin in quantum theory.
 I will try to re-emphasise a few points as we go (for learning, ok)
 and one of them is the idea that in the spacetime algebra (STA) we can usually
 think of 4-geon spin as a real spacetime property, so <em>not</em> as some internal space
-that just &ldquo;happens&rdquo; to have the same algebra as angular momentum.</p><p>Closely related to this is the idea spin in T4G is not discrete.</p><p>Closely related to <em>that</em> is the idea that the &ldquo;quantum weirdness&rdquo; of spin involves
+that just &ldquo;happens&rdquo; to have the same algebra as angular momentum.</p>
+<p>Closely related to this is the idea spin in T4G is not discrete.</p>
+<p>Closely related to <em>that</em> is the idea that the &ldquo;quantum weirdness&rdquo; of spin involves
 the conservative thinking weirdness of spacetime topology.
 In other words, we are seeking a sort of mini grand synthesis of quantum mechanics
 with special relativity that avoids the need to introduce fictional field variables
-and one that has a realistic interpretation.</p><p>The final main thing I want to often repeat for emphasis is the understanding
+and one that has a realistic interpretation.</p>
+<p>The final main thing I want to often repeat for emphasis is the understanding
 that none of this is a claim for a fundamental theory of physics.
 T4G is just offering a realistic way to interpret quantum mechanics.
 Hopefully in the future experiments will be possible to test T4G theory,
 but today the Planck scale structure (wormhole topology) that T4G postulates is
-simply not accessible to our measurement instruments, except highly indirectly.</p><p>Thus, all the theory I write, borrowing the STA concepts and the realism of the
-Cambridge GA groups and of David Hestenes, is all provisional stuff.</p><p>Hestenes has published numerous reviews of his on work, one of the nicer shorter
+simply not accessible to our measurement instruments, except highly indirectly.</p>
+<p>Thus, all the theory I write, borrowing the STA concepts and the realism of the
+Cambridge GA groups and of David Hestenes, is all provisional stuff.</p>
+<p>Hestenes has published numerous reviews of his on work, one of the nicer shorter
 accounts is the paper on
 <a href=http://geocalc.clas.asu.edu/pdf-preAdobe8/REAL_DIRAC.pdf target=_blank>Real Dirac Theory</a>
 and the more recent review is the new edition of the book
 <a href=https://link.springer.com/content/pdf/10.1007/978-3-319-18413-5.pdf target=_blank>Spacetime Algebra</a>
 (which should really be called Timespace algebra)
 for which there is a free tier version in the paper
-<a href=http://reprints.gravitywaves.com/AJP/Hestenes-2002_SpacetimePhysicsWithGeometricAlgebra.pdf target=_blank>Spacetime physics with geometric algebra.</a></p><p>Lastly for this intro, the T4G paradigm adds even more realism to the GA/Hestenes
+<a href=http://reprints.gravitywaves.com/AJP/Hestenes-2002_SpacetimePhysicsWithGeometricAlgebra.pdf target=_blank>Spacetime physics with geometric algebra.</a>
+</p>
+<p>Lastly for this intro, the T4G paradigm adds even more realism to the GA/Hestenes
 approaches, since in T4G we think we know where entanglement and single particle
-interference, and hence all &ldquo;weird&rdquo; quantum effects, come from (ER=EPR).</p><p>Some people might criticize all this as being a massive hedge.
+interference, and hence all &ldquo;weird&rdquo; quantum effects, come from (ER=EPR).</p>
+<p>Some people might criticize all this as being a massive hedge.
 But that&rsquo;s a bit unfair.
 I&rsquo;m just being honest in thinking;
 (a) I think T4G has something true to say about physics,
 and (b) I do not think I fully understand T4G theory implications.
-I&rsquo;m not really hedging on (a).</p><h3 id=warnings-on-the-metric-signature><a class=anchor href=#warnings-on-the-metric-signature title='Anchor for: Warnings on the metric signature.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Warnings on the metric signature</h3><p>I, by far, prefer the GR convention signature, $(- + +\, +)$ (the timespace
+I&rsquo;m not really hedging on (a).</p>
+<h3 id=warnings-on-the-metric-signature><a class=anchor href=#warnings-on-the-metric-signature title="Anchor for: Warnings on the metric signature."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Warnings on the metric signature</h3>
+<p>I, by far, prefer the GR convention signature, $(- + +\, +)$ (the timespace
 metric??). I could of course use a metric $(+ + + -)$ and call this the
-spacetime algebra, and that is what I wil l do.</p><p>But Hestenes got in first and used $(+ - -\, - )$ for his
+spacetime algebra, and that is what I wil l do.</p>
+<p>But Hestenes got in first and used $(+ - -\, - )$ for his
 &ldquo;Spacetime&rdquo; Algebra book, but I will not concede, this West coast metric has to be
 the Timespace Algebra (TSA), since this is in accordance with Cliffordian convention:
 $$
@@ -87,20 +220,30 @@ C\ell(3,1)\!\! &\Rightarrow \text{diag}\,\, \eta_{\mu\nu} \sim (- + +\, + ).
 \end{array}
 $$
 The latter is of course often written $(+ + +\, -)$ but this truly <em>is</em> a difference without a difference.
-So the algebra I mostly try to stick with is really the <em>proper</em> STA, the East coast metric or $(- + +\, +)$.</p><p>This puts us at odds with the vast bulk of spacetime algebra
+So the algebra I mostly try to stick with is really the <em>proper</em> STA, the East coast metric or $(- + +\, +)$.</p>
+<p>This puts us at odds with the vast bulk of spacetime algebra
 literature, which is very unfortunate, because although there are no known physical
 differences in the choice of metric signature, the geometric algebra that results is
 <strong><em>not isomorphic</em></strong>. You can reference the
-<a href=https://en.wikipedia.org/wiki/Classification_of_Clifford_algebras#Classification target=_blank>classifications here on Wikipedia.</a></p><p>With $p=$the positive metric components, and $q=$ the negative, we have the Clifford algebras $C\ell(p,q)$, in this scheme,</p><ul><li>$C\ell(1,3)$ is the $(+ - -\, -)$ Hestenes timespace algebra, which is isomorphic
-to the matrix algebra $M_2(\mathbb{H})$ (real $2\times 2$ matrices over the quaternions.</li><li>The spacetime algebra $C\ell(3,1)$ with $p=3, q=1$ and signature $(- + +\, +)$ is isomorphic to the matrix algebra $M_4(\mathbb{R})$ ($4\times 4$ matrices over the reals).</li></ul><p>It sounds like it morally <em>ought</em> to have some physical difference, and to my
+<a href=https://en.wikipedia.org/wiki/Classification_of_Clifford_algebras#Classification target=_blank>classifications here on Wikipedia.</a>
+</p>
+<p>With $p=$the positive metric components, and $q=$ the negative, we have the Clifford algebras $C\ell(p,q)$, in this scheme,</p>
+<ul>
+<li>$C\ell(1,3)$ is the $(+ - -\, -)$ Hestenes timespace algebra, which is isomorphic
+to the matrix algebra $M_2(\mathbb{H})$ (real $2\times 2$ matrices over the quaternions.</li>
+<li>The spacetime algebra $C\ell(3,1)$ with $p=3, q=1$ and signature $(- + +\, +)$ is isomorphic to the matrix algebra $M_4(\mathbb{R})$ ($4\times 4$ matrices over the reals).</li>
+</ul>
+<p>It sounds like it morally <em>ought</em> to have some physical difference, and to my
 mind maybe it will, but only in the very esoteric stuff, which involves the
 gauge groups and their representatives in the geometric algebra of timespace
 versus spacetime. Although, I am not currently aware that there are any
 fundamental physical differences that are experimentally observable. It is just
-a possibility <em>because</em> the geometric algebras differ.</p><p>You might ask, who decreed that physics depends upon the spacetime algebra versus the
+a possibility <em>because</em> the geometric algebras differ.</p>
+<p>You might ask, who decreed that physics depends upon the spacetime algebra versus the
 timespace algebra? My answer is that I do not know, and I am not sure there is a
 difference, but if &ldquo;the universe&rdquo; is a &ldquo;mathematical thing&rdquo; then there could easily
-be a physical difference.</p><p>The first papers I know of where the $(- + +\, +)$ metric was pointed out as the
+be a physical difference.</p>
+<p>The first papers I know of where the $(- + +\, +)$ metric was pointed out as the
 only way to factorize the Klein-Gordon equation without introducing a spurious unit
 imaginary (also what I would call the pure Clifford approach) is
 <a href=/home/geon/papers/GeomAlgebra/GAParticlePhysics/Greider_1984_A.unifying.Clifford.algebra.formalism.for.relativistic.fields.pdf>Kenneth Greider (1984)</a>
@@ -108,52 +251,73 @@ imaginary (also what I would call the pure Clifford approach) is
 So I&rsquo;m calling our spinors Hestenes-Greider. Hestenes used the $M_2(\mathbb{H})$
 timespace algebra, which is funny because elsewhere the geometric algebra research
 groups like to point out the quaternions are a left-handed system (hence implying
-they&rsquo;re &ldquo;a bit stupid&rdquo;).</p><p>For the development of Dirac spinor theory this is all a pain in the neck, because
+they&rsquo;re &ldquo;a bit stupid&rdquo;).</p>
+<p>For the development of Dirac spinor theory this is all a pain in the neck, because
 the Dirac spinor equations are sensitive to these algebraic differences.
 Apparently there is a covariant way to write down the Dirac Theory
 <a href=https://arxiv.org/pdf/gr-qc/970404 target=_blank>see Pezzaglia (1997)</a>
 which is insensitive to
-these differences, and some day I hope to write about that approach.</p><p>Other references are:</p><ul><li><a href=https://link.springer.com/article/10.1007/BF01883677 target=_blank>Lounesto (1993)</a>
+these differences, and some day I hope to write about that approach.</p>
+<p>Other references are:</p>
+<ul>
+<li><a href=https://link.springer.com/article/10.1007/BF01883677 target=_blank>Lounesto (1993)</a>
 &mdash; goes
 through the transform between signatures without need to use the complex imaginary,
-Lounesto coined this transform the <strong>Tilt</strong>.</li><li><a href=https://arxiv.org/pdf/math-ph/0003041 target=_blank>Miralles and Parra (2000)</a>
+Lounesto coined this transform the <strong>Tilt</strong>.</li>
+<li><a href=https://arxiv.org/pdf/math-ph/0003041 target=_blank>Miralles and Parra (2000)</a>
 &mdash; show what
 they call a &ldquo;simulation&rdquo; of one Clifford algebra in it&rsquo;s opposite signature.
 I do not yet fully know what that means, but since $C\ell(1,3)$ and $C\ell(3,1)$ are
 not isomorphic I guess it can mean something interesting. Formally all it means is
-introducing a new operator, which Miralles calls the &ldquo;vee product.&rdquo; Big deal. Well, maybe a little big deal but certainly not a huge big deal${}^\ast$.</li><li>See also <a href=https://aip.scitation.org/doi/abs/10.1063/1.2375037 target=_blank>Botman and Joyce (2000)</a>
+introducing a new operator, which Miralles calls the &ldquo;vee product.&rdquo; Big deal. Well, maybe a little big deal but certainly not a huge big deal${}^\ast$.</li>
+<li>See also <a href=https://aip.scitation.org/doi/abs/10.1063/1.2375037 target=_blank>Botman and Joyce (2000)</a>
 ,
 who motivate a geometric equivalence that is not
 algebraic equivalence, so this is a view that the physics might be the same,
-provided the physics is <em>only</em> sensitive to geometry, not to the full algebra.</li></ul><p>${}^\ast$On this second paper by Miralles et al., the existence of their
+provided the physics is <em>only</em> sensitive to geometry, not to the full algebra.</li>
+</ul>
+<p>${}^\ast$On this second paper by Miralles et al., the existence of their
 &ldquo;vee product&rdquo; operator $\vee$, just means that there is a description of a Minkowski
 metric within the Euclidean space.
 So it amounts to something like a Wick rotation, but the significance is they get
 this &ldquo;rotation&rdquo; without introducing an external unit imaginary, they then do the same
 for $C\ell(1,3)$ to obtain $C\ell(3,1)$, showing the descriptive powers of each
-algebra are the same. Similar to Lounesto&rsquo;s Tilt transform.</p><p>Mathematics however has no concept of &ldquo;expressive power&rdquo; &mdash; which is a relation
+algebra are the same. Similar to Lounesto&rsquo;s Tilt transform.</p>
+<p>Mathematics however has no concept of &ldquo;expressive power&rdquo; &mdash; which is a relation
 between mathematical structure and a physical (or other) sort of <em>concrete</em> reality.
-So these results are interesting mathematical physics.</p><p>On the last point concerning the Botman and Joyce paper, I consider this a highly
+So these results are interesting mathematical physics.</p>
+<p>On the last point concerning the Botman and Joyce paper, I consider this a highly
 interesting physics question!
-<em>Is physics in our universe sensitive to the entire algebra of spacetime (timespace) and not just to the geometry (qua Botman and Joyce)?</em></p><p>I do not think anyone can know the answer at this point in science history.</p><p>However, there is a way in which T4G theory might suggest physics is sensitive to the
+<em>Is physics in our universe sensitive to the entire algebra of spacetime (timespace) and not just to the geometry (qua Botman and Joyce)?</em></p>
+<p>I do not think anyone can know the answer at this point in science history.</p>
+<p>However, there is a way in which T4G theory might suggest physics is sensitive to the
 algebra, which would be through the topology, which goes beyond the smooth spacetime
 symmetry geometry. If non-trivial topology makes a difference that shows up
 algebraically, but not in the locally Minkowski geometry, then we might possibly have
 a reason for thinking the metric signature is an empirically determinable piece of
 information. It would mean the Hestenes spinor theory is perfectly fine, but also a
-&ldquo;a little bit dumb.&rdquo;</p><p>Which brings us to the meat & potatoes of this chapter, and the pedagogical head
-scratch of how to begin.</p><h3 id=boomerangs><a class=anchor href=#boomerangs title='Anchor for: Boomerangs.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Boomerangs</h3><p>I could not resist mentioning one delightful consequence of
+&ldquo;a little bit dumb.&rdquo;</p>
+<p>Which brings us to the meat & potatoes of this chapter, and the pedagogical head
+scratch of how to begin.</p>
+<h3 id=boomerangs><a class=anchor href=#boomerangs title="Anchor for: Boomerangs."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Boomerangs</h3>
+<p>I could not resist mentioning one delightful consequence of
 <a href=https://link.springer.com/article/10.1007/BF01883677 target=_blank>Lounesto's approach</a>
 ,
 which is that he discovers a new variety of spinor, distinct from the Dirac, Weyl and
-Majorana spinors, which he dubs a <em>Boomerang</em>.</p><p>There is another curiosity, the so-called ELKO spinor, which introduces a sign difference between charge-conjugate pairs.</p><p>Whether these spinors are realized in nature or not is unknown, but I thought it worth
+Majorana spinors, which he dubs a <em>Boomerang</em>.</p>
+<p>There is another curiosity, the so-called ELKO spinor, which introduces a sign difference between charge-conjugate pairs.</p>
+<p>Whether these spinors are realized in nature or not is unknown, but I thought it worth
 quickly highlighting. OK, got that off my chest. Now to scratch the head about where
-to begin with spinors.</p><h2 id=how-then-to-proceed><a class=anchor href=#how-then-to-proceed title='Anchor for: How then to proceed?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>How then to proceed?</h2><p>I have delayed writing this chapter on spinors because I want to use the proper
+to begin with spinors.</p>
+<h2 id=how-then-to-proceed><a class=anchor href=#how-then-to-proceed title="Anchor for: How then to proceed?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> How then to proceed?</h2>
+<p>I have delayed writing this chapter on spinors because I want to use the proper
 spacetime metric $(- + +\, +)$, but most of the Hestenes spinor theory uses the
 timespace metric $(+ - - \, -)$, and we know now that there will be annoying
-algebraic differences.</p><p>For the time being what I ended up doing is trying to develop the Hestenes theory
+algebraic differences.</p>
+<p>For the time being what I ended up doing is trying to develop the Hestenes theory
 using the spacetime metric. A couple of changes in sign and definitions for one or
-two of the involutions are needed, but I think not too much more.</p><p>What I quite liked was
+two of the involutions are needed, but I think not too much more.</p>
+<p>What I quite liked was
 <a href="https://scholar.uwindsor.ca/cgi/viewcontent.cgi?article=8848" target=_blank>Keselica's pedagogical approach</a>
 which starts with the free electron, which is a simple equation to motivate,
 expressing a spacetime relativistic identity, <a name=Eq.1>(Eq.1)</a>
@@ -168,14 +332,17 @@ Recall the reason for working with the linear relation <a href=#Eq.2>Eq.2</a>
 is for
 quantum mechanics, our theory of measurements. We could use the quadratic
 Klein-Gordon equation too, based on $p^2=m^2$, but it does not describe fermions,
-because the symmetries of Klein-Gordon fields are spin$=0$.</p><p>The linear relation for the equation of state for $\psi$ is what we need for
+because the symmetries of Klein-Gordon fields are spin$=0$.</p>
+<p>The linear relation for the equation of state for $\psi$ is what we need for
 developing superpositions for spin-$\tfrac{1}{2}$ states, which is what we want in
-order to compute orthodox quantum mechanics.</p><p>I do not want to get too heavily into the philosophy here, so we can regard the
+order to compute orthodox quantum mechanics.</p>
+<p>I do not want to get too heavily into the philosophy here, so we can regard the
 search for a linear relation expressing the relativistic mass-energy relation as
 &ldquo;empirically imposed&rdquo; by the fact we observe superpositions in nature.
 This nicely side-steps most of the philosophy. But, of course, waves
 in a medium will superpose even if they are solutions to non-linear wave
-equations, so this empiricism is not really enough justification.</p><p>What we are <em>really</em> demanding is a Measurement Theory (Quantum Mechanics), not
+equations, so this empiricism is not really enough justification.</p>
+<p>What we are <em>really</em> demanding is a Measurement Theory (Quantum Mechanics), not
 a phase space trajectory theory. So it is <em>really</em> measurement outcomes that we
 wish to model with the eigenfunction equations. Superposition is then a matter
 of presuming all possible measurement outcomes must be present in any solution
@@ -197,75 +364,104 @@ By imposing this particular choice we are using up some freedoms, and the
 a linear eigenfunction equation <a href=#Eq.2>Eq.2</a>
 . For spin$=0$ states we&rsquo;d be ok
 using the Klein-Gordon <a href=#Eq.1>Eq.1</a>
-.</p><p>In summary, it is by our free choice of how we want to &ldquo;do physics&rdquo; &mdash; with a
+.</p>
+<p>In summary, it is by our free choice of how we want to &ldquo;do physics&rdquo; &mdash; with a
 measurement theory &mdash; that we choose weighted linear sum solutions of the form
 <a href=#Eq.3>Eq.3</a>
 (or the integral form for continuous state spaces). The further
 choice of whether to study spin-$\tfrac{1}{2}$ or spin-$0$ states imposes the form
-of the relativistic mass-energy relation we use.</p><p>We can in retrospect note that nature forced our hand for the first choice:
+of the relativistic mass-energy relation we use.</p>
+<p>We can in retrospect note that nature forced our hand for the first choice:
 we cannot seem to find a nice complete phase space theory for quantum physics.
 QM in a phase space gets very weird, because it cannot be directly related to the
-physical space of classical mechanics.</p><p>Provided we use a Measurement State space instead then no such problem occurs
+physical space of classical mechanics.</p>
+<p>Provided we use a Measurement State space instead then no such problem occurs
 for any known quantum phenomena (here we mean: the photoelectric effect, single
-photon interference, electron diffraction, Bell-Aspect experiments and whatnot).</p><h3 id=using-noethers-theorem><a class=anchor href=#using-noethers-theorem title='Anchor for: Using Noether&rsquo;s Theorem?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Using Noether&rsquo;s Theorem?</h3><p>Noether&rsquo;s Theorem in classical mechanics relates conserved quantities to
+photon interference, electron diffraction, Bell-Aspect experiments and whatnot).</p>
+<h3 id=using-noethers-theorem><a class=anchor href=#using-noethers-theorem title="Anchor for: Using Noether&rsquo;s Theorem?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Using Noether&rsquo;s Theorem?</h3>
+<p>Noether&rsquo;s Theorem in classical mechanics relates conserved quantities to
 symmetries of the equations of motion. In QM we have no such equations of motion,
 since we are not using a phase space. We have measurement states and their
-possibilities.</p><p>What remains invariant in QM is thus not a phase space quantity like
+possibilities.</p>
+<p>What remains invariant in QM is thus not a phase space quantity like
 &ldquo;total energy&rdquo; or &ldquo;linear momentum&rdquo; and so forth, but rather
 <em>the <strong>symmetry</strong> itself</em>. So that would be time translation invariance, rotational
 invariance, translation invariance. The physics should not depend upon any of these
-transformations.</p><p>We also have unitarity or &ldquo;conservation of probability&rdquo; &mdash; which was trivial and
+transformations.</p>
+<p>We also have unitarity or &ldquo;conservation of probability&rdquo; &mdash; which was trivial and
 thus not even spoken about in classical mechanics (we never lose track of particles
-in CM). Unitarity was a symmetry in CM too, we just never had to bother with it.</p><p>We will recover the classical conserved quantities now only in aggregate, so
+in CM). Unitarity was a symmetry in CM too, we just never had to bother with it.</p>
+<p>We will recover the classical conserved quantities now only in aggregate, so
 statistically. Without unitarity we&rsquo;d be unable to guarantee these classically
-conserved relations. So that is how we are using Noether&rsquo;s Theorem.</p><p>Thus, if we apply any of the symmetry transforms to our fundamental
+conserved relations. So that is how we are using Noether&rsquo;s Theorem.</p>
+<p>Thus, if we apply any of the symmetry transforms to our fundamental
 mass-energy relation <a href=#Eq.2>Eq.2</a>
-, the relation had better not change.</p><p>Which transforms do we use though? The stupid (but as it turns out correct)
+, the relation had better not change.</p>
+<p>Which transforms do we use though? The stupid (but as it turns out correct)
 thought is to use the infinitesimal generators for the symmetry groups themselves,
 since they are all Lie groups, except for parity, time or space inversion,
 and charge conjugation, the Lie algebra generators are all we need for differential
 forms for <a href=#Eq.2>Eq.2</a>
 . The integral forms would follow by using a Lagrangian
-action principle with the same Lie algebra generators.</p><p>This, I believe, is the best way conceptually and pedagogically, to derive
+action principle with the same Lie algebra generators.</p>
+<p>This, I believe, is the best way conceptually and pedagogically, to derive
 Schrödinger-Pauli theory &mdash; from the symmetry generators, and from the
 relativistic mass-energy Law (law? relation? identity? Take your pick.) Start with
-the relativistic treatment first. Forget about the historical development of it all.</p><p>There is a loose analogy here to Einstein&rsquo;s general relativity. We couple terms
+the relativistic treatment first. Forget about the historical development of it all.</p>
+<p>There is a loose analogy here to Einstein&rsquo;s general relativity. We couple terms
 from two realms: (i) spacetime curvature, (ii) stress-momentum. The coupling is
 achieved by (iii) finding a form that yields Newtonian gravity in the Minkowski
-flat space limit.</p><p>((One could equally well use the ultra-high energy limit, but of course we do not
-have empirical access to that.))</p><p>In relativistic quantum mechanics we are doing the same: coupling (i) the spacetime
+flat space limit.</p>
+<p>((One could equally well use the ultra-high energy limit, but of course we do not
+have empirical access to that.))</p>
+<p>In relativistic quantum mechanics we are doing the same: coupling (i) the spacetime
 symmetry generators with (ii) the matter components which act on the generators.
 The form of the coupling is (iii) taken to express one of the fundamental physical
 constraints or laws, in this case the mass-energy relation in flat spacetime
-(since QM is not immediately concerned with spacetime curvature).</p><p>This is about as basic as I think we can get for developing a first quantized field
+(since QM is not immediately concerned with spacetime curvature).</p>
+<p>This is about as basic as I think we can get for developing a first quantized field
 theory. &ldquo;Quantization&rdquo; in the spacetime algebra form for QM is nothing more or less
-than:</p><ul><li>respecting the real algebra commutation relations for the symmetry generators.
+than:</p>
+<ul>
+<li>respecting the real algebra commutation relations for the symmetry generators.
 One has $\hbar=1$ from the get-go here, because there is literally no concept of a
-Planck&rsquo;s constant needing to be artificially introduced.<br>    and</li><li>noting the matter part (that is, $\psi$) of the measurement theory in the
+Planck&rsquo;s constant needing to be artificially introduced.<br>
+    and</li>
+<li>noting the matter part (that is, $\psi$) of the measurement theory in the
 eigenfunction equation form <a href=#Eq.2>Eq.2</a>
 is &ldquo;particulate&rdquo; (when detected is always a
-local energy deposition).</li></ul><p>We are not saying Planck&rsquo;s constant is trivially unity, the importance is in the
-ratio of $\hbar$ to the actions of geometric objects swept through spacetime.</p><p>The second of these meanings for &ldquo;quantization&rdquo; de-mystifies a lot I think. We&rsquo;re
+local energy deposition).</li>
+</ul>
+<p>We are not saying Planck&rsquo;s constant is trivially unity, the importance is in the
+ratio of $\hbar$ to the actions of geometric objects swept through spacetime.</p>
+<p>The second of these meanings for &ldquo;quantization&rdquo; de-mystifies a lot I think. We&rsquo;re
 just saying the fact $\psi(x)$ takes geometric multivector values at every point in
 spacetime $\{x^\mu\}$ implies $\psi(x)$ is not <strong><em>the</em> particle</strong>, but is an intrinsically
-statistical description of the particle via uncertainty in measurement outcomes.</p><p>So-called QFT (quantum field theory) reduces to the theory of these fields and their
+statistical description of the particle via uncertainty in measurement outcomes.</p>
+<p>So-called QFT (quantum field theory) reduces to the theory of these fields and their
 interactions when creation and annihilation processes are accounted for, which are
 necessary because your fermion (or boson) can disappear from the Measurement Process
-via interaction.</p><p>In T4G theory we have to allow superpositions in-between measurements (in the
+via interaction.</p>
+<p>In T4G theory we have to allow superpositions in-between measurements (in the
 spacetime cobordism region) because of wormhole topology permitting discrete jumps in
 the particle trajectories. The function $\psi(x)$ does not &ldquo;undergo&rdquo; these jumps
 because it is a statistical description, but $\psi$ &ldquo;knows&rdquo; about the jumps in at
 least two ways: (1) we permit superpositions, (2) we permit entanglement (pairwise
-coupling).</p><p>Both the superposition and naïve entanglement are of course purely statistical in
+coupling).</p>
+<p>Both the superposition and naïve entanglement are of course purely statistical in
 orthodox QM, and that is because orthodox QM only deals with $\psi$, not with the
 actual particles, which are deemed &ldquo;too hard to keep track of&rdquo; (which T4G theory
-provisionally well explains).</p><p>If you go back and run through my English language exposition in this section you will
+provisionally well explains).</p>
+<p>If you go back and run through my English language exposition in this section you will
 find it is a realists account of the fundamental postulates of orthodox QM, but with
 an ontology, and a measurement process methodology of description, backing them.
 Feel free and welcome to formalise it all, but that will not gain you any fresh
-insight or extra understanding.</p><h3 id=the-spacetime-element><a class=anchor href=#the-spacetime-element title='Anchor for: The spacetime element.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The spacetime element</h3><p>One thing I want to do here, since this is the first chapter properly on relativity,
+insight or extra understanding.</p>
+<h3 id=the-spacetime-element><a class=anchor href=#the-spacetime-element title="Anchor for: The spacetime element."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The spacetime element</h3>
+<p>One thing I want to do here, since this is the first chapter properly on relativity,
 is to show how the anti-commuting Clifford algebra view arises from classical physics
-with no need to invoke quantum mechanics.</p><p>We consider the spacetime element and metric $g_{\mu\nu}$,
+with no need to invoke quantum mechanics.</p>
+<p>We consider the spacetime element and metric $g_{\mu\nu}$,
 $$
 ds^2 = g_{\mu\nu}dx^\mu dx^\nu
 $$
@@ -283,7 +479,8 @@ $$
 dx^\mu \cdot dx^\mu = \tfrac{1}{2}(\gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu) dx^\mu dx^\nu
 $$
 is the desired spacetime element. In flat Minkowski spacetime we recover the
-geometric algebra $C\ell(3,1)$ with metric $(- + + \, +)$.</p><p>In special relativity no significance is attached to the bivector and $k$-vector algebra for $k>1$, but if we refuse to ignore then in special relativity we already have spinors and higher grade objects, the general $k$-vector element being a scalar multiple of,
+geometric algebra $C\ell(3,1)$ with metric $(- + + \, +)$.</p>
+<p>In special relativity no significance is attached to the bivector and $k$-vector algebra for $k>1$, but if we refuse to ignore then in special relativity we already have spinors and higher grade objects, the general $k$-vector element being a scalar multiple of,
 $$
 \gamma_K = \tfrac{1}{k!} [ \gamma_{\sigma_1},\gamma_{\sigma_2},\ldots, \gamma_{\sigma_k} ]
 $$
@@ -292,14 +489,18 @@ For $k=4$ in the spacetime algebra we max out, and get the spacetime pseudoscala
 $$
 I = \gamma_0\wedge\gamma_1\wedge\gamma_2\wedge\gamma_3.
 $$
-In flat spacetime this is the same as $I=\gamma_0\gamma_1\gamma_2\gamma_3$ the geometric product, since the $\gamma\mu$ are orthogonal.</p><h3 id=the-geometric-algebra-expression-for-relativity><a class=anchor href=#the-geometric-algebra-expression-for-relativity title='Anchor for: The geometric algebra expression for relativity.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The geometric algebra expression for relativity</h3><p>The next question is how to express $p^2=m^2$ in the spacetime geometric algebra?
+In flat spacetime this is the same as $I=\gamma_0\gamma_1\gamma_2\gamma_3$ the geometric product, since the $\gamma\mu$ are orthogonal.</p>
+<h3 id=the-geometric-algebra-expression-for-relativity><a class=anchor href=#the-geometric-algebra-expression-for-relativity title="Anchor for: The geometric algebra expression for relativity."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The geometric algebra expression for relativity</h3>
+<p>The next question is how to express $p^2=m^2$ in the spacetime geometric algebra?
 Since we want to be doing quantum mechanics, we need to adopt the measurement
 theory formalism, which means the spinor $\psi$ which the multivector operators
 act upon is itself an instruction to transform frame vectors and other graded
-$k$-vectors.</p><p>In other words you can flip things around: regard $\psi$ as the object acting on
+$k$-vectors.</p>
+<p>In other words you can flip things around: regard $\psi$ as the object acting on
 the other multivectors, the other multivectors (linear operators in the matrix
 version of QM) represent abstract measurement processes, and so are usually
-represented by invariants of those processes, which are the symmetry group generators.</p><p>To generate spacetime translations we thus need $\psi$ to act on the time and
+represented by invariants of those processes, which are the symmetry group generators.</p>
+<p>To generate spacetime translations we thus need $\psi$ to act on the time and
 space derivatives, which are $1$-vectors:
 $$
 \begin{array}{rl}
@@ -310,8 +511,10 @@ $$
 when this d&rsquo;Alembertian is acted on by the spinor $\psi$ we thus get the
 measurements corresponding to time and space translation invariance, i.e, energy
 and momentum. Putting these together as Einstein taught us we get the relativistic
-four-momentum $p$.</p><p>Note that $\gamma_0^2 = -1$, so the inverse basis vector $\gamma_0^{-1} = -\gamma_0$.
-Whereas $\gamma_k^2=1$, so $\gamma_k^{-1}=\gamma_k$ for $k=1,2,3$.</p><p>Since we are restricting attention to negligible gravity, the global spacetime
+four-momentum $p$.</p>
+<p>Note that $\gamma_0^2 = -1$, so the inverse basis vector $\gamma_0^{-1} = -\gamma_0$.
+Whereas $\gamma_k^2=1$, so $\gamma_k^{-1}=\gamma_k$ for $k=1,2,3$.</p>
+<p>Since we are restricting attention to negligible gravity, the global spacetime
 basis $\{\gamma_\mu\}$ vectors are used for every fermion, and we will not be
 needing a local frame basis say $\{e_\mu\}$ for each fermion. We worry about a
 copy of the frame only for coupled geons, which we&rsquo;ve already treated in the
@@ -323,12 +526,14 @@ non-relativistically, which I have no desire to repeat relativistically, since n
 much changes. I say this knowing coupling in T4G is via an ER bridge EPR wormhole, so
 that&rsquo;s going to involve GR and local frames $\{e_\mu\}$ in a proper analysis, but I
 am not promising a fully fledged redo of general relativity with non-trivial wormhole
-topology for the T4G website. That is a project for someone else.</p><p>In QM then, in accord with our <em>precription</em> in the previous section, we use the time
+topology for the T4G website. That is a project for someone else.</p>
+<p>In QM then, in accord with our <em>precription</em> in the previous section, we use the time
 translation symmetry generator $\partial_t$ and the space translation generator
 $\pa_x$ for the four-momentum $\vec{p}$, and the unit scalar $1$ for the mass $m^2$
 (since it is a Casimir invariant). Since it&rsquo;s a four-momentum we combine the time and
 space generators into the single d&rsquo;Alembertian Lie generator $\box^2$, as appropriate
-for relativistic QM.</p><p>We note $\psi$ should then act by translating our laboratory coordinates for $\Box^2$ onto the rest frame of the particle or 4-geon, so that <a href=#Eq.2>Eq.2</a>
+for relativistic QM.</p>
+<p>We note $\psi$ should then act by translating our laboratory coordinates for $\Box^2$ onto the rest frame of the particle or 4-geon, so that <a href=#Eq.2>Eq.2</a>
 will hold.
 We thus get,
 $$
@@ -343,66 +548,97 @@ so, <a name=Eq.4>(Eq.4)</a>
 $$
 \Rightarrow\qquad (\Box - m)\psi = 0
 $$
-which is the free Dirac equation.</p><h4 id=not-fundamental><a class=anchor href=#not-fundamental title='Anchor for: Not fundamental.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Not fundamental</h4><p>The free Dirac theory <a name=Eq.4>(Eq.4)</a> cannot be a fundamental theory
-of fermions because the mass $m$ has to be inserted &ldquo;by hand&rdquo;.</p><p>This begs the question why we are bothering with Dirac-Hestenes theory?</p><p>My only answer is that it is scaffolding and motivation for exploring T4G theory.
+which is the free Dirac equation.</p>
+<h4 id=not-fundamental><a class=anchor href=#not-fundamental title="Anchor for: Not fundamental."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Not fundamental</h4>
+<p>The free Dirac theory <a name=Eq.4>(Eq.4)</a> cannot be a fundamental theory
+of fermions because the mass $m$ has to be inserted &ldquo;by hand&rdquo;.</p>
+<p>This begs the question why we are bothering with Dirac-Hestenes theory?</p>
+<p>My only answer is that it is scaffolding and motivation for exploring T4G theory.
 A theory with a statistical objective function like the spinors $\psi$ is not an
 ontological theory. However, owing to the success of the statistical theory, we might
 be guided to some understanding of the underlying topology assumed by T4G theory (as a
-string theorist might wish to be guided for their string modes).</p><h2 id=spacetime-spinors><a class=anchor href=#spacetime-spinors title='Anchor for: Spacetime Spinors.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Spacetime Spinors</h2><p>In spacetime algebra (STA) spinors (Dirac&ndash;Pauli, Weyl and Majorana) are all characterised by real spacetime geometry (no internal &ldquo;spin space&rdquo; required) and have the property of being acted on single-sided by rotations.
+string theorist might wish to be guided for their string modes).</p>
+<h2 id=spacetime-spinors><a class=anchor href=#spacetime-spinors title="Anchor for: Spacetime Spinors."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Spacetime Spinors</h2>
+<p>In spacetime algebra (STA) spinors (Dirac&ndash;Pauli, Weyl and Majorana) are all characterised by real spacetime geometry (no internal &ldquo;spin space&rdquo; required) and have the property of being acted on single-sided by rotations.
 We will see this is because the rotor component of a spinor is itself an &ldquo;instruction to rotate&rdquo;.
-(The other component being a dilation, which we take in T4G to be accounting for wormhole gas dynamic statistics &mdash; non-classical statistical mechanics, or &ldquo;quantum mechanics&rdquo;.)</p><p>((Skip ahead to the bit at the end on <a href=#fractal-spacetime>fractal spacetime</a>
-for an alternative view.))</p><p>This is all easy to comprehend when we use the GA/STA treatment, since in GA all rotations are performed by (double-sided) multiplication by rotors.</p><p>What we are going to show is how to map the matrix algebra (over a Hilbert space $\mathcal{H}$) to the multivector spacetime algebra $\mathcal{G}^{1,3}$.
+(The other component being a dilation, which we take in T4G to be accounting for wormhole gas dynamic statistics &mdash; non-classical statistical mechanics, or &ldquo;quantum mechanics&rdquo;.)</p>
+<p>((Skip ahead to the bit at the end on <a href=#fractal-spacetime>fractal spacetime</a>
+for an alternative view.))</p>
+<p>This is all easy to comprehend when we use the GA/STA treatment, since in GA all rotations are performed by (double-sided) multiplication by rotors.</p>
+<p>What we are going to show is how to map the matrix algebra (over a Hilbert space $\mathcal{H}$) to the multivector spacetime algebra $\mathcal{G}^{1,3}$.
 If we are only worried about the non-relativistic case, we will not need the
 Lorentz boosts (space-time rotations) and so we can drop down from the
 16-dimensional Dirac algebra (<em>real</em> spacetime algebra or STA) to the
-8-dimensional Pauli algebra. Which we&rsquo;ve already covered.</p><p>The curious thing is that basis vectors in the Pauli algebra are <em>best</em> taken as bivectors from the Dirac algebra.
+8-dimensional Pauli algebra. Which we&rsquo;ve already covered.</p>
+<p>The curious thing is that basis vectors in the Pauli algebra are <em>best</em> taken as bivectors from the Dirac algebra.
 This is a curious thing about physical geometric algebra:
-even when you want to avoid the time direction in space+time you cannot avoid the time!</p><h2 id=the-basic-mapping-from-phirangle-mapsto-sqrtrhor><a class=anchor href=#the-basic-mapping-from-phirangle-mapsto-sqrtrhor title='Anchor for: The basic mapping from $|\phi\rangle \mapsto \sqrt{\rho}R$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The basic mapping from $|\phi\rangle \mapsto \sqrt{\rho}R$</h2><p>Luckily, since we&rsquo;ve already got the motivation from the Pauli spinors, we can,
+even when you want to avoid the time direction in space+time you cannot avoid the time!</p>
+<h2 id=the-basic-mapping-from-phirangle-mapsto-sqrtrhor><a class=anchor href=#the-basic-mapping-from-phirangle-mapsto-sqrtrhor title="Anchor for: The basic mapping from $|\phi\rangle \mapsto \sqrt{\rho}R$."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The basic mapping from $|\phi\rangle \mapsto \sqrt{\rho}R$</h2>
+<p>Luckily, since we&rsquo;ve already got the motivation from the Pauli spinors, we can,
 I think without intellectual debt, go straight to postulating the isormorphism,
-then if we feel inclined spend a few pages showing it is valid.</p><pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished.  Work in progress.]
-</code></pre><h2 id=caveats><a class=anchor href=#caveats title='Anchor for: Caveats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Caveats</h2><h3 id=fractal-spacetime><a class=anchor href=#fractal-spacetime title='Anchor for: Fractal spacetime?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Fractal spacetime?</h3><p>There are a bunch of people who have been working over the years on theories of
+then if we feel inclined spend a few pages showing it is valid.</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished.  Work in progress.]
+</code></pre>
+<h2 id=caveats><a class=anchor href=#caveats title="Anchor for: Caveats."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Caveats</h2>
+<h3 id=fractal-spacetime><a class=anchor href=#fractal-spacetime title="Anchor for: Fractal spacetime?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Fractal spacetime?</h3>
+<p>There are a bunch of people who have been working over the years on theories of
 <a href=http://luth2.obspm.fr/~luthier/nottale/arICCA7.pdf target=_blank>scale relativity</a>
 and
 <a href=https://arxiv.org/pdf/0812.3857 target=_blank>fractal spacetime,</a>
 such as
 <a href=http://elbereth2009.obspm.fr/~luthier/nottale/arCSF94.pdf target=_blank>Laurent Nottale, here</a>
 who think they derive
-Schrödinger&ndash;Pauli theory from the postulate spacetime is fractal on the Planck scale.</p><p>I believe their derivations are sound, and insightful for what they are &mdash; what
+Schrödinger&ndash;Pauli theory from the postulate spacetime is fractal on the Planck scale.</p>
+<p>I believe their derivations are sound, and insightful for what they are &mdash; what
 they are is the half of T4G theory that I have not written much about yet:
 the theory for the statistical probability density factor $\rho$ on the
-Dirac and Pauli $\mathcal{GA}$ spinors.</p><p>My take (not as an expert on fractal spacetimes) is that they (Nottale, et al)
+Dirac and Pauli $\mathcal{GA}$ spinors.</p>
+<p>My take (not as an expert on fractal spacetimes) is that they (Nottale, et al)
 have an account broadly consistent with Ballentine&rsquo;s
-<a href=https://doi.org/10.1103/RevModPhys.42.358 target=_blank>statistical interpretation of QM.</a></p><p>I&rsquo;m not quite sure what to make of it all though.
+<a href=https://doi.org/10.1103/RevModPhys.42.358 target=_blank>statistical interpretation of QM.</a>
+</p>
+<p>I&rsquo;m not quite sure what to make of it all though.
 I have never understood how the fractal spacetime theorists account for non-locality
 and entanglement. Nor do they have a theory for the Standard Model,
 which is very odd for a paradigm that suggests quantum mechanics is all about geometry.
 (Perhaps I&rsquo;ve not read their work closely enough, and it&rsquo;s been a while since I picked up
 one of Nottale&rsquo;s papers, so if you know any better please contact me and tell me what you
-know.)</p><p>Contrast with T4G theory, where we have a path &mdash; not so well explored yet
-&mdash; for getting at Standard Model phenomenology.</p><p>However, fractal spacetime and scale relativity are concepts that fit well
-with T4G theory as weak cousins. For example,</p><ul><li>The wormhole gas CTC geometrodynamics are going to generically yield fractal-like Feynman&ndash;Hibbs paths for 4-geons (in scale relativity they have to just <em>assume</em>
+know.)</p>
+<p>Contrast with T4G theory, where we have a path &mdash; not so well explored yet
+&mdash; for getting at Standard Model phenomenology.</p>
+<p>However, fractal spacetime and scale relativity are concepts that fit well
+with T4G theory as weak cousins. For example,</p>
+<ul>
+<li>The wormhole gas CTC geometrodynamics are going to generically yield fractal-like Feynman&ndash;Hibbs paths for 4-geons (in scale relativity they have to just <em>assume</em>
 non-differentiable spacetime as axiomatic, T4G does not).
-So tick that box. ☑</li><li>We can use (borrow, beg from, or steal) the fractal spacetime folk&rsquo;s derivations
+So tick that box. ☑</li>
+<li>We can use (borrow, beg from, or steal) the fractal spacetime folk&rsquo;s derivations
 of the Dirac equation. Then it&rsquo;s almost <em>voila!</em> we have our
 &ldquo;previously classically unexplained statistical dilation factor&rdquo; $\rho$ in the
-Pauli and Dirac rotor/spinors. Thanks Laurent! Another box checked ☑</li><li>Scale relativity postulates physics has an additional conformal
+Pauli and Dirac rotor/spinors. Thanks Laurent! Another box checked ☑</li>
+<li>Scale relativity postulates physics has an additional conformal
 (scale invariance) symmetry in addition to Einstein&rsquo;s group
 (Poincaré plus parity inversion) &mdash; but that this symmetry is broken at the
 Planck scale, which they consider to be the &ldquo;quantum mechanics&rdquo;.
 I think that&rsquo;s a bit backwards, but the right idea, in T4G we have wormhole
 topology at the Planck scale, but which allows macroscopic separation between
-the wormhole ends, giving us proper non-locality. Tick that box ☑</li></ul><p>I don&rsquo;t know about you, but if you weigh all this &ldquo;evidence&rdquo; (can I call it that?)
+the wormhole ends, giving us proper non-locality. Tick that box ☑</li>
+</ul>
+<p>I don&rsquo;t know about you, but if you weigh all this &ldquo;evidence&rdquo; (can I call it that?)
 we build a pretty strong case for thinking T4G theory really is onto something
 profound, and scale relativity and fractal spacetime paradigms are just the
 surface of it &mdash; I&rsquo;d say, without meaning to snub anyone, that the fractal
 spacetime + scale relativity theory is a sub-branch of T4G theory,
-for the above reasons.</p><p>((I know it&rsquo;s an easy game to make up lists of check boxes that your theory
+for the above reasons.</p>
+<p>((I know it&rsquo;s an easy game to make up lists of check boxes that your theory
 ticks. I&rsquo;m not suggesting this discussion is anything more than such a game.
 But I am saying it&rsquo;s a suggestive game. Let me know if you think it&rsquo;s not
 good physics via <a href=https://ko-fi.com/achrononmaster/ target=_blank>Achrononmaster @ Ko-fi</a>
-.))</p><p>Last note: if I ever get the time, I might go through Nottale&rsquo;s derivation of
+.))</p>
+<p>Last note: if I ever get the time, I might go through Nottale&rsquo;s derivation of
 the Dirac equation, because I think someone should tie all these lose threads
-together some day.</p><p>Hestenes, Lasenby & Doran are missing an explanation for $\rho$ and for
+together some day.</p>
+<p>Hestenes, Lasenby & Doran are missing an explanation for $\rho$ and for
 non-locality (they are assuming those postulates of QM);
 Nottalle et al are missing the reason spacetime trajectories are fractal
 (they postulate it); and Susskind and Maldacena are missing the idea
@@ -415,36 +651,69 @@ $S$-matrix scattering approach should really morally work but they&rsquo;ve not 
 the wormhole topology figured out as the proper foundation for non-locality,
 they still think in terms of locality being too primitive to do without.
 They are right of course, but the problems of non-local correlation cannot
-be swept under any rug in scattering theory.</p><p>On the latter issue: the interactions (scattering, or Feynman vertices) are
+be swept under any rug in scattering theory.</p>
+<p>On the latter issue: the interactions (scattering, or Feynman vertices) are
 <em>always local</em>. That&rsquo;s absolutely foundational to QFT and QM.
 But the ER=EPR bridges give us non-local correlators,
 which the modernized $S$-matrix paradigm (Amplituhedra)
-I think is not presently capturing.</p><pre aria-label="Box containing code sample." tabindex=0><code>TODO: work in progress. Some day we shall complete the basics for Dirac Theory 
+I think is not presently capturing.</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>TODO: work in progress. Some day we shall complete the basics for Dirac Theory 
 in the STA.
-</code></pre><h2 id=summary-dirac-hestenes><a class=anchor href=#summary-dirac-hestenes title='Anchor for: Summary of Dirac-Hestenes Algebra in STA.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Summary of Dirac-Hestenes Algebra in STA</h2><p>Here for reference are the main results. I am using the TSA though
-(timespace $C\ell(3,1)$ algebra.)</p><pre aria-label="Box containing code sample." tabindex=0><code>Below is a repeat of the Pauli Algebra, I have no got around to writing 
+</code></pre>
+<h2 id=summary-dirac-hestenes><a class=anchor href=#summary-dirac-hestenes title="Anchor for: Summary of Dirac-Hestenes Algebra in STA."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Summary of Dirac-Hestenes Algebra in STA</h2>
+<p>Here for reference are the main results. I am using the TSA though
+(timespace $C\ell(3,1)$ algebra.)</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>Below is a repeat of the Pauli Algebra, I have no got around to writing 
 out the Dirac Algebra yet. Coming soon.
 </code></pre><p><strong>The main mapping</strong> (spinor equivalences):
 $$
 \mathcal{H} \ni \quad |\psi\rangle
 = \begin{pmatrix} a^0 + i a^3 \\ -a^2 + i a^1 \end{pmatrix}
 \longmapsto \sqrt{\rho}R = a^0 + I a^k \boldsymbol{\sigma}_k \quad \in \mathscr{D}
-$$</p><p><strong>Operator equivalences</strong>:
+$$</p>
+<p><strong>Operator equivalences</strong>:
 $$
 \begin{array}{rcl}
 \hat{\sigma}_k |\psi\rangle &\longleftrightarrow& \boldsymbol{\sigma}_k\psi\boldsymbol{\sigma}_3.\\
 i |\psi\rangle &\longleftrightarrow& \psi I \boldsymbol{\sigma}_3 = \psi J.\\
 \langle\phi | \psi\rangle &\longleftrightarrow& \langle\phi^\dagger\psi\rangle_S = \tfrac{1}{2} ( \phi^\dagger\psi - J \phi^\dagger\psi J).
 \end{array}
-$$</p><p><strong>Observables</strong>:
+$$</p>
+<p><strong>Observables</strong>:
 $$
 \begin{array}{rcl}
 \rho & \longleftrightarrow& \psi\psi^\dagger.\\
 \langle\psi|\hat{s}_k |\psi\rangle &\longleftrightarrow& \langle\boldsymbol{\sigma}_k \psi \boldsymbol{\sigma}_3\psi^\dagger\rangle_0\\
 \hat{s} &\longleftrightarrow & \boldsymbol{s} = \psi \boldsymbol{\sigma}_3 \psi^\dagger
 \end{array}
-$$</p><h2 id=caveats-1><a class=anchor href=#caveats-1 title='Anchor for: Caveats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Caveats</h2><p>No particular caveats for this chapter, but maybe a parting comment.</p><p>Nothing very profound has been accomplished physically in providing the language of STA for relativistic QM. The language is not the physics.</p><p>Plus, this is, from a sophisticated theoretical physicist perspective, pretty much just &ldquo;baby mathematics.&rdquo;
-And yet the physical insight afforded have been amazing (at least I think so &mdash; what other approach using just a new language for QM has revealed so much ontology, that &ldquo;elementary particles&rdquo; are not the wave functions themselves, and that the wave-functions are describing <strong><em>processes</em></strong>, not objects?).</p><p>Compare this to String/M-theory, which uses incredibly complicated mathematics,
+$$</p>
+<h2 id=caveats-1><a class=anchor href=#caveats-1 title="Anchor for: Caveats."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Caveats</h2>
+<p>No particular caveats for this chapter, but maybe a parting comment.</p>
+<p>Nothing very profound has been accomplished physically in providing the language of STA for relativistic QM. The language is not the physics.</p>
+<p>Plus, this is, from a sophisticated theoretical physicist perspective, pretty much just &ldquo;baby mathematics.&rdquo;
+And yet the physical insight afforded have been amazing (at least I think so &mdash; what other approach using just a new language for QM has revealed so much ontology, that &ldquo;elementary particles&rdquo; are not the wave functions themselves, and that the wave-functions are describing <strong><em>processes</em></strong>, not objects?).</p>
+<p>Compare this to String/M-theory, which uses incredibly complicated mathematics,
 and yet achieved very little fundamental ontological insights into quantum mechanics proper.
-Imagine unloosing the mental prowess of a string theorist upon T4G theory?</p><p><a href=../011_spin_measurement_part2>Next chapter (Spin Measurements, part-2)</a><br><a href=../009_interference_from_entanglement>Previous chapter (Interference from Entanglement)</a><br><a href=../>Back to Theory TOC</a></p></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.5e5e5e3f11510a5488490612ff5c36a48c133ae81bb9d2e4e5c377309de5ece2.js integrity="sha256-Xl5ePxFRClSISQYS/1w2pIwTOugbudLk5cN3MJ3l7OI=" crossorigin=anonymous></script>
-<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
+Imagine unloosing the mental prowess of a string theorist upon T4G theory?</p>
+<p><a href=../011_spin_measurement_part2>Next chapter (Spin Measurements, part-2)</a>
+<br>
+<a href=../009_interference_from_entanglement>Previous chapter (Interference from Entanglement)</a>
+<br>
+<a href=../>Back to Theory TOC</a>
+</p>
+</article>
+</main>
+</div>
+<footer>
+<div class=req-js>
+<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
+</div>
+<noscript>
+<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
+</noscript>
+</footer>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
+<script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
+<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
+</body>
+</html>

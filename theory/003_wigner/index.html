@@ -1,109 +1,255 @@
-<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.119.0"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Wigner and Particles | Topological 4-Geon Theory Unchained</title><meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/003_wigner/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Wigner and Particles"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/003_wigner/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px></a>
-<a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Wigner and Particles</h1><p>Published on <time datetime=2016-03-04>2016-03-04</time></p></header><h2 id=the-traditional-approach><a class=anchor href=#the-traditional-approach title='Anchor for: The Traditional Approach.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Traditional Approach</h2><p>This chapter is to comfort the older physicist who was probably trained on the
+<!doctype html><html lang=en data-mode=dark>
+<head prefix="og: http://ogp.me/ns#">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+<title>Wigner and Particles | Topological 4-Geon Theory Unchained</title>
+<meta name=author content="Bijou M. Smith">
+<meta name=robots content="index follow">
+<link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/003_wigner/>
+<meta property="og:site_name" content="Topological 4-Geon Theory Unchained">
+<meta property="og:title" content="Wigner and Particles">
+<meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/003_wigner/">
+<meta property="og:type" content="website">
+<meta name=twitter:dnt content="on">
+<meta name=theme-color content="#222">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="default">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous>
+<noscript>
+<meta name=theme-color content="#26A269">
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous>
+</noscript>
+<link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script src=https://t4gu.gitlab.io/t4gu/js/main.42b683201e75d61e0c2793a3814a2306fd1f036cf6dd7f9ea3b61cd13f2d752e.js integrity="sha256-QraDIB511h4MJ5OjgUojBv0fA2z23X+eo7Yc0T8tdS4=" crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<a href=/t4gu> <img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a>
+<a href=/t4gu> Topological 4-Geon Theory Unchained </a>
+<nav aria-label="Main menu.">
+<ul>
+<li>
+<a class=btn href=/t4gu/t4gu/>Home</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/philosophy/>Philosophy</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/theory/>Theory</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/blog/>Posts</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/contact/>Contact</a>
+</li>
+<li>
+<a class=btn href=/t4gu/t4gu/donations/>Donate</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=filler>
+<main>
+<article>
+<header>
+<h1>Wigner and Particles</h1>
+<p>
+Published on <time datetime=2016-03-04>2016-03-04</time>
+</p>
+</header>
+<h2 id=the-traditional-approach><a class=anchor href=#the-traditional-approach title="Anchor for: The Traditional Approach."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Traditional Approach</h2>
+<p>This chapter is to comfort the older physicist who was probably trained on the
 traditional particles physics approach. In that approach one takes as a
-catechism the dogma:</p><blockquote><p>The elementary particles <em>are</em> irreducible representations of the fundamental
-symmetries.</p></blockquote><p>Weinberg&rsquo;s text QFT, Vol.1, Ch.4 goes over Wigner&rsquo;s classification.</p><h2 id=the-spacetime-algebra-sta-approach><a class=anchor href=#the-spacetime-algebra-sta-approach title='Anchor for: The Spacetime Algebra (STA) Approach.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Spacetime Algebra (STA) Approach</h2><p><strong>The Good News:</strong> we are not doing anything different in the STA approach to
-quantum mechanics (QM).</p><ul><li>We will change formalism to a real multivector algebra, and ditch
+catechism the dogma:</p>
+<blockquote>
+<p>The elementary particles <em>are</em> irreducible representations of the fundamental
+symmetries.</p>
+</blockquote>
+<p>Weinberg&rsquo;s text QFT, Vol.1, Ch.4 goes over Wigner&rsquo;s classification.</p>
+<h2 id=the-spacetime-algebra-sta-approach><a class=anchor href=#the-spacetime-algebra-sta-approach title="Anchor for: The Spacetime Algebra (STA) Approach."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Spacetime Algebra (STA) Approach</h2>
+<p><strong>The Good News:</strong> we are not doing anything different in the STA approach to
+quantum mechanics (QM).</p>
+<ul>
+<li>We will change formalism to a real multivector algebra, and ditch
 Hilbert Space,
 Hilbert space is simply very extremely dumb. It&rsquo;s historical crud. Using the
-STA clarifies the whole picture of QM.</li><li>You can always re-transcribe STA back to Hilbert space bras and kets when you
-please. Not that you should, but you could.</li></ul><h3 id=all-the-particles><a class=anchor href=#all-the-particles title='Anchor for: All the Particles.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>All the Particles</h3><p>In STA it is hard to find scraps where the T4G view is fully adopted, but
+STA clarifies the whole picture of QM.</li>
+<li>You can always re-transcribe STA back to Hilbert space bras and kets when you
+please. Not that you should, but you could.</li>
+</ul>
+<h3 id=all-the-particles><a class=anchor href=#all-the-particles title="Anchor for: All the Particles."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> All the Particles</h3>
+<p>In STA it is hard to find scraps where the T4G view is fully adopted, but
 you can get glimpses of it in the standard GA texts by Hestenes, and
-Lasenby & Doran.</p><p>The idea is:</p><blockquote><p>The elementary particles are (initially undefined) objects embedded in, or
-fabricated out of, spacetime.<br>      In T4G (not explicitly in other STA physics)
+Lasenby & Doran.</p>
+<p>The idea is:</p>
+<blockquote>
+<p>The elementary particles are (initially undefined) objects embedded in, or
+fabricated out of, spacetime.<br>
+      In T4G (not explicitly in other STA physics)
 we view the particles as <em>so far</em> unknown regions of non-trivial spacetime
 topology. The exact nature is yet to be determined, but if you&rsquo;ve grown up with
 a superstring/p-brane education, you should be free to think in those sorts of
-terms. Strings are regions of non-trivial spacetime topology.</p></blockquote><p>I do not think String/M-theory is correct (but whaddaiknow?), but it&rsquo;s a good
+terms. Strings are regions of non-trivial spacetime topology.</p>
+</blockquote>
+<p>I do not think String/M-theory is correct (but whaddaiknow?), but it&rsquo;s a good
 framework for some purposes, and as a theory where elementary particles are
 regions of non-trivial spacetime topology I find String Theory to be closer in
 spirit to T4G theory than traditional QFT. I am with Weinberg on this: QFT is a
 very decent <em>effective</em> theory of fundamental physics, but is not fundamental
-physics.</p><p>I do not discourage String Theory thinking, I just think we do not need that
-whole hog.</p><p>Over time we might be able to build up better intuitions about the topology of
+physics.</p>
+<p>I do not discourage String Theory thinking, I just think we do not need that
+whole hog.</p>
+<p>Over time we might be able to build up better intuitions about the topology of
 the elementary particles. They are simple objects, with simple behaviours, so
 the topology should be (one might presume) fairly simple. But lacking direct
 empirical clues it is darn hard to &ldquo;see&rdquo; what they&rsquo;d be like should we have a
-fantastical Planck microscope to look at them.</p><h3 id=relationship-to-wigners-classifications><a class=anchor href=#relationship-to-wigners-classifications title='Anchor for: Relationship to Wigner&rsquo;s Classifications.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Relationship to Wigner&rsquo;s Classifications</h3><p>Wigner was (unbeknownst to himself and others) <em>only</em> classifying the
+fantastical Planck microscope to look at them.</p>
+<h3 id=relationship-to-wigners-classifications><a class=anchor href=#relationship-to-wigners-classifications title="Anchor for: Relationship to Wigner&rsquo;s Classifications."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Relationship to Wigner&rsquo;s Classifications</h3>
+<p>Wigner was (unbeknownst to himself and others) <em>only</em> classifying the
 transformations or symmetries of the elementary particles. He was not
 classifying <em>the</em> elementary particles. These symmetries are described in the
 Hilbert space representation using simple complex valued vector inner product
-spaces.</p><p>This is a terrible way to formulate physics. The correct approach (imho) is to
+spaces.</p>
+<p>This is a terrible way to formulate physics. The correct approach (imho) is to
 use the real geometric algebra. And for starters use the 16-dimensional
 spacetime algebra, because that&rsquo;s minimalistic (aim for parsimony.) If we later
 find we simply must add extra compactified dimensions to space, so be it, but so
 far I&rsquo;ve not seen how the need for extra dimensions arises in the real geometric
 algebra. It&rsquo;s a String Theory and Kaluza-Klein theory artefact imho. A result of
-using a bad formalism that loses sight of the real geometry.</p><p>The real geometric spacetime algebra might turn out to have a rich enough
+using a bad formalism that loses sight of the real geometry.</p>
+<p>The real geometric spacetime algebra might turn out to have a rich enough
 structure for the Standard Model. That remains to be seen, but if true, then we
 will not need extra dimensions. The graded algebra of spacetime could be
-sufficient.</p><p>The orthodox QM wavefunctions are not literally <em>the particles.</em></p><p>In the very clear and lucid STA approach it is easy to see the wavefunctions are
+sufficient.</p>
+<p>The orthodox QM wavefunctions are not literally <em>the particles.</em></p>
+<p>In the very clear and lucid STA approach it is easy to see the wavefunctions are
 in fact instructions for rotating and scaling. So the wavefunction acts on a
-measurement frame. That&rsquo;s all we get in orthodox QM.</p><p>So the Wigner irreducible representations are not the particles, but are
+measurement frame. That&rsquo;s all we get in orthodox QM.</p>
+<p>So the Wigner irreducible representations are not the particles, but are
 rather the transformations we have to make to a laboratory reference frame to
-mathematize a measurement process.</p><p>Quantum Mechanics is all about measurement processes, the particles take a
+mathematize a measurement process.</p>
+<p>Quantum Mechanics is all about measurement processes, the particles take a
 back stage, and are truly not really spoken of, QM is an apophatic religion of
-elementary particles (is one way to put it!). &ldquo;<em>Speak not of the particles.</em>&rdquo;</p><p>The problem with Wigner&rsquo;s classification is that physicists really wanted to
+elementary particles (is one way to put it!). &ldquo;<em>Speak not of the particles.</em>&rdquo;</p>
+<p>The problem with Wigner&rsquo;s classification is that physicists really wanted to
 have a quasi-Newtonian conception, and wanted to speak of the particles. So they
-took the symmetry groups and made of them particles. Blasphemy!</p><p>((Hope you are not a sensitive little atheist child and get triggered by
-these jokes.))</p><h3 id=amplituhedron-program><a class=anchor href=#amplituhedron-program title='Anchor for: Amplituhedron Program.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Amplituhedron Program</h3><p>Another modern approach to elementary particle physics, which is launching off
+took the symmetry groups and made of them particles. Blasphemy!</p>
+<p>((Hope you are not a sensitive little atheist child and get triggered by
+these jokes.))</p>
+<h3 id=amplituhedron-program><a class=anchor href=#amplituhedron-program title="Anchor for: Amplituhedron Program."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Amplituhedron Program</h3>
+<p>Another modern approach to elementary particle physics, which is launching off
 the Holographic Principle revolution and re-discovering fruits of the $S$-Matrix
-program, is Nima Arkani-Hamed&rsquo;s Amplituhedron program.</p><p>The cool thing about that program is the way it is able to drastically
+program, is Nima Arkani-Hamed&rsquo;s Amplituhedron program.</p>
+<p>The cool thing about that program is the way it is able to drastically
 simplify (500 pages of algebra down to one page sort of stuff) computations for
 Feynman diagram perturbation theory calculations. So it is a well-grounded
-empirically driven approach.</p><p>However, philosophically it bears a spiritual resemblance to T4G theory.</p><p>Firstly because it takes a view where particles are primary, not fields. Some
+empirically driven approach.</p>
+<p>However, philosophically it bears a spiritual resemblance to T4G theory.</p>
+<p>Firstly because it takes a view where particles are primary, not fields. Some
 field theory stuff is used to motivate bits of the amplituhedron program at the
-beginning, but I suspect that can be shunted away with future developments.</p><p>(What decent theory hasn&rsquo;t had a kick-start from a bit of slight-of-hand?)</p><p>I forget where the youtube link is, but there is a lecture series Arkani-Hamed
+beginning, but I suspect that can be shunted away with future developments.</p>
+<p>(What decent theory hasn&rsquo;t had a kick-start from a bit of slight-of-hand?)</p>
+<p>I forget where the youtube link is, but there is a lecture series Arkani-Hamed
 gave at Princeton or Harvard, wherever Andy Strominger was, which goes right
-through most of the basics of the Amplituhedron.</p><p>The thing I&rsquo;m interested in for now is the second lecture, where Nima reviews
-Wigner&rsquo;s classification.</p><p>He points out just Lorentz invariance and unitarity alone are such powerful
-contraints they almost give us all of elementary particle physics, We get:</p><ul><li>There can only be particles with spin $0$, $\tfrac{1}{2}$, $1$,
+through most of the basics of the Amplituhedron.</p>
+<p>The thing I&rsquo;m interested in for now is the second lecture, where Nima reviews
+Wigner&rsquo;s classification.</p>
+<p>He points out just Lorentz invariance and unitarity alone are such powerful
+contraints they almost give us all of elementary particle physics, We get:</p>
+<ul>
+<li>There can only be particles with spin $0$, $\tfrac{1}{2}$, $1$,
 $\tfrac{3}{2}$ and $2$.
-No others are possible.</li><li>Spin-$1$ is Yang-Mills theory.</li><li>Spin-$\tfrac{1}{2}$ is electroweak theory.</li><li>Spin-$\tfrac{3}{2}$ is supersymmetry.</li><li>Spin-$2$ is gravity.</li></ul><p>That&rsquo;s <em>all known elementary physics</em>. All from (a) Lorentz invariance
-and (b) unitarity.)</p><p>For a $\tfrac{3}{2}$ spin theory coupled to gravity the existence of
+No others are possible.</li>
+<li>Spin-$1$ is Yang-Mills theory.</li>
+<li>Spin-$\tfrac{1}{2}$ is electroweak theory.</li>
+<li>Spin-$\tfrac{3}{2}$ is supersymmetry.</li>
+<li>Spin-$2$ is gravity.</li>
+</ul>
+<p>That&rsquo;s <em>all known elementary physics</em>. All from (a) Lorentz invariance
+and (b) unitarity.)</p>
+<p>For a $\tfrac{3}{2}$ spin theory coupled to gravity the existence of
 superpartners is forced upon us simply by the algebra of the scattering
-amplitudes.</p><p>The spinor-helicty scattering theoy also reproduces the Witten-Weingberg
+amplitudes.</p>
+<p>The spinor-helicty scattering theoy also reproduces the Witten-Weingberg
 theorems. So we also find gravity is universal: any other spin-$2$ particles
-would be non-interacting with each other.</p><h3 id=but-what-is-spin><a class=anchor href=#but-what-is-spin title='Anchor for: But What is &ldquo;Spin&rdquo;?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>But What is &ldquo;Spin&rdquo;?</h3><p>The crude Hilbert Space view really gives us no clues. The formal mathematics
-just spits out at us contemptuously:</p><ul><li>Massless particles must be vectors &mdash; spin-$1$ or spin-$2$.</li><li>Massive particles can be spin-$\tfrac{1}{2}$ &mdash; so can be spinors, not
-just vectors.</li></ul><p>Cool.</p><p>But&mldr; what?</p><p>Wtf is a spinor?</p><p>I think it is only the geometric STA approach that yields insights into what
+would be non-interacting with each other.</p>
+<h3 id=but-what-is-spin><a class=anchor href=#but-what-is-spin title="Anchor for: But What is &ldquo;Spin&rdquo;?."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> But What is &ldquo;Spin&rdquo;?</h3>
+<p>The crude Hilbert Space view really gives us no clues. The formal mathematics
+just spits out at us contemptuously:</p>
+<ul>
+<li>Massless particles must be vectors &mdash; spin-$1$ or spin-$2$.</li>
+<li>Massive particles can be spin-$\tfrac{1}{2}$ &mdash; so can be spinors, not
+just vectors.</li>
+</ul>
+<p>Cool.</p>
+<p>But&mldr; what?</p>
+<p>Wtf is a spinor?</p>
+<p>I think it is only the geometric STA approach that yields insights into what
 that all means. The thing is, as we will learn in the coming chapters here on
-T4G, these spin labels have nothing to do with &ldquo;spinning particles&rdquo; <em>per se</em>.</p><p>The particles might spin around, so will have the same Lie algebra
+T4G, these spin labels have nothing to do with &ldquo;spinning particles&rdquo; <em>per se</em>.</p>
+<p>The particles might spin around, so will have the same Lie algebra
 representations as orbiting rocks around a star. But the quantum labels are
 <em>only</em> symmetry group labels. They are not discretized spin mechanical
 variables. But this is totally obscured in the Hilbert space formalism. And
-almost completely unveiled in the real geometric algebra picture.</p><p>A spinor is nothing but an <em>instruction to rotate</em> a coordinate reference
-frame (with a statistical scale factor for the quantum statistics).</p><p>The vector bosons act one-sided on all multivectors to generate rotations or
+almost completely unveiled in the real geometric algebra picture.</p>
+<p>A spinor is nothing but an <em>instruction to rotate</em> a coordinate reference
+frame (with a statistical scale factor for the quantum statistics).</p>
+<p>The vector bosons act one-sided on all multivectors to generate rotations or
 spacetime boosts (which are just rotations in Lorentzian signature). The spinors
 are essentially geometric algebra rotors, and so act <em>double-sided</em> on
 multivectors to generate rotations. The double-sided rotor transform law is
 also called the <em>sandwich product</em>.
 $$
 A \longrightarrow R^\dagger A R.
-$$</p><p>That&rsquo;s the entire mystery of &ldquo;quantum spin.&rdquo; No mystery remaining (except for
-superposition and entanglement.)</p><p>Why must the massless bosons have integral spins?</p><p>The answer is that this is an algebraic property. A general rotation is always
+$$</p>
+<p>That&rsquo;s the entire mystery of &ldquo;quantum spin.&rdquo; No mystery remaining (except for
+superposition and entanglement.)</p>
+<p>Why must the massless bosons have integral spins?</p>
+<p>The answer is that this is an algebraic property. A general rotation is always
 described by a rotor (or spinor if we included the statistics). But massless
 particles cannot be rotated in any plane except perpendicular to their
 instantaneous direction of motion. So they cannot be described by rotors. That&rsquo;s
-all there is to it.</p><p>Thus it is that massless particles have only helicity labels, which turn up
+all there is to it.</p>
+<p>Thus it is that massless particles have only helicity labels, which turn up
 as vectorial in the geometric algebra. Whereas massive particles have three
 degrees of spin freedom and can be described by spinors.
 I feel these are tiny clues about the topology of the fundamental 4-geons, but
 it is not fine enough grained information (at least not for me) to derive an
-ontology for the elementary particles.</p><p>(There is a possibility neutrinos (spin-$\tfrac{1}{2}$) could be massless,
+ontology for the elementary particles.</p>
+<p>(There is a possibility neutrinos (spin-$\tfrac{1}{2}$) could be massless,
 so a theory where full spinorial degrees of freedom are permitted would have to
 have some other constraints for such neutrinos (and also the Weyl fermions). But
 I&rsquo;ll take it for now as a provisional <em>given</em> that there are no massless
-fermions.)</p><p>What about massive bosons?</p><p>There is nothing inconsistent with the STA geometry if we have massive bosons,
+fermions.)</p>
+<p>What about massive bosons?</p>
+<p>There is nothing inconsistent with the STA geometry if we have massive bosons,
 since they are still considered to be fundamentally massless particles, and the
-mass is imparted via broken gauge symmetry.</p><p>Arkani-Hamed is still trapped in the Hilbert Space
+mass is imparted via broken gauge symmetry.</p>
+<p>Arkani-Hamed is still trapped in the Hilbert Space
 paradigm. Which is a damn shame, because he is far smarter than me, and could
-produce wonders if he bothered to learn the STA approach. Justsayin'.</p><p>Once you understand this (hopefully by the next chapter plus following) then I
+produce wonders if he bothered to learn the STA approach. Justsayin'.</p>
+<p>Once you understand this (hopefully by the next chapter plus following) then I
 think you&rsquo;ll have a much clearer idea about quantum mechanics. QM becomes &ldquo;not
-too hard a theory to comprehend&rdquo;.</p><p>No promises though. I&rsquo;m no genius and T4G could be all wrong!</p><h2 id=the-internal-symmetries><a class=anchor href=#the-internal-symmetries title='Anchor for: The Internal Symmetries.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Internal Symmetries</h2><p>The Lorentz invariance and unitarity, together with the spacetime algebra, give
+too hard a theory to comprehend&rdquo;.</p>
+<p>No promises though. I&rsquo;m no genius and T4G could be all wrong!</p>
+<h2 id=the-internal-symmetries><a class=anchor href=#the-internal-symmetries title="Anchor for: The Internal Symmetries."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> The Internal Symmetries</h2>
+<p>The Lorentz invariance and unitarity, together with the spacetime algebra, give
 us (I think) most of the structure of the Standard Model. But not the
-interactions.</p><p>A spinor, re-conceived now in the STA, as an instruction for a rotation just
-rotates. It is not encoding any interaction.</p><p>Here now is the beauty of the geometric algebra (or a further beauty, since I
+interactions.</p>
+<p>A spinor, re-conceived now in the STA, as an instruction for a rotation just
+rotates. It is not encoding any interaction.</p>
+<p>Here now is the beauty of the geometric algebra (or a further beauty, since I
 haven&rsquo;t yet explained the first beauties). Consider a gluon&ndash;quark scattering
 process,
 $$
@@ -111,17 +257,55 @@ g^{\bar{r}b} q^r \longrightarrow g^b
 $$
 There seems to be nothing &ldquo;rotating&rdquo; here. But this is a topological
 interaction, so can be thought of algebraically as a generalized rotation, or
-rather, simply a multivector operation.</p><p>The gluon when written in terms of the STA multivector operates on the red quark
+rather, simply a multivector operation.</p>
+<p>The gluon when written in terms of the STA multivector operates on the red quark
 to produce the blue quark. Nothing rotated in physical space. Instead, as we
-learned from orthodox QCD, we say the</p><blockquote><p>&mldr; the quark got &ldquo;rotated&rdquo; in color space.</p></blockquote><p>Of course, we can now perhaps begin to appreciate this is poetic nonsense. The
+learned from orthodox QCD, we say the</p>
+<blockquote>
+<p>&mldr; the quark got &ldquo;rotated&rdquo; in color space.</p>
+</blockquote>
+<p>Of course, we can now perhaps begin to appreciate this is poetic nonsense. The
 &ldquo;rotation&rdquo; is no such thing. The operation has a topology change flavour to it.
 But we do not know exactly what this is, since we as yet have no clear ontology
 about the 4-geon topology. Yet we can, in the abstract, recognize that QCD is
 not a theory of internal symmetry rotations in a fibre bundle space, per se, but
 is rather a topology changing description of nature. The gauge fibre bundle
-theory is merely a crutch for avoiding talk about topology change.</p><p>Of course this is all philosophy so far, without a theory of the topology it
+theory is merely a crutch for avoiding talk about topology change.</p>
+<p>Of course this is all philosophy so far, without a theory of the topology it
 will remain philosophy. But it is not bad philosophy imho. I think it is pretty
-darn good.</p><h2 id=homework><a class=anchor href=#homework title='Anchor for: Homework.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Homework</h2><p>See if you can plough through Weinbergs&rsquo; Chapter 4. It&rsquo;s not sexy, but it is
+darn good.</p>
+<h2 id=homework><a class=anchor href=#homework title="Anchor for: Homework."><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a> Homework</h2>
+<p>See if you can plough through Weinbergs' Chapter 4. It&rsquo;s not sexy, but it is
 edifying. One day I might do a youtube series on that stuff for free view, but
-don&rsquo;t count on it. I can&rsquo;t write and produce content on an empty stomach.</p><table style="border-collapse:collapse;border=0"><col span=1 style=width:25%><col span=1 style=width:35%><col span=1 style=width:25%><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../002_preliminaries>Previous</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Theory</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../004_geometric_algebra>Next chapter</a></td></tr><tr style="border:1px solid color:#0f0f0f"><td style="border:1px solid color:#0f0f0f"><a href=../002_preliminaries>Preliminaries</a></td><td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td><td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../004_geometric_algebra>Geometric Algebra</a></td></tr></table></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.5e5e5e3f11510a5488490612ff5c36a48c133ae81bb9d2e4e5c377309de5ece2.js integrity="sha256-Xl5ePxFRClSISQYS/1w2pIwTOugbudLk5cN3MJ3l7OI=" crossorigin=anonymous></script>
-<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.cdeaf561a454e015b169c385f95c72d57d41f906a9bc4100636b18e1e4c15da3.js integrity="sha256-zer1YaRU4BWxacOF+Vxy1X1B+QapvEEAY2sY4eTBXaM=" crossorigin=anonymous></script></body></html>
+don&rsquo;t count on it. I can&rsquo;t write and produce content on an empty stomach.</p>
+<table style="border-collapse:collapse;border=0">
+<col span=1 style=width:25%>
+<col span=1 style=width:35%>
+<col span=1 style=width:25%>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../002_preliminaries>Previous</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>Back to Theory</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../004_geometric_algebra>Next chapter</a></td>
+</tr>
+<tr style="border:1px solid color:#0f0f0f">
+<td style="border:1px solid color:#0f0f0f"><a href=../002_preliminaries>Preliminaries</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:center"><a href=../>TOC</a></td>
+<td style="border:1px solid color:#0f0f0f;text-align:right"><a href=../004_geometric_algebra>Geometric Algebra</a></td>
+</tr>
+</table>
+</article>
+</main>
+</div>
+<footer>
+<div class=req-js>
+<button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist>
+</div>
+<noscript>
+<p class=noscript>Unable to execute JavaScript. Some features were disabled.</p>
+</noscript>
+</footer>
+<link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous>
+<script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6d5c73f67c1a40d4f11996ad5321a09b6a2675e35e4e49c13eefb03e6620da93.js integrity="sha256-bVxz9nwaQNTxGZatUyGgm2omdeNeTknBPu+wPmYg2pM=" crossorigin=anonymous></script>
+<script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.a980cc2c6c5ba8439af11acf5645c3d86b20e6cbe19c9d96c65976fae5264599.js integrity="sha256-qYDMLGxbqEOa8RrPVkXD2Gsg5svhnJ2Wxll2+uUmRZk=" crossorigin=anonymous></script>
+</body>
+</html>
