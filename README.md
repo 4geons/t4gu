@@ -1,4 +1,3 @@
-rCuCc:x:x
 # T4G Unchained
 
 Test KaTeX:
