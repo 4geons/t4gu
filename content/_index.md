@@ -1,6 +1,7 @@
 ---
 title                 : "Welcome to the T4G Dev Community"
 disableTitleSeparator : false
+katex: true
 ---
 
 
