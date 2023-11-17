@@ -1,0 +1,838 @@
+<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.120.4"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Spin-Statistics in Geometric Algebra | Topological 4-Geon Theory Unchained</title>
+<meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/008_pauli_in_ga/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Spin-Statistics in Geometric Algebra"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/008_pauli_in_ga/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a><a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Spin-Statistics in Geometric Algebra</h1><p>Published on <time datetime=2016-11-02>2016-11-02</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#two-particle-correlator>Two-particle Correlator</a><ul><li><a href=#computations-for-2-geon-systems>Computations for 2-geon systems?</a></li><li><a href=#notation-for-the-2-geon-systems>Notation for the 2-geon systems</a></li><li><a href=#the-2-geon-basis-states>The 2-geon basis states</a></li><li><a href=#the-singlet-state>The singlet state</a></li></ul></li><li><a href=#the-pauli-principle>The Pauli Principle</a><ul><li><a href=#what-is-the-pauli-principle>What is the Pauli Principle?</a></li><li><a href=#the-geon-exchange-operation-mathcali-in-ga>The geon exchange operation $\mathcal{I}$, in GA</a></li></ul></li><li><a href=#geon-exchange-is-rotationally-covariant>Geon exchange is rotationally covariant</a><ul><li><a href=#rotational-covariance>Rotational covariance</a></li><li><a href=#lorentz-invariance-of-mathcali>Lorentz invariance of $\mathcal{I}$</a></li></ul></li><li><a href=#dirac-wave-equation-symmetry>Dirac wave equation symmetry</a></li><li><a href=#todo>todo</a></li><li><a href=#summary-of-pauli-exclusion>Summary of Pauli Exclusion</a></li><li><a href=#two-slit-experiment-amplitudes>Two Slit Experiment Amplitudes</a></li><li><a href=#caveats>Caveats</a></li></ul></nav></details><p>To denote a system with two <em>indistinguishable</em> particles we need a <strong><em>pair</em></strong> of
+spacetime frame vectors, since each particle carries it&rsquo;s own clock.</p><p>((Why is that? Well, remember in QM/QFT all fundamental particles are &ldquo;oscillators&rdquo;
+and in T4G theory they all are assumed to have an internal CTC structure which permits
+geometrodynamic oscillations, which are very much like string vibrations in M-Theory.
+But this is not really the reason why we need a copy of a spacetime fame for each
+particle. We need a copy for each in order to specify results of measurements
+independently using the geometric algebra multivectors.))</p><p>To denote this in GA we need an extra decoration on the spacetime frame vectors
+$\{\gamma_\mu\}$. Doran & Lasenby use a right superscript, which clashes with exponentiation,
+so I&rsquo;ve invented my own notation, which uses a left scriptsize underlined index.
+Thus if we have two coupled particles we just add their respective frame vectors
+to denote the singlet state, like so:
+$$
+\underbar{\scriptsize 1}\gamma_\mu
++\underbar{\scriptsize 2}\gamma_\mu
+$$
+((No worries if this never catches on, but it&rsquo;s good for this website,
+which I have to write in KaTeX, so I cannot write left superscripts.))</p><p><strong>Note 1.</strong> Note that $\underbar{\scriptsize 1}\gamma_\mu$ and $\underbar{\scriptsize 2}\gamma_\mu$
+are two full-blown copies of the entire spacetime algebra (STA).
+Which might strike some younger sensitive folks as a bit profligate.
+But fear not! For a few reasons:</p><ul><li>In general relativity we are already comfortable with the notion of a privileged local
+frame of reference that any particle essentially &ldquo;carries around with itself&rdquo;.
+You know,&mldr; a muon knows what it&rsquo;s lifetime to decay is supposed to be, and it never
+changes, and a photon knows it&rsquo;s supposed to &ldquo;live & die in an instant&rdquo;
+from source to sink.</li><li>We are not making a copy of spacetime. The reference frames
+$\{ \underbar{\scriptsize i}\gamma_\mu
+\}$ are book-keeping accountancy,
+they&rsquo;re not ontological.</li><li>But they do <em>help us</em> express a real physical relationship, in some cases
+(namely the cases where we entangle two geons).</li><li>Multi-particle quantum mechanics is an interesting applied field of research,
+but we&rsquo;ll have very little use for it, because the case of a <strong><em>pair</em></strong> of
+indistinguishable particles is the only fundamental case we need consider,
+since, as we&rsquo;ve learned, spin-coupled states can only exist in <em>pairs</em>.</li><li>The exotic cases of GHZ states (multipartite entanglement) are a cool speciality topic,
+but pretty rare in the wild, and we&rsquo;ll have a pretty similar STA generalization to
+handle them, if and when we bother to handle them.</li></ul><p><strong>Note 2.</strong> Crucially though, <strong><em>this is more than notation</em></strong> &mdash; since what we mean in
+T4G theory by these coupled pair systems is that an EPR=ER wormhole bridge
+<em>might</em> connect the two indistinguishable geons.
+If two fermions are <em>not</em> so coupled then we cannot write a pure singlet state to
+describe them, we&rsquo;d have a mixed state.
+In T4G and in O&rsquo;Hara&rsquo;s terms, that just means the uncoupled geons are
+statistically independent, not Bell pairs.
+If they once had an ER bridge connecting them, it&rsquo;s collapsed &mdash; by some ant
+or speck of dust or Dextor in his lab making &ldquo;a measurement.&rdquo;</p><p>Why is this T4G view justified?</p><p>It is because with an ER=EPR wormhole the same quantum information goes down
+both wormholes, or can traverse out either end, after perhaps oscillating in-between
+them a countable number of times.</p><p>Recall (or learn) that <em>wormholes growing</em> means more information going in,
+an increase in the quantum complexity
+<a href=https://arxiv.org/pdf/1512.04993 target=_blank>(Brown, Susskind, Roberts and Zhang, 2016)</a>
+(see also <a href=https://link.aps.org/pdf/10.1103/PhysRevD.98.046016 target=_blank>Susskind's teleportation paper</a>
+).
+But fundamental particles do not grow in complexity, so their wormhole&rsquo;s do not grow
+(a proper mathematical physics result! Go on, try to fact-check me!) and
+so the horizon of a minimal wormhole in a t4g-geon structure preserves
+&ldquo;quantum information&rdquo; until it decays, and so both ends of these
+Planckian wormholes in T4G theory <em>have to be horizons for the <strong>same information</strong></em>,
+meaning they&rsquo;re &ldquo;the same particle&rdquo; or two copies &mdash; coupled &mdash;
+of indistinguishable geon&rsquo;s.</p><p>((I realise this raises the conundrum that if geons themselves contain CTC&rsquo;s,
+then every fundamental particle modelled by a t4g-geon has, in some sense,
+this sort of dual horizon, it &ldquo;carries information about itself in two copies,&rdquo;
+is how I would put it. But I am not sure this gives us any headaches,
+in fact it greatly relieves one headache I had while writing the older
+<a href=/t4gu/philosophy/>philosophy</a>
+pages, which is that I wondered how we justify
+geometric amplitudes in the superpositions. Well, we&rsquo;re going to get an answer
+from entanglement in the <a href=../009_interference_from_entanglement>next chapter</a>
+.))</p><p>That&rsquo;s the preliminaries, now we have to do the basic mathematics.
+It ain&rsquo;t too hard, luckily, which we saw in the previous chapter in O&rsquo;Hara&rsquo;s
+version.
+Who would&rsquo;ve thought.
+Although, the $\mathcal{GA}$ version we&rsquo;ll do now looks a bit nastier,
+I have to admit.
+I&rsquo;d like to have a slicker presentation.</p><h2 id=two-particle-correlator><a class=anchor href=#two-particle-correlator title='Anchor for: Two-particle Correlator.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Two-particle Correlator</h2><p>We have a copy of the pseudoscalar for each geon, that is, for the space labelled
+by $\underbar{\scriptsize 1}$ there is a pseudoscalar $\underbar{\scriptsize 1}i$,
+and for the space labelled by $\underbar{\scriptsize 2}$ there is a pseudoscalar $\underbar{\scriptsize 2}i$.</p><p>So we aught to write:
+$$
+\underbar{\scriptsize 1}J
+= \underbar{\scriptsize 1}i \underbar{\scriptsize 1}\boldsymbol{\sigma}_3
+$$
+and likewise for $\underbar{\scriptsize 2}J
+$, $ \underbar{\scriptsize 2}i$ and $\underbar{\scriptsize 2}\boldsymbol{\sigma}_3
+$.
+This is for notational convenience, to avoid a bit of mess down the road.</p><p>For either a coupled or uncoupled two-geon system with two-states, e.g., spin
+$\uparrow$ and $\downarrow$ we have the shorthand tensor product notation
+that covers the basis,
+$$
+\begin{pmatrix} 1\\ 0\end{pmatrix} \otimes \begin{pmatrix} 1\\ 0\end{pmatrix},\quad
+\begin{pmatrix} 1\\ 0\end{pmatrix} \otimes \begin{pmatrix} 0\\ 1\end{pmatrix},\quad
+\begin{pmatrix} 0\\ 1\end{pmatrix} \otimes \begin{pmatrix} 1\\ 0\end{pmatrix},\quad
+\begin{pmatrix} 0\\ 1\end{pmatrix} \otimes \begin{pmatrix} 0\\ 1\end{pmatrix}.
+$$
+The first of these is also written $\ket{\scriptsize ++}$ in bra-ket notation,
+the second $\ket{\scriptsize +-}$ and so forth.
+But we have a dictionary for translating these into geometric algebra spinors,
+$\psi$, or even elements of the Pauli $\mathcal{G}^+_3$ algebra.</p><p>For a two-geon system we will have a product spinor,
+$$
+\underbar{\scriptsize 12}\psi = \underbar{\scriptsize 1}\psi
+\underbar{\scriptsize 2}\psi
+$$
+we will just be lazy and call this tensor space spinor ``$\psi$&rsquo;&rsquo; for this chapter.</p><p>We need the two-particle state to act (or be acted upon) the multivectors in
+each of the product spaces in an invariant manner, so the $\underbar{\scriptsize 1}J
+$ and $\underbar{\scriptsize 2}J
+$
+simply <em>cannot be</em> the pseudoscalar for the two-particle system.
+We need to find a new pseudoscalar that acts invariantly on both spaces when
+multiplying $\psi$.</p><p>We thus need to find spinors that satisfy,
+$$
+\psi\underbar{\scriptsize 1}J
+= \psi\underbar{\scriptsize 2}J
+$$
+And yet, take note, each spinor in it&rsquo;s own half of the tensor space is just a
+normal Pauli rotor from our previous $\mathscr{P}$.
+So the above constraint is very interesting.
+But we are &ldquo;doing QM&rdquo; in T4G & GA context here, and so the spinors are not
+physical particles, they are not <em>the geons</em>. They are processes or instructions
+for how to translate laboratory instrument settings onto the frame that describes
+the geon properties, which is what a measurement theory demands, as per our previous
+philosophy and theory of QM from a T4G perspective.</p><p>That is all just to say that we are free to do essentially what we please to the
+separate spinors $\underbar{\scriptsize 1}\psi
+$ and $\underbar{\scriptsize 2}\psi
+$ provided we do not deform their
+action on their local variables in their respective $\underbar{\scriptsize k}\gamma_\mu
+$ frames.
+This is another constraint on the possible form that the $\underbar{\scriptsize k}\psi
+$ can take.</p><p>You can scribble around for a while, but one shortcut through the potential mess
+is a slick but simple bit of algebra, just note that each $\underbar{\scriptsize i}J
+$ satisfies,
+$$
+\underbar{\scriptsize i}J
+^2 = -1,
+$$
+so that,
+$$
+\psi = - \psi \underbar{\scriptsize 1}J
+\underbar{\scriptsize 2}J
+$$
+so we can form $2\psi$ by adding that expression to $\psi$, hence,
+$$
+\begin{array}{lrl}
+& 2\psi \!\!&= \psi - \psi \underbar{\scriptsize 1}J
+\underbar{\scriptsize 2}J
+\\
+\therefore & \psi \!\!&= \tfrac{1}{2}\psi \left( 1 - \underbar{\scriptsize 1}J
+\underbar{\scriptsize 2}J
+\right)
+\end{array}
+$$
+and so in what seems like a bit of wizardly sleight of hand we&rsquo;ve found a candidate
+form for the general two-particle state, which is that whatever
+$\psi = \underbar{\scriptsize 1}\psi
+\underbar{\scriptsize 2}\psi
+$ is, if it has this post-factor on the right-hand
+side it will have invariance upon right multiplications by the Pauli algebra $\mathscr{P}$ mapping of the unit imaginary for both spaces in the tensor form
+(namely $\underbar{\scriptsize 1}J
+$ and $\underbar{\scriptsize 2}J
+$). So, abstractly,
+$$
+\psi = \left(\text{some spinors}\right) \left( 1 - \underbar{\scriptsize 1}J
+\underbar{\scriptsize 2}J
+\right)
+$$
+and we tidy this up a little by defining a new idempotent element we name, $E$,
+$$
+E = \tfrac{1}{2}\left( 1 - \underbar{\scriptsize 1}J
+\underbar{\scriptsize 2}J
+\right)
+$$
+since we need the factor of $\scriptsize 1/2$ to make it square to itself, you can check that,
+$$
+E^2 = E
+$$
+which is the definition of an <strong><em>idempotent</em></strong> element of any algebra.
+(I do not know who settled on the name `$E$&rsquo; for this idempotent,
+but it is kind of &ldquo;elementary&rdquo;.)
+In physics-ese lingo this property also means $E$ is a <strong><em>projector</em></strong>.
+(You act with it once is gives you back a new spinor projected onto a
+measurement subspace, but act twice it does no more or less.)</p><p>Next, with this projector defined we can now write down an invariant &ldquo;unit imaginary&rdquo; for the whole product space,
+$$
+J = E \underbar{\scriptsize 1}J
+= E \underbar{\scriptsize 2}J
+= \tfrac{1}{2}\left(\underbar{\scriptsize 1}J
++ \underbar{\scriptsize 2}J
+\right)
+$$
+Again , you could scribble around a while trying to invent this, but you&rsquo;ll find it&rsquo;s the simplest and obvious choice.
+But you should check it is a tensor space version of the pseudoscalar:
+$$
+J^2 = -1.
+$$
+Which is not hard, since we already have $E^2=E$, and $(\underbar{\scriptsize k}J
+)^2 = -1$ for
+each geon&rsquo;s tensor space label $\underbar{\scriptsize k}
+=\underbar{\scriptsize 1}
+,\underbar{\scriptsize 2}
+$.</p><p>You might be asking why we&rsquo;re doing all this? It is because we need a
+geometric algebra basis for this new thing called a 2-geon system.
+And <em>that</em> in turn is because later on we will want to couple such a system with
+a wormhole ER=EPR bridge, the same way we did last chapter.</p><p>The object that allows us to do this for geometric algebra spinors is this thing
+$E$, which we will now enshrine a bit further by christening it:</p><blockquote><p>The object $E$ generalizes to a system of $n$ geons, where it is denoted $E_n$
+and is called,<br><div style=text-align:center><em>The quantum correlator</em></div></p></blockquote><p>To figure out what $E_n$ boils down to you need to have it satisfy:
+$$
+E_n \underbar{\scriptsize j}J
+= E_n\underbar{\scriptsize k}J
+= J_n,\quad\text{for each }
+\underbar{\scriptsize i}
+,\underbar{\scriptsize k}
+\in\{\underbar{\scriptsize 1}
+, \underbar{\scriptsize 2}
+,\ldots , \underbar{\scriptsize n}
+\}
+$$
+It turns out this is just a product over all the correlators with any one of the $\underbar{\scriptsize i}
+$,
+so we can choose $\underbar{\scriptsize i}
+=\underbar{\scriptsize 1}
+$, for simplicity and write,
+$$
+E_n = \prod_{\underbar{\scriptsize k}
+=\underbar{\scriptsize 2}
+}^{\underbar{\scriptsize n}
+} \tfrac{1}{2}\left(1 - \underbar{\scriptsize 1}J
+\underbar{\scriptsize k}J
+\right).
+$$
+Not bad for an afternoon&rsquo;s algebra huh?</p><p>Note also that we get the &ldquo;complex structure&rdquo; for the mapping from Hilbert to
+$\mathscr{P}$ GA space with any one of the $\underbar{\scriptsize i}J
+$, so for instance,
+$$
+J_n = E_n\underbar{\scriptsize k}J
+$$
+is independent of which $\underbar{\scriptsize k}
+$ label we choose, all give the same $J_n$.</p><p>The pay-off for going to all this effort is that now all the operations we did
+in the single geon geometric algebra $\mathscr{P}$ work the same in the
+multi-particle setting, just with $J_n$ instead of the old single GA pseudocalar $I$.</p><p>So,</p><ul><li>reversion,</li><li>space conjugate,</li><li>Hermitian conjugate,</li><li>Hermitian transpose,</li><li>spinor inner product, $\langle\cdot\rangle_S$</li></ul><p>all work the same as before. In particular rotations by rotors works the same.</p><h3 id=computations-for-2-geon-systems><a class=anchor href=#computations-for-2-geon-systems title='Anchor for: Computations for 2-geon systems?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Computations for 2-geon systems?</h3><p>So we might want to check some of those operations, in particular rotations.
+How?</p><p>I found the Julia <code>Multivectors.jl</code> package to be far too awkward.
+So I tried Python&rsquo;s <code>galgebra</code>.</p><p>To check all this stuff computationally, we would need two or more GA bases
+defined, and I am not sure that works even in the Python <code>galgebra</code> library yet,
+so in a lot of this multi-particle GA quantum mechanics we are off on our own
+pen & paper without a computer algebra checker I think. Like in the olde days of
+Newton, Maxwell, Dirac and Pauli.
+But you might like to write a multi-particle galgebra module for Python yourself?
+Think about it anyway, if you like a programming challenge.</p><p>One possible way if you are careful and &ldquo;behave&rdquo; is to just use a higher dimensional
+basis, so in <code>galgebra</code> I might define an 8-dimensional basis as follows
+(apologies for the long scroll needed in the code box, for aesthetics I did not
+want to do too much line wrapping),</p><div class=highlight><pre aria-label="Box containing code sample." tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>sympy</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>galgebra.ga</span> <span class=kn>import</span> <span class=n>Ga</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>txyz12</span> <span class=o>=</span> <span class=p>(</span><span class=n>t1</span><span class=p>,</span> <span class=n>x1</span><span class=p>,</span> <span class=n>y1</span><span class=p>,</span> <span class=n>z1</span><span class=p>,</span> <span class=n>t2</span><span class=p>,</span> <span class=n>x2</span><span class=p>,</span> <span class=n>y2</span><span class=p>,</span> <span class=n>z2</span> <span class=p>)</span> <span class=o>=</span> <span class=n>sympy</span><span class=o>.</span><span class=n>symbols</span><span class=p>(</span><span class=s1>&#39;t1 x1 y1 z1 t2 x2 y2 z2&#39;</span><span class=p>,</span> <span class=n>real</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>o8d</span> <span class=o>=</span> <span class=n>Ga</span><span class=p>(</span><span class=s1>&#39;e1t e1x e1y e1z e2t e2x e2y e2z&#39;</span><span class=p>,</span> <span class=n>g</span><span class=o>=</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>],</span> <span class=n>coords</span><span class=o>=</span><span class=n>txyz12</span><span class=p>)</span>
+</span></span></code></pre></div><p>However, this is <strong><em>not</em></strong> going to work, because what it defines is a 256-dimensional
+algebra, with grades of $k=0\ldots 8$, whereas what we want is a tensor of spaces of
+grades $k=1\ldots 4$.
+For two-geon quantum mechanics we want a doubling of the space,
+not an exponentiating!
+Also, we need the multivectors in the separate quotient spaces of the
+tensor space to commute, but they will not commute if we take them from the
+8-dimensional (3+3)-space (1+1)-time frame basis.</p><p>One option was to use numpy arrays, which can vectorize multiplications.
+I had a go at this but numpy arrays do not work in the same way as tensors,
+so I think to get multiparticles into <code>galgebra</code> it might be necessary to write
+a whole new class that piggy backs on the underlying multivectors.</p><p>There is a Python library for tensors called <a href=https://pypi.org/project/pytearcat/ target=_blank>pytearcat</a>
+but I have not tried it together with galgebra yet, but it seems too specialized for general
+relativity. A more general package is <a href=https://pypi.org/project/algebra/ target=_blank>algebra</a>
+which might
+be easier to extend with galgebra.
+But provided speed is not of the essence, I don&rsquo;t see much wrong with writing our own
+python classes for at least the $n=2$ geon systems.</p><p>I&rsquo;ve put this on a TODO list.</p><p>The project is &ldquo;complicated&rdquo; because the Pauli relative vectors in different
+halves of the tensor space need to commute, while for the same subspace they do not.
+This strongly suggest to me that no native Python matrix or tensor libraries
+are going to be able to cope. We&rsquo;ll need to build our own.</p><h3 id=notation-for-the-2-geon-systems><a class=anchor href=#notation-for-the-2-geon-systems title='Anchor for: Notation for the 2-geon systems.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Notation for the 2-geon systems</h3><p>Suppose we had a 2-geon spinor expressed in geometric algebra of $\mathscr{P}$ 2-geon space, that was something like,
+$$
+\underbar{\scriptsize 12}\psi = \cos(\alpha)\,\underbar{\scriptsize 1}i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
++ \sin(\alpha)\, \underbar{\scriptsize 2}i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+E.
+$$
+A nice convention to tidy this up a little is that when the pseudoscalar $i$
+is next to a $\underbar{\scriptsize j}\boldsymbol{\sigma}_k$ from one of the
+spaces of relative vectors we can drop the left script label on it,
+taking it as implied. So the tidier format is,
+$$
+\psi = \cos(\alpha)\,i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
++ \sin(\alpha)\, i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+E.
+$$
+Since the spinor components given are obviously for a 2-geon system we&rsquo;ve afforded
+to drop the left underbar scripts $\underbar{\scriptsize 12}$ from the $\psi$ too.</p><p>That&rsquo;d also get pretty tedious for an $n>4$ geon system, imagine,
+$$
+\underbar{\scriptsize 123456} \psi
+$$
+for $n=6$. What would happen when we get to $n=12$,
+$$
+\underbar{\scriptsize 123456789101112} \psi \,\, ?
+$$
+it gets a bit ridiculous, even though it&rsquo;s unambiguous.
+So we drop the labels whenever possible.
+But you know the right-hand side would look even more horrific.
+Nature serves us up some respite, since it&rsquo;s difficult to couple more than
+$n=2$ geons, so in large $n$ systems of interest typically semi-classical
+physics approximations will be good enough for all practical purposes,
+and count for us as <strong><em>applied physics</em></strong> and so we&rsquo;re not interested in them.</p><p>I guess I&rsquo;d adopt a shorthand if pressed to use explicit identifications, like,
+$$
+\underbar{\scriptsize \ldots 12}\psi
+$$
+for the $n=12$ geon case. The lead ellipsis is just to be sure we did not mean
+$n=1, 2$. After all, we do not need to be reminded to start
+counting geons at $\underbar{\scriptsize i}=1$.</p><p>Particle physicists at CERN do not need to worry much at all about entanglement
+except for computing two-particle scattering amplitudes that are sensitive to
+whether particles are created in the singlet sates or not,
+and I don&rsquo;t think many are. Although I guess the glueballs could pose a hairy problem.
+I wouldn&rsquo;t know.</p><h3 id=the-2-geon-basis-states><a class=anchor href=#the-2-geon-basis-states title='Anchor for: The 2-geon basis states.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The 2-geon basis states</h3><p>Above we wrote down the Pauli column vector and ket representations for the
+basis states for a two-state 2-geon system. That is, two maybe coupled (maybe not) geons,
+that have $\uparrow$ and $\downarrow$ states they can be projected into by a
+spin measurement.</p><p>((Although, this is more general than spin measurement, they could be two atoms
+that have two energy eigenstates some energy measurement projects onto. Like
+Feynman&rsquo;s ammonia molecule example in the <em>Red Book</em> Vol-III.
+Or like a two-slit interference experiment.))</p><p>It turns out we can get the tensored basis state just with geometric products of
+the correlator $E$ and the $i\underbar{\scriptsize 1}\boldsymbol{\sigma}_k
+$ and $i\underbar{\scriptsize 2}\boldsymbol{\sigma}_k
+$</p><p>To do so, remember the principle mapping from $\mathcal{H} \mapsto\mathscr{P}$:
+$$
+\mathcal{H} \ni \quad |\psi\rangle
+= \begin{pmatrix} a^0 + i a^3 \\ -a^2 + i a^1 \end{pmatrix}
+\longmapsto \sqrt{\rho}R = a^0 + I a^k \boldsymbol{\sigma}_k \quad \in \mathscr{P}
+$$
+From which we can read off the first basis column vector, which goes like,
+$$
+\begin{pmatrix}
+1 \\ 0
+\end{pmatrix} \longmapsto 1
+$$
+So in the 2-geon (potentially coupled, but maybe not) system we need to
+post-multiply by the correlator $E_2$, so we&rsquo;ve got,
+$$
+\begin{pmatrix} 1\\ 0\end{pmatrix} \otimes \begin{pmatrix} 1\\ 0\end{pmatrix}
+\longmapsto (1)(1)E = E.
+$$</p><p>I guess the rest of the tensor basis is homework?</p><p><strong>Exercise <a name=Ex.1>1. (a), (b), (c)</a></strong> write down the other
+three 2-geon basis states.</p><p><strong>Solution <a name=Ex.1-a>Ex.1.(a)</a></strong> The second of the 1-geon base states goes as,
+$$
+\begin{pmatrix} 0\\ 1\end{pmatrix}
+\longmapsto - a^2 I \boldsymbol{\sigma}_2 = i\boldsymbol{\sigma}_2
+$$
+so the second of the 2-geon base states must go as,
+$$
+\begin{pmatrix} 1\\ 0\end{pmatrix} \otimes \begin{pmatrix} 0\\ 1\end{pmatrix}
+\longmapsto (1)(-i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+) E = -i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+E.
+$$</p><p><strong>Solution <a name=Ex.1-b>Ex.1.(b)</a></strong> The third of the 2-geon tensor base states,
+$$
+\begin{pmatrix} 0\\ 1\end{pmatrix} \otimes \begin{pmatrix} 1\\ 0\end{pmatrix}
+\longmapsto (-i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+)(1) E = -i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+E
+$$</p><p><strong>Solution <a name=Ex.1-c>Ex.1.(c)</a></strong> The fourth of the 2-geon tensor base states,
+$$
+\begin{pmatrix} 0\\ 1\end{pmatrix} \otimes \begin{pmatrix} 0\\ 1\end{pmatrix}
+\longmapsto (-i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+) (-i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+)E = i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+\,i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+E.
+$$</p><p>I will admit here that visually the column matrix rendition looks more appealing
+and &ldquo;physical&rdquo; but that&rsquo;s a bit of a mirage.
+What we are going to see later is that the geometric algebra 2-geon states are
+superior for deriving basic results like the Pauli Exclusion principle.
+For that though, we need to get an expression for the singlet 2-geon state.</p><h3 id=the-singlet-state><a class=anchor href=#the-singlet-state title='Anchor for: The singlet state.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The singlet state</h3><p>Maybe this is an exercise.</p><p><strong>Exercise <a name=Ex.2>2.</a></strong> Show that the isotropic spin-coupled singlet state,
+$$
+\ket{\varpi} = \tfrac{1}{\sqrt{2}} \left(\ket{\scriptsize + -} - \ket{\scriptsize - +}\right)
+$$
+is expressed in geometric algebra of $\mathscr{P}$ 2-geon space as,
+$$
+\varpi = \tfrac{1}{\sqrt{2}} \left(\underbar{\scriptsize 1}i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+- \underbar{\scriptsize 2}i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+\right) E.
+$$
+Just naming it &ldquo;$\varpi&rdquo;$ for the heck of it, or not really,
+I like the suggestive overbar connector on that Greek letter.</p><p>Recall the convention is that when the pseudoscalar $i$ is next to a
+$\underbar{\scriptsize j}\boldsymbol{\sigma}_k$ from one of the spaces of relative vectors we can drop the left script label on it, taking it as implied, so a bit tidier is,
+$$
+\varpi = \tfrac{1}{\sqrt{2}} \left( i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+- i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+\right) E.
+$$</p><p><strong>Solution 2.</strong> Using the previous tensor base states we&rsquo;ve got a sum of two of them,
+from <a href=#Ex.1-a>Ex.1.(a)</a>
+and <a href=Ex.1-b>1.(b)</a>
+:
+$$
+\begin{array}{rl}
+\ket{\varpi} \!\!&= \tfrac{1}{\sqrt{2}} \left(\ket{\scriptsize + -} - \ket{\scriptsize - +}\right) \\
+\!\!& \longmapsto \varpi = \tfrac{1}{\sqrt{2}} \left((-i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+) - (-i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+)\right) E \\
+\!\!& = \tfrac{1}{\sqrt{2}} \left(i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+- i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+)\right) E \\
+\end{array}
+$$
+as required.</p><p><strong>Exercise <a name=Ex.3>3.</a></strong> Show that $\varpi$ can be factored into two new
+idempotents, as follows:
+$$
+\varpi = \tfrac{1}{2} \left(1 + i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+\,i\underbar{\scriptsize 2}\boldsymbol{\sigma}_2
+\right)\,
+\tfrac{1}{2}\left(1 + i\underbar{\scriptsize 1}\boldsymbol{\sigma}_3
+\,i\underbar{\scriptsize 2}\boldsymbol{\sigma}_3
+\right) \sqrt{2}\, i\underbar{\scriptsize 1}\boldsymbol{\sigma}_2
+$$</p><p><strong>Exercise <a name=Ex.4>4.</a></strong> Use the quantum scalar product from
+<a href=../005_spacetime_algebra>chapter 4</a>
+to show the singlet state $\varpi$ is
+already unit normalized.</p><p><strong>Comment:</strong> I am pretty sure this spinor encodes a lot of the mystery of
+quantum mechanics. And yet, all we&rsquo;ve got is that it is,</p><ul><li>spin-coupled,</li><li>rotationally covariant,</li><li>represents a wormhole bridge between the 1-geons.</li></ul><p>and if that third point is taken seriously that&rsquo;s the only non-classical thing
+about the singlet state $\varpi$.
+It&rsquo;s all classical spacetime geometry otherwise, with the weird thing being how
+we interpret this object, a spacetime Pauli spinor, as an instruction for telling
+us what&rsquo;ll happen if we measure the spin orientations at each of the possibly spacelike separated locations $\{\underbar{\scriptsize 1}\gamma
+_\mu\}$ and $\{\underbar{\scriptsize 2}\gamma
+_\mu\}$.</p><p>The thing that existing T4G theory cannot yet show is why an ER bridge couples
+the spins in a singlet state and not in one of the other paired states.
+On the other hand, this could be taken as a sort of definition of what an
+ER=EPR bridge accomplishes. Then T4G theory would be about figuring out why that is,
+and what sort of properties the putative EPR wormhole has to have.</p><p>Actually we did not show $\varpi$ is rotationally covariant.</p><h4 id=the-singlet-state-is-rotationally-covariant><a class=anchor href=#the-singlet-state-is-rotationally-covariant title='Anchor for: The singlet state is rotationally covariant.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The singlet state is rotationally covariant</h4><p>You could stop and do this as an exercise, but unless you have facility with
+the tensored geometric algebra it might be a bit odd figuring it out.
+So let&rsquo;s go through it lemma style.</p><p>What we need is a joint rotor to perform the rotation, plus the knowledge from
+<a href=../005_spacetime_algebra>the Pauli algebra chapter</a>
+that under a rotation a spinor transforms by single sided left-multiplication
+(recall all pure $k$-blades would transform double-sided).</p><p>The rotor&rsquo;s carry the labels for the separate copies of the frames, so we&rsquo;ve got a rotor:
+$$
+R = \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+$$
+and to rotate the singlet state, it is:
+$$
+\varpi \longrightarrow \varpi^\prime = \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\varpi
+$$
+But now a bit of magic happens.
+Use the following exercise to simplify the rotated $\varpi$.</p><p><strong>Exercise <a name=Ex.5>5.</a></strong> Show that for the singlet state,
+$$
+i\underbar{\scriptsize 1}\boldsymbol{\sigma}_3
+\varpi = -i\underbar{\scriptsize 2}\boldsymbol{\sigma}_3
+\varpi
+$$
+and hence that also,
+$$
+i\underbar{\scriptsize 1}\boldsymbol{\sigma}_1
+\varpi = -i\underbar{\scriptsize 2}\boldsymbol{\sigma}_1
+\varpi
+$$
+and hence, finally, that for <em>any</em> even multivector $M$,
+in the Pauli algebra $\mathscr{P}$,
+$$
+\underbar{\scriptsize 1}
+M \varpi = \underbar{\scriptsize 2}
+M^\dagger \varpi.
+$$</p><p><strong>Exercise <a name=Ex.6>6.</a></strong> Use <a href=#Ex.5>Ex.5</a>
+to show that the singlet state $\varpi$ is rotationally covariant.</p><p>To solve this exercise we might need a hint. We know rotors satisfy,
+$$
+R\tilde{R} = 1
+$$
+so since the Hermitian conjugate is in timespace signature,
+$M^\dagger = -\gamma_0\tilde{M}\gamma_0$, and if $M$ is even grade then it
+commutes with $\gamma_0$, so we get,
+$$
+M^\dagger = \tilde{M},\quad\text{for $M$ even.}
+$$</p><p><strong>Solution 6.</strong> The rotors are even elements of $\mathscr{P}$, so we can directly
+apply Ex.5, and the hint above,
+$$
+\varpi^\prime = \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\varpi = \underbar{\scriptsize 1}R
+\underbar{\scriptsize 1}
+R^\dagger \varpi = \varpi.
+$$
+OK, I said it was magic, but we should have proved this result non-magically for
+the singlet state in the previous chapter using the general rotation matrix.
+The reason I did not is because that sucks. The use of rotors for rotation is so
+much more elegant.</p><p>The cost was having to prove the lemma above for the even multivectors,
+but that was not so bad. So I guess I lied about it being magic,
+but it&rsquo;s still pretty slick.</p><p>Anyway, now we&rsquo;ve found spin coupling, rotational covariance, hence ISC states,
+and all with classical geometry and the only weird bit of it being how to
+interpret the coupling, and from T4G we&rsquo;re claiming it&rsquo;s via an ER=EPR bridge.</p><p>It should be possible now to state the Pauli Exclusion Principle in this language.
+We might even get a slicker proof than in the last chapter.</p><h2 id=the-pauli-principle><a class=anchor href=#the-pauli-principle title='Anchor for: The Pauli Principle.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Pauli Principle</h2><p>In the &ldquo;<a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>STA and electron physics</a>
+&rdquo; paper,
+Doran <em>et al</em> would develop the wave equations for the multi-particle systems at this stage.
+I&rsquo;m going to skip that because it&rsquo;s not essential for the rest of this chapter.</p><p>All we need to know is that in a measurement theory the Pauli spinors describe well
+enough what the results of measurements of the two-particle system will be,
+and that if the two geons are coupled then the spin measurements will be more
+correlated than classical mechanics can account for, they will be Bell correlated.</p><p>The previous expressions using the quantum correlator showed us how to describe such correlations. We are interpreting them as an implied ER=EPR bridge connection,
+such that the pair of particles share two horizons and the same qubits.
+Enough qubits to describe two particles, not just one.</p><p>So we could say this is &ldquo;not quite&rdquo; a minimal Planck wormhole, but it&rsquo;s the
+next most minimal ER bridge.
+And as O&rsquo;Hara&rsquo;s results from the previous chapter already alerted us,
+hardly a more minimal wormhole is possible, since entanglements involving more
+wormholes would have to violate rotational covariance, and so would be <em>distinguishable</em> particles.</p><p>The trouble was, O&rsquo;Hara&rsquo;s formalism for all this exploited existing Dirac
+bra-ket machinery, which obscures the <em>real</em> geometry. So now we wish to see how
+it is all described with real geometric algebra. And we&rsquo;ve already obtained the
+singlet state for a spin $\uparrow | \downarrow$ coupled system.</p><h3 id=what-is-the-pauli-principle><a class=anchor href=#what-is-the-pauli-principle title='Anchor for: What is the Pauli Principle?.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>What is the Pauli Principle?</h3><p>You can forget about the field commutation relations, there&rsquo;re not fundamental,
+since the field variables are fictional accounting tools useful for differential
+Hamiltonian time evolution.
+We want to be doing T4G theory, which is global and must deal with a full
+4D cobordism all at once, and that means &mdash; if we do not want to risk madness &mdash;
+simplifying analysis to the spacetime boundaries of a measurement process.</p><p>At the measurement boundaries what matters are the symmetry principles,
+since they express what is conserved. (Deep down that&rsquo;s all the field
+variable commutators were expressing as well.)</p><p>But at this level of analysis this means the Pauli Exclusion Principle boils
+down to a simple statement about symmetry of the wave functions or spinors
+used to describe possible outcomes of spin measurements.
+(Implying a magnetic field of some sort or another, possibly Stern-Gerlach,
+or more naturally the Coulomb fields of an atomic nucleus. Anything that can
+be counted as a type of detection of the geon&rsquo;s spin.)
+The statement is, for a wave packet $\psi = \underbar{\scriptsize 12}\psi
+$ describing two-geons,
+$$
+\psi (\vec{r}) = -\psi(\mathcal{I}[\vec{r}]).
+$$
+where $\vec{r}$ is an 8-dimensional coordinate vector, and
+$$
+\vec{r} = \underbar{\scriptsize 1}q
++ \underbar{\scriptsize 2}s
+$$
+is the multi-particle 3-space position tensor, and $\mathcal{I}$ is abstractly
+the operation (we know not yet how to do it) of &ldquo;swapping the particles&rdquo;, that is,
+abstractly,
+$$
+\mathcal{I}[ \underbar{\scriptsize 1}q
++ \underbar{\scriptsize 2}s
+] = \underbar{\scriptsize 1}s
++ \underbar{\scriptsize 2}q
+$$</p><p>((Have a bit of a stare at that for a minute. The English symbols $q$ and $s$
+are standing for Euclidean vectors
+$(x=q_1, y=q_2, z=q_3)$, and $(x=s_1, y=s_2, z=s_3)$, while the left
+underbar scripts stand for the separate copies of the spacetime frames, i.e.,
+particle labels.
+So the abstract operator $\mathcal{I}$ really is &ldquo;swapping geons&rdquo;.))</p><p>The point of the Pauli Principle is that when the particles are indistinguishable,
+we should see no essential physics change if we swap them around, and yet if we
+make some physical swap (via say wormhole traversals) something does change,
+a sign on the two-geon wave function. This sign change has no effect classically,
+due to employment of Kolmogorov probabilities, but quantum mechanically it is a
+phase change on the measurement algebra descriptors (the spinor tensor) and can lead
+to interference effects, and that&rsquo;s what &ldquo;causes&rdquo; the Pauli exclusion phenomenon.
+It&rsquo;s an interference phenomenon.</p><p>In T4G terms, it is an effect of wormhole topology, which is the underlying
+cause of all the non-classical interference effects.</p><p>To do this in $\mathscr{P}$ we first seek a multivector operator
+(so just a multivector) that
+swaps $(x,y,z)$ coordinates on a spinor like the singlet state $\varpi$,
+but which does so for <em>both</em> of the tensor subspaces simultaneously,
+so it has to invert or swap a frame
+$\{\underbar{\scriptsize 1}\gamma_\mu
+\}$ with a frame $\{\underbar{\scriptsize 2}\gamma_\mu
+\}$.</p><p>But we cannot simply parity swap the coordinates in the geometric algebra
+$\mathscr{P}$ treatment, because recall the two-geon spinor $\underbar{\scriptsize 12}\psi
+$ was
+a little more complicated than a 1-geon spinor, since it has two copies of the
+spacetime algebra. It&rsquo;s a tensor product space object.</p><p>So we need a frame swapping multivector operation, and there isn&rsquo;t one
+single multivector geometric product to do this (at least I think not,
+you could try finding one). But there is a next best thing,
+which is a single multivector that can perform the frame swapping by a
+double-sided geometric product, so just like the action of a rotor for rotations.</p><h3 id=the-geon-exchange-operation-mathcali-in-ga><a class=anchor href=#the-geon-exchange-operation-mathcali-in-ga title='Anchor for: The geon exchange operation $\mathcal{I}$, in GA.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The geon exchange operation $\mathcal{I}$, in GA</h3><p>And to be honest I have no idea how long it would take me to figure out what it is,
+probably days, maybe weeks. Luckily I never had to, since
+<a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>Doran et al</a>
+found it for us.
+All we need to do is verify that it works. It is denoted $\mathcal{I}$
+(for &ldquo;frame inversion&rdquo; I guess, but it is really a swap, not an invert,
+but whatever&mldr;)
+and is defined by,
+$$
+\mathcal{I} = \Gamma_0\Gamma_1\Gamma_2\Gamma_3
+$$
+where,
+$$
+\Gamma_\mu = \tfrac{1}{\sqrt{2}}\left(\underbar{\scriptsize 1}\gamma_\mu
++ \underbar{\scriptsize 2}\gamma_\mu
+\right).
+$$</p><p>Checking this works can be now made into exercises.</p><p><strong>Exercise <a name=Ex.7>7</a></strong> Show that,
+$$
+\mathcal{I}^2 = -1.
+$$
+this is what we&rsquo;d expect if we think we need to act double-sided by $\mathcal{I}$
+to do a coordinate frame swap.</p><p><strong>Exercise <a name=Ex.8>8</a></strong> Show that $\mathcal{I}$ does indeed invert
+coordinates in each tensor subspace correctly, that is,,
+$$
+\mathcal{I}\underbar{\scriptsize 1}\gamma_\mu
+\mathcal{I} = \underbar{\scriptsize 2}\gamma_\mu
+,\qquad\text{and}\qquad
+\mathcal{I}\underbar{\scriptsize 2}\gamma_\mu
+\mathcal{I} = \underbar{\scriptsize 1}\gamma_\mu
+.
+$$
+In other words, $\mathcal{I}$ is confirmed as the particle-exchange operation
+in the geometric algebra $\mathscr{P}$.</p><p><strong>Exercise <a name=Ex.8>8</a></strong> it is trivial now to show that,
+$$
+\mathcal{I}\left(\underbar{\scriptsize 1}q
++ \underbar{\scriptsize 2}s
+\right)\mathcal{I} = \underbar{\scriptsize 1}s
++ \underbar{\scriptsize 2}q
+.
+$$
+all you need to do is note $\underbar{\scriptsize 1}q
+= \underbar{\scriptsize 1}\gamma_\mu
+q^\mu$
+and $\underbar{\scriptsize 2}s
+= \underbar{\scriptsize 2}\gamma_\mu
+s^\mu$, for $\mu\in\{0,1,2,3\}$.</p><h2 id=geon-exchange-is-rotationally-covariant><a class=anchor href=#geon-exchange-is-rotationally-covariant title='Anchor for: Geon exchange is rotationally covariant.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Geon exchange is rotationally covariant</h2><p>Recall the Pauli Principle, or ISC statistics, applies only to pairs of geons,
+and in particular we get Fermi-Dirac statistics for the singlet state $\varpi$.
+We are cheating here because we know this from orthodox QM. Nevertheless, for
+geometric algebra pedagogy we can imagine some genius figuring this out
+using the GA language rather than Dirac bra-kets.
+We&rsquo;re going to skip the tormented genius scribbling in vain stuff.</p><p>But the question to hand is how do we know the geon exchange
+$\mathcal{I} \psi \mathcal{I}$ will preserve rotational covariance?</p><p>We should also worry about preserving solutions to the Dirac equation,
+since we&rsquo;d like the geon-exchanged two-geon system to be a solution to the
+Dirac equation, otherwise it will not be counted as &ldquo;behaving like a fermion&rdquo;.
+You might think this is trivial, since &ldquo;How can swapping the coordinate
+frames possibly change solutions to the wave equations?&rdquo;
+You&rsquo;d be right, but we have no right to just assume this.
+So we also have to show the exchanged state is a symmetry of the
+Dirac equation for paired geons.</p><p>These are the two next tasks: check $\mathcal{I} \psi \mathcal{I}$ is;
+(i) rotationally covariant,
+(ii) Lorentz invariant,
+(iii) a symmetry of Dirac 2-geon equation.</p><p>These are perhaps a bit more than homework exercises, so I&rsquo;ll walk through them
+pedestrian like.</p><h3 id=rotational-covariance><a class=anchor href=#rotational-covariance title='Anchor for: Rotational covariance.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Rotational covariance</h3><p>The problem to solve is to show that if we rotate the tensored frames
+$\{\underbar{\scriptsize 1}\gamma_\mu
+\}$ and $\{\underbar{\scriptsize 2}\gamma_\mu
+\}$ equally, then we should paranoid-like in
+<em>a worst case scenario</em> expect to get a &ldquo;different&rdquo; geon-exchange
+operator $\mathcal{I}^\prime$, which <em>would be a bad thing</em> because it would mean
+$\mathcal{I}$ would depend upon our choice of spacetime frames,
+and we actually want it not to!
+We would like to find a 2-geon exchange operator that does <strong><em>not</em></strong> depend
+upon our choice of frame!</p><p>So instead we hope that the naïve paranoid expectation is wrong and that when
+we rotate the frame basis vectors nothing happens to the new $\mathcal{I}^\prime$
+it should end up equal to the original $\mathcal{I}$. So let&rsquo;s see if the good
+scenario is always going to be true.</p><p>We rotate frame vectors as normal in GA with a rotor,
+$$
+\underbar{\scriptsize 1}\gamma_\mu
+^\prime = \underbar{\scriptsize 1}R
+(\underbar{\scriptsize 1}\gamma_\mu
+)\underbar{\scriptsize 1}\tilde{R}
+$$
+and similarly for the other tensor subspace, with a rotor $\underbar{\scriptsize 2}R
+$.
+This will change the $\Gamma_\mu$ in the definition of $\mathcal{I}$,
+and that will completely describe or new $\mathcal{I}^\prime$ by definition. For the $\Gamma$ we&rsquo;ve got,
+$$
+\Gamma_\mu^\prime = \tfrac{1}{\sqrt{2}}\left( \underbar{\scriptsize 1}R
+(\underbar{\scriptsize 1}\gamma_\mu
+)\underbar{\scriptsize 1}\tilde{R}
++
+\underbar{\scriptsize 2}R
+(\underbar{\scriptsize 2}\gamma_\mu
+)\underbar{\scriptsize 2}\tilde{R}
+\right)
+$$
+but the slickness of our notation means we can gather the rotors to the left
+and right hand sides, since each labelled rotor acts only on it&rsquo;s labelled tensor
+subspace, hence,
+$$
+\begin{array}{rl}
+\Gamma_\mu^\prime\!\! &= \tfrac{1}{\sqrt{2}} \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\left( \underbar{\scriptsize 1}\gamma_\mu
++
+\underbar{\scriptsize 2}\gamma_\mu
+\right) \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+\\
+&= \tfrac{1}{\sqrt{2}} \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\,\Gamma_\mu\, \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+\end{array}
+$$
+We have to use this to define the new $\mathcal{I}$, which is the geometric
+product of all these, which is thus,
+$$
+\mathcal{I}^\prime = \tfrac{1}{\sqrt{2}} \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\,\Gamma_0\, \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+\underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\,\Gamma_1\, \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+\ldots \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\,\Gamma_3\, \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+$$
+Now notice tall the inner rotors cancel in pairs, since $R\tilde{R}=1$ for any
+individual rotor whatsoever. So this is cleans up to,
+$$
+\mathcal{I}^\prime = \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\, \mathcal{I}\, \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+$$
+To finish the demonstration we need to consider what this &ldquo;new&rdquo; $\mathcal{I}^\prime$ does to even elements in $\mathscr{P}$. For scalars it is obvious, since they just &ldquo;move through&rdquo; all the rotors, and that will leave us with $\mathcal{I}^2 = -1$.</p><p>For other even elements we&rsquo;ve only got bivectors like $a\wedge b$ in each subspace.
+But consider how the original $mathcal{I}$ acts double-sided on <em>any</em> bivector in
+the single geon subspace,
+$$
+\begin{array}{rl}
+\mathcal{I}\,\underbar{\scriptsize 1}a
+\wedge \underbar{\scriptsize 1}b
+\, \mathcal{I} \!\!
+&= -\mathcal{I}\,\underbar{\scriptsize 1}a
+\,\mathcal{I} \wedge \mathcal{I}\, \underbar{\scriptsize 1}b
+\, \mathcal{I} \\
+&= -\underbar{\scriptsize 2}b
+\wedge \underbar{\scriptsize 2}a
+\\
+\end{array}
+$$
+where on the second line there we just <em>inserted</em> a pair $\mathcal{I}^2$ which
+is illegally inserting a $-1$, hence the prefactor $-1$ out front to cancel
+this to make it legal <em>al-jabr</em>.</p><p>In other words, the effect of sandwiching a bivector between
+$\mathcal{I}(\ldots)\mathcal{I}$ is to exchange the tensor spaces but with a
+sign change too. The bivector gets flipped a sign upon particle exchange.
+There is no such change for a vector or odd grade element of the algebra,
+they just get exchanged <em>without</em> a sign change, since the $\gamma_\mu$ do.</p><p>So think about this. Rotors have only even grade terms.
+This means we can, by using the same trick of inserting a few $\mathcal{I}^2$,
+write,
+$$
+\begin{array}{rl}
+\mathcal{I}\,\underbar{\scriptsize 1}\tilde{R}
+\underbar{\scriptsize 2}\tilde{R}
+\!\!
+&= - \mathcal{I}\,\underbar{\scriptsize 1}\tilde{R}
+\,\mathcal{I}\,\mathcal{I}\, \underbar{\scriptsize 2}\tilde{R}
+\\
+&= + \underbar{\scriptsize 2}\tilde{R}
+\, \mathcal{I}\,\underbar{\scriptsize 2}\tilde{R}
+\\
+&= - \underbar{\scriptsize 2}\tilde{R}
+\, \mathcal{I}\,\underbar{\scriptsize 2}\tilde{R}
+\,\mathcal{I}\,\mathcal{I} \\
+&= + \underbar{\scriptsize 2}\tilde{R}
+\,\underbar{\scriptsize 1}\tilde{R}
+\,\mathcal{I}
+\end{array}
+$$
+Now substitute this result for the last three factors in the above expression,
+$$
+\mathcal{I}^\prime = \underbar{\scriptsize 1}R
+\underbar{\scriptsize 2}R
+\, \mathcal{I}\, \underbar{\scriptsize 2}\tilde{R}
+\underbar{\scriptsize 1}\tilde{R}
+$$
+and we get,
+$$
+\begin{array}{rl}
+\mathcal{I}^\prime \!\!&= (\underbar{\scriptsize 1}R
+)(\underbar{\scriptsize 2}R
+)(\underbar{\scriptsize 2}\tilde{R}
+)(\underbar{\scriptsize 1}\tilde{R}
+)\mathcal{I} \\
+& = \mathcal{I}
+\end{array}
+$$
+which is what we hoped for, the geon-exchanger $\mathcal{I}$ is rotationally covariant.
+qed.</p><p>I used a few parentheses to make it easier to read back there, you can see repeated
+applying unitarity of rotors $R\tilde{R}=1$ vanishes them all.</p><h3 id=lorentz-invariance-of-mathcali><a class=anchor href=#lorentz-invariance-of-mathcali title='Anchor for: Lorentz invariance of $\mathcal{I}$.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Lorentz invariance of $\mathcal{I}$</h3><p>I have no plans to write on this, since Lorentz invariance is a matter of checking
+the action of $\mathcal{I}$ does not change under a boost.
+But boosts are nothing but rotations with the timelike relative bivectors in the STA,
+and we&rsquo;ve already shown the exchange operator is invariant under rotations.</p><p>But if you wish to check the fine details then just look at section 9.5 in the <a href=https://arxiv.org/abs/quant-ph/0509178 target=_blank>spacetime algebra and electron physics paper.</a>
+It is only a couple of paragraphs long, so hardly worth reproducing here.</p><h2 id=dirac-wave-equation-symmetry><a class=anchor href=#dirac-wave-equation-symmetry title='Anchor for: Dirac wave equation symmetry.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Dirac wave equation symmetry</h2><p>It is slightly more interesting to run through the check that the exchanged
+wave-function is still a solution to the Dirac Equation for the two-geon system,
+because this requirement does not automatically follow from rotational invariance.
+The problem is I have not yet covered Dirac Theory, so let&rsquo;s defer this until
+after we go through Dirac-Hestenes spinor theory.</p><p>So let&rsquo;s mark this section as a TODO. I will try to remember to put it at the end of the
+<a href=../010_hestenes_spinors>Hestenes Spinor chapter.</a></p><h2 id=todo><a class=anchor href=#todo title='Anchor for: todo.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>todo</h2><pre aria-label="Box containing code sample." tabindex=0><code>[TODO: unfinished.  Work in progress. Rest of Doran et al 2005 Sec.9.5...]
+</code></pre><h2 id=summary-of-pauli-exclusion><a class=anchor href=#summary-of-pauli-exclusion title='Anchor for: Summary of Pauli Exclusion.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Summary of Pauli Exclusion</h2><p>There is a lot more that could be written on the applications of Pauli exclusion
+and &ldquo;exchange forces&rdquo;. In STA there are numerical simulations for one,
+but I am not interested in such applied physics. It stretches my time too thin.</p><p>Here we can just make do with summarizing what Pauli Exclusion looks like in simplest fundamental terms in the geometric algebra.</p><p>First, we find that the exchanged state,
+$$
+\psi\prime = \mathcal{I}\,\psi(\mathcal{I}x\mathcal{I})\, \mathcal{I}
+$$
+is Lorentz invariant and a solution to the Dirac equation whenever $\psi(x)$ is a solution.</p><p>Second, this being the case we know the fully anti-symmetrized wave function,
+denoted $\psi_\mathcal{I}$,
+$$
+\psi_\mathcal{I} = \psi(x) + \mathcal{I}\, \psi(\mathcal{I}x\mathcal{I})\, \mathcal{I}
+$$
+thus also solves the Dirac equation, but also is by construction invariant under the exchange operator,
+$$
+\psi_\mathcal{I} = \mathcal{I}\psi_\mathcal{I}(\mathcal{I}x\mathcal{I})\mathcal{I}
+$$
+This last expression is the full and complete statement of Pauli Exclusion
+in the spacetime Pauli algebra. All the practical effects of Pauli Exclusion follow therefrom.</p><p>Finally, and this is what orthodox QM and QFT cannot and do not supply, we have
+available now a realist underpinning for Pauli exclusion, which is that the effect
+follows from pair-wise coupling in a rotationally covariant &ldquo;state&rdquo; &mdash; which in orthodox
+QM and QFT is nothing but a mathematical formalism, hence quite mystical.
+In T4G theory we have a realist <em>picture of this mathematics</em>, which is that an
+ER=EPR bridge connects the pairs in these Bell states, and so entanglement,
+<em>à la</em> Paul O&rsquo;Hara, is responsible for Pauli Exclusion.
+O&rsquo;Hara almost had this, but did not posit the ER bridge as the geometric causal factor.</p><p>The singlet state we denoted $\varpi$ in the last chapter, is the Measurement Theory
+description of a minimal Maldacena-Susskind wormhole topology. We all it a &ldquo;quantum state&rdquo;
+but in fact it is pure gravity. Non-classical <em>classical</em> gravity mind you.</p><p>This statement or claim might make more sense to you after reading the chapter on
+<a href=../011_spin_measurement_part2>Spin Measurement Part-2.</a>
+The key is the &ldquo;quantum state&rdquo; or &ldquo;wave-function&rsquo; needs to be interpreted as
+instructions for what can happen (what we need to do to a lab reference frame)
+<em>when we conduct measurements</em>. The &ldquo;sate&rdquo; is <strong><em>not</em></strong> the elementary particle.
+The &ldquo;quantum state&rdquo; is <em>physically</em> in fact a <em>process</em>, not an <em>object</em>.</p><h2 id=two-slit-experiment-amplitudes><a class=anchor href=#two-slit-experiment-amplitudes title='Anchor for: Two Slit Experiment Amplitudes.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Two Slit Experiment Amplitudes</h2><p>To my mind the simplest way to conduct a mathematical formal analysis of Young&rsquo;s
+experiment with <em>single photons</em> is the path integral formulation of Feynman.
+And for beginners the simplest way to do <em>that</em> is to make the
+first order approximation that the classical ray trajectories dominate the path integral.</p><p>This is a bit gross and icky for purists, but it is a fair pedagogical way to go.
+I&rsquo;m not saying &ldquo;go way and compute the full path integral to check,&rdquo; I am saying
+others have done so and there is no use in reinventing such a pedantic wheel.</p><p>However, that is not the reason I want to make the ray approximation.</p><p>I want to make the approximation because my interest is in getting to the
+core of T4G theory explanations. And the core of the T4G account of the
+Two Slit experiment is not the sum-over-histories. The core is the simple
+ER bridge entanglement.
+This is O&rsquo;Hara&rsquo;s lesson: Pauli exclusion and interference for singlet states is
+more fundamentally a coupling principle, not a superposition principle.</p><p>The reason superposition comes into play at a first or zeroth order level in the
+Two Slit experiment is really only because the singlet state $\varpi$ is described
+in the mathematical formalism by a superposition.
+In T4G theory we recognize it not as a superposition, but as a wormhole bridge.
+The geon really is in two places at any time, but when detected the ER bridge
+must collapse and so it is no longer in two places, at least not for a
+split second or femtosecond or whatever &mdash; until it gets entangled with bits
+of the measurement apparatus and then thus spread out again.</p><p>You have to remember to not take this T4G picture as &ldquo;realty&rdquo; because it is only
+a mental model. I&rsquo;m betting on it being something close to true reality
+(for my Ko-Fi funding fans), but you should not. You should ask yourself if this
+mental model has flaws, and if so how to correct them or use them to definitively
+disprove T4G theory.</p><h2 id=caveats><a class=anchor href=#caveats title='Anchor for: Caveats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Caveats</h2><p>This is more a teaser than a caveat. I want to point out another of Paul O&rsquo;Hara&rsquo;s papers,
+this one is on the &ldquo;<a href=https://iopscience.iop.org/article/10.1088/1742-6596/1239/1/012021/pdf target=_blank>EPR Paradox and SU(2) symmetry,</a>
+&rdquo; &mdash; in it O&rsquo;Hara almost gets around to using
+geometric algebra, as we&rsquo;ve done in this chapter, but he failed to release himself
+from the grip of the matrix representation of the Pauli algebra.</p><p>At the end of his paper O&rsquo;Hara rediscovers the result of Hestenes, Lasenby and Doran,
+et al., which is that the bivector which encodes the instruction to rotate is a component
+factor of the Pauli spinor $\psi$, and further, that it is the invariance of the
+coupled 2-geon bivector under SL(2,$\mathbb{C}$) which is responsible for EPR correlation.
+In addition the spin vector property of the particle (geon) described by the
+instruction $\psi$, is SU(2) frame-of-reference dependent.
+Finally O&rsquo;Hara suggests multipartite entanglement seen in GHZ states is an
+analogous consequence of a more general invariance under a semi-group,
+denoted SM(2,$\mathbb{C}$).</p><p>O&rsquo;Hara somewhat mystically writes this as an expression that,
+&ldquo;<em>the whole is more than the sum of its parts</em>,&rdquo; but T4G provides a
+non-mystical account for that, which is that an ER bridge connects the
+&ldquo;parts&rdquo; of every &ldquo;elementary particle.&rdquo; So the deep principle rediscovered
+here is only that elementary particles are (a) not point-like, and
+(b) are not trivially embedded in spacetime like superstrings or $p$-branes,
+but are rather non-trivially connected, via wormhole topologies.</p><p>What I would suggest is that with the aid of the geometric algebra approach
+developed by HLD and colleagues, we are probably well situated to account for
+GHZ states within the geometry of spacetime rotors.</p><p>My own attitude to this project is that it&rsquo;d be nice to complete,
+but I feel it is more applied physics than fundamental physics,
+so I have to leave it to cleverer people to polish off.</p><p><a href=../009_interference_from_entanglement>Next chapter (Interference from Entanglement)</a><br><a href=../007_pauli_ex_entanglement>Previous chapter (Pauli Exclusion from Entanglement)</a><br><a href=../>Back to Theory TOC</a></p></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.0ef45cd8f7b6109cb7d8fd21b5a999fa3a6353d7c8b817b13f24fa66136c32d9.js integrity="sha256-DvRc2Pe2EJy32P0htamZ+jpjU9fIuBexPyT6ZhNsMtk=" crossorigin=anonymous></script><script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.c40a327c961fc9259dd10a48b4276e7e24fcd8baa1a1e028f68273f4cbe8ce8a.js integrity="sha256-xAoyfJYfySWd0QpItCdufiT82LqhoeAo9oJz9Mvozoo=" crossorigin=anonymous></script></body></html>

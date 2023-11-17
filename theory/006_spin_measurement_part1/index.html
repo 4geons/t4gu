@@ -1,0 +1,191 @@
+<!doctype html><html lang=en data-mode=dark><head prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.120.4"><meta name=theme content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world"><title>Spin Measurement, part-1 - Projection | Topological 4-Geon Theory Unchained</title>
+<meta name=author content="Bijou M. Smith"><meta name=robots content="index follow"><link rel=canonical href=https://t4gu.gitlab.io/t4gu/theory/006_spin_measurement_part1/><meta property="og:site_name" content="Topological 4-Geon Theory Unchained"><meta property="og:title" content="Spin Measurement, part-1 - Projection"><meta property="og:url" content="https://t4gu.gitlab.io/t4gu/theory/006_spin_measurement_part1/"><meta property="og:type" content="website"><meta name=twitter:dnt content="on"><meta name=theme-color content="#222"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://t4gu.gitlab.io/t4gu","inLanguage":"en","name":"Topological 4-Geon Theory Unchained","description":"Geon Theory Development","publisher":"Bijou M. Smith"}</script><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/main.min.d33233e3d0eb633ea1fbb9e17553fe7c8ff07875b91d8186e046a48480987c8e.css integrity="sha256-0zIz49DrYz6h+7nhdVP+fI/weHW5HYGG4EakhICYfI4=" crossorigin=anonymous><noscript><meta name=theme-color content="#26A269"><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/css/noscript.min.503f912ad7e7391597c629c1f7134b77fa61b200f7425671b8fbbe91f62ad657.css integrity="sha256-UD+RKtfnORWXxinB9xNLd/phsgD3QlZxuPu+kfYq1lc=" crossorigin=anonymous></noscript><link rel=preload href=/t4gu/fonts/OpenSans-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Italic.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/OpenSans-Regular.ttf as=font crossorigin=anonymous><link rel=preload href=/t4gu/fonts/Oswald-Bold.ttf as=font crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Main-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Math-Italic.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size2-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/libs/katex@0.16.0/dist/fonts/KaTeX_Size4-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script src=https://t4gu.gitlab.io/t4gu/js/main.6bc16541f8ff648cb50eea8924e00b94561cf02ec5b5c22ae4b3bce8bab38233.js integrity="sha256-a8FlQfj/ZIy1DuqJJOALlFYc8C7FtcIq5LO86LqzgjM=" crossorigin=anonymous></script></head><body><header><a href=/t4gu><img src=https://t4gu.gitlab.io/t4gu/images/t4gu_logo.svg alt="T4GU logo" style=display:flex;width:40px;height:34px;float:left;margin-bottom:-2.5px;margin-right:10px> </a><a href=/t4gu>Topological 4-Geon Theory Unchained</a><nav aria-label="Main menu."><ul><li><a class=btn href=/t4gu/>Home</a></li><li><a class=btn href=/t4gu/philosophy/>Philosophy</a></li><li><a class=btn href=/t4gu/theory/>Theory</a></li><li><a class=btn href=/t4gu/blog/>Posts</a></li><li><a class=btn href=/t4gu/contact/>Contact</a></li><li><a class=btn href=/t4gu/donations/>Donate</a></li></ul></nav></header><div class=filler><main><article><header><h1>Spin Measurement, part-1 - Projection</h1><p>Published on <time datetime=2016-10-28>2016-10-28</time></p></header><details class=toc open><summary class=outline-dashed>Contents</summary><nav id=TableOfContents><ul><li><a href=#measuring-spin-orientation>Measuring Spin Orientation</a><ul><li><a href=#the-probabilities-and-their-amplitudes>The probabilities and their amplitudes</a></li><li><a href=#the-two-valuedness>The two-valuedness</a></li><li><a href=#notation-for-the-bell-multiplets>Notation for the Bell multiplets</a></li></ul></li><li><a href=#the-spin-vector>The Spin Vector</a></li><li><a href=#a-quick-look-at-the-road-ahead>A quick look at the road ahead</a><ul><li><a href=#the-measurement-theory-connection>The measurement theory connection</a></li><li><a href=#caveats>Caveats</a></li></ul></li></ul></nav></details><p>Building on the previous chapter about spinors in the Paul algebra,
+we now take a look at measurement of 4-geon spin, and suggest why there is
+not necessarily a &ldquo;proof positive&rdquo; that spin is discrete in quantum theory.
+The &ldquo;quantum number&rdquo; for &ldquo;spin&rdquo; is viewed as arising from topology, or the group
+(symmetry) structure, not from any fundamental discrete ontology.</p><p>This is crucial, since it will eventually brings us in a virtuous &ldquo;full circle&rdquo;
+back to the promise of T4G theory &mdash; which was that most of the <em>weirdness</em> of
+quantum mechanics dissolves when we try better to see quantum mechanics as a
+theory of gravity but endowed with particle-like topological 4-geon structure
+down at the Planck scale.</p><p>The remaining little bit of weirdness we resolve in this chapter concerns
+supposedly &ldquo;discrete angular momentum&rdquo; and &ldquo;discrete spin&rdquo;.</p><p>((Actually, this is not the last weirdness, since we still need to account for the
+extra symmetries seen in the Standard Model. All that in good time, hopefully.
+And I am not even going to sniff at cosmology.))</p><p><strong>Note:</strong> we do not need the Dirac spinors for this work, that&rsquo;ll be a
+<a href=../010_hestenes_spinors>later topic,</a>
+and this is because the <em>essentials</em> of spin measurements can be analyzed
+non-relativistically with no trouble.</p><h2 id=measuring-spin-orientation><a class=anchor href=#measuring-spin-orientation title='Anchor for: Measuring Spin Orientation.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Measuring Spin Orientation</h2><p>The paradigm for this sort of thinking is that of: &ldquo;Do not discretize what does
+not need to be discretized.&rdquo;
+So all particle properties associated with spacetime symmetries should be smooth,
+or at worst topological.
+That is because spacetime is itself a continuum.
+A lot of discrete physics can be derived from the discrete homotopy group
+structure, in other words.
+For that we need wormholes.
+And that is the T4G paradigm.</p><p>All measurements in QM have to specify some apparatus, since in QM, unlike CM,
+the measurement apparatus plays a fundamental role in the possible outcomes
+of any measurement.
+Although to the uninformed that sounds like a tautology, it really does have important nuance, but I&rsquo;m not going to get diverted into an entire discussion behind the philosophy of measurement, because I do not think that is necessary <em>for our present purposes</em>.
+The idea is straight forward:</p><ul><li>We specify a particular experiment,</li><li>that experiment, not the fundamental particles themselves, <em>the experiment + the particles</em> determines what the possible instrument recordings can be.</li></ul><p>We will use the Stern-Gerlach experiment again for this chapter and the following.</p><img src=../../images/Stern_Gerlach_filter.png alt="Stern-Gerlach apparatus set-up." style=width:600px;height:480px><p>According to which the electron &ldquo;spin&rdquo; &mdash; which is a 1-vector in 3-space is
+<em>forced</em> by the apparatus to appear as either an upwards deflected beam or a downwards.
+So the apparatus, <strong><em>not the electron</em></strong> dictates the &ldquo;spin value&rdquo; is either $\uparrow$
+or $\downarrow$.
+Here &ldquo;spin value&rdquo; does <strong><em>not</em></strong> mean the electron property,
+it means the recording on the instrument.
+That&rsquo;s a pretty basic and <em>important</em> distinction.</p><p>The Stern-Gerlach apparatus therefore acts as a spin polarizer, not as a &ldquo;filter&rdquo;.
+All electrons get through the apparatus! But they get polarized by the magnetic
+field into the downwards deflected beam or the upwards deflected beam.</p><p>If you do not believe this is the correct description of the Stern-Gerlach
+experiment then I invite you to later read the chapter on
+<a href=../011_spin_measurement_part2>Spin Measurement part-2</a>
+where we show the
+Dirac theory confirms our T4GU description of the apparatus as a beam polarizer.
+If you are still not convinced then please let it slide for now.
+We&rsquo;re trying to develop a theory of quantum mechanics under-pinnings,
+not debate about interpretations.</p><h3 id=the-probabilities-and-their-amplitudes><a class=anchor href=#the-probabilities-and-their-amplitudes title='Anchor for: The probabilities and their amplitudes.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The probabilities and their amplitudes</h3><p>For the next chapter we will stick to orthodox QM for a bit, just to keep
+things familiar. But straight after that we&rsquo;&rsquo;ll repeat it all in geometric STA.</p><p>For the orthodox treatment, last chapter we already noted (recall: in motivating
+the mapping from the Hilbert space spinors to the STA Pauli rotor-spinors)
+that the amplitudes for a Stern-Gerlach apparatus measurement are in the
+$|\uparrow\rangle$, $|\uparrow\rangle$ basis, and are denoted $c_1(\theta)$
+and $c_2(\theta)$ (or better linguistics: $c_\uparrow(\theta)$
+and $c_\downarrow(\theta)$), where $\theta$ is the angle between the unknown intrinsic
+orientation of the electron spin vector $\mathbf{S}$ and the magnetic field
+direction (given by the central field in the region between the magnet poles).</p><p>We deduced, using physical arguments,
+$$
+c_\uparrow = \cos(\theta/2)e^{-i\alpha/2},\quad
+\text{and}\quad c_\downarrow = \sin(\theta/2)e^{+i\alpha/2}.
+$$
+only I was being lazy and dropping the phase factors, which are needed for interference.</p><p>If I recall correctly this is covered nicely in his inimitable way,
+by Feynman in the <a href=https://www.feynmanlectures.caltech.edu/III_toc.html target=_blank>Red Books, III, chapter 5 and 6.</a></p><p>Those are idealizations of course, but they suffice empirically, as any laboratory
+Dextor or Dextress will tell you.</p><p>We can of course experimentally test all this by first preparing the electron
+beam to be in a definite spin orientation using a pre-polarizer
+(a second Stern-Gerlach apparatus placed in front of ours,
+that has the magnetic field $\vec{B}_0$ is titled at an angle $\theta$ to ours $\vec{B}_1$.)</p><p>The probabilities for recording the $\uparrow $ and $\downarrow$ deflections will then be,
+$$
+P(\uparrow) = \cos^2(\theta/2),\quad\text{and}\quad P(\downarrow) = 1- P(\uparrow) = \sin^2(\theta/2).
+$$
+It&rsquo;s a little easier typesetting if we use the shorthand $\uparrow =$&rsquo;$+$&rsquo;
+and $\uparrow =$&rsquo;$-$&rsquo;, and some authors do that, but I prefer the arrow notation.</p><p>I think the trigonometric functions are a nice way to point out how the Stern-Gerlach
+experiment is basically a simple projection apparatus.
+We are (can I say &ldquo;literally&rdquo;?) <em>projecting</em> the electron&rsquo;s 3-dimensional spin vector $\mathbf{S}=\tfrac{\hbar}{2}\vec{n}$ onto a detector screen.</p><p>At this stage there is nothing too weirdly &ldquo;quantum mechanical&rdquo;.
+But if you go and read that <a href=https://www.feynmanlectures.caltech.edu/III_06.html target=_blank>chapter in Feynman's Lectures</a>
+you will get all the weirdness.</p><h3 id=the-two-valuedness><a class=anchor href=#the-two-valuedness title='Anchor for: The two-valuedness.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The two-valuedness</h3><p>Just to emphasis the point:
+the two-valuedness of the spin measurement is <em>our choice</em> of measurement apparatus.
+So when we write the wave-function of an incoming electron as,
+$$
+|\psi\rangle = c_1 |\uparrow\rangle + c_2|\downarrow\rangle
+$$
+we are <strong><em>not</em></strong> saying the spin $\mathbf{S}$ <em>has to be</em> up($+$) or down($-$).</p><p>No. What we are describing is that the available information about the
+prepared state of the electron can be decomposed into one of two outcomes
+<em>for our experiment.</em>
+But that&rsquo;s <em>all</em> we are saying.</p><p>In T4G parlance, the measurement apparatus is creating a future spacetime boundary
+condition, and 4-geon wormhole trajectories can propagate onto that boundary or
+off it backwards in time, both directions.</p><p>This is how the interference arises, and that is why the phase factors
+$e^{\pm\alpha/2}$ are needed, they are <em>accounting tools</em>.
+We hereby have given a T4G explanation, or an account, for the geometric phase factors.
+This account is entirely absent in orthodox QM, where it is taken as an unexplained axiom.</p><h3 id=notation-for-the-bell-multiplets><a class=anchor href=#notation-for-the-bell-multiplets title='Anchor for: Notation for the Bell multiplets.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Notation for the Bell multiplets</h3><p>In the next chapter we get to the guts of what we want to show, where we&rsquo;ll be
+concerned with entangled Bell pairs. But to get there we have to show there are
+only Bell pairs, and there cannot be fully entangled Bell triples for $n\ge 3$
+spin coupled wave-functions.</p><p>To do so, I think I will lapse in notation and use Wigner and O&rsquo;Hara&rsquo;s &lsquo;$\pm$&rsquo; notation.
+I think this is just because it is easier on the eyes to see which particles go &lsquo;up&rsquo;
+and which go &lsquo;down&rsquo; for a triplet this way.
+(And we will see we only need to consider the triplet case, since the argument for
+spin-coupling pairing or monogamy, immediately extends to $n>3$.)</p><p>So when we simultaneously measure three coupled electrons (or any fermions) and
+get say a reading of (up, up down) then instead of writing this in our lab notebook as,
+$$
+\text{I observed:}\quad (\uparrow, \uparrow, \downarrow)
+$$
+we are going to record it in pen as,
+$$
+\text{I observed:}\quad (++-)
+$$
+if that&rsquo;s ok with you. Saves a bit on ink.</p><p>These measurements, just to be clear, are made on three different electrons.
+So we simultaneously conduct three experiments.</p><p>The critical thing is that we are imagining we have some source of electrons
+which couples them, so that they are as dependent as possible, that is,
+as coupled or as entangled as maximally possible.</p><p>What that means is simply that if we measure any <em>one</em> of the electrons,
+then we immediately know the result of the experiment on the other two electrons,
+simultaneously, with no light speed signal possibly fudging things for us.</p><p>The fact this sort of coupling exists in nature gives rise to violation of
+Bell&rsquo;s Inequalities. But that&rsquo;s a bit boring. We are not going to discuss the Bell Inequality violating experiments that &ldquo;prove&rdquo; quantum mechanics does not admit any local hidden variable interpretations.
+T4G theory is after all intrinsically non-local, since wormhole traversals by qubits of information violate local Minkowski causality.
+So violation of the Bell Inequalities is trivial for T4G theory.</p><p>What we are interested in is how to account for Pauli exclusion with T4G theory,
+without needing to undergo the mess and headache of motivating quantum field theory
+from T4G principles. (We assume we could do that too, but we&rsquo;re too lazy to do it today.)</p><p>We are going to see shortly that the Pauli Exclusion Principle follows directly
+from this state of full tripartite entanglement being <strong><em>impossible</em></strong> for more
+than two electrons at a time.
+(Or generally for more than two indistinguishable 4-geons among
+$n$ indistinguishable 4-geons &mdash; we will not be
+using anything that is specific to electrons.)</p><h2 id=the-spin-vector><a class=anchor href=#the-spin-vector title='Anchor for: The Spin Vector.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The Spin Vector</h2><p>In GA the Schrödinger equation for a spin in a magnetic field reduces to a
+simple rotor equation. We&rsquo;d like to see how. But first we need to cover the
+basics of spin expectation in the GA formulation of QM.</p><p>In GA the spin vector is defined,
+$$
+\boldsymbol{s} = \tfrac{\hbar}{2} \psi \boldsymbol{\sigma}_3 \psi^\dagger
+$$
+The motive for this definition comes from the mapping we established last chapter
+and the Hilbert space definition of the spin expectation value:
+$$
+\langle \hat{s}_k\rangle = \langle \psi | \tfrac{\hbar}{2}\hat{\sigma}_k|\psi \rangle
+$$
+How do we get this mapped to the $\mathscr{P}$ algebra?</p><p>First we need,
+$$
+\langle \psi | \tfrac{\hbar}{2}\hat{\sigma}_k|\psi \rangle
+\longmapsto \langle\psi^\dagger\boldsymbol{\sigma}_k\psi\boldsymbol{\sigma}_3\rangle -
+\langle\psi^\dagger\boldsymbol{\sigma}_k\psi I\rangle I\boldsymbol{\sigma}_3
+$$
+where $ \langle \cdot \rangle $ on the right of the mapping is &ldquo;scalar part&rdquo; recall.</p><p>This simplifies, because $\psi^\dagger\boldsymbol{\sigma}_3\psi$ reverse to minus
+itself hence must have zero scalar part, so the last term on the right-hand side vanishes.
+Then for the other term in 3-dimensions $\psi\boldsymbol{\sigma}_3\psi^\dagger$ is both odd-grade and reverses to itself hence must be a pure vector. This motivates the GA definition:
+$$
+\boldsymbol{s} = \tfrac{\hbar}{2} \psi \boldsymbol{\sigma}_3 \psi^\dagger
+$$
+for the <strong>spin vector</strong>. Good.</p><p>The expectation value now reduces to,
+$$
+\langle \hat{s}_k\rangle \longmapsto \tfrac{\hbar}{2} \langle\boldsymbol{\sigma}_k\psi\boldsymbol{\sigma}_3\psi^\dagger\rangle = \boldsymbol{\sigma}_k \cdot \boldsymbol{s}
+$$</p><p><strong>The Insight:</strong> This is a nice result, it tells us the formerly rather obscure
+&ldquo;operator expectation value&rdquo; in orthodox QM treatments is nothing more than a
+projection of the $k^\text{th}$ component of the real spin vector $\boldsymbol{s}$.
+At least for spin expectations.</p><pre aria-label="Box containing code sample." tabindex=0><code>TODO: maybe work through the rest of Lasenby &amp; Doran section 8.1.4.
+</code></pre><h2 id=a-quick-look-at-the-road-ahead><a class=anchor href=#a-quick-look-at-the-road-ahead title='Anchor for: A quick look at the road ahead.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>A quick look at the road ahead</h2><p>After this Pauli algebra stuff we are prepared for relativistic QM in the STA,
+and so Dirac-Hestenes theory.
+But I&rsquo;m deferring that for much later, because with the Pauli algebra $\mathscr{P}$ we
+already have the tools to account for the Pauli Exclusion Principle and basic
+single particle interference.</p><p>It might seem pedagogically strained that I&rsquo;m now going to treat multi-particle
+quantum mechanics first, before interference, but I think you will see why this
+is natural.
+Without giving too much away, it is because to account for interference we have
+to account for atemporal (T4G motivated) interaction between the 4-geon and each slit
+(in the prototypical double slit interference case).
+This means there is a description of the global system in the spacetime region of the
+cobordism from source to detector, that has to permit a coupling between the
+4-geon and each slit.
+The single particle 4-geon thus has to be described <em>epistemologically</em> by a coupled geon,
+that is, a wormhole bridge connects ends of the internal structure of the 4-geon.</p><p>Only in T4G theory this is not a &ldquo;hidden&rdquo; internal structure anymore,
+it is real and manifest, and the apparent acausality in the self-interaction is
+due to the ambient vacuum wormhole gas dynamics, plus the fact the ER bridge
+intrinsic to the topological structure of the 4-geon is itself a non-local
+connection when viewed from the ignorance of Minkowski spacetime and it&rsquo;s trivial
+topology.
+This is at least the theory.</p><p>We will be able to describe single-particle interference phenomena with this
+approach without explicitly invoking the T4G geometrodynamics in the
+<a href=009_interference_from_entanglement.md>third chapter ahead.</a>
+But as I just explained, it arises from self-coupling, and in a 4-geon topologically
+agnostic sense there is little difference between such single-particle self-coupling
+and two-particle coupling that we need to explain Pauli Exclusion.
+So it is Pauli Exclusion next up.</p><h3 id=the-measurement-theory-connection><a class=anchor href=#the-measurement-theory-connection title='Anchor for: The measurement theory connection.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>The measurement theory connection</h3><p>In terms of measurement theory the remarks above are put in the context of
+T4G theory with an interpretation that goes like this:</p><blockquote><p>For a self-coupled 4-geon, the geon&rsquo;s wormhole structure (ER bridge) is
+&ldquo;pinched off&rdquo; or collapsed when a measurement process occurs, which re-connects
+the end where the energy is detected with a geon that is part of the measurement apparatus.<br><div style=text-align:center>(Basically a scattering result in primitive terms.)</div></p></blockquote><p>It should be noted the term &ldquo;self-coupled 4-geon&rdquo; is a redundancy,
+since every 4-geon is considered non-trivial in topology, and so they are all
+self-coupled by minimal
+ER bridge structure, in some way.
+Or, if not, they can behave &ldquo;quantum mechanically&rdquo; only if they can traverse
+ambient spacetime vacuum wormholes (the Planck scale wormhole gas geometrodynamics).</p><p><strong>The Anti-Crackpot Statement:</strong> Yes, I know, pretty much every idea about what goes on at the
+Planck scale is today pure metaphysics. And a great place to hide all sorts of nonsense
+without immediate risk of embarrassment &mdash; since&mldr; who is going to test it?
+I would just say judge all such competing ideas on merit,
+and also by how parsimonious they are.
+I&rsquo;ve never known a more parsimonious model underlying quantum mechanics than T4G,
+but if you think you know of one that&rsquo;s more parsimonious please let me know,
+after donating on <strong><a href=https://ko-fi.com/achrononmaster/ target=_blank>Ko-fi</a>
+</strong>so I can give myself permission to read what you&rsquo;ve got to say.</p><h3 id=caveats><a class=anchor href=#caveats title='Anchor for: Caveats.'><svg aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#hashtag"/></svg></a>Caveats</h3><p>Although above I mentioned the &ldquo;philosophy of measurement&rdquo; is not too important
+for our present purposes, it is a topic I will want to come back to when we take
+a look at &ldquo;measurement propositions&rdquo; and so-called <a href=../099_quantum_logic>quantum logic.</a>
+That&rsquo;s because quantum logic is really all about measurement propositions!
+And I think T4G theory sheds a pretty unique light upon all of that.</p><p><a href=../007_pauli_ex_entanglement>Next chapter (Pauli Exclusion and Entanglement)</a><br><a href=../005_spacetime_algebra>Previous chapter (Spacetime Algebra)</a><br><a href=../>Back to Theory TOC</a></p></article></main></div><footer><div class=req-js><button class=outline-dashed title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/t4gu/img/bundle.min.fc89b321aa39dfb355170fc007ce5b94.svg#adjust"/></svg></button><input class=outline-dashed type=color list=presets value=#26A269 title="Change accent color." aria-label="Change accent color."><datalist id=presets><option value=#1f676b><option value=#26A269><option value=#225670><option value=#dd587c><option value=#902b37><option value=#f3a530><option value=#754e85><option value=#7fc121><option value=#a8314a><option value=#ff7433><option value=#3e6728><option value=#c063bd><option value=#805080><option value=#9d629d><option value=#a064a0><option value=#7daa50><option value=#284531><option value=#285790><option value=#F5A83D><option value=#88aa33><option value=#015660><option value=#bf274e><option value=#bf4242><option value=#51b37c></datalist></div><noscript><p class=noscript>Unable to execute JavaScript. Some features were disabled.</p></noscript></footer><link rel=stylesheet href=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.6950e59dbd8dfddd111390d85888bb5f9dc2e9c334da7ac1c3bacc92a695610d.css integrity="sha256-aVDlnb2N/d0RE5DYWIi7X53C6cM02nrBw7rMkqaVYQ0=" crossorigin=anonymous><script defer src=https://t4gu.gitlab.io/t4gu/libs/katex@0.16.0/dist/katex.min.0ef45cd8f7b6109cb7d8fd21b5a999fa3a6353d7c8b817b13f24fa66136c32d9.js integrity="sha256-DvRc2Pe2EJy32P0htamZ+jpjU9fIuBexPyT6ZhNsMtk=" crossorigin=anonymous></script><script defer src=https://t4gu.gitlab.io/t4gu/js/katex-custom-render.min.c40a327c961fc9259dd10a48b4276e7e24fcd8baa1a1e028f68273f4cbe8ce8a.js integrity="sha256-xAoyfJYfySWd0QpItCdufiT82LqhoeAo9oJz9Mvozoo=" crossorigin=anonymous></script></body></html>
